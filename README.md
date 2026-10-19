@@ -14,7 +14,7 @@ CONFIRMED (1)
     source: https://github.com/stripe/openapi/compare/0ba185f3d96c3fee739b01aaa46fa86245da1f0b...bcfd59f49dcac84a84d63d304c62793dff6e5916 (upgrade 2023-10-16 -> 2026-09-30.endive)
 ```
 
-That is real output on a public repository ([mayfer/dbpill](https://github.com/mayfer/dbpill) at `b5b1769`). On 28 public Stripe codebases it first found 6 of the 7 upgrade breaks a separate check expected, with no false confirmed findings. The miss (a client wrapped in a `Proxy`) is fixed and the rerun finds all 7; since the fixes were made after seeing that sample, treat 6 of 7 as the honest number until a fresh sample is measured. Method and details: [eval/stripe-upgrade-recall](eval/stripe-upgrade-recall/README.md).
+That is real output on a public repository ([mayfer/dbpill](https://github.com/mayfer/dbpill) at `b5b1769`). On a fresh sample of 30 public Stripe codebases, measured before any fix, it found 15 of the 17 upgrade breaks a separate check expected, with no false confirmed findings. Both misses are fixed now. Method and details: [eval/stripe-upgrade-recall](eval/stripe-upgrade-recall/README.md).
 
 It is also **Dependabot for the other APIs you call**: the same scanner watches the official OpenAPI specs of Stripe, OpenAI, GitHub and Twilio and flags the lines an upstream breaking change hits as it lands.
 
@@ -102,7 +102,7 @@ What to keep in mind: a snapshot is Stripe's published description of a version,
 - **Upgrade mode is Stripe only.** OpenAI and Twilio do not publish versioned specs the same way; GitHub's REST versions are separate documents.
 - **Twilio SDK calls are detected but not mapped.** They're reported as unresolved. Raw HTTP calls to Twilio are resolved.
 - **SDK maps are built from the latest SDK.** A method that exists only in an older SDK version shows up as unresolved.
-- **Bindings follow names within a file and imports between files**, including factories, lazy getters and `Proxy` wrappers. Dynamic dispatch and clients passed through untyped function parameters aren't followed.
+- **Bindings follow names within a file and imports between files**, including factories, lazy getters and `Proxy` wrappers. Clients returned by static class methods, dynamic dispatch and clients passed through untyped function parameters aren't followed.
 - **No impact ranking yet.** Findings are ordered by level and location. Reach-based ranking (which routes depend on a call) is planned, not faked.
 
 ## Data and site

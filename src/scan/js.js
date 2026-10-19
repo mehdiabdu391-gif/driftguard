@@ -218,6 +218,14 @@ export class JsFile {
         // const { default: X } = await import('m') / const X = await import('m') (namespace)
         const dyn = value ? dynamicImportSpec(unwrap(value)) : null;
         const req = value ? requireSpec(unwrap(value)) ?? dyn : null;
+        // const X = (await import('m')).default / .Named
+        const uv = value ? unwrap(value) : null;
+        if (!req && name?.type === 'identifier' && uv?.type === 'member_expression') {
+          const obj = uv.childForFieldName('object');
+          const spec = obj ? dynamicImportSpec(unwrap(obj)) : null;
+          const prop = uv.childForFieldName('property')?.text;
+          if (spec && prop) this.addImport(name.text, spec, prop);
+        }
         if (req && name) {
           if (name.type === 'identifier') this.addImport(name.text, req, dyn ? '*' : 'default');
           if (name.type === 'object_pattern') {
@@ -503,6 +511,15 @@ export class JsFile {
    */
   exprEntity(node) {
     const n = unwrap(node);
+    // key ? new Stripe(key, ...) : null. Branches that are null/undefined are ignored; the
+    // rest must agree on the client (and its pin) or the expression is not a known client.
+    if (n.type === 'ternary_expression') {
+      const branches = ['consequence', 'alternative'].map((f) => n.childForFieldName(f)).filter((b) => b && !['null', 'undefined'].includes(unwrap(b).type) && unwrap(b).text !== 'undefined');
+      const es = branches.map((b) => (b ? this.exprEntity(b) : null));
+      if (es.length === 0 || es.some((e) => !e)) return null;
+      const keys = new Set(es.map((e) => JSON.stringify(e)));
+      return keys.size === 1 ? es[0] : null;
+    }
     if (n.type === 'identifier') {
       const e = this.entityOf(n.text);
       return e && (e.kind === 'client' || e.kind === 'axios-instance') ? e : null;

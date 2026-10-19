@@ -58,6 +58,31 @@ Fixed, each with a regression test:
 
 These fixes were written after seeing this sample, so the second run's 7 of 7 is not an unbiased estimate. A fresh sample is the honest next measurement.
 
+## Fresh sample (measured before any fix it led to)
+
+To get a number not shaped by the fixes above, 30 new repositories: the first distinct results of three different searches (`apiVersion "checkout.sessions.create" language:JavaScript`, `apiVersion "customers.create" language:TypeScript`, `apiVersion "billingPortal.sessions.create" language:TypeScript`), skipping every repository used before. Same ground-truth script.
+
+| | |
+|---|---|
+| Repositories with a pin DriftGuard could attribute | 23 of 30 |
+| Stripe SDK call sites found by the regex | 251 |
+| Resolved by DriftGuard | 216 (2 more listed as unresolved) |
+| Resolved but not checked (no attributable pin, listed) | 68 |
+| Breaks the regex script expected | 19 |
+| ...of which inside template strings (code a CLI writes out, never run) | 2 |
+| **Real expected breaks** | **17** |
+| **Confirmed by DriftGuard** | **15** |
+| **Missed** | **2** |
+| Confirmed findings not in the ground truth | 0 |
+
+**Recall on the fresh sample: 15 of 17.** This is the number to quote.
+
+Misses, both fixed afterwards with regression tests:
+- a client created in a ternary, `key ? new Stripe(key, { apiVersion }) : null`;
+- a class taken from `(await import('stripe')).default`.
+
+Coverage gap seen but not fixed: a client returned by a static class method (`StripeService.getInstance()`) is not followed, so that repository's 9 calls were not resolved. The regex script expected no breaks there, so it does not change recall, but those calls are silently unchecked.
+
 ## Limits of this measurement
 
 - The ground truth checks top-level fields only. Nested fields, query parameters and endpoint removals that a top-level check cannot see are not counted, so recall on those is not measured here.

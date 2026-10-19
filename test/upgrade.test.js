@@ -392,3 +392,35 @@ test('one name assigned clients with two different pins has an unknown pin, neve
 test('drift upgrade on a path that does not exist is an error, not a clean report', async () => {
   await assert.rejects(main(['upgrade', path.join(tmpdir(), 'drift-does-not-exist'), '--data', dataDir]), /is not a directory/);
 });
+
+test('a client built in a ternary with a null fallback keeps its pin', async () => {
+  const dir = await appWith('ternary', [
+    "import Stripe from 'stripe'",
+    "export const stripe = process.env.K ? new Stripe(process.env.K, { apiVersion: '2023-10-16' }) : null",
+    "export const pay = () => stripe!.checkout.sessions.create({ mode: 'payment', ui_mode: 'hosted', payment_method_types: ['card'] })",
+  ]);
+  const r = await upgrade(dir, { dataDir, cacheDir: await mkdtemp(path.join(tmpdir(), 'drift-cache-')), fetch: fakeFetch });
+  assert.deepEqual(brief(r), ['confirmed stripe.ts:3 request-field-removed payment_method_types']);
+});
+
+test('a ternary choosing between two different pins is not a known pin', async () => {
+  const dir = await appWith('ternary2', [
+    "import Stripe from 'stripe'",
+    "export const stripe = process.env.OLD ? new Stripe('k', { apiVersion: '2023-10-16' }) : new Stripe('k', { apiVersion: '2026-09-30.endive' })",
+    "export const pay = () => stripe.checkout.sessions.create({ mode: 'payment', ui_mode: 'hosted', payment_method_types: ['card'] })",
+  ]);
+  const r = await upgrade(dir, { dataDir, cacheDir: await mkdtemp(path.join(tmpdir(), 'drift-cache-')), fetch: fakeFetch });
+  assert.deepEqual(brief(r), []);
+});
+
+test('a client class taken from (await import("stripe")).default is detected', async () => {
+  const dir = await appWith('dynmember', [
+    'export default async function handler() {',
+    "  const Stripe = (await import('stripe')).default",
+    "  const stripe = new Stripe('k', { apiVersion: '2023-10-16' })",
+    "  return stripe.checkout.sessions.create({ mode: 'payment', ui_mode: 'hosted', payment_method_types: ['card'] })",
+    '}',
+  ]);
+  const r = await upgrade(dir, { dataDir, cacheDir: await mkdtemp(path.join(tmpdir(), 'drift-cache-')), fetch: fakeFetch });
+  assert.deepEqual(brief(r), ['confirmed stripe.ts:4 request-field-removed payment_method_types']);
+});
