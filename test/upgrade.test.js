@@ -309,3 +309,86 @@ test('a client from a dynamic import is detected (const { default: Stripe } = aw
 test('an unknown --fail-on value is an error, not a silent default', async () => {
   await assert.rejects(main(['upgrade', appDir, '--data', dataDir, '--fail-on', 'none']), /--fail-on must be/);
 });
+
+/**
+ * @param {string} name
+ * @param {string[]} lines
+ */
+async function appWith(name, lines) {
+  const dir = await mkdtemp(path.join(tmpdir(), `drift-${name}-`));
+  await writeFile(path.join(dir, 'stripe.ts'), [...lines, ''].join('\n'));
+  return dir;
+}
+
+const LAZY = [
+  "import Stripe from 'stripe'",
+  'let stripeInstance: Stripe | null = null',
+  'function getStripe(): Stripe {',
+  '  if (!stripeInstance) {',
+  "    stripeInstance = new Stripe(process.env.KEY!, { apiVersion: '2023-10-16' })",
+  '  }',
+  '  return stripeInstance',
+  '}',
+  'export function getStripeInstance(): Stripe {',
+  '  return getStripe()',
+  '}',
+];
+
+test('a pin set inside a lazy getter reaches calls through nested factories', async () => {
+  const dir = await appWith('lazy', [
+    ...LAZY,
+    'export async function pay() {',
+    '  const client = getStripeInstance()',
+    "  return client.checkout.sessions.create({ mode: 'payment', ui_mode: 'hosted', payment_method_types: ['card'] })",
+    '}',
+  ]);
+  const r = await upgrade(dir, { dataDir, cacheDir: await mkdtemp(path.join(tmpdir(), 'drift-cache-')), fetch: fakeFetch });
+  assert.deepEqual(brief(r), ['confirmed stripe.ts:14 request-field-removed payment_method_types']);
+  assert.deepEqual(r.upgrade?.skipped, []);
+});
+
+test('a client wrapped in a Proxy is detected and takes the pin of the client its handler obtains', async () => {
+  const dir = await appWith('proxy', [
+    ...LAZY,
+    'export const stripe = new Proxy({} as Stripe, {',
+    '  get(_target, prop) {',
+    '    const instance = getStripe()',
+    '    const value = instance[prop as keyof Stripe]',
+    "    return typeof value === 'function' ? value.bind(instance) : value",
+    '  },',
+    '})',
+    'export async function pay() {',
+    "  return stripe.checkout.sessions.create({ mode: 'payment', ui_mode: 'hosted', payment_method_types: ['card'] })",
+    '}',
+  ]);
+  const r = await upgrade(dir, { dataDir, cacheDir: await mkdtemp(path.join(tmpdir(), 'drift-cache-')), fetch: fakeFetch });
+  assert.deepEqual(brief(r), ['confirmed stripe.ts:20 request-field-removed payment_method_types']);
+});
+
+test('a Proxy typed as a client but with no visible client keeps the SDK and no pin', async () => {
+  const dir = await appWith('proxy-nopin', [
+    "import Stripe from 'stripe'",
+    'export const stripe = new Proxy({} as Stripe, { get: (_t, p) => (globalThis as any).real[p] })',
+    "export const pay = () => stripe.checkout.sessions.create({ mode: 'payment' })",
+  ]);
+  const r = await upgrade(dir, { dataDir, cacheDir: await mkdtemp(path.join(tmpdir(), 'drift-cache-')), fetch: fakeFetch });
+  assert.equal(r.callSites.filter((c) => c.status === 'resolved').length, 1);
+  assert.deepEqual(r.upgrade?.skipped.map((s) => s.line), [3]);
+});
+
+test('one name assigned clients with two different pins has an unknown pin, never the first one', async () => {
+  const dir = await appWith('conflict', [
+    "import Stripe from 'stripe'",
+    'let stripe: Stripe',
+    "if (process.env.LEGACY) stripe = new Stripe('k', { apiVersion: '2023-10-16' })",
+    "else stripe = new Stripe('k', { apiVersion: '2026-09-30.endive' })",
+    "export const pay = () => stripe.checkout.sessions.create({ mode: 'payment', payment_method_types: ['card'] })",
+  ]);
+  const r = await upgrade(dir, { dataDir, cacheDir: await mkdtemp(path.join(tmpdir(), 'drift-cache-')), fetch: fakeFetch });
+  assert.deepEqual(brief(r), []);
+  assert.deepEqual(r.upgrade?.skipped.map((s) => s.line), [5]);
+});
+
+test('drift upgrade on a path that does not exist is an error, not a clean report', async () => {
+  await assert.rejects(main(['upgrade', path.join(tmpdir(), 'drift-does-not-exist'), '--data', dataDir]), /is not a directory/);
+});

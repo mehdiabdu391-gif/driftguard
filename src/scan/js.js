@@ -157,15 +157,46 @@ export class JsFile {
     this.exportNames = new Map();
     /** @type {{spec: string, imported: string, as: string}[]} */
     this.reexports = [];
+    /** Bumped whenever a binding is added or gains a pin, so bind() runs to a fixed point. */
+    this.bindingChanges = 0;
+    /** Names bound to clients with different API version pins: their pin is unknown. */
+    this.pinConflicts = new Set();
+  }
+
+  /**
+   * Record a client binding. A later binding of the same SDK can add the API version pin an
+   * earlier one lacked (a lazily initialised `let stripe: Stripe | null`); two different pins
+   * for one name make the pin unknown rather than whichever came first.
+   * @param {string} key
+   * @param {Entity} e
+   */
+  setEntity(key, e) {
+    const prev = this.entities.get(key);
+    if (!prev) {
+      this.entities.set(key, this.pinConflicts.has(key) && 'apiVersion' in e ? withoutPin(e) : e);
+      this.bindingChanges++;
+      return;
+    }
+    if (!('sdk' in prev) || !('sdk' in e) || prev.sdk !== e.sdk || prev.kind !== e.kind) return;
+    const a = 'apiVersion' in prev ? prev.apiVersion : undefined;
+    const b = 'apiVersion' in e ? e.apiVersion : undefined;
+    if (!b || a === b || this.pinConflicts.has(key)) return;
+    if (a) {
+      this.pinConflicts.add(key);
+      this.entities.set(key, withoutPin(prev));
+    } else {
+      this.entities.set(key, /** @type {Entity} */ ({ ...prev, apiVersion: b }));
+    }
+    this.bindingChanges++;
   }
 
   /** Collect imports, constants and entity bindings. Runs to a fixed point within the file. */
   bind() {
     this.collectImportsAndConsts();
-    for (let pass = 0; pass < 4; pass++) {
-      const before = this.entities.size;
+    for (let pass = 0; pass < 6; pass++) {
+      const before = this.bindingChanges;
       this.collectBindings();
-      if (this.entities.size === before) break;
+      if (this.bindingChanges === before) break;
     }
   }
 
@@ -378,9 +409,10 @@ export class JsFile {
    * @param {Node} value
    */
   bindValue(key, value) {
-    if (this.entities.has(key)) return;
     const e = this.exprEntity(value);
-    if (e && (e.kind === 'client' || e.kind === 'axios-instance')) this.entities.set(key, e);
+    if (!e || (e.kind !== 'client' && e.kind !== 'axios-instance')) return;
+    if (this.entities.has(key) && e.kind !== 'client') return;
+    this.setEntity(key, e);
   }
 
   /**
@@ -391,7 +423,10 @@ export class JsFile {
   bindType(key, type) {
     if (this.entities.has(key)) return;
     const e = this.entityOf(type);
-    if (e?.kind === 'ctor') this.entities.set(key, { kind: 'client', sdk: e.sdk, ...(e.variant ? { variant: e.variant } : {}) });
+    if (e?.kind === 'ctor') {
+      this.entities.set(key, { kind: 'client', sdk: e.sdk, ...(e.variant ? { variant: e.variant } : {}) });
+      this.bindingChanges++;
+    }
   }
 
   /**
@@ -400,7 +435,8 @@ export class JsFile {
    * @param {Node} body
    */
   bindFactory(name, body) {
-    if (this.entities.has(name)) return;
+    const existing = this.entities.get(name);
+    if (existing && (existing.kind !== 'factory' || existing.apiVersion)) return;
     /** @type {Entity | null} */
     let found = null;
     if (body.type !== 'statement_block') {
@@ -417,7 +453,48 @@ export class JsFile {
         return true;
       });
     }
-    if (found && found.kind === 'client') this.entities.set(name, { kind: 'factory', sdk: found.sdk, ...(found.variant ? { variant: found.variant } : {}), ...(found.apiVersion ? { apiVersion: found.apiVersion } : {}) });
+    if (found && found.kind === 'client') this.setEntity(name, { kind: 'factory', sdk: found.sdk, ...(found.variant ? { variant: found.variant } : {}), ...(found.apiVersion ? { apiVersion: found.apiVersion } : {}) });
+  }
+
+  /**
+   * A Proxy standing in for an SDK client. The SDK comes from the target's type assertion
+   * (`{} as Stripe`) or from the clients the handler obtains; the pin only when every client
+   * the handler obtains agrees on one.
+   * @param {Node} n  new_expression
+   * @returns {Entity | null}
+   */
+  proxyEntity(n) {
+    const args = n.childForFieldName('arguments');
+    const target = args?.namedChild(0);
+    const handler = args?.namedChild(1);
+    /** @type {string | null} */
+    let sdk = null;
+    /** @type {string | undefined} */
+    let variant;
+    const asType = target?.type === 'as_expression' ? target.namedChild(target.namedChildCount - 1) : null;
+    if (asType?.type === 'type_identifier') {
+      const t = this.entityOf(asType.text);
+      if (t?.kind === 'ctor') ({ sdk, variant } = t);
+    }
+    /** @type {Set<string | null>} */
+    const pins = new Set();
+    /** @type {Set<string>} */
+    const sdks = new Set();
+    if (handler) {
+      walk(handler, (m) => {
+        if (m.type !== 'call_expression' && m.type !== 'new_expression') return true;
+        const e = this.exprEntity(m);
+        if (e?.kind === 'client') {
+          sdks.add(e.sdk);
+          pins.add(e.apiVersion ?? null);
+        }
+        return true;
+      });
+    }
+    if (!sdk && sdks.size === 1) sdk = [...sdks][0];
+    if (!sdk || (sdks.size > 0 && (sdks.size > 1 || !sdks.has(sdk)))) return null;
+    const pin = pins.size === 1 ? [...pins][0] : null;
+    return { kind: 'client', sdk, ...(variant ? { variant } : {}), ...(pin ? { apiVersion: pin } : {}) };
   }
 
   /**
@@ -457,7 +534,11 @@ export class JsFile {
           const pin = v?.type === 'object' ? v.tree.fields.apiVersion?.value ?? null : null;
           return { kind: 'client', sdk: e.sdk, ...(pin ? { apiVersion: pin } : {}) };
         }
-        if (e?.kind === 'ctor' || e?.kind === 'factory') return { kind: 'client', sdk: e.sdk, ...(e.variant ? { variant: e.variant } : {}) };
+        // A factory's client carries the pin its constructor set.
+        if (e?.kind === 'factory') return { kind: 'client', sdk: e.sdk, ...(e.variant ? { variant: e.variant } : {}), ...(e.apiVersion ? { apiVersion: e.apiVersion } : {}) };
+        if (e?.kind === 'ctor') return { kind: 'client', sdk: e.sdk, ...(e.variant ? { variant: e.variant } : {}) };
+        // new Proxy({} as Stripe, { get() { return getStripe()[prop] } })
+        if (n.type === 'new_expression' && c.text === 'Proxy' && !this.entityOf('Proxy')) return this.proxyEntity(n);
         if (e?.kind === 'get-octokit') return { kind: 'client', sdk: 'octokit' };
       }
       if (c.type === 'member_expression') {
@@ -796,6 +877,15 @@ function propKey(key) {
   if (key.type === 'property_identifier' || key.type === 'identifier' || key.type === 'shorthand_property_identifier') return key.text;
   if (key.type === 'number') return key.text;
   return stringValue(key);
+}
+
+/**
+ * @param {Entity} e
+ * @returns {Entity}
+ */
+function withoutPin(e) {
+  const { apiVersion: _drop, ...rest } = /** @type {any} */ (e);
+  return rest;
 }
 
 /**

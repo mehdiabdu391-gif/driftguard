@@ -27,27 +27,36 @@ Every expected break was then checked against Stripe's own changelog. Both kinds
 
 ## Result
 
-| | Count |
-|---|---|
-| Repositories | 28 (26 with a pinned version DriftGuard could attribute) |
-| Stripe SDK call sites found by the regex | 98 (one is commented-out code) |
-| Call sites DriftGuard resolved | 93, plus 3 listed as unresolved (method maps to several endpoints) |
-| Resolved calls not checked because no pin was attributable | 2 (listed in the report with the reason) |
-| Expected breaks | 7 in 7 repositories |
-| Confirmed by DriftGuard | 6 |
-| **Missed** | **1** |
-| Confirmed findings not in the ground truth | 0 |
-| Possible findings (not counted as hits) | 8 |
+Two runs on the same sample. The first found a silent miss; the fixes it led to are in the second.
 
-Recall on this sample: 6 of 7. Precision of confirmed findings: 6 of 6.
+| | First run | After fixes |
+|---|---|---|
+| Repositories with a pinned version DriftGuard could attribute | 26 of 28 | 27 of 28 |
+| Stripe SDK call sites found by the regex (one is commented-out code) | 98 | 98 |
+| Call sites DriftGuard resolved | 93 | 96 |
+| Listed as unresolved (method maps to several endpoints) | 3 | 3 |
+| Resolved but not checked: no attributable pin (listed with the reason) | 2 | 1 |
+| Expected breaks | 7 in 7 repositories | 7 |
+| Confirmed by DriftGuard | 6 | **7** |
+| **Missed** | **1** | **0** |
+| Confirmed findings not in the ground truth | 0 | 0 |
+| Possible findings (not counted as hits) | 8 | 9 |
 
-### The miss
+The one remaining not-checked call (repo-18) takes its client from a constructor option, `cfg.client ?? new Stripe(...)`, so the version it runs at depends on the caller. Listing it as not checked is the correct answer.
 
-repo-28 calls Stripe through a lazily initialised client wrapped in `new Proxy({} as Stripe, { get(...) {...} })`. DriftGuard does not follow a Proxy, so all 3 calls in that repository were invisible to it: not resolved, not listed as unresolved. That is the worst kind of miss, a silent one, and it is recorded here as such.
+### The miss in the first run, and the fixes
 
-### Fixed during this study
+repo-28 calls Stripe through a lazily initialised client wrapped in `new Proxy({} as Stripe, { get(...) { const instance = getStripe(); ... } })`. DriftGuard did not follow a Proxy, so all 3 calls in that repository were invisible: not resolved, not listed as unresolved. A silent miss.
 
-A client created from a dynamic import (`const { default: Stripe } = await import('stripe')`, common in Next.js route handlers) was not detected. That is fixed and covered by a regression test. No expected break depended on it in this sample.
+Fixed, each with a regression test:
+
+- A `Proxy` whose target is asserted as an SDK class (`{} as Stripe`) or whose handler obtains a client is treated as that client. It takes an API version pin only when every client the handler obtains agrees on one.
+- Pins now survive factories. `getStripe()` returning a client built with `apiVersion` used to lose the pin at the call; nested factories (`getStripeInstance()` returning `getStripe()`) keep it too.
+- A lazily initialised `let stripe: Stripe | null` takes the pin of the client later assigned to it. If one name is assigned clients with two different pins, the pin is unknown and the call is listed as not checked, instead of taking whichever came first.
+- A client created from a dynamic import (`const { default: Stripe } = await import('stripe')`) is detected.
+- `drift upgrade` / `drift scan` on a path that does not exist is an error. Before, it scanned zero files and reported a clean result.
+
+These fixes were written after seeing this sample, so the second run's 7 of 7 is not an unbiased estimate. A fresh sample is the honest next measurement.
 
 ## Limits of this measurement
 

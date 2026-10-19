@@ -1,7 +1,7 @@
 // Command line entry point: `drift scan`, plus the maintenance commands that refresh the
 // published data (`drift track`, `drift sdk-maps`, `drift site`).
 
-import { readFile, readdir, writeFile, appendFile } from 'node:fs/promises';
+import { stat, readFile, readdir, writeFile, appendFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { SPECS, WINDOWS } from './providers.js';
@@ -219,6 +219,9 @@ export async function main(argv) {
     if (!['confirmed', 'possible', 'never'].includes(failOn)) throw new Error(`--fail-on must be confirmed, possible or never (got "${failOn}").`);
     const dataDir = await resolveDataDir({ explicit: args.data });
     const repo = path.resolve(args._[1] ?? '.');
+    // A path that does not exist would scan zero files and report a clean result.
+    const st = await stat(repo).catch(() => null);
+    if (!st?.isDirectory()) throw new Error(`${repo} is not a directory.`);
     const report = cmd === 'upgrade'
       ? await upgrade(repo, { dataDir, from: args.from, to: args.to, exclude: args.exclude })
       : await scan(repo, { dataDir, windowDays: Number(args.window ?? 90), exclude: args.exclude });
