@@ -65,3 +65,13 @@ test('a failed refresh falls back to the existing cache', async () => {
   await utimes(path.join(dir, '.fetched'), old, old);
   assert.equal(await resolveDataDir({ ...base, fetch: fakeFetch(null, []) }), dir);
 });
+
+test('a timed-out download reports the timeout and, with no cache, is an error', async () => {
+  const timeout = /** @type {typeof fetch} */ (/** @type {unknown} */ (async () => {
+    throw new DOMException('The operation was aborted due to timeout', 'TimeoutError');
+  }));
+  await assert.rejects(
+    resolveDataDir({ env: {}, packageRoot: await empty(), cacheDir: await empty(), fetch: timeout }),
+    /timed out after 30 s/,
+  );
+});

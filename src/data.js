@@ -20,6 +20,7 @@ import { fileURLToPath } from 'node:url';
 export const DATA_REPO = 'mehdiabdu391-gif/driftguard';
 export const DATA_BRANCH = 'data';
 const MAX_AGE_MS = 6 * 60 * 60 * 1000;
+const FETCH_TIMEOUT_MS = 30_000;
 const PACKAGE_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
 /** @param {string} p */
@@ -65,18 +66,31 @@ export async function downloadData(dir, opts = {}) {
   const repo = opts.repo ?? DATA_REPO;
   const branch = opts.branch ?? DATA_BRANCH;
   const url = `https://codeload.github.com/${repo}/tar.gz/refs/heads/${branch}`;
-  const res = await (opts.fetch ?? fetch)(url);
-  if (!res.ok) throw new Error(`Could not download DriftGuard data from ${url} (HTTP ${res.status}). Pass --data <dir> to use a local copy.`);
-  const archive = new Uint8Array(await res.arrayBuffer());
+  /** @type {Uint8Array} */
+  let archive;
+  try {
+    const res = await (opts.fetch ?? fetch)(url, { signal: AbortSignal.timeout(FETCH_TIMEOUT_MS) });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    archive = new Uint8Array(await res.arrayBuffer());
+  } catch (err) {
+    const why = err instanceof Error && err.name === 'TimeoutError' ? `timed out after ${FETCH_TIMEOUT_MS / 1000} s` : /** @type {Error} */ (err).message;
+    throw new Error(`Could not download DriftGuard data from ${url} (${why}). Pass --data <dir> to use a local copy.`);
+  }
   const tmp = `${dir}.tmp-${process.pid}`;
   await rm(tmp, { recursive: true, force: true });
   await mkdir(tmp, { recursive: true });
   await untar(archive, tmp);
   if (!(await isDir(path.join(tmp, 'changes')))) throw new Error(`Downloaded data from ${url} has no changes/ directory.`);
   await writeFile(path.join(tmp, '.fetched'), `${new Date().toISOString()}\n`);
-  await rm(dir, { recursive: true, force: true });
+  // Swap in the new data without a moment where `dir` is missing: move the old copy
+  // aside, rename the new one into place, then delete the old copy.
   await mkdir(path.dirname(dir), { recursive: true });
+  const old = `${dir}.old-${process.pid}`;
+  await rm(old, { recursive: true, force: true });
+  const hadOld = await isDir(dir);
+  if (hadOld) await rename(dir, old);
   await rename(tmp, dir);
+  if (hadOld) await rm(old, { recursive: true, force: true });
 }
 
 /**

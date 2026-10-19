@@ -44,6 +44,8 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
           if [ "$(date -u +%u)" = "1" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then node bin/drift.js sdk-maps; fi
+      - name: Check data is complete
+        run: node src/tracker/check.js data
       - name: Publish data branch
         working-directory: data
         run: |
