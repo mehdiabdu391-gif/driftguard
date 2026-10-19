@@ -13,6 +13,10 @@
  *   Hosts the API is served from. `pathPrefix` is the part of the URL path that the
  *   spec's server URL already contains (it is stripped before matching spec paths).
  * @property {string} [note]        Caveat shown next to every finding for this spec.
+ * @property {{file: string}} [versionHistory]
+ *   A file in the same repository whose full commit history carries the provider's API
+ *   version in `info.version`. Used to map a pinned API version to the spec snapshot that
+ *   describes it (`drift upgrade`).
  */
 
 /** @type {SpecSource[]} */
@@ -28,6 +32,7 @@ export const SPECS = [
       { host: 'api.stripe.com', pathPrefix: '' },
       { host: 'files.stripe.com', pathPrefix: '' },
     ],
+    versionHistory: { file: 'openapi/spec3.json' },
     note:
       'Stripe pins an API version per account or per request. A Stripe spec change reaches your code when your API version moves forward, which for stripe-node and stripe-python usually happens when you upgrade the SDK.',
   },

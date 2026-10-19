@@ -17,7 +17,23 @@ import { specById } from './providers.js';
  * @property {{filesSeen: number, filesParsed: number, parseErrors: {file: string, error: string}[]}} stats
  * @property {Record<string, {sdk: string, repo: string, sha: string}>} sdkMaps
  * @property {Record<string, string | null>} [specVersions]  spec id -> info.version of the latest snapshot
+ * @property {UpgradeInfo} [upgrade]  present for `drift upgrade` reports
+ *
+ * @typedef {object} UpgradeInfo
+ * @property {string} specId
+ * @property {{version: string, sha: string}} to
+ * @property {{from: string, fromSha: string, calls: number, changes: number}[]} compared
+ * @property {{file: string, line: number, reason: string}[]} skipped
  */
+
+/** @param {Report} r */
+function scopeLine(r) {
+  if (!r.upgrade) return null;
+  const froms = r.upgrade.compared.map((g) => g.from);
+  return froms.length
+    ? `Stripe API upgrade from ${froms.join(', ')} to ${r.upgrade.to.version}`
+    : `Stripe API upgrade to ${r.upgrade.to.version}: no call site has a version to upgrade from`;
+}
 
 /** @param {Report} r */
 export function counts(r) {
@@ -61,8 +77,10 @@ function unique(findings) {
 export function renderText(r) {
   const c = counts(r);
   const lines = [];
-  lines.push(`DriftGuard scan of ${r.repo}`);
-  lines.push(`Provider spec changes over the last ${r.windowDays} days, matched to ${c.resolved} resolved call sites (${c.unresolved} unresolved).`);
+  lines.push(`DriftGuard ${r.upgrade ? 'upgrade check' : 'scan'} of ${r.repo}`);
+  lines.push(r.upgrade
+    ? `${scopeLine(r)}, checked against ${c.resolved} resolved Stripe call sites (${c.unresolved} unresolved).`
+    : `Provider spec changes over the last ${r.windowDays} days, matched to ${c.resolved} resolved call sites (${c.unresolved} unresolved).`);
   lines.push('');
   const groups = /** @type {const} */ (['confirmed', 'possible', 'deprecated']);
   const findings = unique(r.findings);
@@ -77,11 +95,11 @@ export function renderText(r) {
         : `    ${specById(f.change.specId).name}: ${opText(f)} — ${f.change.text}`);
       lines.push(`    why: ${f.evidence}`);
       if (!f.related) lines.push(`    spec check: ${f.change.verification.status} (${f.change.verification.reason})`);
-      const when = f.change.introducedIn ? `introduced ${f.change.introducedIn.date.slice(0, 10)} in ${f.change.introducedIn.sha.slice(0, 10)}` : `between ${r.windows[f.change.specId]?.base?.sha?.slice(0, 10)} and ${r.windows[f.change.specId]?.revision?.sha?.slice(0, 10)}`;
+      const when = f.change.upgrade ? `upgrade ${f.change.upgrade.from} -> ${f.change.upgrade.to}` : f.change.introducedIn ? `introduced ${f.change.introducedIn.date.slice(0, 10)} in ${f.change.introducedIn.sha.slice(0, 10)}` : `between ${r.windows[f.change.specId]?.base?.sha?.slice(0, 10)} and ${r.windows[f.change.specId]?.revision?.sha?.slice(0, 10)}`;
       lines.push(`    source: ${changeLink(f)} (${when})`);
-      if (f.call.apiVersion) lines.push(`    pinned: this client pins API version ${f.call.apiVersion}; the change applies once that pin moves to the current spec version${r.specVersions?.[f.change.specId] ? ` (${r.specVersions[f.change.specId]})` : ''}`);
+      if (f.call.apiVersion && !r.upgrade) lines.push(`    pinned: this client pins API version ${f.call.apiVersion}; the change applies once that pin moves to the current spec version${r.specVersions?.[f.change.specId] ? ` (${r.specVersions[f.change.specId]})` : ''}`);
       const note = specById(f.change.specId).note;
-      if (note && level === 'confirmed' && !f.call.apiVersion) lines.push(`    note: ${note}`);
+      if (note && level === 'confirmed' && !f.call.apiVersion && !r.upgrade) lines.push(`    note: ${note}`);
     }
     lines.push('');
   }
@@ -92,6 +110,12 @@ export function renderText(r) {
     for (const s of unresolved) lines.push(`  ${s.file}:${s.line}  ${s.client}${s.sdkMethod ? ` ${s.sdkMethod}` : ''} — ${s.reason}`);
     lines.push('');
   }
+  if (r.upgrade?.skipped.length) {
+    lines.push(`NOT CHECKED (${r.upgrade.skipped.length}) — Stripe calls with no version to upgrade from:`);
+    for (const s of r.upgrade.skipped) lines.push(`  ${s.file}:${s.line} — ${s.reason}`);
+    lines.push('');
+  }
+  if (r.upgrade) lines.push('Not checked: response schemas. The upgrade check compares request bodies, parameters and operations only.', '');
   if (r.untracedResponse.length) {
     const total = r.untracedResponse.reduce((n, u) => n + u.count, 0);
     lines.push(`Not checked: ${total} response-schema changes on ${r.untracedResponse.length} operations you call. DriftGuard does not yet trace which response fields your code reads.`);
@@ -106,9 +130,11 @@ export function renderMarkdown(r) {
   const c = counts(r);
   const findings = unique(r.findings);
   const out = [];
-  out.push('## DriftGuard: upstream API changes vs. your code');
+  out.push(r.upgrade ? '## DriftGuard: Stripe API upgrade check' : '## DriftGuard: upstream API changes vs. your code');
   out.push('');
-  out.push(`Spec changes from the last **${r.windowDays} days** matched against **${c.resolved}** resolved provider call sites (${c.unresolved} unresolved).`);
+  out.push(r.upgrade
+    ? `${scopeLine(r)}, checked against **${c.resolved}** resolved Stripe call sites (${c.unresolved} unresolved).`
+    : `Spec changes from the last **${r.windowDays} days** matched against **${c.resolved}** resolved provider call sites (${c.unresolved} unresolved).`);
   out.push('');
   out.push(`**${c.confirmed} confirmed** · ${c.possible} possible · ${c.deprecated} deprecated`);
   out.push('');
@@ -122,7 +148,7 @@ export function renderMarkdown(r) {
     out.push('| Location | Change | Why this call | Spec check | Source |');
     out.push('|---|---|---|---|---|');
     for (const f of list.slice(0, 200)) {
-      const pin = f.call.apiVersion ? ` (client pins API version ${f.call.apiVersion})` : '';
+      const pin = f.call.apiVersion && !r.upgrade ? ` (client pins API version ${f.call.apiVersion})` : '';
       const what = (f.related ? `${f.related.length} request changes` : f.change.text) + pin;
       const check = f.related ? 'mixed' : f.change.verification.status;
       out.push(`| \`${md(f.call.file)}:${f.call.line}\` | ${md(specById(f.change.specId).name)}: \`${md(opText(f))}\` ${md(what)} | ${md(f.evidence)} | ${check} | [diff](${f.related ? f.change.compareUrl : changeLink(f)}) |`);
@@ -139,11 +165,17 @@ export function renderMarkdown(r) {
     for (const s of unresolved.slice(0, 100)) out.push(`- \`${md(s.file)}:${s.line}\` ${md(s.client)}${s.sdkMethod ? ` \`${md(s.sdkMethod)}\`` : ''}: ${md(s.reason ?? '')}`);
     out.push('', '</details>', '');
   }
+  if (r.upgrade?.skipped.length) {
+    out.push(`<details><summary>Not checked (${r.upgrade.skipped.length}) — no version to upgrade from</summary>`, '');
+    for (const s of r.upgrade.skipped.slice(0, 100)) out.push(`- \`${md(s.file)}:${s.line}\`: ${md(s.reason)}`);
+    out.push('', '</details>', '');
+  }
+  if (r.upgrade) out.push('_Not checked: response schemas. The upgrade check compares request bodies, parameters and operations only._', '');
   if (r.untracedResponse.length) {
     const total = r.untracedResponse.reduce((n, u) => n + u.count, 0);
     out.push(`_Not checked: ${total} response-schema changes on ${r.untracedResponse.length} operations you call (response field reads are not traced yet)._`, '');
   }
-  const notes = new Set(findings.filter((f) => f.level === 'confirmed').map((f) => specById(f.change.specId).note).filter(Boolean));
+  const notes = new Set(r.upgrade ? [] : findings.filter((f) => f.level === 'confirmed').map((f) => specById(f.change.specId).note).filter(Boolean));
   for (const n of notes) out.push(`> ${n}`, '');
   out.push('<sub>Confirmed means the spec change was verified against the spec documents and the call provably sends, omits or targets what changed. Only confirmed findings fail the check.</sub>');
   return out.join('\n');
@@ -156,6 +188,7 @@ export function renderJson(r) {
       repo: r.repo,
       windowDays: r.windowDays,
       windows: r.windows,
+      ...(r.upgrade ? { upgrade: r.upgrade } : {}),
       summary: counts(r),
       findings: unique(r.findings).map((f) => ({
         level: f.level,
@@ -175,6 +208,7 @@ export function renderJson(r) {
           sourceUrl: f.change.sourceUrl,
           compareUrl: f.change.compareUrl,
           introducedIn: f.change.introducedIn,
+          ...(f.change.upgrade ? { upgrade: f.change.upgrade } : {}),
         },
         ...(f.related ? { relatedChanges: f.related.map((c) => ({ kind: c.kind, text: c.text, target: c.target, verification: c.verification.status, sourceUrl: c.sourceUrl })) } : {}),
       })),

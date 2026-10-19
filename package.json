@@ -1,7 +1,7 @@
 {
   "name": "driftguard",
   "version": "0.1.0",
-  "description": "Dependabot for the APIs you call: finds the exact lines in your code that upstream API spec changes break.",
+  "description": "Know what breaks before you bump your Stripe API version, and which lines upstream API spec changes (Stripe, OpenAI, GitHub, Twilio) break.",
   "type": "module",
   "license": "Apache-2.0",
   "author": "Mehdi Abdu Mohammed",

@@ -184,9 +184,11 @@ export class JsFile {
         if (name?.type === 'identifier') declared.set(name.text, (declared.get(name.text) ?? 0) + 1);
         if (name?.type === 'identifier' && value) this.consts.set(name.text, value);
         // const X = require('m') / const { A, B: C } = require('m')
-        const req = value ? requireSpec(unwrap(value)) : null;
+        // const { default: X } = await import('m') / const X = await import('m') (namespace)
+        const dyn = value ? dynamicImportSpec(unwrap(value)) : null;
+        const req = value ? requireSpec(unwrap(value)) ?? dyn : null;
         if (req && name) {
-          if (name.type === 'identifier') this.addImport(name.text, req, 'default');
+          if (name.type === 'identifier') this.addImport(name.text, req, dyn ? '*' : 'default');
           if (name.type === 'object_pattern') {
             for (const p of name.namedChildren) {
               if (!p) continue;
@@ -803,6 +805,16 @@ function propKey(key) {
 function requireSpec(n) {
   if (n.type !== 'call_expression') return null;
   if (n.childForFieldName('function')?.text !== 'require') return null;
+  return stringValue(n.childForFieldName('arguments')?.namedChild(0) ?? null);
+}
+
+/**
+ * `import('x')` (dynamic import) -> 'x'
+ * @param {Node} n
+ */
+function dynamicImportSpec(n) {
+  if (n.type !== 'call_expression') return null;
+  if (n.childForFieldName('function')?.type !== 'import') return null;
   return stringValue(n.childForFieldName('arguments')?.namedChild(0) ?? null);
 }
 

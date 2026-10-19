@@ -54,6 +54,30 @@ export async function commitsTouching(repo, branch, file, { since, limit }) {
 }
 
 /**
+ * Every commit that touched `file`, newest first.
+ * @param {string} repo
+ * @param {string} branch
+ * @param {string} file
+ * @param {{stopAt?: string}} [opts]  stop after collecting the commit with this SHA
+ * @returns {Promise<Commit[]>}
+ */
+export async function allCommitsTouching(repo, branch, file, opts = {}) {
+  /** @type {Commit[]} */
+  const out = [];
+  for (let page = 1; page <= 100; page++) {
+    const url = `${API}/repos/${repo}/commits?sha=${encodeURIComponent(branch)}&path=${encodeURIComponent(file)}&per_page=100&page=${page}`;
+    /** @type {any[]} */
+    const batch = await get(url);
+    for (const c of batch) {
+      out.push(toCommit(c));
+      if (opts.stopAt && c.sha === opts.stopAt) return out;
+    }
+    if (batch.length < 100) return out;
+  }
+  throw new Error(`More than 10000 commits touch ${repo}/${file}; refusing to page further.`);
+}
+
+/**
  * The last commit touching `file` at or before `until`, or null if the file did not exist.
  * @param {string} repo
  * @param {string} branch

@@ -7,7 +7,8 @@
 // with the expected shape, and that every mapped SDK has a method map. An empty
 // `changes` list is valid (a quiet spec). So is a window the tracker recorded as `null`
 // in the spec's state because no snapshot goes back that far; every other window must
-// have its file, and at least one window must exist.
+// have its file, and at least one window must exist. Specs with a version history must
+// have a non-empty version index.
 
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
@@ -50,6 +51,12 @@ export async function checkData(dataDir) {
       return j?.id === spec.id && j.head && windows && typeof windows === 'object' ? null : 'no snapshot state';
     });
     await check(`operations/${spec.id}.json`, (j) => (Array.isArray(j?.operations) && j.operations.length > 0 ? null : 'empty operation index'));
+    if (spec.versionHistory) {
+      await check(`versions/${spec.id}.json`, (j) =>
+        j?.specId === spec.id && j.head?.sha && Array.isArray(j.versions) && j.versions.length > 0 && j.versions.every((/** @type {any} */ v) => v.version && v.last?.sha)
+          ? null
+          : 'malformed version index');
+    }
     if (!windows) continue; // already reported above
     const expected = WINDOWS.filter((days) => windows?.[`${days}d`] !== null);
     if (expected.length === 0) problems.push(`specs/${spec.id}.json: no change window was produced`);

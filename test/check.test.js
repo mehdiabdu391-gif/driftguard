@@ -23,6 +23,9 @@ async function complete(noWindow = /** @type {Record<string, number[]>} */ ({}))
     for (const d of WINDOWS.filter((x) => !skipped.includes(x))) {
       await put(path.join(dir, 'changes', spec.id, `window-${d}d.json`), { specId: spec.id, days: d, changes: [] });
     }
+    if (spec.versionHistory) {
+      await put(path.join(dir, 'versions', `${spec.id}.json`), { specId: spec.id, head: { sha: 'abc' }, versions: [{ version: '2023-10-16', first: { sha: 'abc' }, last: { sha: 'abc' } }] });
+    }
   }
   for (const sdk of SDKS.filter((s) => s.mapped)) await put(path.join(dir, 'sdk-maps', `${sdk.id}.json`), { methods: { a: 1 } });
   return dir;
@@ -60,4 +63,12 @@ test('a malformed or missing file is reported without throwing', async () => {
   const problems = await checkData(dir);
   assert.ok(problems.includes('specs/stripe.json: unreadable or invalid JSON'));
   assert.ok(problems.includes('sdk-maps/octokit.json: missing'));
+});
+
+test('a missing or empty version index is reported', async () => {
+  const dir = await complete();
+  await put(path.join(dir, 'versions', 'stripe.json'), { specId: 'stripe', head: { sha: 'abc' }, versions: [] });
+  assert.deepEqual(await checkData(dir), ['versions/stripe.json: malformed version index']);
+  await rm(path.join(dir, 'versions', 'stripe.json'));
+  assert.deepEqual(await checkData(dir), ['versions/stripe.json: missing']);
 });

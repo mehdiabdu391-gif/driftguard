@@ -1,0 +1,463 @@
+{
+ "target": "2026-09-30.endive",
+ "repos": [
+  {
+   "id": "repo-01",
+   "pins": [
+    "2024-06-20"
+   ],
+   "regexCalls": 6,
+   "resolved": 5,
+   "unresolved": 1,
+   "notChecked": 0,
+   "possible": 0,
+   "expected": 0,
+   "hits": 0,
+   "misses": 0,
+   "unexpectedConfirmed": 0,
+   "expectedKinds": []
+  },
+  {
+   "id": "repo-02",
+   "pins": [
+    "2024-09-30.acacia"
+   ],
+   "regexCalls": 1,
+   "resolved": 1,
+   "unresolved": 0,
+   "notChecked": 0,
+   "possible": 0,
+   "expected": 0,
+   "hits": 0,
+   "misses": 0,
+   "unexpectedConfirmed": 0,
+   "expectedKinds": []
+  },
+  {
+   "id": "repo-03",
+   "pins": [
+    "2023-10-16"
+   ],
+   "regexCalls": 3,
+   "resolved": 3,
+   "unresolved": 0,
+   "notChecked": 0,
+   "possible": 0,
+   "expected": 0,
+   "hits": 0,
+   "misses": 0,
+   "unexpectedConfirmed": 0,
+   "expectedKinds": []
+  },
+  {
+   "id": "repo-04",
+   "pins": [
+    "2022-11-15"
+   ],
+   "regexCalls": 1,
+   "resolved": 1,
+   "unresolved": 0,
+   "notChecked": 0,
+   "possible": 0,
+   "expected": 0,
+   "hits": 0,
+   "misses": 0,
+   "unexpectedConfirmed": 0,
+   "expectedKinds": []
+  },
+  {
+   "id": "repo-05",
+   "pins": [
+    "2025-08-27.basil"
+   ],
+   "regexCalls": 8,
+   "resolved": 8,
+   "unresolved": 0,
+   "notChecked": 0,
+   "possible": 1,
+   "expected": 1,
+   "hits": 1,
+   "misses": 0,
+   "unexpectedConfirmed": 0,
+   "expectedKinds": [
+    "request-field-removed:payment_method_types"
+   ]
+  },
+  {
+   "id": "repo-06",
+   "pins": [
+    "2023-10-16"
+   ],
+   "regexCalls": 2,
+   "resolved": 1,
+   "unresolved": 0,
+   "notChecked": 0,
+   "possible": 0,
+   "expected": 0,
+   "hits": 0,
+   "misses": 0,
+   "unexpectedConfirmed": 0,
+   "expectedKinds": []
+  },
+  {
+   "id": "repo-07",
+   "pins": [
+    "2022-11-15"
+   ],
+   "regexCalls": 6,
+   "resolved": 6,
+   "unresolved": 2,
+   "notChecked": 0,
+   "possible": 0,
+   "expected": 0,
+   "hits": 0,
+   "misses": 0,
+   "unexpectedConfirmed": 0,
+   "expectedKinds": []
+  },
+  {
+   "id": "repo-08",
+   "pins": [
+    "2024-12-18.acacia"
+   ],
+   "regexCalls": 8,
+   "resolved": 8,
+   "unresolved": 0,
+   "notChecked": 0,
+   "possible": 0,
+   "expected": 0,
+   "hits": 0,
+   "misses": 0,
+   "unexpectedConfirmed": 0,
+   "expectedKinds": []
+  },
+  {
+   "id": "repo-09",
+   "pins": [
+    "2024-06-20"
+   ],
+   "regexCalls": 6,
+   "resolved": 6,
+   "unresolved": 0,
+   "notChecked": 0,
+   "possible": 0,
+   "expected": 0,
+   "hits": 0,
+   "misses": 0,
+   "unexpectedConfirmed": 0,
+   "expectedKinds": []
+  },
+  {
+   "id": "repo-10",
+   "pins": [
+    "2024-04-10"
+   ],
+   "regexCalls": 6,
+   "resolved": 6,
+   "unresolved": 0,
+   "notChecked": 0,
+   "possible": 0,
+   "expected": 1,
+   "hits": 1,
+   "misses": 0,
+   "unexpectedConfirmed": 0,
+   "expectedKinds": [
+    "request-enum-value-removed:ui_mode"
+   ]
+  },
+  {
+   "id": "repo-11",
+   "pins": [
+    "2023-10-16"
+   ],
+   "regexCalls": 3,
+   "resolved": 3,
+   "unresolved": 0,
+   "notChecked": 0,
+   "possible": 0,
+   "expected": 0,
+   "hits": 0,
+   "misses": 0,
+   "unexpectedConfirmed": 0,
+   "expectedKinds": []
+  },
+  {
+   "id": "repo-12",
+   "pins": [
+    "2023-08-16"
+   ],
+   "regexCalls": 5,
+   "resolved": 5,
+   "unresolved": 0,
+   "notChecked": 0,
+   "possible": 1,
+   "expected": 0,
+   "hits": 0,
+   "misses": 0,
+   "unexpectedConfirmed": 0,
+   "expectedKinds": []
+  },
+  {
+   "id": "repo-13",
+   "pins": [
+    "2023-08-16"
+   ],
+   "regexCalls": 4,
+   "resolved": 4,
+   "unresolved": 0,
+   "notChecked": 0,
+   "possible": 1,
+   "expected": 0,
+   "hits": 0,
+   "misses": 0,
+   "unexpectedConfirmed": 0,
+   "expectedKinds": []
+  },
+  {
+   "id": "repo-14",
+   "pins": [
+    "2023-10-16"
+   ],
+   "regexCalls": 3,
+   "resolved": 3,
+   "unresolved": 0,
+   "notChecked": 0,
+   "possible": 0,
+   "expected": 1,
+   "hits": 1,
+   "misses": 0,
+   "unexpectedConfirmed": 0,
+   "expectedKinds": [
+    "request-field-removed:payment_method_types"
+   ]
+  },
+  {
+   "id": "repo-15",
+   "pins": [
+    "2023-10-16"
+   ],
+   "regexCalls": 2,
+   "resolved": 2,
+   "unresolved": 0,
+   "notChecked": 0,
+   "possible": 1,
+   "expected": 0,
+   "hits": 0,
+   "misses": 0,
+   "unexpectedConfirmed": 0,
+   "expectedKinds": []
+  },
+  {
+   "id": "repo-16",
+   "pins": [
+    "2022-08-01"
+   ],
+   "regexCalls": 4,
+   "resolved": 4,
+   "unresolved": 0,
+   "notChecked": 0,
+   "possible": 2,
+   "expected": 0,
+   "hits": 0,
+   "misses": 0,
+   "unexpectedConfirmed": 0,
+   "expectedKinds": []
+  },
+  {
+   "id": "repo-17",
+   "pins": [
+    "2024-12-18.acacia"
+   ],
+   "regexCalls": 4,
+   "resolved": 4,
+   "unresolved": 0,
+   "notChecked": 0,
+   "possible": 0,
+   "expected": 1,
+   "hits": 1,
+   "misses": 0,
+   "unexpectedConfirmed": 0,
+   "expectedKinds": [
+    "request-field-removed:payment_method_types"
+   ]
+  },
+  {
+   "id": "repo-18",
+   "pins": [],
+   "regexCalls": 1,
+   "resolved": 1,
+   "unresolved": 0,
+   "notChecked": 1,
+   "possible": 0,
+   "expected": 0,
+   "hits": 0,
+   "misses": 0,
+   "unexpectedConfirmed": 0,
+   "expectedKinds": []
+  },
+  {
+   "id": "repo-19",
+   "pins": [
+    "2025-02-24.acacia"
+   ],
+   "regexCalls": 3,
+   "resolved": 3,
+   "unresolved": 0,
+   "notChecked": 1,
+   "possible": 0,
+   "expected": 0,
+   "hits": 0,
+   "misses": 0,
+   "unexpectedConfirmed": 0,
+   "expectedKinds": []
+  },
+  {
+   "id": "repo-20",
+   "pins": [
+    "2023-10-16"
+   ],
+   "regexCalls": 3,
+   "resolved": 3,
+   "unresolved": 0,
+   "notChecked": 0,
+   "possible": 0,
+   "expected": 0,
+   "hits": 0,
+   "misses": 0,
+   "unexpectedConfirmed": 0,
+   "expectedKinds": []
+  },
+  {
+   "id": "repo-21",
+   "pins": [
+    "2023-10-16"
+   ],
+   "regexCalls": 1,
+   "resolved": 1,
+   "unresolved": 0,
+   "notChecked": 0,
+   "possible": 0,
+   "expected": 0,
+   "hits": 0,
+   "misses": 0,
+   "unexpectedConfirmed": 0,
+   "expectedKinds": []
+  },
+  {
+   "id": "repo-22",
+   "pins": [
+    "2024-04-10"
+   ],
+   "regexCalls": 3,
+   "resolved": 3,
+   "unresolved": 0,
+   "notChecked": 0,
+   "possible": 0,
+   "expected": 1,
+   "hits": 1,
+   "misses": 0,
+   "unexpectedConfirmed": 0,
+   "expectedKinds": [
+    "request-field-removed:payment_method_types"
+   ]
+  },
+  {
+   "id": "repo-23",
+   "pins": [
+    "2022-11-15"
+   ],
+   "regexCalls": 1,
+   "resolved": 1,
+   "unresolved": 0,
+   "notChecked": 0,
+   "possible": 1,
+   "expected": 1,
+   "hits": 1,
+   "misses": 0,
+   "unexpectedConfirmed": 0,
+   "expectedKinds": [
+    "request-field-removed:payment_method_types"
+   ]
+  },
+  {
+   "id": "repo-24",
+   "pins": [
+    "2025-04-30.basil"
+   ],
+   "regexCalls": 1,
+   "resolved": 1,
+   "unresolved": 0,
+   "notChecked": 0,
+   "possible": 0,
+   "expected": 0,
+   "hits": 0,
+   "misses": 0,
+   "unexpectedConfirmed": 0,
+   "expectedKinds": []
+  },
+  {
+   "id": "repo-25",
+   "pins": [
+    "2024-04-10"
+   ],
+   "regexCalls": 3,
+   "resolved": 3,
+   "unresolved": 0,
+   "notChecked": 0,
+   "possible": 0,
+   "expected": 0,
+   "hits": 0,
+   "misses": 0,
+   "unexpectedConfirmed": 0,
+   "expectedKinds": []
+  },
+  {
+   "id": "repo-26",
+   "pins": [
+    "2026-01-28.clover"
+   ],
+   "regexCalls": 4,
+   "resolved": 4,
+   "unresolved": 0,
+   "notChecked": 0,
+   "possible": 1,
+   "expected": 0,
+   "hits": 0,
+   "misses": 0,
+   "unexpectedConfirmed": 0,
+   "expectedKinds": []
+  },
+  {
+   "id": "repo-27",
+   "pins": [
+    "2024-06-20"
+   ],
+   "regexCalls": 3,
+   "resolved": 3,
+   "unresolved": 0,
+   "notChecked": 0,
+   "possible": 0,
+   "expected": 0,
+   "hits": 0,
+   "misses": 0,
+   "unexpectedConfirmed": 0,
+   "expectedKinds": []
+  },
+  {
+   "id": "repo-28",
+   "pins": [],
+   "regexCalls": 3,
+   "resolved": 0,
+   "unresolved": 0,
+   "notChecked": 0,
+   "possible": 0,
+   "expected": 1,
+   "hits": 0,
+   "misses": 1,
+   "unexpectedConfirmed": 0,
+   "expectedKinds": [
+    "request-field-removed:payment_method_types"
+   ]
+  }
+ ]
+}

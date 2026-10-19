@@ -8,6 +8,9 @@ import { SPECS, WINDOWS } from './providers.js';
 import { scanRepository } from './scan/index.js';
 import { match } from './match.js';
 import { resolveDataDir } from './data.js';
+import { upgradeChanges, loadSnapshot } from './upgrade.js';
+import { findVersion } from './tracker/versions.js';
+import { homedir } from 'node:os';
 import { renderText, renderMarkdown, renderJson, renderAnnotations, counts } from './report.js';
 
 const PACKAGE_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -24,6 +27,11 @@ Usage:
     --exclude <prefix>     Skip a repository path prefix (repeatable)
     --data <dir>           Data directory (default: the published data branch, cached)
     --annotations          Also print GitHub workflow annotations
+
+  drift upgrade [path]     What breaks when your pinned Stripe API version moves forward
+    --from <version>       Version to upgrade from (default: each client's literal pin)
+    --to <version>         Version to upgrade to (default: the newest published)
+    --format, --output, --json-output, --fail-on, --exclude, --data, --annotations as for scan
 
   drift track              Refresh spec snapshots and diffs into the data directory
     --spec <id>            Only this spec (repeatable)
@@ -123,6 +131,81 @@ export async function scan(repo, opts) {
   };
 }
 
+/**
+ * Upgrade check for Stripe: for every Stripe call site, compare the operation it calls in
+ * the snapshot of the version it pins (or --from) with the snapshot of the target version.
+ * @param {string} repo
+ * @param {{dataDir: string, from?: string, to?: string, exclude?: string[], cacheDir?: string, fetch?: typeof fetch}} opts
+ * @returns {Promise<import('./report.js').Report>}
+ */
+export async function upgrade(repo, opts) {
+  const specId = 'stripe';
+  const index = JSON.parse(await readFile(path.join(opts.dataDir, 'versions', `${specId}.json`), 'utf8').catch(() => {
+    throw new Error(`No Stripe version index in ${opts.dataDir} (versions/${specId}.json).`);
+  }));
+  const cacheDir = opts.cacheDir ?? path.join(process.env.XDG_CACHE_HOME || path.join(homedir(), '.cache'), 'driftguard', 'specs');
+  const latest = index.versions[index.versions.length - 1];
+  const to = opts.to ? findVersion(index, opts.to) : latest;
+  if (!to) throw new Error(`--to ${opts.to} is not an API version in Stripe's published spec history.`);
+  if (opts.from && !findVersion(index, opts.from)) throw new Error(`--from ${opts.from} is not an API version in Stripe's published spec history.`);
+
+  const { sdkMaps, operations } = await loadData(opts.dataDir);
+  const result = await scanRepository(repo, { sdkMaps, operations, exclude: opts.exclude });
+  const stripeCalls = result.callSites.filter((s) => s.provider === specId || s.specId === specId);
+
+  /** @type {Map<string, typeof stripeCalls>} */
+  const groups = new Map();
+  /** @type {{file: string, line: number, reason: string}[]} */
+  const skipped = [];
+  for (const call of stripeCalls) {
+    if (call.status !== 'resolved') continue;
+    const label = opts.from ?? call.apiVersion;
+    if (!label) {
+      skipped.push({ file: call.file, line: call.line, reason: 'no API version pinned in code; it uses the account default. Pass --from <version> to check it.' });
+      continue;
+    }
+    const run = findVersion(index, label);
+    if (!run) {
+      skipped.push({ file: call.file, line: call.line, reason: `pins ${label}, which is not an API version in Stripe's published spec history` });
+      continue;
+    }
+    const key = run.version;
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key)?.push(call);
+  }
+
+  const targetDoc = groups.size ? await loadSnapshot(index.repo, index.file, to.last.sha, cacheDir, opts.fetch) : null;
+  /** @type {import('./match.js').Finding[]} */
+  const findings = [];
+  /** @type {{from: string, fromSha: string, calls: number, changes: number}[]} */
+  const compared = [];
+  for (const [version, calls] of groups) {
+    const from = /** @type {NonNullable<ReturnType<typeof findVersion>>} */ (findVersion(index, version));
+    if (from.last.sha === to.last.sha) {
+      compared.push({ from: version, fromSha: from.last.sha, calls: calls.length, changes: 0 });
+      continue;
+    }
+    const baseDoc = await loadSnapshot(index.repo, index.file, from.last.sha, cacheDir, opts.fetch);
+    const ops = calls.flatMap((c) => (c.operation ? [c.operation] : []));
+    const changes = upgradeChanges(baseDoc, targetDoc, ops, { specId, repo: index.repo, file: index.file, from: { version, sha: from.last.sha }, to: { version: to.version, sha: to.last.sha } });
+    compared.push({ from: version, fromSha: from.last.sha, calls: calls.length, changes: changes.length });
+    findings.push(...match(calls, { [specId]: { changes, responseSummary: {} } }).findings);
+  }
+  const order = { confirmed: 0, possible: 1, deprecated: 2 };
+  findings.sort((a, b) => order[a.level] - order[b.level] || a.call.file.localeCompare(b.call.file) || a.call.line - b.call.line);
+  return {
+    repo,
+    windowDays: 0,
+    windows: {},
+    findings,
+    callSites: stripeCalls,
+    untracedResponse: [],
+    stats: { filesSeen: result.filesSeen, filesParsed: result.filesParsed, parseErrors: result.parseErrors },
+    sdkMaps: Object.fromEntries(Object.entries(sdkMaps).map(([id, m]) => [id, { sdk: id, repo: m.repo, sha: m.sha }])),
+    upgrade: { specId, to: { version: to.version, sha: to.last.sha }, compared, skipped },
+  };
+}
+
 /** @param {string[]} argv */
 export async function main(argv) {
   const args = parseArgs(argv);
@@ -131,10 +214,14 @@ export async function main(argv) {
     process.stdout.write(HELP);
     return 0;
   }
-  if (cmd === 'scan') {
+  if (cmd === 'scan' || cmd === 'upgrade') {
+    const failOn = args['fail-on'] ?? 'confirmed';
+    if (!['confirmed', 'possible', 'never'].includes(failOn)) throw new Error(`--fail-on must be confirmed, possible or never (got "${failOn}").`);
     const dataDir = await resolveDataDir({ explicit: args.data });
     const repo = path.resolve(args._[1] ?? '.');
-    const report = await scan(repo, { dataDir, windowDays: Number(args.window ?? 90), exclude: args.exclude });
+    const report = cmd === 'upgrade'
+      ? await upgrade(repo, { dataDir, from: args.from, to: args.to, exclude: args.exclude })
+      : await scan(repo, { dataDir, windowDays: Number(args.window ?? 90), exclude: args.exclude });
     report.repo = args._[1] ?? '.';
     const format = args.format ?? 'text';
     const body = format === 'json' ? renderJson(report) : format === 'markdown' ? renderMarkdown(report) : renderText(report);
@@ -149,7 +236,6 @@ export async function main(argv) {
       await appendFile(process.env.GITHUB_STEP_SUMMARY, `${renderMarkdown(report)}\n`);
     }
     const c = counts(report);
-    const failOn = args['fail-on'] ?? 'confirmed';
     if (failOn === 'never') return 0;
     if (failOn === 'possible') return c.confirmed + c.possible > 0 ? 1 : 0;
     return c.confirmed > 0 ? 1 : 0;

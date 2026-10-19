@@ -13,6 +13,7 @@ import { verifyChange } from './verify.js';
 import { changelog, oasdiffVersion } from './oasdiff.js';
 import { commitsTouching, commitAtOrBefore, rawUrl, blobUrl, compareUrl } from './github.js';
 import { opKey } from '../paths.js';
+import { updateVersionIndex } from './versions.js';
 
 const HTTP_METHODS = ['get', 'put', 'post', 'delete', 'patch', 'options', 'head', 'trace'];
 
@@ -30,7 +31,8 @@ const HTTP_METHODS = ['get', 'put', 'post', 'delete', 'patch', 'options', 'head'
  *   key: string,
  *   sourceUrl: string | null,
  *   compareUrl: string,
- *   introducedIn: {sha: string, date: string, message: string, compareUrl: string} | null
+ *   introducedIn: {sha: string, date: string, message: string, compareUrl: string} | null,
+ *   upgrade?: {from: string, to: string}
  * }} PublishedChange
  */
 
@@ -56,6 +58,10 @@ export async function track(dataDir, opts = {}) {
       feedLimit: opts.feedLimit ?? 40,
       oasdiff: version,
     });
+    if (spec.versionHistory) {
+      const index = await updateVersionIndex(spec, dataDir, { log });
+      summary[spec.id].versions = index?.versions.length ?? 0;
+    }
   }
   return summary;
 }

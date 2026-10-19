@@ -1,10 +1,19 @@
 name: DriftGuard API drift check
-description: Find the lines in your code that upstream API spec changes (Stripe, OpenAI, GitHub, Twilio) break.
+description: Find the lines a Stripe API version upgrade breaks, and the lines upstream API spec changes (Stripe, OpenAI, GitHub, Twilio) break.
 author: Mehdi Abdu Mohammed
 branding:
   icon: git-pull-request
   color: blue
 inputs:
+  command:
+    description: '"scan" (upstream spec changes over a window) or "upgrade" (what breaks when your pinned Stripe API version moves forward).'
+    default: scan
+  from:
+    description: 'upgrade only: API version to upgrade from. Default: each Stripe client''s literal apiVersion pin.'
+    default: ''
+  to:
+    description: 'upgrade only: API version to upgrade to. Default: the newest Stripe has published.'
+    default: ''
   path:
     description: Directory to scan, relative to the workspace.
     default: '.'
@@ -43,6 +52,9 @@ runs:
       id: scan
       shell: bash
       env:
+        INPUT_COMMAND: ${{ inputs.command }}
+        INPUT_FROM: ${{ inputs.from }}
+        INPUT_TO: ${{ inputs.to }}
         INPUT_PATH: ${{ inputs.path }}
         INPUT_WINDOW: ${{ inputs.window }}
         INPUT_FAIL_ON: ${{ inputs.fail-on }}
@@ -53,7 +65,16 @@ runs:
         [ -z "$DRIFTGUARD_DATA" ] && unset DRIFTGUARD_DATA
         excludes=()
         for p in $INPUT_EXCLUDE; do excludes+=(--exclude "$p"); done
-        node "$GITHUB_ACTION_PATH/bin/drift.js" scan "$INPUT_PATH" --window "$INPUT_WINDOW" --format markdown --output "$RUNNER_TEMP/drift.md" --json-output "$RUNNER_TEMP/drift.json" --annotations "${excludes[@]}" --fail-on "$INPUT_FAIL_ON"
+        mode=()
+        case "$INPUT_COMMAND" in
+          scan) mode=(scan "$INPUT_PATH" --window "$INPUT_WINDOW") ;;
+          upgrade)
+            mode=(upgrade "$INPUT_PATH")
+            [ -n "$INPUT_FROM" ] && mode+=(--from "$INPUT_FROM")
+            [ -n "$INPUT_TO" ] && mode+=(--to "$INPUT_TO") ;;
+          *) echo "::error::command must be scan or upgrade (got \"$INPUT_COMMAND\")."; echo "exit_code=2" >> "$GITHUB_OUTPUT"; exit 0 ;;
+        esac
+        node "$GITHUB_ACTION_PATH/bin/drift.js" "${mode[@]}" --format markdown --output "$RUNNER_TEMP/drift.md" --json-output "$RUNNER_TEMP/drift.json" --annotations "${excludes[@]}" --fail-on "$INPUT_FAIL_ON"
         code=$?
         if [ ! -s "$RUNNER_TEMP/drift.json" ]; then echo "::error::DriftGuard scan did not complete (exit $code)."; echo "exit_code=2" >> "$GITHUB_OUTPUT"; exit 0; fi
         cat "$RUNNER_TEMP/drift.md" >> "$GITHUB_STEP_SUMMARY"

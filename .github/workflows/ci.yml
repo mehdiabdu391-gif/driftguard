@@ -25,6 +25,17 @@ jobs:
           path: test/fixtures/js-app
           fail-on: never
           comment: 'false'
+      - name: Run the action in upgrade mode against the bundled fixture app
+        id: upgrade
+        uses: ./
+        with:
+          command: upgrade
+          from: '2023-10-16'
+          path: test/fixtures/js-app
+          fail-on: never
+          comment: 'false'
+      - name: Upgrade mode produced a report
+        run: test -n "${{ steps.upgrade.outputs.confirmed }}"
   promote:
     # Users pin `@stable`. It only fast-forwards to main commits that passed both jobs.
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'

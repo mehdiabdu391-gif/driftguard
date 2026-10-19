@@ -62,7 +62,7 @@ export function alternatives(doc, schema, depth = 0, seen = new Set()) {
  * @param {string} method
  * @param {string} path
  */
-function operation(doc, method, path) {
+export function operation(doc, method, path) {
   return doc?.paths?.[path]?.[method.toLowerCase()];
 }
 
@@ -71,7 +71,7 @@ function operation(doc, method, path) {
  * @param {any} doc
  * @param {any} op
  */
-function bodyRoots(doc, op) {
+export function bodyRoots(doc, op) {
   let body = op?.requestBody;
   if (body?.$ref) body = deref(doc, body.$ref);
   const content = body?.content ?? {};
@@ -114,7 +114,7 @@ export function resolveProperty(doc, roots, propPath) {
  * @param {any} doc
  * @param {any} schema
  */
-function expandWithItems(doc, schema) {
+export function expandWithItems(doc, schema) {
   const out = [];
   for (const alt of alternatives(doc, schema)) {
     out.push(alt);
@@ -128,7 +128,7 @@ function expandWithItems(doc, schema) {
  * @param {any} doc
  * @param {any[]} leaves
  */
-function acceptedEnum(doc, leaves) {
+export function acceptedEnum(doc, leaves) {
   /** @type {Set<string>} */
   const values = new Set();
   let unconstrained = false;
@@ -150,7 +150,7 @@ function acceptedEnum(doc, leaves) {
  * @param {string} method
  * @param {string} path
  */
-function parameters(doc, method, path) {
+export function parameters(doc, method, path) {
   const item = doc?.paths?.[path];
   const list = [...(item?.parameters ?? []), ...(operation(doc, method, path)?.parameters ?? [])];
   return list.map((p) => (p?.$ref ? deref(doc, p.$ref) : p)).filter(Boolean);

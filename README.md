@@ -1,18 +1,22 @@
 # DriftGuard
 
-**Dependabot for the APIs you call.** DriftGuard watches the official OpenAPI specs of Stripe, OpenAI, GitHub and Twilio, and tells you which lines of *your* code an upstream breaking change hits: the file and line, the exact spec diff that caused it, and how sure it is.
+**Know what breaks before you bump your Stripe API version.** Point DriftGuard at your code and it names the exact lines that stop working when your pinned Stripe version moves to a newer one: the file and line, the field or value Stripe removed, and the two spec snapshots that prove it.
 
 ```
+$ drift upgrade .
+Stripe API upgrade from 2023-10-16 to 2026-09-30.endive, checked against 7 resolved Stripe call sites (0 unresolved).
+
 CONFIRMED (1)
   landing/run.ts:266  const session = await stripe.checkout.sessions.create({
     Stripe API: POST /v1/checkout/sessions — removed the request property `payment_method_types`
     why: this call sends "payment_method_types" (line 268), which the spec no longer accepts
     spec check: verified (property "payment_method_types" is no longer declared in the revision spec)
-    source: https://github.com/stripe/openapi/compare/9ac29c7795ab21c7711b4bc25bb2dd739552a5fa...18fa2cc768024b47789dc6fa243acd48478acac2 (introduced 2026-09-25 in 18fa2cc768)
-    pinned: this client pins API version 2023-10-16; the change applies once that pin moves to the current spec version (2026-09-30.endive)
+    source: https://github.com/stripe/openapi/compare/0ba185f3d96c3fee739b01aaa46fa86245da1f0b...bcfd59f49dcac84a84d63d304c62793dff6e5916 (upgrade 2023-10-16 -> 2026-09-30.endive)
 ```
 
-That is real output from scanning a public repository ([mayfer/dbpill](https://github.com/mayfer/dbpill) at `b5b1769`).
+That is real output on a public repository ([mayfer/dbpill](https://github.com/mayfer/dbpill) at `b5b1769`). On 28 public Stripe codebases it found 6 of the 7 upgrade breaks a separate check expected, with no false confirmed findings; the one miss and how it was measured are in [eval/stripe-upgrade-recall](eval/stripe-upgrade-recall/README.md).
+
+It is also **Dependabot for the other APIs you call**: the same scanner watches the official OpenAPI specs of Stripe, OpenAI, GitHub and Twilio and flags the lines an upstream breaking change hits as it lands.
 
 ## Quickstart
 
@@ -47,15 +51,26 @@ Inputs: `path` (default `.`), `window` (`30`, `90` or `180` days, default `90`),
 
 `@stable` is a branch that only moves forward to commits that passed CI, so your workflow never runs work in progress from `main`. Spec data is not tied to it: every run downloads the latest published changes.
 
+To check a Stripe upgrade in CI instead (for example on the pull request that bumps `apiVersion` or the SDK), use `command: upgrade`, optionally with `from` and `to`:
+
+```yaml
+      - uses: mehdiabdu391-gif/driftguard@stable
+        with:
+          command: upgrade
+          to: '2026-09-30.endive'   # default: the newest version Stripe has published
+```
+
 ### CLI
 
 ```bash
+npx github:mehdiabdu391-gif/driftguard upgrade .                      # Stripe: each client's pin -> newest
+npx github:mehdiabdu391-gif/driftguard upgrade . --from 2023-10-16    # code with no literal pin
 npx github:mehdiabdu391-gif/driftguard scan .
 # or, from a clone
 node bin/drift.js scan /path/to/repo --format markdown --window 180
 ```
 
-`--format text|markdown|json`, `--output <file>`, `--json-output <file>` (JSON too, from the same scan), `--data <dir>`, `--fail-on confirmed|possible|never`, `--exclude <prefix>`, `--annotations`. Exit code is 1 when the fail-on level is reached, 2 on an error.
+`upgrade` takes `--from <version>` (default: each Stripe client's literal `apiVersion`) and `--to <version>` (default: the newest published). Both: `--format text|markdown|json`, `--output <file>`, `--json-output <file>` (JSON too, from the same scan), `--data <dir>`, `--fail-on confirmed|possible|never`, `--exclude <prefix>`, `--annotations`. Exit code is 1 when the fail-on level is reached, 2 on an error.
 
 ## How it works
 
@@ -72,13 +87,22 @@ node bin/drift.js scan /path/to/repo --format markdown --window 180
 | **deprecated** | The call uses an endpoint or field the spec now marks deprecated. |
 | **unresolved** | A provider call that couldn't be pinned to one operation, with the reason. It is listed but not checked. |
 
+### Upgrade check (Stripe)
+
+Stripe publishes its spec to [stripe/openapi](https://github.com/stripe/openapi), and every snapshot names the API version it describes in `info.version`. The tracker reads that field at every one of the 1,200+ commits of `openapi/spec3.json` since 2017 and publishes an index of which commits describe which version. No sampling: Stripe has re-published an older version after a newer one (2024-11-20.acacia on 2024-12-13, between two 2024-12-18.acacia snapshots), so the history is not strictly ordered. A version maps to the last snapshot Stripe published for it.
+
+`drift upgrade` then compares, for each operation your code calls, the snapshot of the version you pin with the snapshot of the target: removed operations, removed request properties (to a depth of six), newly required ones, dropped enum values, removed query parameters, new deprecations. Each change goes through the same verifier and matcher as a regular scan, so **confirmed** means the same thing. Only the operations you call are compared, which keeps a three-year upgrade within a normal CI runner's memory; a whole-spec diff across that span does not.
+
+What to keep in mind: a snapshot is Stripe's published description of a version, not a recording of the API's behaviour, and the last snapshot of an old version can include documentation fixes made after its release. Calls whose client has no literal pin are listed as not checked unless you pass `--from`. Response schemas are not compared.
+
 ## What it does not do (yet)
 
 - **Response fields aren't traced.** Response-schema changes on operations you call are counted, not matched to the fields your code reads.
-- **Stripe is versioned.** A Stripe spec change reaches you when your API version moves forward. DriftGuard shows the version when your code pins it literally.
+- **Stripe is versioned.** A Stripe spec change reaches you when your API version moves forward. `scan` shows the pinned version next to each finding; `upgrade` checks the move itself. A pin set at runtime, per request, or in the Stripe dashboard is not visible in code; pass `--from`.
+- **Upgrade mode is Stripe only.** OpenAI and Twilio do not publish versioned specs the same way; GitHub's REST versions are separate documents.
 - **Twilio SDK calls are detected but not mapped.** They're reported as unresolved. Raw HTTP calls to Twilio are resolved.
 - **SDK maps are built from the latest SDK.** A method that exists only in an older SDK version shows up as unresolved.
-- **Bindings follow names within a file and imports between files.** Dynamic dispatch and clients passed through untyped function parameters aren't followed.
+- **Bindings follow names within a file and imports between files.** Dynamic dispatch, clients wrapped in a `Proxy`, and clients passed through untyped function parameters aren't followed. A `Proxy`-wrapped client was the one miss in the recall check above.
 - **No impact ranking yet.** Findings are ordered by level and location. Reach-based ranking (which routes depend on a call) is planned, not faked.
 
 ## Data and site
@@ -89,6 +113,7 @@ Tracker output is published to the [`data` branch](https://github.com/mehdiabdu3
 - `changes/<id>/commits/*.json`: per-commit changes
 - `changes/<id>/window-<N>d.json`: net changes per window
 - `operations/<id>.json`: operation index per spec
+- `versions/stripe.json`: Stripe API version -> spec snapshot commits
 - `sdk-maps/<sdk>.json`: method maps with their source commit
 
 The landing page and Atom feed (`feed.xml`) are built by the same workflow and deployed to GitHub Pages; nothing is committed for them.

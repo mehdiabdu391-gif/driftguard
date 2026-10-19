@@ -90,8 +90,8 @@ function page(specs, feed) {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DriftGuard — Dependabot for the APIs you call</title>
-<meta name="description" content="Free GitHub Action that finds the exact lines in your code broken by upstream API changes from Stripe, OpenAI, GitHub and Twilio.">
+<title>DriftGuard — know what breaks before you bump your Stripe API version</title>
+<meta name="description" content="Free GitHub Action and CLI that names the lines of your code a Stripe API version upgrade breaks, and watches Stripe, OpenAI, GitHub and Twilio specs for upstream breaking changes.">
 <link rel="alternate" type="application/atom+xml" title="DriftGuard API change feed" href="feed.xml">
 <style>
 :root{--fg:#111;--muted:#555;--line:#e5e5e5;--accent:#0b5fff;--bg:#fff}
@@ -111,8 +111,9 @@ footer{color:var(--muted);font-size:.85rem;margin-top:48px}
 </head>
 <body>
 <main>
-<h1>Dependabot for the APIs you call</h1>
-<p class="lead">DriftGuard watches the official OpenAPI specs of Stripe, OpenAI, GitHub and Twilio, and tells you which lines of <em>your</em> code a breaking change hits: file, line, the exact spec diff, and how sure it is.</p>
+<h1>Know what breaks before you bump your Stripe API version</h1>
+<p class="lead"><code>drift upgrade</code> names the exact lines that stop working when your pinned Stripe version moves forward: file, line, the field or value Stripe removed, and the two spec snapshots that prove it.</p>
+<p>It is also Dependabot for the other APIs you call. DriftGuard watches the official OpenAPI specs of Stripe, OpenAI, GitHub and Twilio, and tells you which lines of <em>your</em> code a breaking change hits: file, line, the exact spec diff, and how sure it is.</p>
 <p class="cta"><a href="${REPO_URL}">Source on GitHub</a><a href="feed.xml">Change feed (Atom)</a></p>
 
 <h2>Add it to a repository</h2>
@@ -126,7 +127,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: mehdiabdu391-gif/driftguard@stable</pre>
-<p>Or run it locally: <code>npx github:mehdiabdu391-gif/driftguard scan .</code></p>
+<p>Or run it locally: <code>npx github:mehdiabdu391-gif/driftguard upgrade .</code> (Stripe upgrade check) or <code>npx github:mehdiabdu391-gif/driftguard scan .</code> (recent upstream changes). In the Action, <code>with: { command: upgrade }</code> runs the upgrade check.</p>
 
 <h2>What “confirmed” means</h2>
 <p>Every finding traces to a real spec diff (linked to the upstream commit and line) and a real call site. A finding is <strong>confirmed</strong> only when DriftGuard has re-checked the change against the spec documents and the call provably sends a removed field, omits a newly required one, sends a removed enum value, or calls a removed endpoint. Anything it cannot prove is labelled <em>possible</em> or <em>unresolved</em>. Only confirmed findings fail the check.</p>
