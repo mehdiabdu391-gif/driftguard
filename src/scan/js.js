@@ -98,6 +98,8 @@ function rootKey(n) {
     const obj = u.childForFieldName('object');
     const prop = u.childForFieldName('property');
     if (obj?.type === 'this' && prop) return `this.${prop.text}`;
+    // StripeService.stripe: a static member of a class (only ever bound for class names).
+    if (obj?.type === 'identifier' && prop?.type === 'property_identifier') return `${obj.text}.${prop.text}`;
   }
   if (u.type === 'call_expression') {
     const fn = u.childForFieldName('function');
@@ -302,9 +304,10 @@ export class JsFile {
     const decl = stmt.childForFieldName('declaration');
     if (decl) {
       walk(decl, (n) => {
-        if (n.type === 'variable_declarator' || n.type === 'function_declaration') {
+        if (n.type === 'variable_declarator' || n.type === 'function_declaration' || n.type === 'class_declaration') {
           const name = n.childForFieldName('name');
-          if (name?.type === 'identifier') this.exportNames.set(name.text, name.text);
+          if (name?.type === 'identifier' || name?.type === 'type_identifier') this.exportNames.set(name.text, name.text);
+          if (n.type === 'class_declaration' && name && stmt.text.startsWith('export default')) this.exportNames.set('default', name.text);
           return false;
         }
         return n === decl || n.type === 'lexical_declaration' || n.type === 'variable_declaration';
@@ -329,6 +332,12 @@ export class JsFile {
     if (e) return e;
     const imp = this.localImports.get(name);
     if (imp) return this.resolveImport(this.file, imp.spec, imp.imported);
+    // Imported class static member: StripeService.getInstance
+    const dot = name.indexOf('.');
+    if (dot > 0) {
+      const head = this.localImports.get(name.slice(0, dot));
+      if (head && head.imported !== '*') return this.resolveImport(this.file, head.spec, `${head.imported}.${name.slice(dot + 1)}`);
+    }
     return null;
   }
 
@@ -339,6 +348,12 @@ export class JsFile {
    * @returns {Entity | null}
    */
   exportedEntity(exported, resolveImport) {
+    const dot = exported.indexOf('.');
+    if (dot > 0) {
+      const head = this.exportNames.get(exported.slice(0, dot));
+      if (!head || head === '__default__') return null;
+      return this.entities.get(`${head}.${exported.slice(dot + 1)}`) ?? null;
+    }
     const local = this.exportNames.get(exported);
     if (local) {
       if (local === '__default__') {
@@ -395,6 +410,28 @@ export class JsFile {
           const name = n.childForFieldName('name');
           const body = n.childForFieldName('body');
           if (name && body) this.bindFactory(name.text, body);
+          break;
+        }
+        case 'class_declaration':
+        case 'class': {
+          // static getInstance() { return ... } / static stripe = new Stripe(...)
+          const cls = n.childForFieldName('name')?.text;
+          const body = n.childForFieldName('body');
+          if (!cls || !body) break;
+          for (const m of body.namedChildren) {
+            if (!m || !m.children.some((c) => c?.type === 'static')) continue;
+            const mname = (m.childForFieldName('name') ?? m.childForFieldName('property'))?.text;
+            if (!mname) continue;
+            if (m.type === 'method_definition') {
+              const mbody = m.childForFieldName('body');
+              if (mbody) this.bindFactory(`${cls}.${mname}`, mbody);
+            } else {
+              const value = m.childForFieldName('value');
+              if (value) this.bindValue(`${cls}.${mname}`, value);
+              const type = typeName(m);
+              if (type) this.bindType(`${cls}.${mname}`, type);
+            }
+          }
           break;
         }
         default:
@@ -527,7 +564,7 @@ export class JsFile {
     if (n.type === 'member_expression') {
       const key = rootKey(n);
       if (key) {
-        const e = this.entities.get(key);
+        const e = key.startsWith('this.') ? this.entities.get(key) : this.entityOf(key);
         if (e && (e.kind === 'client' || e.kind === 'axios-instance')) return e;
       }
       return null;
@@ -561,6 +598,10 @@ export class JsFile {
       if (c.type === 'member_expression') {
         const obj = c.childForFieldName('object');
         const prop = c.childForFieldName('property')?.text;
+        // StripeService.getInstance(): a static factory, in this file or an imported class.
+        const sk = rootKey(c);
+        const se = sk && !sk.startsWith('this.') ? this.entityOf(sk) : null;
+        if (se?.kind === 'factory') return { kind: 'client', sdk: se.sdk, ...(se.variant ? { variant: se.variant } : {}), ...(se.apiVersion ? { apiVersion: se.apiVersion } : {}) };
         const oe = obj && unwrap(obj).type === 'identifier' ? this.entityOf(unwrap(obj).text) : null;
         if (oe?.kind === 'actions-github' && prop === 'getOctokit') return { kind: 'client', sdk: 'octokit' };
         if (oe?.kind === 'ctor' && oe.sdk === 'twilio-node' && prop === 'Twilio') return { kind: 'client', sdk: 'twilio-node' };

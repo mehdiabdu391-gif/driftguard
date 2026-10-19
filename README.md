@@ -102,7 +102,7 @@ What to keep in mind: a snapshot is Stripe's published description of a version,
 - **Upgrade mode is Stripe only.** OpenAI and Twilio do not publish versioned specs the same way; GitHub's REST versions are separate documents.
 - **Twilio SDK calls are detected but not mapped.** They're reported as unresolved. Raw HTTP calls to Twilio are resolved.
 - **SDK maps are built from the latest SDK.** A method that exists only in an older SDK version shows up as unresolved.
-- **Bindings follow names within a file and imports between files**, including factories, lazy getters and `Proxy` wrappers. Clients returned by static class methods, dynamic dispatch and clients passed through untyped function parameters aren't followed.
+- **Bindings follow names within a file and imports between files**, including factories, lazy getters, static class methods and `Proxy` wrappers. Dynamic dispatch and clients passed through untyped function parameters aren't followed.
 - **No impact ranking yet.** Findings are ordered by level and location. Reach-based ranking (which routes depend on a call) is planned, not faked.
 
 ## Data and site

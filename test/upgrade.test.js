@@ -424,3 +424,30 @@ test('a client class taken from (await import("stripe")).default is detected', a
   const r = await upgrade(dir, { dataDir, cacheDir: await mkdtemp(path.join(tmpdir(), 'drift-cache-')), fetch: fakeFetch });
   assert.deepEqual(brief(r), ['confirmed stripe.ts:4 request-field-removed payment_method_types']);
 });
+
+test('a client returned by a static class method is followed, in the same file and from an import', async () => {
+  const dir = await appWith('static', [
+    "import Stripe from 'stripe'",
+    'class StripeService {',
+    '  static stripe = null',
+    '  static init() {',
+    "    if (!StripeService.stripe) StripeService.stripe = new Stripe('k', { apiVersion: '2023-10-16' })",
+    '    return StripeService.stripe',
+    '  }',
+    '  static getInstance() {',
+    '    return StripeService.init()',
+    '  }',
+    '}',
+    'export default StripeService',
+  ]);
+  await writeFile(path.join(dir, 'route.ts'), [
+    "import StripeService from './stripe'",
+    'export async function pay() {',
+    '  const stripe = StripeService.getInstance()',
+    "  return stripe.checkout.sessions.create({ mode: 'payment', ui_mode: 'hosted', payment_method_types: ['card'] })",
+    '}',
+    '',
+  ].join('\n'));
+  const r = await upgrade(dir, { dataDir, cacheDir: await mkdtemp(path.join(tmpdir(), 'drift-cache-')), fetch: fakeFetch });
+  assert.deepEqual(brief(r), ['confirmed route.ts:4 request-field-removed payment_method_types']);
+});

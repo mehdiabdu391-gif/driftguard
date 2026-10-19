@@ -81,7 +81,9 @@ Misses, both fixed afterwards with regression tests:
 - a client created in a ternary, `key ? new Stripe(key, { apiVersion }) : null`;
 - a class taken from `(await import('stripe')).default`.
 
-Coverage gap seen but not fixed: a client returned by a static class method (`StripeService.getInstance()`) is not followed, so that repository's 9 calls were not resolved. The regex script expected no breaks there, so it does not change recall, but those calls are silently unchecked.
+A coverage gap was also fixed: a client returned by a static class method (`StripeService.getInstance()`, in the same file or an imported class) was not followed, leaving one repository's 9 calls silently unchecked.
+
+After the fixes, the same 30 repositories: 242 call sites resolved (was 216), all 17 real breaks confirmed, still 0 confirmed findings outside the ground truth. Like the first sample's rerun, that is not an unbiased number; 15 of 17 is.
 
 ## Limits of this measurement
 
