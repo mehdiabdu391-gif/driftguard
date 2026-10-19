@@ -1,0 +1,4 @@
+{
+  // path aliases, as in a typical Next.js app
+  "compilerOptions": { "baseUrl": ".", "paths": { "@/*": ["./src/*"] }, },
+}

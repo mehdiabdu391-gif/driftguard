@@ -1,0 +1,52 @@
+{
+  "specId": "stripe",
+  "days": 90,
+  "base": {
+    "sha": "a2de9917ac9c7be3ba11abd5151b5c2df3add59e",
+    "date": "2026-06-25T15:56:23Z",
+    "message": "Update OpenAPI for 2026-06-24.dahlia"
+  },
+  "revision": {
+    "sha": "969d8c308ea65b6dbdef4b6b4a71904027a010b8",
+    "date": "2026-09-30T00:25:06Z",
+    "message": "Update OpenAPI for 2026-09-30.endive"
+  },
+  "compareUrl": "https://github.com/stripe/openapi/compare/a2de9917ac9c7be3ba11abd5151b5c2df3add59e...969d8c308ea65b6dbdef4b6b4a71904027a010b8",
+  "oasdiff": "oasdiff version 1.34.0",
+  "generatedAt": "2026-10-19T06:32:23.262Z",
+  "changes": [
+    {
+      "rule": "request-property-removed",
+      "level": 2,
+      "text": "removed the request property `payment_method_types`",
+      "method": "POST",
+      "path": "/v1/checkout/sessions",
+      "operationId": "PostCheckoutSessions",
+      "source": null,
+      "kind": "request-field-removed",
+      "target": {
+        "location": "body",
+        "path": [
+          "payment_method_types"
+        ],
+        "viaArray": false,
+        "raw": "payment_method_types"
+      },
+      "verification": {
+        "status": "verified",
+        "reason": "property \"payment_method_types\" is no longer declared in the revision spec"
+      },
+      "specId": "stripe",
+      "key": "request-property-removed|POST /v1/checkout/sessions|removed the request property `payment_method_types`",
+      "sourceUrl": null,
+      "compareUrl": "https://github.com/stripe/openapi/compare/a2de9917ac9c7be3ba11abd5151b5c2df3add59e...969d8c308ea65b6dbdef4b6b4a71904027a010b8",
+      "introducedIn": {
+        "sha": "18fa2cc768024b47789dc6fa243acd48478acac2",
+        "date": "2026-09-25T23:17:55Z",
+        "message": "Update OpenAPI for 2026-09-30.endive",
+        "compareUrl": "https://github.com/stripe/openapi/compare/9ac29c7795ab21c7711b4bc25bb2dd739552a5fa...18fa2cc768024b47789dc6fa243acd48478acac2"
+      }
+    }
+  ],
+  "responseSummary": {}
+}

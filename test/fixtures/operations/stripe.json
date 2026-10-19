@@ -1,0 +1,4519 @@
+{
+ "specId": "stripe",
+ "snapshots": [
+  "969d8c308ea65b6dbdef4b6b4a71904027a010b8",
+  "9ac29c7795ab21c7711b4bc25bb2dd739552a5fa",
+  "a2de9917ac9c7be3ba11abd5151b5c2df3add59e",
+  "5146460c7a0c6dfcf9d4c92d1b0abab58719c6ff"
+ ],
+ "operations": [
+  {
+   "method": "POST",
+   "path": "/v1/account_links",
+   "operationId": "PostAccountLinks",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/account_sessions",
+   "operationId": "PostAccountSessions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/account",
+   "operationId": "GetAccount",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v1/accounts/{account}/bank_accounts/{id}",
+   "operationId": "DeleteAccountsAccountBankAccountsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/accounts/{account}/bank_accounts/{id}",
+   "operationId": "GetAccountsAccountBankAccountsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/accounts/{account}/bank_accounts/{id}",
+   "operationId": "PostAccountsAccountBankAccountsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/accounts/{account}/bank_accounts",
+   "operationId": "PostAccountsAccountBankAccounts",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/accounts/{account}/capabilities/{capability}",
+   "operationId": "GetAccountsAccountCapabilitiesCapability",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/accounts/{account}/capabilities/{capability}",
+   "operationId": "PostAccountsAccountCapabilitiesCapability",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/accounts/{account}/capabilities",
+   "operationId": "GetAccountsAccountCapabilities",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v1/accounts/{account}/external_accounts/{id}",
+   "operationId": "DeleteAccountsAccountExternalAccountsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/accounts/{account}/external_accounts/{id}",
+   "operationId": "GetAccountsAccountExternalAccountsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/accounts/{account}/external_accounts/{id}",
+   "operationId": "PostAccountsAccountExternalAccountsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/accounts/{account}/external_accounts",
+   "operationId": "GetAccountsAccountExternalAccounts",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/accounts/{account}/external_accounts",
+   "operationId": "PostAccountsAccountExternalAccounts",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/accounts/{account}/login_links",
+   "operationId": "PostAccountsAccountLoginLinks",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v1/accounts/{account}/people/{person}",
+   "operationId": "DeleteAccountsAccountPeoplePerson",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/accounts/{account}/people/{person}",
+   "operationId": "GetAccountsAccountPeoplePerson",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/accounts/{account}/people/{person}",
+   "operationId": "PostAccountsAccountPeoplePerson",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/accounts/{account}/people",
+   "operationId": "GetAccountsAccountPeople",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/accounts/{account}/people",
+   "operationId": "PostAccountsAccountPeople",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v1/accounts/{account}/persons/{person}",
+   "operationId": "DeleteAccountsAccountPersonsPerson",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/accounts/{account}/persons/{person}",
+   "operationId": "GetAccountsAccountPersonsPerson",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/accounts/{account}/persons/{person}",
+   "operationId": "PostAccountsAccountPersonsPerson",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/accounts/{account}/persons",
+   "operationId": "GetAccountsAccountPersons",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/accounts/{account}/persons",
+   "operationId": "PostAccountsAccountPersons",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/accounts/{account}/reject",
+   "operationId": "PostAccountsAccountReject",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/accounts/{account}/unreject",
+   "operationId": "PostAccountsAccountUnreject",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v1/accounts/{account}",
+   "operationId": "DeleteAccountsAccount",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/accounts/{account}",
+   "operationId": "GetAccountsAccount",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/accounts/{account}",
+   "operationId": "PostAccountsAccount",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/accounts",
+   "operationId": "GetAccounts",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/accounts",
+   "operationId": "PostAccounts",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v1/apple_pay/domains/{domain}",
+   "operationId": "DeleteApplePayDomainsDomain",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/apple_pay/domains/{domain}",
+   "operationId": "GetApplePayDomainsDomain",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/apple_pay/domains",
+   "operationId": "GetApplePayDomains",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/apple_pay/domains",
+   "operationId": "PostApplePayDomains",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/application_fees/{fee}/refunds/{id}",
+   "operationId": "GetApplicationFeesFeeRefundsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/application_fees/{fee}/refunds/{id}",
+   "operationId": "PostApplicationFeesFeeRefundsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/application_fees/{id}/refund",
+   "operationId": "PostApplicationFeesIdRefund",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/application_fees/{id}/refunds",
+   "operationId": "GetApplicationFeesIdRefunds",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/application_fees/{id}/refunds",
+   "operationId": "PostApplicationFeesIdRefunds",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/application_fees/{id}",
+   "operationId": "GetApplicationFeesId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/application_fees",
+   "operationId": "GetApplicationFees",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/apps/installs/{id}/uninstall",
+   "operationId": "PostAppsInstallsIdUninstall",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/apps/installs/{id}",
+   "operationId": "GetAppsInstallsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/apps/installs/{id}",
+   "operationId": "PostAppsInstallsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/apps/installs",
+   "operationId": "GetAppsInstalls",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/apps/installs",
+   "operationId": "PostAppsInstalls",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/apps/secrets/delete",
+   "operationId": "PostAppsSecretsDelete",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/apps/secrets/find",
+   "operationId": "GetAppsSecretsFind",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/apps/secrets",
+   "operationId": "GetAppsSecrets",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/apps/secrets",
+   "operationId": "PostAppsSecrets",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/balance_settings",
+   "operationId": "GetBalanceSettings",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/balance_settings",
+   "operationId": "PostBalanceSettings",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/balance_transactions/{id}",
+   "operationId": "GetBalanceTransactionsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/balance_transactions",
+   "operationId": "GetBalanceTransactions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/balance/history/{id}",
+   "operationId": "GetBalanceHistoryId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/balance/history",
+   "operationId": "GetBalanceHistory",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/balance",
+   "operationId": "GetBalance",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/billing_portal/configurations/{configuration}",
+   "operationId": "GetBillingPortalConfigurationsConfiguration",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/billing_portal/configurations/{configuration}",
+   "operationId": "PostBillingPortalConfigurationsConfiguration",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/billing_portal/configurations",
+   "operationId": "GetBillingPortalConfigurations",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/billing_portal/configurations",
+   "operationId": "PostBillingPortalConfigurations",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/billing_portal/sessions",
+   "operationId": "PostBillingPortalSessions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/billing/alerts/{id}/activate",
+   "operationId": "PostBillingAlertsIdActivate",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/billing/alerts/{id}/archive",
+   "operationId": "PostBillingAlertsIdArchive",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/billing/alerts/{id}/deactivate",
+   "operationId": "PostBillingAlertsIdDeactivate",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/billing/alerts/{id}",
+   "operationId": "GetBillingAlertsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/billing/alerts",
+   "operationId": "GetBillingAlerts",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/billing/alerts",
+   "operationId": "PostBillingAlerts",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/billing/credit_balance_summary",
+   "operationId": "GetBillingCreditBalanceSummary",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/billing/credit_balance_transactions/{id}",
+   "operationId": "GetBillingCreditBalanceTransactionsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/billing/credit_balance_transactions",
+   "operationId": "GetBillingCreditBalanceTransactions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/billing/credit_grants/{id}/expire",
+   "operationId": "PostBillingCreditGrantsIdExpire",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/billing/credit_grants/{id}/void",
+   "operationId": "PostBillingCreditGrantsIdVoid",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/billing/credit_grants/{id}",
+   "operationId": "GetBillingCreditGrantsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/billing/credit_grants/{id}",
+   "operationId": "PostBillingCreditGrantsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/billing/credit_grants",
+   "operationId": "GetBillingCreditGrants",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/billing/credit_grants",
+   "operationId": "PostBillingCreditGrants",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/billing/feedback_options/{id}/deactivate",
+   "operationId": "PostBillingFeedbackOptionsIdDeactivate",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/billing/feedback_options/{id}",
+   "operationId": "GetBillingFeedbackOptionsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/billing/feedback_options/{id}",
+   "operationId": "PostBillingFeedbackOptionsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/billing/feedback_options",
+   "operationId": "GetBillingFeedbackOptions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/billing/feedback_options",
+   "operationId": "PostBillingFeedbackOptions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/billing/meter_event_adjustments",
+   "operationId": "PostBillingMeterEventAdjustments",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/billing/meter_events",
+   "operationId": "PostBillingMeterEvents",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/billing/meters/{id}/deactivate",
+   "operationId": "PostBillingMetersIdDeactivate",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/billing/meters/{id}/event_summaries",
+   "operationId": "GetBillingMetersIdEventSummaries",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/billing/meters/{id}/reactivate",
+   "operationId": "PostBillingMetersIdReactivate",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/billing/meters/{id}",
+   "operationId": "GetBillingMetersId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/billing/meters/{id}",
+   "operationId": "PostBillingMetersId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/billing/meters",
+   "operationId": "GetBillingMeters",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/billing/meters",
+   "operationId": "PostBillingMeters",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/charges/{charge}/capture",
+   "operationId": "PostChargesChargeCapture",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/charges/{charge}/dispute/close",
+   "operationId": "PostChargesChargeDisputeClose",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/charges/{charge}/dispute",
+   "operationId": "GetChargesChargeDispute",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/charges/{charge}/dispute",
+   "operationId": "PostChargesChargeDispute",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/charges/{charge}/refund",
+   "operationId": "PostChargesChargeRefund",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/charges/{charge}/refunds/{refund}",
+   "operationId": "GetChargesChargeRefundsRefund",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/charges/{charge}/refunds/{refund}",
+   "operationId": "PostChargesChargeRefundsRefund",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/charges/{charge}/refunds",
+   "operationId": "GetChargesChargeRefunds",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/charges/{charge}/refunds",
+   "operationId": "PostChargesChargeRefunds",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/charges/{charge}",
+   "operationId": "GetChargesCharge",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/charges/{charge}",
+   "operationId": "PostChargesCharge",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/charges/search",
+   "operationId": "GetChargesSearch",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/charges",
+   "operationId": "GetCharges",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/charges",
+   "operationId": "PostCharges",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/checkout/sessions/{session}/expire",
+   "operationId": "PostCheckoutSessionsSessionExpire",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/checkout/sessions/{session}/line_items",
+   "operationId": "GetCheckoutSessionsSessionLineItems",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/checkout/sessions/{session}",
+   "operationId": "GetCheckoutSessionsSession",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/checkout/sessions/{session}",
+   "operationId": "PostCheckoutSessionsSession",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/checkout/sessions",
+   "operationId": "GetCheckoutSessions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/checkout/sessions",
+   "operationId": "PostCheckoutSessions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/climate/orders/{order}/cancel",
+   "operationId": "PostClimateOrdersOrderCancel",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/climate/orders/{order}",
+   "operationId": "GetClimateOrdersOrder",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/climate/orders/{order}",
+   "operationId": "PostClimateOrdersOrder",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/climate/orders",
+   "operationId": "GetClimateOrders",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/climate/orders",
+   "operationId": "PostClimateOrders",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/climate/products/{product}",
+   "operationId": "GetClimateProductsProduct",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/climate/products",
+   "operationId": "GetClimateProducts",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/climate/suppliers/{supplier}",
+   "operationId": "GetClimateSuppliersSupplier",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/climate/suppliers",
+   "operationId": "GetClimateSuppliers",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/confirmation_tokens/{confirmation_token}",
+   "operationId": "GetConfirmationTokensConfirmationToken",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/country_specs/{country}",
+   "operationId": "GetCountrySpecsCountry",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/country_specs",
+   "operationId": "GetCountrySpecs",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v1/coupons/{coupon}",
+   "operationId": "DeleteCouponsCoupon",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/coupons/{coupon}",
+   "operationId": "GetCouponsCoupon",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/coupons/{coupon}",
+   "operationId": "PostCouponsCoupon",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/coupons",
+   "operationId": "GetCoupons",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/coupons",
+   "operationId": "PostCoupons",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/credit_notes/{credit_note}/lines",
+   "operationId": "GetCreditNotesCreditNoteLines",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/credit_notes/{id}/void",
+   "operationId": "PostCreditNotesIdVoid",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/credit_notes/{id}",
+   "operationId": "GetCreditNotesId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/credit_notes/{id}",
+   "operationId": "PostCreditNotesId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/credit_notes/preview/lines",
+   "operationId": "GetCreditNotesPreviewLines",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/credit_notes/preview",
+   "operationId": "GetCreditNotesPreview",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/credit_notes",
+   "operationId": "GetCreditNotes",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/credit_notes",
+   "operationId": "PostCreditNotes",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/customer_sessions",
+   "operationId": "PostCustomerSessions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/customers/{customer}/balance_transactions/{transaction}",
+   "operationId": "GetCustomersCustomerBalanceTransactionsTransaction",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/customers/{customer}/balance_transactions/{transaction}",
+   "operationId": "PostCustomersCustomerBalanceTransactionsTransaction",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/customers/{customer}/balance_transactions",
+   "operationId": "GetCustomersCustomerBalanceTransactions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/customers/{customer}/balance_transactions",
+   "operationId": "PostCustomersCustomerBalanceTransactions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/customers/{customer}/bank_accounts/{id}/verify",
+   "operationId": "PostCustomersCustomerBankAccountsIdVerify",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v1/customers/{customer}/bank_accounts/{id}",
+   "operationId": "DeleteCustomersCustomerBankAccountsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/customers/{customer}/bank_accounts/{id}",
+   "operationId": "GetCustomersCustomerBankAccountsId",
+   "deprecated": true,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/customers/{customer}/bank_accounts/{id}",
+   "operationId": "PostCustomersCustomerBankAccountsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/customers/{customer}/bank_accounts",
+   "operationId": "GetCustomersCustomerBankAccounts",
+   "deprecated": true,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/customers/{customer}/bank_accounts",
+   "operationId": "PostCustomersCustomerBankAccounts",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v1/customers/{customer}/cards/{id}",
+   "operationId": "DeleteCustomersCustomerCardsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/customers/{customer}/cards/{id}",
+   "operationId": "GetCustomersCustomerCardsId",
+   "deprecated": true,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/customers/{customer}/cards/{id}",
+   "operationId": "PostCustomersCustomerCardsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/customers/{customer}/cards",
+   "operationId": "GetCustomersCustomerCards",
+   "deprecated": true,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/customers/{customer}/cards",
+   "operationId": "PostCustomersCustomerCards",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/customers/{customer}/cash_balance_transactions/{transaction}",
+   "operationId": "GetCustomersCustomerCashBalanceTransactionsTransaction",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/customers/{customer}/cash_balance_transactions",
+   "operationId": "GetCustomersCustomerCashBalanceTransactions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/customers/{customer}/cash_balance",
+   "operationId": "GetCustomersCustomerCashBalance",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/customers/{customer}/cash_balance",
+   "operationId": "PostCustomersCustomerCashBalance",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v1/customers/{customer}/discount",
+   "operationId": "DeleteCustomersCustomerDiscount",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/customers/{customer}/discount",
+   "operationId": "GetCustomersCustomerDiscount",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/customers/{customer}/funding_instructions",
+   "operationId": "PostCustomersCustomerFundingInstructions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/customers/{customer}/payment_methods/{payment_method}",
+   "operationId": "GetCustomersCustomerPaymentMethodsPaymentMethod",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/customers/{customer}/payment_methods",
+   "operationId": "GetCustomersCustomerPaymentMethods",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/customers/{customer}/sources/{id}/verify",
+   "operationId": "PostCustomersCustomerSourcesIdVerify",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v1/customers/{customer}/sources/{id}",
+   "operationId": "DeleteCustomersCustomerSourcesId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/customers/{customer}/sources/{id}",
+   "operationId": "GetCustomersCustomerSourcesId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/customers/{customer}/sources/{id}",
+   "operationId": "PostCustomersCustomerSourcesId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/customers/{customer}/sources",
+   "operationId": "GetCustomersCustomerSources",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/customers/{customer}/sources",
+   "operationId": "PostCustomersCustomerSources",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v1/customers/{customer}/subscriptions/{subscription_exposed_id}/discount",
+   "operationId": "DeleteCustomersCustomerSubscriptionsSubscriptionExposedIdDiscount",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/customers/{customer}/subscriptions/{subscription_exposed_id}/discount",
+   "operationId": "GetCustomersCustomerSubscriptionsSubscriptionExposedIdDiscount",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v1/customers/{customer}/subscriptions/{subscription_exposed_id}",
+   "operationId": "DeleteCustomersCustomerSubscriptionsSubscriptionExposedId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/customers/{customer}/subscriptions/{subscription_exposed_id}",
+   "operationId": "GetCustomersCustomerSubscriptionsSubscriptionExposedId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/customers/{customer}/subscriptions/{subscription_exposed_id}",
+   "operationId": "PostCustomersCustomerSubscriptionsSubscriptionExposedId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/customers/{customer}/subscriptions",
+   "operationId": "GetCustomersCustomerSubscriptions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/customers/{customer}/subscriptions",
+   "operationId": "PostCustomersCustomerSubscriptions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v1/customers/{customer}/tax_ids/{id}",
+   "operationId": "DeleteCustomersCustomerTaxIdsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/customers/{customer}/tax_ids/{id}",
+   "operationId": "GetCustomersCustomerTaxIdsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/customers/{customer}/tax_ids",
+   "operationId": "GetCustomersCustomerTaxIds",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/customers/{customer}/tax_ids",
+   "operationId": "PostCustomersCustomerTaxIds",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v1/customers/{customer}",
+   "operationId": "DeleteCustomersCustomer",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/customers/{customer}",
+   "operationId": "GetCustomersCustomer",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/customers/{customer}",
+   "operationId": "PostCustomersCustomer",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/customers/search",
+   "operationId": "GetCustomersSearch",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/customers",
+   "operationId": "GetCustomers",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/customers",
+   "operationId": "PostCustomers",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/disputes/{dispute}/close",
+   "operationId": "PostDisputesDisputeClose",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/disputes/{dispute}",
+   "operationId": "GetDisputesDispute",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/disputes/{dispute}",
+   "operationId": "PostDisputesDispute",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/disputes",
+   "operationId": "GetDisputes",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/entitlements/active_entitlements/{id}",
+   "operationId": "GetEntitlementsActiveEntitlementsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/entitlements/active_entitlements",
+   "operationId": "GetEntitlementsActiveEntitlements",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/entitlements/features/{id}",
+   "operationId": "GetEntitlementsFeaturesId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/entitlements/features/{id}",
+   "operationId": "PostEntitlementsFeaturesId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/entitlements/features",
+   "operationId": "GetEntitlementsFeatures",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/entitlements/features",
+   "operationId": "PostEntitlementsFeatures",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v1/ephemeral_keys/{key}",
+   "operationId": "DeleteEphemeralKeysKey",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/ephemeral_keys",
+   "operationId": "PostEphemeralKeys",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/events/{id}",
+   "operationId": "GetEventsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/events",
+   "operationId": "GetEvents",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/exchange_rates/{rate_id}",
+   "operationId": "GetExchangeRatesRateId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/exchange_rates",
+   "operationId": "GetExchangeRates",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/external_accounts/{id}",
+   "operationId": "PostExternalAccountsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/file_links/{link}",
+   "operationId": "GetFileLinksLink",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/file_links/{link}",
+   "operationId": "PostFileLinksLink",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/file_links",
+   "operationId": "GetFileLinks",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/file_links",
+   "operationId": "PostFileLinks",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/files/{file}",
+   "operationId": "GetFilesFile",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/files",
+   "operationId": "GetFiles",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/files",
+   "operationId": "PostFiles",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/financial_connections/accounts/{account}/disconnect",
+   "operationId": "PostFinancialConnectionsAccountsAccountDisconnect",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/financial_connections/accounts/{account}/owners",
+   "operationId": "GetFinancialConnectionsAccountsAccountOwners",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/financial_connections/accounts/{account}/refresh",
+   "operationId": "PostFinancialConnectionsAccountsAccountRefresh",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/financial_connections/accounts/{account}/subscribe",
+   "operationId": "PostFinancialConnectionsAccountsAccountSubscribe",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/financial_connections/accounts/{account}/unsubscribe",
+   "operationId": "PostFinancialConnectionsAccountsAccountUnsubscribe",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/financial_connections/accounts/{account}",
+   "operationId": "GetFinancialConnectionsAccountsAccount",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/financial_connections/accounts",
+   "operationId": "GetFinancialConnectionsAccounts",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/financial_connections/sessions/{session}",
+   "operationId": "GetFinancialConnectionsSessionsSession",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/financial_connections/sessions",
+   "operationId": "PostFinancialConnectionsSessions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/financial_connections/transactions/{transaction}",
+   "operationId": "GetFinancialConnectionsTransactionsTransaction",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/financial_connections/transactions",
+   "operationId": "GetFinancialConnectionsTransactions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/forwarding/requests/{id}",
+   "operationId": "GetForwardingRequestsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/forwarding/requests",
+   "operationId": "GetForwardingRequests",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/forwarding/requests",
+   "operationId": "PostForwardingRequests",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/identity/verification_reports/{report}",
+   "operationId": "GetIdentityVerificationReportsReport",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/identity/verification_reports",
+   "operationId": "GetIdentityVerificationReports",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/identity/verification_sessions/{session}/cancel",
+   "operationId": "PostIdentityVerificationSessionsSessionCancel",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/identity/verification_sessions/{session}/redact",
+   "operationId": "PostIdentityVerificationSessionsSessionRedact",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/identity/verification_sessions/{session}",
+   "operationId": "GetIdentityVerificationSessionsSession",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/identity/verification_sessions/{session}",
+   "operationId": "PostIdentityVerificationSessionsSession",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/identity/verification_sessions",
+   "operationId": "GetIdentityVerificationSessions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/identity/verification_sessions",
+   "operationId": "PostIdentityVerificationSessions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/invoice_payments/{invoice_payment}",
+   "operationId": "GetInvoicePaymentsInvoicePayment",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/invoice_payments",
+   "operationId": "GetInvoicePayments",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/invoice_rendering_templates/{template}/archive",
+   "operationId": "PostInvoiceRenderingTemplatesTemplateArchive",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/invoice_rendering_templates/{template}/unarchive",
+   "operationId": "PostInvoiceRenderingTemplatesTemplateUnarchive",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/invoice_rendering_templates/{template}",
+   "operationId": "GetInvoiceRenderingTemplatesTemplate",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/invoice_rendering_templates",
+   "operationId": "GetInvoiceRenderingTemplates",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v1/invoiceitems/{invoiceitem}",
+   "operationId": "DeleteInvoiceitemsInvoiceitem",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/invoiceitems/{invoiceitem}",
+   "operationId": "GetInvoiceitemsInvoiceitem",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/invoiceitems/{invoiceitem}",
+   "operationId": "PostInvoiceitemsInvoiceitem",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/invoiceitems",
+   "operationId": "GetInvoiceitems",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/invoiceitems",
+   "operationId": "PostInvoiceitems",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/invoices/{invoice}/add_lines",
+   "operationId": "PostInvoicesInvoiceAddLines",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/invoices/{invoice}/attach_payment",
+   "operationId": "PostInvoicesInvoiceAttachPayment",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/invoices/{invoice}/finalize",
+   "operationId": "PostInvoicesInvoiceFinalize",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/invoices/{invoice}/lines/{line_item_id}",
+   "operationId": "PostInvoicesInvoiceLinesLineItemId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/invoices/{invoice}/lines",
+   "operationId": "GetInvoicesInvoiceLines",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/invoices/{invoice}/mark_uncollectible",
+   "operationId": "PostInvoicesInvoiceMarkUncollectible",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/invoices/{invoice}/pay",
+   "operationId": "PostInvoicesInvoicePay",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/invoices/{invoice}/remove_lines",
+   "operationId": "PostInvoicesInvoiceRemoveLines",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/invoices/{invoice}/send",
+   "operationId": "PostInvoicesInvoiceSend",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/invoices/{invoice}/update_lines",
+   "operationId": "PostInvoicesInvoiceUpdateLines",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/invoices/{invoice}/void",
+   "operationId": "PostInvoicesInvoiceVoid",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v1/invoices/{invoice}",
+   "operationId": "DeleteInvoicesInvoice",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/invoices/{invoice}",
+   "operationId": "GetInvoicesInvoice",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/invoices/{invoice}",
+   "operationId": "PostInvoicesInvoice",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/invoices/create_preview",
+   "operationId": "PostInvoicesCreatePreview",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/invoices/search",
+   "operationId": "GetInvoicesSearch",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/invoices",
+   "operationId": "GetInvoices",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/invoices",
+   "operationId": "PostInvoices",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/issuing/authorizations/{authorization}/approve",
+   "operationId": "PostIssuingAuthorizationsAuthorizationApprove",
+   "deprecated": true,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/issuing/authorizations/{authorization}/decline",
+   "operationId": "PostIssuingAuthorizationsAuthorizationDecline",
+   "deprecated": true,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/issuing/authorizations/{authorization}",
+   "operationId": "GetIssuingAuthorizationsAuthorization",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/issuing/authorizations/{authorization}",
+   "operationId": "PostIssuingAuthorizationsAuthorization",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/issuing/authorizations",
+   "operationId": "GetIssuingAuthorizations",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/issuing/cardholders/{cardholder}",
+   "operationId": "GetIssuingCardholdersCardholder",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/issuing/cardholders/{cardholder}",
+   "operationId": "PostIssuingCardholdersCardholder",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/issuing/cardholders",
+   "operationId": "GetIssuingCardholders",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/issuing/cardholders",
+   "operationId": "PostIssuingCardholders",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/issuing/cards/{card}",
+   "operationId": "GetIssuingCardsCard",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/issuing/cards/{card}",
+   "operationId": "PostIssuingCardsCard",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/issuing/cards",
+   "operationId": "GetIssuingCards",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/issuing/cards",
+   "operationId": "PostIssuingCards",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/issuing/disputes/{dispute}/submit",
+   "operationId": "PostIssuingDisputesDisputeSubmit",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/issuing/disputes/{dispute}",
+   "operationId": "GetIssuingDisputesDispute",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/issuing/disputes/{dispute}",
+   "operationId": "PostIssuingDisputesDispute",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/issuing/disputes",
+   "operationId": "GetIssuingDisputes",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/issuing/disputes",
+   "operationId": "PostIssuingDisputes",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/issuing/personalization_designs/{personalization_design}",
+   "operationId": "GetIssuingPersonalizationDesignsPersonalizationDesign",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/issuing/personalization_designs/{personalization_design}",
+   "operationId": "PostIssuingPersonalizationDesignsPersonalizationDesign",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/issuing/personalization_designs",
+   "operationId": "GetIssuingPersonalizationDesigns",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/issuing/personalization_designs",
+   "operationId": "PostIssuingPersonalizationDesigns",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/issuing/physical_bundles/{physical_bundle}",
+   "operationId": "GetIssuingPhysicalBundlesPhysicalBundle",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/issuing/physical_bundles",
+   "operationId": "GetIssuingPhysicalBundles",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/issuing/settlements/{settlement}",
+   "operationId": "GetIssuingSettlementsSettlement",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/issuing/settlements/{settlement}",
+   "operationId": "PostIssuingSettlementsSettlement",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/issuing/tokens/{token}",
+   "operationId": "GetIssuingTokensToken",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/issuing/tokens/{token}",
+   "operationId": "PostIssuingTokensToken",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/issuing/tokens",
+   "operationId": "GetIssuingTokens",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/issuing/transactions/{transaction}",
+   "operationId": "GetIssuingTransactionsTransaction",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/issuing/transactions/{transaction}",
+   "operationId": "PostIssuingTransactionsTransaction",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/issuing/transactions",
+   "operationId": "GetIssuingTransactions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/link_account_sessions/{session}",
+   "operationId": "GetLinkAccountSessionsSession",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/link_account_sessions",
+   "operationId": "PostLinkAccountSessions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/linked_accounts/{account}/disconnect",
+   "operationId": "PostLinkedAccountsAccountDisconnect",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/linked_accounts/{account}/owners",
+   "operationId": "GetLinkedAccountsAccountOwners",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/linked_accounts/{account}/refresh",
+   "operationId": "PostLinkedAccountsAccountRefresh",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/linked_accounts/{account}",
+   "operationId": "GetLinkedAccountsAccount",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/linked_accounts",
+   "operationId": "GetLinkedAccounts",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/mandates/{mandate}",
+   "operationId": "GetMandatesMandate",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/payment_attempt_records/{id}",
+   "operationId": "GetPaymentAttemptRecordsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/payment_attempt_records",
+   "operationId": "GetPaymentAttemptRecords",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/payment_intents/{intent}/amount_details_line_items",
+   "operationId": "GetPaymentIntentsIntentAmountDetailsLineItems",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/payment_intents/{intent}/apply_customer_balance",
+   "operationId": "PostPaymentIntentsIntentApplyCustomerBalance",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/payment_intents/{intent}/cancel",
+   "operationId": "PostPaymentIntentsIntentCancel",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/payment_intents/{intent}/capture",
+   "operationId": "PostPaymentIntentsIntentCapture",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/payment_intents/{intent}/confirm",
+   "operationId": "PostPaymentIntentsIntentConfirm",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/payment_intents/{intent}/increment_authorization",
+   "operationId": "PostPaymentIntentsIntentIncrementAuthorization",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/payment_intents/{intent}/verify_microdeposits",
+   "operationId": "PostPaymentIntentsIntentVerifyMicrodeposits",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/payment_intents/{intent}",
+   "operationId": "GetPaymentIntentsIntent",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/payment_intents/{intent}",
+   "operationId": "PostPaymentIntentsIntent",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/payment_intents/search",
+   "operationId": "GetPaymentIntentsSearch",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/payment_intents",
+   "operationId": "GetPaymentIntents",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/payment_intents",
+   "operationId": "PostPaymentIntents",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/payment_links/{payment_link}/line_items",
+   "operationId": "GetPaymentLinksPaymentLinkLineItems",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/payment_links/{payment_link}",
+   "operationId": "GetPaymentLinksPaymentLink",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/payment_links/{payment_link}",
+   "operationId": "PostPaymentLinksPaymentLink",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/payment_links",
+   "operationId": "GetPaymentLinks",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/payment_links",
+   "operationId": "PostPaymentLinks",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/payment_method_configurations/{configuration}",
+   "operationId": "GetPaymentMethodConfigurationsConfiguration",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/payment_method_configurations/{configuration}",
+   "operationId": "PostPaymentMethodConfigurationsConfiguration",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/payment_method_configurations",
+   "operationId": "GetPaymentMethodConfigurations",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/payment_method_configurations",
+   "operationId": "PostPaymentMethodConfigurations",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/payment_method_domains/{payment_method_domain}/validate",
+   "operationId": "PostPaymentMethodDomainsPaymentMethodDomainValidate",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/payment_method_domains/{payment_method_domain}",
+   "operationId": "GetPaymentMethodDomainsPaymentMethodDomain",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/payment_method_domains/{payment_method_domain}",
+   "operationId": "PostPaymentMethodDomainsPaymentMethodDomain",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/payment_method_domains",
+   "operationId": "GetPaymentMethodDomains",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/payment_method_domains",
+   "operationId": "PostPaymentMethodDomains",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/payment_methods/{payment_method}/attach",
+   "operationId": "PostPaymentMethodsPaymentMethodAttach",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/payment_methods/{payment_method}/detach",
+   "operationId": "PostPaymentMethodsPaymentMethodDetach",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/payment_methods/{payment_method}",
+   "operationId": "GetPaymentMethodsPaymentMethod",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/payment_methods/{payment_method}",
+   "operationId": "PostPaymentMethodsPaymentMethod",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/payment_methods",
+   "operationId": "GetPaymentMethods",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/payment_methods",
+   "operationId": "PostPaymentMethods",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/payment_records/{id}/report_payment_attempt_canceled",
+   "operationId": "PostPaymentRecordsIdReportPaymentAttemptCanceled",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/payment_records/{id}/report_payment_attempt_failed",
+   "operationId": "PostPaymentRecordsIdReportPaymentAttemptFailed",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/payment_records/{id}/report_payment_attempt_guaranteed",
+   "operationId": "PostPaymentRecordsIdReportPaymentAttemptGuaranteed",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/payment_records/{id}/report_payment_attempt_informational",
+   "operationId": "PostPaymentRecordsIdReportPaymentAttemptInformational",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/payment_records/{id}/report_payment_attempt",
+   "operationId": "PostPaymentRecordsIdReportPaymentAttempt",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/payment_records/{id}/report_refund",
+   "operationId": "PostPaymentRecordsIdReportRefund",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/payment_records/{id}",
+   "operationId": "GetPaymentRecordsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/payment_records/report_payment",
+   "operationId": "PostPaymentRecordsReportPayment",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/payment_records",
+   "operationId": "GetPaymentRecords",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/payouts/{payout}/cancel",
+   "operationId": "PostPayoutsPayoutCancel",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/payouts/{payout}/reverse",
+   "operationId": "PostPayoutsPayoutReverse",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/payouts/{payout}",
+   "operationId": "GetPayoutsPayout",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/payouts/{payout}",
+   "operationId": "PostPayoutsPayout",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/payouts",
+   "operationId": "GetPayouts",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/payouts",
+   "operationId": "PostPayouts",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v1/plans/{plan}",
+   "operationId": "DeletePlansPlan",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/plans/{plan}",
+   "operationId": "GetPlansPlan",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/plans/{plan}",
+   "operationId": "PostPlansPlan",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/plans",
+   "operationId": "GetPlans",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/plans",
+   "operationId": "PostPlans",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/prices/{price}",
+   "operationId": "GetPricesPrice",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/prices/{price}",
+   "operationId": "PostPricesPrice",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/prices/search",
+   "operationId": "GetPricesSearch",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/prices",
+   "operationId": "GetPrices",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/prices",
+   "operationId": "PostPrices",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/product_catalog/trial_offers/{id}",
+   "operationId": "GetProductCatalogTrialOffersId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/product_catalog/trial_offers/{id}",
+   "operationId": "PostProductCatalogTrialOffersId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/product_catalog/trial_offers",
+   "operationId": "GetProductCatalogTrialOffers",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/product_catalog/trial_offers",
+   "operationId": "PostProductCatalogTrialOffers",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v1/products/{id}",
+   "operationId": "DeleteProductsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/products/{id}",
+   "operationId": "GetProductsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/products/{id}",
+   "operationId": "PostProductsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v1/products/{product}/features/{id}",
+   "operationId": "DeleteProductsProductFeaturesId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/products/{product}/features/{id}",
+   "operationId": "GetProductsProductFeaturesId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/products/{product}/features",
+   "operationId": "GetProductsProductFeatures",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/products/{product}/features",
+   "operationId": "PostProductsProductFeatures",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/products/search",
+   "operationId": "GetProductsSearch",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/products",
+   "operationId": "GetProducts",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/products",
+   "operationId": "PostProducts",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/promotion_codes/{promotion_code}",
+   "operationId": "GetPromotionCodesPromotionCode",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/promotion_codes/{promotion_code}",
+   "operationId": "PostPromotionCodesPromotionCode",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/promotion_codes",
+   "operationId": "GetPromotionCodes",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/promotion_codes",
+   "operationId": "PostPromotionCodes",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/quotes/{quote}/accept",
+   "operationId": "PostQuotesQuoteAccept",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/quotes/{quote}/cancel",
+   "operationId": "PostQuotesQuoteCancel",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/quotes/{quote}/computed_upfront_line_items",
+   "operationId": "GetQuotesQuoteComputedUpfrontLineItems",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/quotes/{quote}/finalize",
+   "operationId": "PostQuotesQuoteFinalize",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/quotes/{quote}/line_items",
+   "operationId": "GetQuotesQuoteLineItems",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/quotes/{quote}/pdf",
+   "operationId": "GetQuotesQuotePdf",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/quotes/{quote}",
+   "operationId": "GetQuotesQuote",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/quotes/{quote}",
+   "operationId": "PostQuotesQuote",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/quotes",
+   "operationId": "GetQuotes",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/quotes",
+   "operationId": "PostQuotes",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/radar/early_fraud_warnings/{early_fraud_warning}",
+   "operationId": "GetRadarEarlyFraudWarningsEarlyFraudWarning",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/radar/early_fraud_warnings",
+   "operationId": "GetRadarEarlyFraudWarnings",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/radar/payment_evaluations",
+   "operationId": "PostRadarPaymentEvaluations",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v1/radar/value_list_items/{item}",
+   "operationId": "DeleteRadarValueListItemsItem",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/radar/value_list_items/{item}",
+   "operationId": "GetRadarValueListItemsItem",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/radar/value_list_items",
+   "operationId": "GetRadarValueListItems",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/radar/value_list_items",
+   "operationId": "PostRadarValueListItems",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v1/radar/value_lists/{value_list}",
+   "operationId": "DeleteRadarValueListsValueList",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/radar/value_lists/{value_list}",
+   "operationId": "GetRadarValueListsValueList",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/radar/value_lists/{value_list}",
+   "operationId": "PostRadarValueListsValueList",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/radar/value_lists",
+   "operationId": "GetRadarValueLists",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/radar/value_lists",
+   "operationId": "PostRadarValueLists",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/refunds/{refund}/cancel",
+   "operationId": "PostRefundsRefundCancel",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/refunds/{refund}",
+   "operationId": "GetRefundsRefund",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/refunds/{refund}",
+   "operationId": "PostRefundsRefund",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/refunds",
+   "operationId": "GetRefunds",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/refunds",
+   "operationId": "PostRefunds",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/reporting/report_runs/{report_run}",
+   "operationId": "GetReportingReportRunsReportRun",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/reporting/report_runs",
+   "operationId": "GetReportingReportRuns",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/reporting/report_runs",
+   "operationId": "PostReportingReportRuns",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/reporting/report_types/{report_type}",
+   "operationId": "GetReportingReportTypesReportType",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/reporting/report_types",
+   "operationId": "GetReportingReportTypes",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/reviews/{review}/approve",
+   "operationId": "PostReviewsReviewApprove",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/reviews/{review}",
+   "operationId": "GetReviewsReview",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/reviews",
+   "operationId": "GetReviews",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/setup_attempts",
+   "operationId": "GetSetupAttempts",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/setup_intents/{intent}/cancel",
+   "operationId": "PostSetupIntentsIntentCancel",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/setup_intents/{intent}/confirm",
+   "operationId": "PostSetupIntentsIntentConfirm",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/setup_intents/{intent}/verify_microdeposits",
+   "operationId": "PostSetupIntentsIntentVerifyMicrodeposits",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/setup_intents/{intent}",
+   "operationId": "GetSetupIntentsIntent",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/setup_intents/{intent}",
+   "operationId": "PostSetupIntentsIntent",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/setup_intents",
+   "operationId": "GetSetupIntents",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/setup_intents",
+   "operationId": "PostSetupIntents",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/shipping_rates/{shipping_rate_token}",
+   "operationId": "GetShippingRatesShippingRateToken",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/shipping_rates/{shipping_rate_token}",
+   "operationId": "PostShippingRatesShippingRateToken",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/shipping_rates",
+   "operationId": "GetShippingRates",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/shipping_rates",
+   "operationId": "PostShippingRates",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/sigma/saved_queries/{id}",
+   "operationId": "PostSigmaSavedQueriesId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/sigma/scheduled_query_runs/{scheduled_query_run}",
+   "operationId": "GetSigmaScheduledQueryRunsScheduledQueryRun",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/sigma/scheduled_query_runs",
+   "operationId": "GetSigmaScheduledQueryRuns",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/sources/{source}/mandate_notifications/{mandate_notification}",
+   "operationId": "GetSourcesSourceMandateNotificationsMandateNotification",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/sources/{source}/source_transactions/{source_transaction}",
+   "operationId": "GetSourcesSourceSourceTransactionsSourceTransaction",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/sources/{source}/source_transactions",
+   "operationId": "GetSourcesSourceSourceTransactions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/sources/{source}/verify",
+   "operationId": "PostSourcesSourceVerify",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/sources/{source}",
+   "operationId": "GetSourcesSource",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/sources/{source}",
+   "operationId": "PostSourcesSource",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/sources",
+   "operationId": "PostSources",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v1/subscription_items/{item}",
+   "operationId": "DeleteSubscriptionItemsItem",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/subscription_items/{item}",
+   "operationId": "GetSubscriptionItemsItem",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/subscription_items/{item}",
+   "operationId": "PostSubscriptionItemsItem",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/subscription_items",
+   "operationId": "GetSubscriptionItems",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/subscription_items",
+   "operationId": "PostSubscriptionItems",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/subscription_schedules/{schedule}/cancel",
+   "operationId": "PostSubscriptionSchedulesScheduleCancel",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/subscription_schedules/{schedule}/release",
+   "operationId": "PostSubscriptionSchedulesScheduleRelease",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/subscription_schedules/{schedule}",
+   "operationId": "GetSubscriptionSchedulesSchedule",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/subscription_schedules/{schedule}",
+   "operationId": "PostSubscriptionSchedulesSchedule",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/subscription_schedules",
+   "operationId": "GetSubscriptionSchedules",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/subscription_schedules",
+   "operationId": "PostSubscriptionSchedules",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v1/subscriptions/{subscription_exposed_id}/discount",
+   "operationId": "DeleteSubscriptionsSubscriptionExposedIdDiscount",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v1/subscriptions/{subscription_exposed_id}",
+   "operationId": "DeleteSubscriptionsSubscriptionExposedId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/subscriptions/{subscription_exposed_id}",
+   "operationId": "GetSubscriptionsSubscriptionExposedId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/subscriptions/{subscription_exposed_id}",
+   "operationId": "PostSubscriptionsSubscriptionExposedId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/subscriptions/{subscription}/migrate",
+   "operationId": "PostSubscriptionsSubscriptionMigrate",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/subscriptions/{subscription}/pause",
+   "operationId": "PostSubscriptionsSubscriptionPause",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/subscriptions/{subscription}/resume",
+   "operationId": "PostSubscriptionsSubscriptionResume",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/subscriptions/search",
+   "operationId": "GetSubscriptionsSearch",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/subscriptions",
+   "operationId": "GetSubscriptions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/subscriptions",
+   "operationId": "PostSubscriptions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/tax_codes/{id}",
+   "operationId": "GetTaxCodesId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/tax_codes",
+   "operationId": "GetTaxCodes",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v1/tax_ids/{id}",
+   "operationId": "DeleteTaxIdsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/tax_ids/{id}",
+   "operationId": "GetTaxIdsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/tax_ids",
+   "operationId": "GetTaxIds",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/tax_ids",
+   "operationId": "PostTaxIds",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/tax_rates/{tax_rate}",
+   "operationId": "GetTaxRatesTaxRate",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/tax_rates/{tax_rate}",
+   "operationId": "PostTaxRatesTaxRate",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/tax_rates",
+   "operationId": "GetTaxRates",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/tax_rates",
+   "operationId": "PostTaxRates",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/tax/associations/find",
+   "operationId": "GetTaxAssociationsFind",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/tax/calculations/{calculation}/line_items",
+   "operationId": "GetTaxCalculationsCalculationLineItems",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/tax/calculations/{calculation}",
+   "operationId": "GetTaxCalculationsCalculation",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/tax/calculations",
+   "operationId": "PostTaxCalculations",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/tax/locations/{location}",
+   "operationId": "GetTaxLocationsLocation",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/tax/locations",
+   "operationId": "GetTaxLocations",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/tax/locations",
+   "operationId": "PostTaxLocations",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/tax/registrations/{id}",
+   "operationId": "GetTaxRegistrationsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/tax/registrations/{id}",
+   "operationId": "PostTaxRegistrationsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/tax/registrations",
+   "operationId": "GetTaxRegistrations",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/tax/registrations",
+   "operationId": "PostTaxRegistrations",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/tax/settings",
+   "operationId": "GetTaxSettings",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/tax/settings",
+   "operationId": "PostTaxSettings",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/tax/transactions/{transaction}/line_items",
+   "operationId": "GetTaxTransactionsTransactionLineItems",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/tax/transactions/{transaction}",
+   "operationId": "GetTaxTransactionsTransaction",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/tax/transactions/create_from_calculation",
+   "operationId": "PostTaxTransactionsCreateFromCalculation",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/tax/transactions/create_reversal",
+   "operationId": "PostTaxTransactionsCreateReversal",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v1/terminal/configurations/{configuration}",
+   "operationId": "DeleteTerminalConfigurationsConfiguration",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/terminal/configurations/{configuration}",
+   "operationId": "GetTerminalConfigurationsConfiguration",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/terminal/configurations/{configuration}",
+   "operationId": "PostTerminalConfigurationsConfiguration",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/terminal/configurations",
+   "operationId": "GetTerminalConfigurations",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/terminal/configurations",
+   "operationId": "PostTerminalConfigurations",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/terminal/connection_tokens",
+   "operationId": "PostTerminalConnectionTokens",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v1/terminal/locations/{location}",
+   "operationId": "DeleteTerminalLocationsLocation",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/terminal/locations/{location}",
+   "operationId": "GetTerminalLocationsLocation",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/terminal/locations/{location}",
+   "operationId": "PostTerminalLocationsLocation",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/terminal/locations",
+   "operationId": "GetTerminalLocations",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/terminal/locations",
+   "operationId": "PostTerminalLocations",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/terminal/onboarding_links",
+   "operationId": "PostTerminalOnboardingLinks",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/terminal/readers/{reader}/cancel_action",
+   "operationId": "PostTerminalReadersReaderCancelAction",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/terminal/readers/{reader}/collect_inputs",
+   "operationId": "PostTerminalReadersReaderCollectInputs",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/terminal/readers/{reader}/collect_payment_method",
+   "operationId": "PostTerminalReadersReaderCollectPaymentMethod",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/terminal/readers/{reader}/confirm_payment_intent",
+   "operationId": "PostTerminalReadersReaderConfirmPaymentIntent",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/terminal/readers/{reader}/process_payment_intent",
+   "operationId": "PostTerminalReadersReaderProcessPaymentIntent",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/terminal/readers/{reader}/process_setup_intent",
+   "operationId": "PostTerminalReadersReaderProcessSetupIntent",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/terminal/readers/{reader}/refund_payment",
+   "operationId": "PostTerminalReadersReaderRefundPayment",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/terminal/readers/{reader}/set_reader_display",
+   "operationId": "PostTerminalReadersReaderSetReaderDisplay",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v1/terminal/readers/{reader}",
+   "operationId": "DeleteTerminalReadersReader",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/terminal/readers/{reader}",
+   "operationId": "GetTerminalReadersReader",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/terminal/readers/{reader}",
+   "operationId": "PostTerminalReadersReader",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/terminal/readers",
+   "operationId": "GetTerminalReaders",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/terminal/readers",
+   "operationId": "PostTerminalReaders",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/terminal/refunds",
+   "operationId": "PostTerminalRefunds",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/confirmation_tokens",
+   "operationId": "PostTestHelpersConfirmationTokens",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/customers/{customer}/fund_cash_balance",
+   "operationId": "PostTestHelpersCustomersCustomerFundCashBalance",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/issuing/authorizations/{authorization}/capture",
+   "operationId": "PostTestHelpersIssuingAuthorizationsAuthorizationCapture",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/issuing/authorizations/{authorization}/expire",
+   "operationId": "PostTestHelpersIssuingAuthorizationsAuthorizationExpire",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/issuing/authorizations/{authorization}/finalize_amount",
+   "operationId": "PostTestHelpersIssuingAuthorizationsAuthorizationFinalizeAmount",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/issuing/authorizations/{authorization}/fraud_challenges/respond",
+   "operationId": "PostTestHelpersIssuingAuthorizationsAuthorizationFraudChallengesRespond",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/issuing/authorizations/{authorization}/increment",
+   "operationId": "PostTestHelpersIssuingAuthorizationsAuthorizationIncrement",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/issuing/authorizations/{authorization}/reverse",
+   "operationId": "PostTestHelpersIssuingAuthorizationsAuthorizationReverse",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/issuing/authorizations",
+   "operationId": "PostTestHelpersIssuingAuthorizations",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/issuing/cards/{card}/shipping/deliver",
+   "operationId": "PostTestHelpersIssuingCardsCardShippingDeliver",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/issuing/cards/{card}/shipping/fail",
+   "operationId": "PostTestHelpersIssuingCardsCardShippingFail",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/issuing/cards/{card}/shipping/return",
+   "operationId": "PostTestHelpersIssuingCardsCardShippingReturn",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/issuing/cards/{card}/shipping/ship",
+   "operationId": "PostTestHelpersIssuingCardsCardShippingShip",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/issuing/cards/{card}/shipping/submit",
+   "operationId": "PostTestHelpersIssuingCardsCardShippingSubmit",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/issuing/personalization_designs/{personalization_design}/activate",
+   "operationId": "PostTestHelpersIssuingPersonalizationDesignsPersonalizationDesignActivate",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/issuing/personalization_designs/{personalization_design}/deactivate",
+   "operationId": "PostTestHelpersIssuingPersonalizationDesignsPersonalizationDesignDeactivate",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/issuing/personalization_designs/{personalization_design}/reject",
+   "operationId": "PostTestHelpersIssuingPersonalizationDesignsPersonalizationDesignReject",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/issuing/settlements/{settlement}/complete",
+   "operationId": "PostTestHelpersIssuingSettlementsSettlementComplete",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/issuing/settlements",
+   "operationId": "PostTestHelpersIssuingSettlements",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/issuing/transactions/{transaction}/refund",
+   "operationId": "PostTestHelpersIssuingTransactionsTransactionRefund",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/issuing/transactions/create_force_capture",
+   "operationId": "PostTestHelpersIssuingTransactionsCreateForceCapture",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/issuing/transactions/create_unlinked_refund",
+   "operationId": "PostTestHelpersIssuingTransactionsCreateUnlinkedRefund",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/refunds/{refund}/expire",
+   "operationId": "PostTestHelpersRefundsRefundExpire",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/terminal/readers/{reader}/present_payment_method",
+   "operationId": "PostTestHelpersTerminalReadersReaderPresentPaymentMethod",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/terminal/readers/{reader}/succeed_input_collection",
+   "operationId": "PostTestHelpersTerminalReadersReaderSucceedInputCollection",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/terminal/readers/{reader}/timeout_input_collection",
+   "operationId": "PostTestHelpersTerminalReadersReaderTimeoutInputCollection",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/test_clocks/{test_clock}/advance",
+   "operationId": "PostTestHelpersTestClocksTestClockAdvance",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v1/test_helpers/test_clocks/{test_clock}",
+   "operationId": "DeleteTestHelpersTestClocksTestClock",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/test_helpers/test_clocks/{test_clock}",
+   "operationId": "GetTestHelpersTestClocksTestClock",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/test_helpers/test_clocks",
+   "operationId": "GetTestHelpersTestClocks",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/test_clocks",
+   "operationId": "PostTestHelpersTestClocks",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/treasury/inbound_transfers/{id}/fail",
+   "operationId": "PostTestHelpersTreasuryInboundTransfersIdFail",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/treasury/inbound_transfers/{id}/return",
+   "operationId": "PostTestHelpersTreasuryInboundTransfersIdReturn",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/treasury/inbound_transfers/{id}/succeed",
+   "operationId": "PostTestHelpersTreasuryInboundTransfersIdSucceed",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/treasury/outbound_payments/{id}/fail",
+   "operationId": "PostTestHelpersTreasuryOutboundPaymentsIdFail",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/treasury/outbound_payments/{id}/post",
+   "operationId": "PostTestHelpersTreasuryOutboundPaymentsIdPost",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/treasury/outbound_payments/{id}/return",
+   "operationId": "PostTestHelpersTreasuryOutboundPaymentsIdReturn",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/treasury/outbound_payments/{id}",
+   "operationId": "PostTestHelpersTreasuryOutboundPaymentsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/treasury/outbound_transfers/{outbound_transfer}/fail",
+   "operationId": "PostTestHelpersTreasuryOutboundTransfersOutboundTransferFail",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/treasury/outbound_transfers/{outbound_transfer}/post",
+   "operationId": "PostTestHelpersTreasuryOutboundTransfersOutboundTransferPost",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/treasury/outbound_transfers/{outbound_transfer}/return",
+   "operationId": "PostTestHelpersTreasuryOutboundTransfersOutboundTransferReturn",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/treasury/outbound_transfers/{outbound_transfer}",
+   "operationId": "PostTestHelpersTreasuryOutboundTransfersOutboundTransfer",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/treasury/received_credits",
+   "operationId": "PostTestHelpersTreasuryReceivedCredits",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/test_helpers/treasury/received_debits",
+   "operationId": "PostTestHelpersTreasuryReceivedDebits",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/three_d_secure/authentications/{authentication}/cancel",
+   "operationId": "PostThreeDSecureAuthenticationsAuthenticationCancel",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/three_d_secure/authentications/{authentication}/submit",
+   "operationId": "PostThreeDSecureAuthenticationsAuthenticationSubmit",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/three_d_secure/authentications/{authentication}",
+   "operationId": "GetThreeDSecureAuthenticationsAuthentication",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/three_d_secure/authentications",
+   "operationId": "GetThreeDSecureAuthentications",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/three_d_secure/authentications",
+   "operationId": "PostThreeDSecureAuthentications",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/tokens/{token}",
+   "operationId": "GetTokensToken",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/tokens",
+   "operationId": "PostTokens",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/topups/{topup}/cancel",
+   "operationId": "PostTopupsTopupCancel",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/topups/{topup}",
+   "operationId": "GetTopupsTopup",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/topups/{topup}",
+   "operationId": "PostTopupsTopup",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/topups",
+   "operationId": "GetTopups",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/topups",
+   "operationId": "PostTopups",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/transfers/{id}/reversals",
+   "operationId": "GetTransfersIdReversals",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/transfers/{id}/reversals",
+   "operationId": "PostTransfersIdReversals",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/transfers/{transfer}/reversals/{id}",
+   "operationId": "GetTransfersTransferReversalsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/transfers/{transfer}/reversals/{id}",
+   "operationId": "PostTransfersTransferReversalsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/transfers/{transfer}",
+   "operationId": "GetTransfersTransfer",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/transfers/{transfer}",
+   "operationId": "PostTransfersTransfer",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/transfers",
+   "operationId": "GetTransfers",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/transfers",
+   "operationId": "PostTransfers",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/treasury/credit_reversals/{credit_reversal}",
+   "operationId": "GetTreasuryCreditReversalsCreditReversal",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/treasury/credit_reversals",
+   "operationId": "GetTreasuryCreditReversals",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/treasury/credit_reversals",
+   "operationId": "PostTreasuryCreditReversals",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/treasury/debit_reversals/{debit_reversal}",
+   "operationId": "GetTreasuryDebitReversalsDebitReversal",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/treasury/debit_reversals",
+   "operationId": "GetTreasuryDebitReversals",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/treasury/debit_reversals",
+   "operationId": "PostTreasuryDebitReversals",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/treasury/financial_accounts/{financial_account}/close",
+   "operationId": "PostTreasuryFinancialAccountsFinancialAccountClose",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/treasury/financial_accounts/{financial_account}/features",
+   "operationId": "GetTreasuryFinancialAccountsFinancialAccountFeatures",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/treasury/financial_accounts/{financial_account}/features",
+   "operationId": "PostTreasuryFinancialAccountsFinancialAccountFeatures",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/treasury/financial_accounts/{financial_account}",
+   "operationId": "GetTreasuryFinancialAccountsFinancialAccount",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/treasury/financial_accounts/{financial_account}",
+   "operationId": "PostTreasuryFinancialAccountsFinancialAccount",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/treasury/financial_accounts",
+   "operationId": "GetTreasuryFinancialAccounts",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/treasury/financial_accounts",
+   "operationId": "PostTreasuryFinancialAccounts",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/treasury/inbound_transfers/{id}",
+   "operationId": "GetTreasuryInboundTransfersId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/treasury/inbound_transfers/{inbound_transfer}/cancel",
+   "operationId": "PostTreasuryInboundTransfersInboundTransferCancel",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/treasury/inbound_transfers",
+   "operationId": "GetTreasuryInboundTransfers",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/treasury/inbound_transfers",
+   "operationId": "PostTreasuryInboundTransfers",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/treasury/outbound_payments/{id}/cancel",
+   "operationId": "PostTreasuryOutboundPaymentsIdCancel",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/treasury/outbound_payments/{id}",
+   "operationId": "GetTreasuryOutboundPaymentsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/treasury/outbound_payments",
+   "operationId": "GetTreasuryOutboundPayments",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/treasury/outbound_payments",
+   "operationId": "PostTreasuryOutboundPayments",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/treasury/outbound_transfers/{outbound_transfer}/cancel",
+   "operationId": "PostTreasuryOutboundTransfersOutboundTransferCancel",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/treasury/outbound_transfers/{outbound_transfer}",
+   "operationId": "GetTreasuryOutboundTransfersOutboundTransfer",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/treasury/outbound_transfers",
+   "operationId": "GetTreasuryOutboundTransfers",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/treasury/outbound_transfers",
+   "operationId": "PostTreasuryOutboundTransfers",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/treasury/received_credits/{id}",
+   "operationId": "GetTreasuryReceivedCreditsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/treasury/received_credits",
+   "operationId": "GetTreasuryReceivedCredits",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/treasury/received_debits/{id}",
+   "operationId": "GetTreasuryReceivedDebitsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/treasury/received_debits",
+   "operationId": "GetTreasuryReceivedDebits",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/treasury/transaction_entries/{id}",
+   "operationId": "GetTreasuryTransactionEntriesId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/treasury/transaction_entries",
+   "operationId": "GetTreasuryTransactionEntries",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/treasury/transactions/{id}",
+   "operationId": "GetTreasuryTransactionsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/treasury/transactions",
+   "operationId": "GetTreasuryTransactions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v1/webhook_endpoints/{webhook_endpoint}",
+   "operationId": "DeleteWebhookEndpointsWebhookEndpoint",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/webhook_endpoints/{webhook_endpoint}",
+   "operationId": "GetWebhookEndpointsWebhookEndpoint",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/webhook_endpoints/{webhook_endpoint}",
+   "operationId": "PostWebhookEndpointsWebhookEndpoint",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v1/webhook_endpoints",
+   "operationId": "GetWebhookEndpoints",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v1/webhook_endpoints",
+   "operationId": "PostWebhookEndpoints",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/billing/meter_event_adjustments",
+   "operationId": "PostV2BillingMeterEventAdjustments",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/billing/meter_event_session",
+   "operationId": "PostV2BillingMeterEventSession",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/billing/meter_event_stream",
+   "operationId": "PostV2BillingMeterEventStream",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/billing/meter_events",
+   "operationId": "PostV2BillingMeterEvents",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v2/commerce/product_catalog/imports/{id}",
+   "operationId": "GetV2CommerceProductCatalogImportsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v2/commerce/product_catalog/imports",
+   "operationId": "GetV2CommerceProductCatalogImports",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/commerce/product_catalog/imports",
+   "operationId": "PostV2CommerceProductCatalogImports",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/core/account_links",
+   "operationId": "PostV2CoreAccountLinks",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v2/core/account_tokens/{id}",
+   "operationId": "GetV2CoreAccountTokensId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/core/account_tokens",
+   "operationId": "PostV2CoreAccountTokens",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v2/core/accounts/{account_id}/person_tokens/{id}",
+   "operationId": "GetV2CoreAccountsAccountIdPersonTokensId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/core/accounts/{account_id}/person_tokens",
+   "operationId": "PostV2CoreAccountsAccountIdPersonTokens",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v2/core/accounts/{account_id}/persons/{id}",
+   "operationId": "DeleteV2CoreAccountsAccountIdPersonsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v2/core/accounts/{account_id}/persons/{id}",
+   "operationId": "GetV2CoreAccountsAccountIdPersonsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/core/accounts/{account_id}/persons/{id}",
+   "operationId": "PostV2CoreAccountsAccountIdPersonsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v2/core/accounts/{account_id}/persons",
+   "operationId": "GetV2CoreAccountsAccountIdPersons",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/core/accounts/{account_id}/persons",
+   "operationId": "PostV2CoreAccountsAccountIdPersons",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/core/accounts/{id}/close",
+   "operationId": "PostV2CoreAccountsIdClose",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v2/core/accounts/{id}",
+   "operationId": "GetV2CoreAccountsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/core/accounts/{id}",
+   "operationId": "PostV2CoreAccountsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v2/core/accounts",
+   "operationId": "GetV2CoreAccounts",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/core/accounts",
+   "operationId": "PostV2CoreAccounts",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/core/event_destinations/{id}/disable",
+   "operationId": "PostV2CoreEventDestinationsIdDisable",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/core/event_destinations/{id}/enable",
+   "operationId": "PostV2CoreEventDestinationsIdEnable",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/core/event_destinations/{id}/ping",
+   "operationId": "PostV2CoreEventDestinationsIdPing",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v2/core/event_destinations/{id}",
+   "operationId": "DeleteV2CoreEventDestinationsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v2/core/event_destinations/{id}",
+   "operationId": "GetV2CoreEventDestinationsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/core/event_destinations/{id}",
+   "operationId": "PostV2CoreEventDestinationsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v2/core/event_destinations",
+   "operationId": "GetV2CoreEventDestinations",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/core/event_destinations",
+   "operationId": "PostV2CoreEventDestinations",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v2/core/events/{id}",
+   "operationId": "GetV2CoreEventsId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v2/core/events",
+   "operationId": "GetV2CoreEvents",
+   "deprecated": false,
+   "inHead": true
+  }
+ ]
+}

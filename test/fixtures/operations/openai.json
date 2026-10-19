@@ -1,0 +1,2537 @@
+{
+ "specId": "openai",
+ "snapshots": [
+  "33248a638234a53846ed3ab4b2a7c77069bc1030",
+  "ddface9bd361f5fe37943291d23ee2ca72cbcc2b",
+  "db3e53198a66732cfe161339ea63bf36fc0137ad"
+ ],
+ "operations": [
+  {
+   "method": "DELETE",
+   "path": "/agents/{agent_id}",
+   "operationId": "deleteAgent",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/agents/{agent_id}",
+   "operationId": "retrieveAgent",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/agents/{agent_id}",
+   "operationId": "updateAgent",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/agents/environments/{environment_id}/files",
+   "operationId": "listAgentEnvironmentFiles",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/agents/environments/{environment_id}/files",
+   "operationId": "createAgentEnvironmentFile",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/agents/environments/{environment_id}",
+   "operationId": "retrieveAgentEnvironment",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/agents/environments/templates/{environment_template_id}",
+   "operationId": "deleteAgentEnvironmentTemplate",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/agents/environments/templates/{environment_template_id}",
+   "operationId": "retrieveAgentEnvironmentTemplate",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/agents/environments/templates/{environment_template_id}",
+   "operationId": "updateAgentEnvironmentTemplate",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/agents/environments/templates",
+   "operationId": "listAgentEnvironmentTemplates",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/agents/environments/templates",
+   "operationId": "createAgentEnvironmentTemplate",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/agents/environments",
+   "operationId": "listAgentEnvironments",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/agents/environments",
+   "operationId": "createAgentEnvironment",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/agents/sessions/{session_id}/artifacts/{artifact_id}/content",
+   "operationId": "retrieveAgentSessionArtifactContent",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/agents/sessions/{session_id}/artifacts/{artifact_id}",
+   "operationId": "deleteAgentSessionArtifact",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/agents/sessions/{session_id}/artifacts/{artifact_id}",
+   "operationId": "retrieveAgentSessionArtifact",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/agents/sessions/{session_id}/artifacts",
+   "operationId": "listAgentSessionArtifacts",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/agents/sessions/{session_id}/events",
+   "operationId": "listAgentSessionEvents",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/agents/sessions/{session_id}/events",
+   "operationId": "createAgentSessionEvents",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/agents/sessions/{session_id}/items",
+   "operationId": "listAgentSessionItems",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/agents/sessions/{session_id}/subagents/{subagent_id}/items",
+   "operationId": "listAgentSessionSubagentItems",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/agents/sessions/{session_id}/subagents/{subagent_id}/turns/{turn_id}/items",
+   "operationId": "listAgentSessionSubagentTurnItems",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/agents/sessions/{session_id}/subagents/{subagent_id}/turns/{turn_id}",
+   "operationId": "retrieveAgentSessionSubagentTurn",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/agents/sessions/{session_id}/subagents/{subagent_id}/turns",
+   "operationId": "listAgentSessionSubagentTurns",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/agents/sessions/{session_id}/subagents/{subagent_id}",
+   "operationId": "retrieveAgentSessionSubagent",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/agents/sessions/{session_id}/subagents",
+   "operationId": "listAgentSessionSubagents",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/agents/sessions/{session_id}/traces",
+   "operationId": "listAgentSessionTraces",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/agents/sessions/{session_id}/turns/{turn_id}/items",
+   "operationId": "listAgentSessionTurnItems",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/agents/sessions/{session_id}/turns/{turn_id}",
+   "operationId": "retrieveAgentSessionTurn",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/agents/sessions/{session_id}/turns",
+   "operationId": "listAgentSessionTurns",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/agents/sessions/{session_id}",
+   "operationId": "deleteAgentSession",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/agents/sessions/{session_id}",
+   "operationId": "retrieveAgentSession",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/agents/sessions/{session_id}",
+   "operationId": "updateAgentSession",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/agents/sessions",
+   "operationId": "listAgentSessions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/agents/sessions",
+   "operationId": "createAgentSession",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/agents",
+   "operationId": "listAgents",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/agents",
+   "operationId": "createAgent",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/assistants/{assistant_id}",
+   "operationId": "deleteAssistant",
+   "deprecated": true,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/assistants/{assistant_id}",
+   "operationId": "getAssistant",
+   "deprecated": true,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/assistants/{assistant_id}",
+   "operationId": "modifyAssistant",
+   "deprecated": true,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/assistants",
+   "operationId": "listAssistants",
+   "deprecated": true,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/assistants",
+   "operationId": "createAssistant",
+   "deprecated": true,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/audio/speech",
+   "operationId": "createSpeech",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/audio/transcriptions",
+   "operationId": "createTranscription",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/audio/translations",
+   "operationId": "createTranslation",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/audio/voice_consents/{consent_id}",
+   "operationId": "deleteVoiceConsent",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/audio/voice_consents/{consent_id}",
+   "operationId": "getVoiceConsent",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/audio/voice_consents/{consent_id}",
+   "operationId": "updateVoiceConsent",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/audio/voice_consents",
+   "operationId": "listVoiceConsents",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/audio/voice_consents",
+   "operationId": "createVoiceConsent",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/audio/voices",
+   "operationId": "createVoice",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/batches/{batch_id}/cancel",
+   "operationId": "cancelBatch",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/batches/{batch_id}",
+   "operationId": "retrieveBatch",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/batches",
+   "operationId": "listBatches",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/batches",
+   "operationId": "createBatch",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/chat/completions/{completion_id}/messages",
+   "operationId": "getChatCompletionMessages",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/chat/completions/{completion_id}",
+   "operationId": "deleteChatCompletion",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/chat/completions/{completion_id}",
+   "operationId": "getChatCompletion",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/chat/completions/{completion_id}",
+   "operationId": "updateChatCompletion",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/chat/completions",
+   "operationId": "listChatCompletions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/chat/completions",
+   "operationId": "createChatCompletion",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/chatkit/sessions/{session_id}/cancel",
+   "operationId": "CancelChatSessionMethod",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/chatkit/sessions",
+   "operationId": "CreateChatSessionMethod",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/chatkit/threads/{thread_id}/items",
+   "operationId": "ListThreadItemsMethod",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/chatkit/threads/{thread_id}",
+   "operationId": "DeleteThreadMethod",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/chatkit/threads/{thread_id}",
+   "operationId": "GetThreadMethod",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/chatkit/threads",
+   "operationId": "ListThreadsMethod",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/completions",
+   "operationId": "createCompletion",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/containers/{container_id}/files/{file_id}/content",
+   "operationId": "RetrieveContainerFileContent",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/containers/{container_id}/files/{file_id}",
+   "operationId": "DeleteContainerFile",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/containers/{container_id}/files/{file_id}",
+   "operationId": "RetrieveContainerFile",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/containers/{container_id}/files",
+   "operationId": "ListContainerFiles",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/containers/{container_id}/files",
+   "operationId": "CreateContainerFile",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/containers/{container_id}",
+   "operationId": "DeleteContainer",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/containers/{container_id}",
+   "operationId": "RetrieveContainer",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/containers",
+   "operationId": "ListContainers",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/containers",
+   "operationId": "CreateContainer",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/content_provenance_checks",
+   "operationId": "Createcontentprovenancecheck",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/conversations/{conversation_id}/items/{item_id}",
+   "operationId": "deleteConversationItem",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/conversations/{conversation_id}/items/{item_id}",
+   "operationId": "getConversationItem",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/conversations/{conversation_id}/items",
+   "operationId": "listConversationItems",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/conversations/{conversation_id}/items",
+   "operationId": "createConversationItems",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/conversations/{conversation_id}",
+   "operationId": "deleteConversation",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/conversations/{conversation_id}",
+   "operationId": "getConversation",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/conversations/{conversation_id}",
+   "operationId": "updateConversation",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/conversations",
+   "operationId": "createConversation",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/decisions",
+   "operationId": "createDecision",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/embeddings",
+   "operationId": "createEmbedding",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/evals/{eval_id}/runs/{run_id}/cancel",
+   "operationId": "cancelEvalRun",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/evals/{eval_id}/runs/{run_id}/output_items/{output_item_id}",
+   "operationId": "getEvalRunOutputItem",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/evals/{eval_id}/runs/{run_id}/output_items",
+   "operationId": "getEvalRunOutputItems",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/evals/{eval_id}/runs/{run_id}",
+   "operationId": "deleteEvalRun",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/evals/{eval_id}/runs/{run_id}",
+   "operationId": "getEvalRun",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/evals/{eval_id}/runs/{run_id}",
+   "operationId": "cancelEvalRun",
+   "deprecated": false,
+   "inHead": false
+  },
+  {
+   "method": "GET",
+   "path": "/evals/{eval_id}/runs",
+   "operationId": "getEvalRuns",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/evals/{eval_id}/runs",
+   "operationId": "createEvalRun",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/evals/{eval_id}",
+   "operationId": "deleteEval",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/evals/{eval_id}",
+   "operationId": "getEval",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/evals/{eval_id}",
+   "operationId": "updateEval",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/evals",
+   "operationId": "listEvals",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/evals",
+   "operationId": "createEval",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/files/{file_id}/content",
+   "operationId": "downloadFile",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/files/{file_id}",
+   "operationId": "deleteFile",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/files/{file_id}",
+   "operationId": "retrieveFile",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/files",
+   "operationId": "listFiles",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/files",
+   "operationId": "createFile",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/fine_tuning/alpha/graders/run",
+   "operationId": "runGrader",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/fine_tuning/alpha/graders/validate",
+   "operationId": "validateGrader",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/fine_tuning/checkpoints/{fine_tuned_model_checkpoint}/permissions/{permission_id}",
+   "operationId": "deleteFineTuningCheckpointPermission",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/fine_tuning/checkpoints/{fine_tuned_model_checkpoint}/permissions",
+   "operationId": "listFineTuningCheckpointPermissions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/fine_tuning/checkpoints/{fine_tuned_model_checkpoint}/permissions",
+   "operationId": "createFineTuningCheckpointPermission",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/fine_tuning/jobs/{fine_tuning_job_id}/cancel",
+   "operationId": "cancelFineTuningJob",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/fine_tuning/jobs/{fine_tuning_job_id}/checkpoints",
+   "operationId": "listFineTuningJobCheckpoints",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/fine_tuning/jobs/{fine_tuning_job_id}/events",
+   "operationId": "listFineTuningEvents",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/fine_tuning/jobs/{fine_tuning_job_id}/pause",
+   "operationId": "pauseFineTuningJob",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/fine_tuning/jobs/{fine_tuning_job_id}/resume",
+   "operationId": "resumeFineTuningJob",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/fine_tuning/jobs/{fine_tuning_job_id}",
+   "operationId": "retrieveFineTuningJob",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/fine_tuning/jobs",
+   "operationId": "listPaginatedFineTuningJobs",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/fine_tuning/jobs",
+   "operationId": "createFineTuningJob",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/images/edits",
+   "operationId": "createImageEdit",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/images/generations",
+   "operationId": "createImage",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/images/variations",
+   "operationId": "createImageVariation",
+   "deprecated": true,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/live/sessions/{session_id}/accept",
+   "operationId": "accept-live-session",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/live/sessions/{session_id}/content",
+   "operationId": "download-live-recording",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/live/sessions/{session_id}/fork",
+   "operationId": "fork-live-session",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/live/sessions/{session_id}/hangup",
+   "operationId": "hangup-live-session",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/live/sessions/{session_id}/refer",
+   "operationId": "refer-live-session",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/live/sessions/{session_id}/reject",
+   "operationId": "reject-live-session",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/live/sessions",
+   "operationId": "create-live",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/models/{model}",
+   "operationId": "deleteModel",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/models/{model}",
+   "operationId": "retrieveModel",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/models",
+   "operationId": "listModels",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/moderations",
+   "operationId": "createModeration",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/organization/admin_api_keys/{key_id}",
+   "operationId": "admin-api-keys-delete",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/admin_api_keys/{key_id}",
+   "operationId": "admin-api-keys-get",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/admin_api_keys",
+   "operationId": "admin-api-keys-list",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/admin_api_keys",
+   "operationId": "admin-api-keys-create",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/audit_logs",
+   "operationId": "list-audit-logs",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/organization/certificates/{certificate_id}",
+   "operationId": "deleteCertificate",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/certificates/{certificate_id}",
+   "operationId": "getCertificate",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/certificates/{certificate_id}",
+   "operationId": "modifyCertificate",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/certificates/activate",
+   "operationId": "activateOrganizationCertificates",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/certificates/deactivate",
+   "operationId": "deactivateOrganizationCertificates",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/certificates",
+   "operationId": "listOrganizationCertificates",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/certificates",
+   "operationId": "uploadCertificate",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/costs",
+   "operationId": "usage-costs",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/data_retention",
+   "operationId": "retrieve-organization-data-retention",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/data_retention",
+   "operationId": "update-organization-data-retention",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/external_storage/{external_storage_id}/validate",
+   "operationId": "Validateanexternalstorageconfiguration",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/organization/external_storage/{external_storage_id}",
+   "operationId": "Deleteanexternalstorageconfiguration",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/external_storage/{external_storage_id}",
+   "operationId": "Getanexternalstorageconfiguration",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/external_storage",
+   "operationId": "Listexternalstorageconfigurations",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/external_storage",
+   "operationId": "Createanexternalstorageconfiguration",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/organization/groups/{group_id}/roles/{role_id}",
+   "operationId": "unassign-group-role",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/groups/{group_id}/roles/{role_id}",
+   "operationId": "retrieve-group-role",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/groups/{group_id}/roles",
+   "operationId": "list-group-role-assignments",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/groups/{group_id}/roles",
+   "operationId": "assign-group-role",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/organization/groups/{group_id}/users/{user_id}",
+   "operationId": "remove-group-user",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/groups/{group_id}/users/{user_id}",
+   "operationId": "retrieve-group-user",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/groups/{group_id}/users",
+   "operationId": "list-group-users",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/groups/{group_id}/users",
+   "operationId": "add-group-user",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/organization/groups/{group_id}",
+   "operationId": "delete-group",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/groups/{group_id}",
+   "operationId": "retrieve-group",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/groups/{group_id}",
+   "operationId": "update-group",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/groups",
+   "operationId": "list-groups",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/groups",
+   "operationId": "create-group",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/organization/invites/{invite_id}",
+   "operationId": "delete-invite",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/invites/{invite_id}",
+   "operationId": "retrieve-invite",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/invites",
+   "operationId": "list-invites",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/invites",
+   "operationId": "inviteUser",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/organization/projects/{project_id}/api_keys/{api_key_id}",
+   "operationId": "delete-project-api-key",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/projects/{project_id}/api_keys/{api_key_id}",
+   "operationId": "retrieve-project-api-key",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/projects/{project_id}/api_keys/{api_key_id}",
+   "operationId": "update-project-api-key",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/projects/{project_id}/api_keys",
+   "operationId": "list-project-api-keys",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/projects/{project_id}/archive",
+   "operationId": "archive-project",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/projects/{project_id}/certificates/activate",
+   "operationId": "activateProjectCertificates",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/projects/{project_id}/certificates/deactivate",
+   "operationId": "deactivateProjectCertificates",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/projects/{project_id}/certificates",
+   "operationId": "listProjectCertificates",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/projects/{project_id}/data_retention",
+   "operationId": "retrieve-project-data-retention",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/projects/{project_id}/data_retention",
+   "operationId": "update-project-data-retention",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/organization/projects/{project_id}/groups/{group_id}",
+   "operationId": "remove-project-group",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/projects/{project_id}/groups/{group_id}",
+   "operationId": "retrieve-project-group",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/projects/{project_id}/groups",
+   "operationId": "list-project-groups",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/projects/{project_id}/groups",
+   "operationId": "add-project-group",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/projects/{project_id}/hosted_tool_permissions",
+   "operationId": "retrieve-project-hosted-tool-permissions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/projects/{project_id}/hosted_tool_permissions",
+   "operationId": "update-project-hosted-tool-permissions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/organization/projects/{project_id}/model_permissions",
+   "operationId": "delete-project-model-permissions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/projects/{project_id}/model_permissions",
+   "operationId": "retrieve-project-model-permissions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/projects/{project_id}/model_permissions",
+   "operationId": "update-project-model-permissions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/projects/{project_id}/rate_limits/{rate_limit_id}",
+   "operationId": "update-project-rate-limits",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/projects/{project_id}/rate_limits",
+   "operationId": "list-project-rate-limits",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/projects/{project_id}/service_accounts/{service_account_id}/api_keys",
+   "operationId": "CreateanAPIkeyforaserviceaccount",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/organization/projects/{project_id}/service_accounts/{service_account_id}",
+   "operationId": "delete-project-service-account",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/projects/{project_id}/service_accounts/{service_account_id}",
+   "operationId": "retrieve-project-service-account",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/projects/{project_id}/service_accounts/{service_account_id}",
+   "operationId": "update-project-service-account",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/projects/{project_id}/service_accounts",
+   "operationId": "list-project-service-accounts",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/projects/{project_id}/service_accounts",
+   "operationId": "create-project-service-account",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/organization/projects/{project_id}/spend_alerts/{alert_id}",
+   "operationId": "delete-project-spend-alert",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/projects/{project_id}/spend_alerts/{alert_id}",
+   "operationId": "retrieve-project-spend-alert",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/projects/{project_id}/spend_alerts/{alert_id}",
+   "operationId": "update-project-spend-alert",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/projects/{project_id}/spend_alerts",
+   "operationId": "list-project-spend-alerts",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/projects/{project_id}/spend_alerts",
+   "operationId": "create-project-spend-alert",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/organization/projects/{project_id}/spend_limit",
+   "operationId": "Deleteprojectspendlimit",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/projects/{project_id}/spend_limit",
+   "operationId": "Getprojectspendlimit",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/projects/{project_id}/spend_limit",
+   "operationId": "Updateprojectspendlimit",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/organization/projects/{project_id}/users/{user_id}",
+   "operationId": "delete-project-user",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/projects/{project_id}/users/{user_id}",
+   "operationId": "retrieve-project-user",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/projects/{project_id}/users/{user_id}",
+   "operationId": "modify-project-user",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/projects/{project_id}/users",
+   "operationId": "list-project-users",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/projects/{project_id}/users",
+   "operationId": "create-project-user",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/projects/{project_id}",
+   "operationId": "retrieve-project",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/projects/{project_id}",
+   "operationId": "modify-project",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/projects",
+   "operationId": "list-projects",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/projects",
+   "operationId": "create-project",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/organization/roles/{role_id}",
+   "operationId": "delete-role",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/roles/{role_id}",
+   "operationId": "retrieve-role",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/roles/{role_id}",
+   "operationId": "update-role",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/roles",
+   "operationId": "list-roles",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/roles",
+   "operationId": "create-role",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/organization/spend_alerts/{alert_id}",
+   "operationId": "delete-organization-spend-alert",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/spend_alerts/{alert_id}",
+   "operationId": "retrieve-organization-spend-alert",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/spend_alerts/{alert_id}",
+   "operationId": "update-organization-spend-alert",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/spend_alerts",
+   "operationId": "list-organization-spend-alerts",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/spend_alerts",
+   "operationId": "create-organization-spend-alert",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/organization/spend_limit",
+   "operationId": "Deleteorganizationspendlimit",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/spend_limit",
+   "operationId": "Getorganizationspendlimit",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/spend_limit",
+   "operationId": "Updateorganizationspendlimit",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/usage/audio_speeches",
+   "operationId": "usage-audio-speeches",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/usage/audio_transcriptions",
+   "operationId": "usage-audio-transcriptions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/usage/code_interpreter_sessions",
+   "operationId": "usage-code-interpreter-sessions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/usage/completions",
+   "operationId": "usage-completions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/usage/decisions",
+   "operationId": "OrganizationDecisionsusage",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/usage/embeddings",
+   "operationId": "usage-embeddings",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/usage/file_search_calls",
+   "operationId": "usage-file-search-calls",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/usage/images",
+   "operationId": "usage-images",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/usage/moderations",
+   "operationId": "usage-moderations",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/usage/vector_stores",
+   "operationId": "usage-vector-stores",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/usage/web_search_calls",
+   "operationId": "usage-web-search-calls",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/organization/users/{user_id}/roles/{role_id}",
+   "operationId": "unassign-user-role",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/users/{user_id}/roles/{role_id}",
+   "operationId": "retrieve-user-role",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/users/{user_id}/roles",
+   "operationId": "list-user-role-assignments",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/users/{user_id}/roles",
+   "operationId": "assign-user-role",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/organization/users/{user_id}",
+   "operationId": "delete-user",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/users/{user_id}",
+   "operationId": "retrieve-user",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/organization/users/{user_id}",
+   "operationId": "modify-user",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/organization/users",
+   "operationId": "list-users",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/projects/{project_id}/groups/{group_id}/roles/{role_id}",
+   "operationId": "unassign-project-group-role",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/projects/{project_id}/groups/{group_id}/roles/{role_id}",
+   "operationId": "retrieve-project-group-role",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/projects/{project_id}/groups/{group_id}/roles",
+   "operationId": "list-project-group-role-assignments",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/projects/{project_id}/groups/{group_id}/roles",
+   "operationId": "assign-project-group-role",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/projects/{project_id}/roles/{role_id}",
+   "operationId": "delete-project-role",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/projects/{project_id}/roles/{role_id}",
+   "operationId": "retrieve-project-role",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/projects/{project_id}/roles/{role_id}",
+   "operationId": "update-project-role",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/projects/{project_id}/roles",
+   "operationId": "list-project-roles",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/projects/{project_id}/roles",
+   "operationId": "create-project-role",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/projects/{project_id}/users/{user_id}/roles/{role_id}",
+   "operationId": "unassign-project-user-role",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/projects/{project_id}/users/{user_id}/roles/{role_id}",
+   "operationId": "retrieve-project-user-role",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/projects/{project_id}/users/{user_id}/roles",
+   "operationId": "list-project-user-role-assignments",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/projects/{project_id}/users/{user_id}/roles",
+   "operationId": "assign-project-user-role",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/realtime/calls/{call_id}/accept",
+   "operationId": "accept-realtime-call",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/realtime/calls/{call_id}/hangup",
+   "operationId": "hangup-realtime-call",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/realtime/calls/{call_id}/refer",
+   "operationId": "refer-realtime-call",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/realtime/calls/{call_id}/reject",
+   "operationId": "reject-realtime-call",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/realtime/calls",
+   "operationId": "create-realtime-call",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/realtime/client_secrets",
+   "operationId": "create-realtime-client-secret",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/realtime/sessions",
+   "operationId": "create-realtime-session",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/realtime/transcription_sessions",
+   "operationId": "create-realtime-transcription-session",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/realtime/translations/client_secrets",
+   "operationId": "create-realtime-translation-client-secret",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/responses?beta=true",
+   "operationId": "beta_createResponse",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/responses/{response_id}?beta=true",
+   "operationId": "beta_deleteResponse",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/responses/{response_id}?beta=true",
+   "operationId": "beta_getResponse",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/responses/{response_id}/cancel?beta=true",
+   "operationId": "beta_cancelResponse",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/responses/{response_id}/cancel",
+   "operationId": "cancelResponse",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/responses/{response_id}/input_items?beta=true",
+   "operationId": "beta_listInputItems",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/responses/{response_id}/input_items",
+   "operationId": "listInputItems",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/responses/{response_id}",
+   "operationId": "deleteResponse",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/responses/{response_id}",
+   "operationId": "getResponse",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/responses/compact?beta=true",
+   "operationId": "beta_Compactconversation",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/responses/compact",
+   "operationId": "Compactconversation",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/responses/input_tokens?beta=true",
+   "operationId": "beta_Getinputtokencounts",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/responses/input_tokens",
+   "operationId": "Getinputtokencounts",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/responses",
+   "operationId": "createResponse",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/safety/alerts/{id}",
+   "operationId": "Getprojectsafetyalert",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/safety/cases/{id}",
+   "operationId": "Getsafetycase",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/skills/{skill_id}/content",
+   "operationId": "GetSkillContent",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/skills/{skill_id}/versions/{version}/content",
+   "operationId": "GetSkillVersionContent",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/skills/{skill_id}/versions/{version}",
+   "operationId": "DeleteSkillVersion",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/skills/{skill_id}/versions/{version}",
+   "operationId": "GetSkillVersion",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/skills/{skill_id}/versions",
+   "operationId": "ListSkillVersions",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/skills/{skill_id}/versions",
+   "operationId": "CreateSkillVersion",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/skills/{skill_id}",
+   "operationId": "DeleteSkill",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/skills/{skill_id}",
+   "operationId": "GetSkill",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/skills/{skill_id}",
+   "operationId": "UpdateSkillDefaultVersion",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/skills",
+   "operationId": "ListSkills",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/skills",
+   "operationId": "CreateSkill",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/threads/{thread_id}/messages/{message_id}",
+   "operationId": "deleteMessage",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/threads/{thread_id}/messages/{message_id}",
+   "operationId": "getMessage",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/threads/{thread_id}/messages/{message_id}",
+   "operationId": "modifyMessage",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/threads/{thread_id}/messages",
+   "operationId": "listMessages",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/threads/{thread_id}/messages",
+   "operationId": "createMessage",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/threads/{thread_id}/runs/{run_id}/cancel",
+   "operationId": "cancelRun",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/threads/{thread_id}/runs/{run_id}/steps/{step_id}",
+   "operationId": "getRunStep",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/threads/{thread_id}/runs/{run_id}/steps",
+   "operationId": "listRunSteps",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/threads/{thread_id}/runs/{run_id}/submit_tool_outputs",
+   "operationId": "submitToolOuputsToRun",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/threads/{thread_id}/runs/{run_id}",
+   "operationId": "getRun",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/threads/{thread_id}/runs/{run_id}",
+   "operationId": "modifyRun",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/threads/{thread_id}/runs",
+   "operationId": "listRuns",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/threads/{thread_id}/runs",
+   "operationId": "createRun",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/threads/{thread_id}",
+   "operationId": "deleteThread",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/threads/{thread_id}",
+   "operationId": "getThread",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/threads/{thread_id}",
+   "operationId": "modifyThread",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/threads/runs",
+   "operationId": "createThreadAndRun",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/threads",
+   "operationId": "createThread",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/uploads/{upload_id}/cancel",
+   "operationId": "cancelUpload",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/uploads/{upload_id}/complete",
+   "operationId": "completeUpload",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/uploads/{upload_id}/parts",
+   "operationId": "addUploadPart",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/uploads",
+   "operationId": "createUpload",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/vaults/{vault_id}/credentials/{credential_id}",
+   "operationId": "deleteVaultCredential",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/vaults/{vault_id}/credentials/{credential_id}",
+   "operationId": "retrieveVaultCredential",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/vaults/{vault_id}/credentials/{credential_id}",
+   "operationId": "rotateVaultCredential",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/vaults/{vault_id}/credentials",
+   "operationId": "listVaultCredentials",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/vaults/{vault_id}/credentials",
+   "operationId": "createVaultCredential",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/vaults/{vault_id}",
+   "operationId": "deleteVault",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/vaults/{vault_id}",
+   "operationId": "retrieveVault",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/vaults/{vault_id}",
+   "operationId": "updateVault",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/vaults",
+   "operationId": "listVaults",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/vaults",
+   "operationId": "createVault",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/vector_stores/{vector_store_id}/file_batches/{batch_id}/cancel",
+   "operationId": "cancelVectorStoreFileBatch",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/vector_stores/{vector_store_id}/file_batches/{batch_id}/files",
+   "operationId": "listFilesInVectorStoreBatch",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/vector_stores/{vector_store_id}/file_batches/{batch_id}",
+   "operationId": "getVectorStoreFileBatch",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/vector_stores/{vector_store_id}/file_batches",
+   "operationId": "createVectorStoreFileBatch",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/vector_stores/{vector_store_id}/files/{file_id}/content",
+   "operationId": "retrieveVectorStoreFileContent",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/vector_stores/{vector_store_id}/files/{file_id}",
+   "operationId": "deleteVectorStoreFile",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/vector_stores/{vector_store_id}/files/{file_id}",
+   "operationId": "getVectorStoreFile",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/vector_stores/{vector_store_id}/files/{file_id}",
+   "operationId": "updateVectorStoreFileAttributes",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/vector_stores/{vector_store_id}/files",
+   "operationId": "listVectorStoreFiles",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/vector_stores/{vector_store_id}/files",
+   "operationId": "createVectorStoreFile",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/vector_stores/{vector_store_id}/search",
+   "operationId": "searchVectorStore",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/vector_stores/{vector_store_id}",
+   "operationId": "deleteVectorStore",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/vector_stores/{vector_store_id}",
+   "operationId": "getVectorStore",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/vector_stores/{vector_store_id}",
+   "operationId": "modifyVectorStore",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/vector_stores",
+   "operationId": "listVectorStores",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/vector_stores",
+   "operationId": "createVectorStore",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/videos/{video_id}/content",
+   "operationId": "RetrieveVideoContent",
+   "deprecated": true,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/videos/{video_id}/remix",
+   "operationId": "CreateVideoRemix",
+   "deprecated": true,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/videos/{video_id}",
+   "operationId": "DeleteVideo",
+   "deprecated": true,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/videos/{video_id}",
+   "operationId": "GetVideo",
+   "deprecated": true,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/videos/characters/{character_id}",
+   "operationId": "GetVideoCharacter",
+   "deprecated": true,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/videos/characters",
+   "operationId": "CreateVideoCharacter",
+   "deprecated": true,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/videos/edits",
+   "operationId": "CreateVideoEdit",
+   "deprecated": true,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/videos/extensions",
+   "operationId": "CreateVideoExtend",
+   "deprecated": true,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/videos",
+   "operationId": "ListVideos",
+   "deprecated": true,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/videos",
+   "operationId": "createVideo",
+   "deprecated": true,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/webhook_endpoints/{webhook_endpoint_id}/rotate_secret",
+   "operationId": "RotateWebhookEndpointSigningSecret",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/webhook_endpoints/{webhook_endpoint_id}/test",
+   "operationId": "TestWebhookEndpoint",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/webhook_endpoints/{webhook_endpoint_id}",
+   "operationId": "DeleteWebhookEndpoint",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/webhook_endpoints/{webhook_endpoint_id}",
+   "operationId": "RetrieveWebhookEndpoint",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/webhook_endpoints/{webhook_endpoint_id}",
+   "operationId": "UpdateWebhookEndpoint",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/webhook_endpoints",
+   "operationId": "ListWebhookEndpoints",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/webhook_endpoints",
+   "operationId": "CreateWebhookEndpoint",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/webhook_event_types",
+   "operationId": "ListWebhookEventTypes",
+   "deprecated": false,
+   "inHead": true
+  }
+ ]
+}

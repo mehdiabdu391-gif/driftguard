@@ -1,0 +1,3214 @@
+{
+ "sdk": "openai-python",
+ "specId": "openai",
+ "repo": "openai/openai-python",
+ "sha": "6eaa90ee20b40bbe84a5b1a5031d7cf672c7d368",
+ "commitDate": "2026-10-19T02:21:06Z",
+ "styles": {
+  "client": {
+   "decisions.create": {
+    "method": "POST",
+    "path": "/decisions",
+    "source": "api.md"
+   },
+   "completions.create": {
+    "method": "POST",
+    "path": "/completions",
+    "source": "api.md"
+   },
+   "chat.completions.create": {
+    "method": "POST",
+    "path": "/chat/completions",
+    "source": "api.md"
+   },
+   "chat.completions.retrieve": {
+    "method": "GET",
+    "path": "/chat/completions/{completion_id}",
+    "source": "api.md"
+   },
+   "chat.completions.update": {
+    "method": "POST",
+    "path": "/chat/completions/{completion_id}",
+    "source": "api.md"
+   },
+   "chat.completions.list": {
+    "method": "GET",
+    "path": "/chat/completions",
+    "source": "api.md"
+   },
+   "chat.completions.delete": {
+    "method": "DELETE",
+    "path": "/chat/completions/{completion_id}",
+    "source": "api.md"
+   },
+   "chat.completions.messages.list": {
+    "method": "GET",
+    "path": "/chat/completions/{completion_id}/messages",
+    "source": "api.md"
+   },
+   "embeddings.create": {
+    "method": "POST",
+    "path": "/embeddings",
+    "source": "api.md"
+   },
+   "files.create": {
+    "method": "POST",
+    "path": "/files",
+    "source": "api.md"
+   },
+   "files.retrieve": {
+    "method": "GET",
+    "path": "/files/{file_id}",
+    "source": "api.md"
+   },
+   "files.list": {
+    "method": "GET",
+    "path": "/files",
+    "source": "api.md"
+   },
+   "files.delete": {
+    "method": "DELETE",
+    "path": "/files/{file_id}",
+    "source": "api.md"
+   },
+   "files.content": {
+    "method": "GET",
+    "path": "/files/{file_id}/content",
+    "source": "api.md"
+   },
+   "files.retrieve_content": {
+    "method": "GET",
+    "path": "/files/{file_id}/content",
+    "source": "api.md"
+   },
+   "images.create_variation": {
+    "method": "POST",
+    "path": "/images/variations",
+    "source": "api.md"
+   },
+   "images.edit": {
+    "method": "POST",
+    "path": "/images/edits",
+    "source": "api.md"
+   },
+   "images.generate": {
+    "method": "POST",
+    "path": "/images/generations",
+    "source": "api.md"
+   },
+   "content_provenance_checks.create": {
+    "method": "POST",
+    "path": "/content_provenance_checks",
+    "source": "api.md"
+   },
+   "audio.transcriptions.create": {
+    "method": "POST",
+    "path": "/audio/transcriptions",
+    "source": "api.md"
+   },
+   "audio.translations.create": {
+    "method": "POST",
+    "path": "/audio/translations",
+    "source": "api.md"
+   },
+   "audio.speech.create": {
+    "method": "POST",
+    "path": "/audio/speech",
+    "source": "api.md"
+   },
+   "audio.voices.create": {
+    "method": "POST",
+    "path": "/audio/voices",
+    "source": "api.md"
+   },
+   "moderations.create": {
+    "method": "POST",
+    "path": "/moderations",
+    "source": "api.md"
+   },
+   "models.retrieve": {
+    "method": "GET",
+    "path": "/models/{model}",
+    "source": "api.md"
+   },
+   "models.list": {
+    "method": "GET",
+    "path": "/models",
+    "source": "api.md"
+   },
+   "models.delete": {
+    "method": "DELETE",
+    "path": "/models/{model}",
+    "source": "api.md"
+   },
+   "fine_tuning.jobs.create": {
+    "method": "POST",
+    "path": "/fine_tuning/jobs",
+    "source": "api.md"
+   },
+   "fine_tuning.jobs.retrieve": {
+    "method": "GET",
+    "path": "/fine_tuning/jobs/{fine_tuning_job_id}",
+    "source": "api.md"
+   },
+   "fine_tuning.jobs.list": {
+    "method": "GET",
+    "path": "/fine_tuning/jobs",
+    "source": "api.md"
+   },
+   "fine_tuning.jobs.cancel": {
+    "method": "POST",
+    "path": "/fine_tuning/jobs/{fine_tuning_job_id}/cancel",
+    "source": "api.md"
+   },
+   "fine_tuning.jobs.list_events": {
+    "method": "GET",
+    "path": "/fine_tuning/jobs/{fine_tuning_job_id}/events",
+    "source": "api.md"
+   },
+   "fine_tuning.jobs.pause": {
+    "method": "POST",
+    "path": "/fine_tuning/jobs/{fine_tuning_job_id}/pause",
+    "source": "api.md"
+   },
+   "fine_tuning.jobs.resume": {
+    "method": "POST",
+    "path": "/fine_tuning/jobs/{fine_tuning_job_id}/resume",
+    "source": "api.md"
+   },
+   "fine_tuning.jobs.checkpoints.list": {
+    "method": "GET",
+    "path": "/fine_tuning/jobs/{fine_tuning_job_id}/checkpoints",
+    "source": "api.md"
+   },
+   "fine_tuning.checkpoints.permissions.create": {
+    "method": "POST",
+    "path": "/fine_tuning/checkpoints/{fine_tuned_model_checkpoint}/permissions",
+    "source": "api.md"
+   },
+   "fine_tuning.checkpoints.permissions.retrieve": {
+    "method": "GET",
+    "path": "/fine_tuning/checkpoints/{fine_tuned_model_checkpoint}/permissions",
+    "source": "api.md"
+   },
+   "fine_tuning.checkpoints.permissions.list": {
+    "method": "GET",
+    "path": "/fine_tuning/checkpoints/{fine_tuned_model_checkpoint}/permissions",
+    "source": "api.md"
+   },
+   "fine_tuning.checkpoints.permissions.delete": {
+    "method": "DELETE",
+    "path": "/fine_tuning/checkpoints/{fine_tuned_model_checkpoint}/permissions/{permission_id}",
+    "source": "api.md"
+   },
+   "fine_tuning.alpha.graders.run": {
+    "method": "POST",
+    "path": "/fine_tuning/alpha/graders/run",
+    "source": "api.md"
+   },
+   "fine_tuning.alpha.graders.validate": {
+    "method": "POST",
+    "path": "/fine_tuning/alpha/graders/validate",
+    "source": "api.md"
+   },
+   "vector_stores.create": {
+    "method": "POST",
+    "path": "/vector_stores",
+    "source": "api.md"
+   },
+   "vector_stores.retrieve": {
+    "method": "GET",
+    "path": "/vector_stores/{vector_store_id}",
+    "source": "api.md"
+   },
+   "vector_stores.update": {
+    "method": "POST",
+    "path": "/vector_stores/{vector_store_id}",
+    "source": "api.md"
+   },
+   "vector_stores.list": {
+    "method": "GET",
+    "path": "/vector_stores",
+    "source": "api.md"
+   },
+   "vector_stores.delete": {
+    "method": "DELETE",
+    "path": "/vector_stores/{vector_store_id}",
+    "source": "api.md"
+   },
+   "vector_stores.search": {
+    "method": "POST",
+    "path": "/vector_stores/{vector_store_id}/search",
+    "source": "api.md"
+   },
+   "vector_stores.files.create": {
+    "method": "POST",
+    "path": "/vector_stores/{vector_store_id}/files",
+    "source": "api.md"
+   },
+   "vector_stores.files.retrieve": {
+    "method": "GET",
+    "path": "/vector_stores/{vector_store_id}/files/{file_id}",
+    "source": "api.md"
+   },
+   "vector_stores.files.update": {
+    "method": "POST",
+    "path": "/vector_stores/{vector_store_id}/files/{file_id}",
+    "source": "api.md"
+   },
+   "vector_stores.files.list": {
+    "method": "GET",
+    "path": "/vector_stores/{vector_store_id}/files",
+    "source": "api.md"
+   },
+   "vector_stores.files.delete": {
+    "method": "DELETE",
+    "path": "/vector_stores/{vector_store_id}/files/{file_id}",
+    "source": "api.md"
+   },
+   "vector_stores.files.content": {
+    "method": "GET",
+    "path": "/vector_stores/{vector_store_id}/files/{file_id}/content",
+    "source": "api.md"
+   },
+   "vector_stores.file_batches.create": {
+    "method": "POST",
+    "path": "/vector_stores/{vector_store_id}/file_batches",
+    "source": "api.md"
+   },
+   "vector_stores.file_batches.retrieve": {
+    "method": "GET",
+    "path": "/vector_stores/{vector_store_id}/file_batches/{batch_id}",
+    "source": "api.md"
+   },
+   "vector_stores.file_batches.cancel": {
+    "method": "POST",
+    "path": "/vector_stores/{vector_store_id}/file_batches/{batch_id}/cancel",
+    "source": "api.md"
+   },
+   "vector_stores.file_batches.list_files": {
+    "method": "GET",
+    "path": "/vector_stores/{vector_store_id}/file_batches/{batch_id}/files",
+    "source": "api.md"
+   },
+   "safety.alerts.retrieve": {
+    "method": "GET",
+    "path": "/safety/alerts/{id}",
+    "source": "api.md"
+   },
+   "safety.cases.retrieve": {
+    "method": "GET",
+    "path": "/safety/cases/{id}",
+    "source": "api.md"
+   },
+   "beta.agents.create": {
+    "method": "POST",
+    "path": "/agents",
+    "source": "api.md"
+   },
+   "beta.agents.retrieve": {
+    "method": "GET",
+    "path": "/agents/{agent_id}",
+    "source": "api.md"
+   },
+   "beta.agents.update": {
+    "method": "POST",
+    "path": "/agents/{agent_id}",
+    "source": "api.md"
+   },
+   "beta.agents.list": {
+    "method": "GET",
+    "path": "/agents",
+    "source": "api.md"
+   },
+   "beta.agents.delete": {
+    "method": "DELETE",
+    "path": "/agents/{agent_id}",
+    "source": "api.md"
+   },
+   "beta.agents.environments.create": {
+    "method": "POST",
+    "path": "/agents/environments",
+    "source": "api.md"
+   },
+   "beta.agents.environments.retrieve": {
+    "method": "GET",
+    "path": "/agents/environments/{environment_id}",
+    "source": "api.md"
+   },
+   "beta.agents.environments.list": {
+    "method": "GET",
+    "path": "/agents/environments",
+    "source": "api.md"
+   },
+   "beta.agents.environments.files.create": {
+    "method": "POST",
+    "path": "/agents/environments/{environment_id}/files",
+    "source": "api.md"
+   },
+   "beta.agents.environments.files.list": {
+    "method": "GET",
+    "path": "/agents/environments/{environment_id}/files",
+    "source": "api.md"
+   },
+   "beta.agents.environments.templates.create": {
+    "method": "POST",
+    "path": "/agents/environments/templates",
+    "source": "api.md"
+   },
+   "beta.agents.environments.templates.retrieve": {
+    "method": "GET",
+    "path": "/agents/environments/templates/{environment_template_id}",
+    "source": "api.md"
+   },
+   "beta.agents.environments.templates.update": {
+    "method": "POST",
+    "path": "/agents/environments/templates/{environment_template_id}",
+    "source": "api.md"
+   },
+   "beta.agents.environments.templates.list": {
+    "method": "GET",
+    "path": "/agents/environments/templates",
+    "source": "api.md"
+   },
+   "beta.agents.environments.templates.delete": {
+    "method": "DELETE",
+    "path": "/agents/environments/templates/{environment_template_id}",
+    "source": "api.md"
+   },
+   "beta.agents.vaults.create": {
+    "method": "POST",
+    "path": "/vaults",
+    "source": "api.md"
+   },
+   "beta.agents.vaults.retrieve": {
+    "method": "GET",
+    "path": "/vaults/{vault_id}",
+    "source": "api.md"
+   },
+   "beta.agents.vaults.update": {
+    "method": "POST",
+    "path": "/vaults/{vault_id}",
+    "source": "api.md"
+   },
+   "beta.agents.vaults.list": {
+    "method": "GET",
+    "path": "/vaults",
+    "source": "api.md"
+   },
+   "beta.agents.vaults.delete": {
+    "method": "DELETE",
+    "path": "/vaults/{vault_id}",
+    "source": "api.md"
+   },
+   "beta.agents.vaults.credentials.create": {
+    "method": "POST",
+    "path": "/vaults/{vault_id}/credentials",
+    "source": "api.md"
+   },
+   "beta.agents.vaults.credentials.retrieve": {
+    "method": "GET",
+    "path": "/vaults/{vault_id}/credentials/{credential_id}",
+    "source": "api.md"
+   },
+   "beta.agents.vaults.credentials.update": {
+    "method": "POST",
+    "path": "/vaults/{vault_id}/credentials/{credential_id}",
+    "source": "api.md"
+   },
+   "beta.agents.vaults.credentials.list": {
+    "method": "GET",
+    "path": "/vaults/{vault_id}/credentials",
+    "source": "api.md"
+   },
+   "beta.agents.vaults.credentials.delete": {
+    "method": "DELETE",
+    "path": "/vaults/{vault_id}/credentials/{credential_id}",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.create": {
+    "method": "POST",
+    "path": "/agents/sessions",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.retrieve": {
+    "method": "GET",
+    "path": "/agents/sessions/{session_id}",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.update": {
+    "method": "POST",
+    "path": "/agents/sessions/{session_id}",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.list": {
+    "method": "GET",
+    "path": "/agents/sessions",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.delete": {
+    "method": "DELETE",
+    "path": "/agents/sessions/{session_id}",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.subagents.retrieve": {
+    "method": "GET",
+    "path": "/agents/sessions/{session_id}/subagents/{subagent_id}",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.subagents.list": {
+    "method": "GET",
+    "path": "/agents/sessions/{session_id}/subagents",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.subagents.items.list": {
+    "method": "GET",
+    "path": "/agents/sessions/{session_id}/subagents/{subagent_id}/items",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.subagents.turns.retrieve": {
+    "method": "GET",
+    "path": "/agents/sessions/{session_id}/subagents/{subagent_id}/turns/{turn_id}",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.subagents.turns.list": {
+    "method": "GET",
+    "path": "/agents/sessions/{session_id}/subagents/{subagent_id}/turns",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.subagents.turns.items.list": {
+    "method": "GET",
+    "path": "/agents/sessions/{session_id}/subagents/{subagent_id}/turns/{turn_id}/items",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.artifacts.retrieve": {
+    "method": "GET",
+    "path": "/agents/sessions/{session_id}/artifacts/{artifact_id}",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.artifacts.list": {
+    "method": "GET",
+    "path": "/agents/sessions/{session_id}/artifacts",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.artifacts.delete": {
+    "method": "DELETE",
+    "path": "/agents/sessions/{session_id}/artifacts/{artifact_id}",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.artifacts.content": {
+    "method": "GET",
+    "path": "/agents/sessions/{session_id}/artifacts/{artifact_id}/content",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.items.list": {
+    "method": "GET",
+    "path": "/agents/sessions/{session_id}/items",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.events.create": {
+    "method": "POST",
+    "path": "/agents/sessions/{session_id}/events",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.events.stream": {
+    "method": "GET",
+    "path": "/agents/sessions/{session_id}/events",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.traces.list": {
+    "method": "GET",
+    "path": "/agents/sessions/{session_id}/traces",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.turns.retrieve": {
+    "method": "GET",
+    "path": "/agents/sessions/{session_id}/turns/{turn_id}",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.turns.list": {
+    "method": "GET",
+    "path": "/agents/sessions/{session_id}/turns",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.turns.items.list": {
+    "method": "GET",
+    "path": "/agents/sessions/{session_id}/turns/{turn_id}/items",
+    "source": "api.md"
+   },
+   "beta.responses.create": {
+    "method": "POST",
+    "path": "/responses?beta=true",
+    "source": "api.md"
+   },
+   "beta.responses.retrieve": {
+    "method": "GET",
+    "path": "/responses/{response_id}?beta=true",
+    "source": "api.md"
+   },
+   "beta.responses.delete": {
+    "method": "DELETE",
+    "path": "/responses/{response_id}?beta=true",
+    "source": "api.md"
+   },
+   "beta.responses.cancel": {
+    "method": "POST",
+    "path": "/responses/{response_id}/cancel?beta=true",
+    "source": "api.md"
+   },
+   "beta.responses.compact": {
+    "method": "POST",
+    "path": "/responses/compact?beta=true",
+    "source": "api.md"
+   },
+   "beta.responses.input_items.list": {
+    "method": "GET",
+    "path": "/responses/{response_id}/input_items?beta=true",
+    "source": "api.md"
+   },
+   "beta.responses.input_tokens.count": {
+    "method": "POST",
+    "path": "/responses/input_tokens?beta=true",
+    "source": "api.md"
+   },
+   "beta.chatkit.sessions.create": {
+    "method": "POST",
+    "path": "/chatkit/sessions",
+    "source": "api.md"
+   },
+   "beta.chatkit.sessions.cancel": {
+    "method": "POST",
+    "path": "/chatkit/sessions/{session_id}/cancel",
+    "source": "api.md"
+   },
+   "beta.chatkit.threads.retrieve": {
+    "method": "GET",
+    "path": "/chatkit/threads/{thread_id}",
+    "source": "api.md"
+   },
+   "beta.chatkit.threads.list": {
+    "method": "GET",
+    "path": "/chatkit/threads",
+    "source": "api.md"
+   },
+   "beta.chatkit.threads.delete": {
+    "method": "DELETE",
+    "path": "/chatkit/threads/{thread_id}",
+    "source": "api.md"
+   },
+   "beta.chatkit.threads.list_items": {
+    "method": "GET",
+    "path": "/chatkit/threads/{thread_id}/items",
+    "source": "api.md"
+   },
+   "beta.realtime.sessions.create": {
+    "method": "POST",
+    "path": "/realtime/sessions",
+    "source": "api.md"
+   },
+   "beta.realtime.transcription_sessions.create": {
+    "method": "POST",
+    "path": "/realtime/transcription_sessions",
+    "source": "api.md"
+   },
+   "beta.assistants.create": {
+    "method": "POST",
+    "path": "/assistants",
+    "source": "api.md"
+   },
+   "beta.assistants.retrieve": {
+    "method": "GET",
+    "path": "/assistants/{assistant_id}",
+    "source": "api.md"
+   },
+   "beta.assistants.update": {
+    "method": "POST",
+    "path": "/assistants/{assistant_id}",
+    "source": "api.md"
+   },
+   "beta.assistants.list": {
+    "method": "GET",
+    "path": "/assistants",
+    "source": "api.md"
+   },
+   "beta.assistants.delete": {
+    "method": "DELETE",
+    "path": "/assistants/{assistant_id}",
+    "source": "api.md"
+   },
+   "beta.threads.create": {
+    "method": "POST",
+    "path": "/threads",
+    "source": "api.md"
+   },
+   "beta.threads.retrieve": {
+    "method": "GET",
+    "path": "/threads/{thread_id}",
+    "source": "api.md"
+   },
+   "beta.threads.update": {
+    "method": "POST",
+    "path": "/threads/{thread_id}",
+    "source": "api.md"
+   },
+   "beta.threads.delete": {
+    "method": "DELETE",
+    "path": "/threads/{thread_id}",
+    "source": "api.md"
+   },
+   "beta.threads.create_and_run": {
+    "method": "POST",
+    "path": "/threads/runs",
+    "source": "api.md"
+   },
+   "beta.threads.runs.create": {
+    "method": "POST",
+    "path": "/threads/{thread_id}/runs",
+    "source": "api.md"
+   },
+   "beta.threads.runs.retrieve": {
+    "method": "GET",
+    "path": "/threads/{thread_id}/runs/{run_id}",
+    "source": "api.md"
+   },
+   "beta.threads.runs.update": {
+    "method": "POST",
+    "path": "/threads/{thread_id}/runs/{run_id}",
+    "source": "api.md"
+   },
+   "beta.threads.runs.list": {
+    "method": "GET",
+    "path": "/threads/{thread_id}/runs",
+    "source": "api.md"
+   },
+   "beta.threads.runs.cancel": {
+    "method": "POST",
+    "path": "/threads/{thread_id}/runs/{run_id}/cancel",
+    "source": "api.md"
+   },
+   "beta.threads.runs.submit_tool_outputs": {
+    "method": "POST",
+    "path": "/threads/{thread_id}/runs/{run_id}/submit_tool_outputs",
+    "source": "api.md"
+   },
+   "beta.threads.runs.steps.retrieve": {
+    "method": "GET",
+    "path": "/threads/{thread_id}/runs/{run_id}/steps/{step_id}",
+    "source": "api.md"
+   },
+   "beta.threads.runs.steps.list": {
+    "method": "GET",
+    "path": "/threads/{thread_id}/runs/{run_id}/steps",
+    "source": "api.md"
+   },
+   "beta.threads.messages.create": {
+    "method": "POST",
+    "path": "/threads/{thread_id}/messages",
+    "source": "api.md"
+   },
+   "beta.threads.messages.retrieve": {
+    "method": "GET",
+    "path": "/threads/{thread_id}/messages/{message_id}",
+    "source": "api.md"
+   },
+   "beta.threads.messages.update": {
+    "method": "POST",
+    "path": "/threads/{thread_id}/messages/{message_id}",
+    "source": "api.md"
+   },
+   "beta.threads.messages.list": {
+    "method": "GET",
+    "path": "/threads/{thread_id}/messages",
+    "source": "api.md"
+   },
+   "beta.threads.messages.delete": {
+    "method": "DELETE",
+    "path": "/threads/{thread_id}/messages/{message_id}",
+    "source": "api.md"
+   },
+   "batches.create": {
+    "method": "POST",
+    "path": "/batches",
+    "source": "api.md"
+   },
+   "batches.retrieve": {
+    "method": "GET",
+    "path": "/batches/{batch_id}",
+    "source": "api.md"
+   },
+   "batches.list": {
+    "method": "GET",
+    "path": "/batches",
+    "source": "api.md"
+   },
+   "batches.cancel": {
+    "method": "POST",
+    "path": "/batches/{batch_id}/cancel",
+    "source": "api.md"
+   },
+   "uploads.create": {
+    "method": "POST",
+    "path": "/uploads",
+    "source": "api.md"
+   },
+   "uploads.cancel": {
+    "method": "POST",
+    "path": "/uploads/{upload_id}/cancel",
+    "source": "api.md"
+   },
+   "uploads.complete": {
+    "method": "POST",
+    "path": "/uploads/{upload_id}/complete",
+    "source": "api.md"
+   },
+   "uploads.parts.create": {
+    "method": "POST",
+    "path": "/uploads/{upload_id}/parts",
+    "source": "api.md"
+   },
+   "admin.organization.audit_logs.list": {
+    "method": "GET",
+    "path": "/organization/audit_logs",
+    "source": "api.md"
+   },
+   "admin.organization.admin_api_keys.create": {
+    "method": "POST",
+    "path": "/organization/admin_api_keys",
+    "source": "api.md"
+   },
+   "admin.organization.admin_api_keys.retrieve": {
+    "method": "GET",
+    "path": "/organization/admin_api_keys/{key_id}",
+    "source": "api.md"
+   },
+   "admin.organization.admin_api_keys.list": {
+    "method": "GET",
+    "path": "/organization/admin_api_keys",
+    "source": "api.md"
+   },
+   "admin.organization.admin_api_keys.delete": {
+    "method": "DELETE",
+    "path": "/organization/admin_api_keys/{key_id}",
+    "source": "api.md"
+   },
+   "admin.organization.usage.audio_speeches": {
+    "method": "GET",
+    "path": "/organization/usage/audio_speeches",
+    "source": "api.md"
+   },
+   "admin.organization.usage.audio_transcriptions": {
+    "method": "GET",
+    "path": "/organization/usage/audio_transcriptions",
+    "source": "api.md"
+   },
+   "admin.organization.usage.code_interpreter_sessions": {
+    "method": "GET",
+    "path": "/organization/usage/code_interpreter_sessions",
+    "source": "api.md"
+   },
+   "admin.organization.usage.completions": {
+    "method": "GET",
+    "path": "/organization/usage/completions",
+    "source": "api.md"
+   },
+   "admin.organization.usage.costs": {
+    "method": "GET",
+    "path": "/organization/costs",
+    "source": "api.md"
+   },
+   "admin.organization.usage.decisions": {
+    "method": "GET",
+    "path": "/organization/usage/decisions",
+    "source": "api.md"
+   },
+   "admin.organization.usage.embeddings": {
+    "method": "GET",
+    "path": "/organization/usage/embeddings",
+    "source": "api.md"
+   },
+   "admin.organization.usage.file_search_calls": {
+    "method": "GET",
+    "path": "/organization/usage/file_search_calls",
+    "source": "api.md"
+   },
+   "admin.organization.usage.images": {
+    "method": "GET",
+    "path": "/organization/usage/images",
+    "source": "api.md"
+   },
+   "admin.organization.usage.moderations": {
+    "method": "GET",
+    "path": "/organization/usage/moderations",
+    "source": "api.md"
+   },
+   "admin.organization.usage.vector_stores": {
+    "method": "GET",
+    "path": "/organization/usage/vector_stores",
+    "source": "api.md"
+   },
+   "admin.organization.usage.web_search_calls": {
+    "method": "GET",
+    "path": "/organization/usage/web_search_calls",
+    "source": "api.md"
+   },
+   "admin.organization.invites.create": {
+    "method": "POST",
+    "path": "/organization/invites",
+    "source": "api.md"
+   },
+   "admin.organization.invites.retrieve": {
+    "method": "GET",
+    "path": "/organization/invites/{invite_id}",
+    "source": "api.md"
+   },
+   "admin.organization.invites.list": {
+    "method": "GET",
+    "path": "/organization/invites",
+    "source": "api.md"
+   },
+   "admin.organization.invites.delete": {
+    "method": "DELETE",
+    "path": "/organization/invites/{invite_id}",
+    "source": "api.md"
+   },
+   "admin.organization.users.retrieve": {
+    "method": "GET",
+    "path": "/organization/users/{user_id}",
+    "source": "api.md"
+   },
+   "admin.organization.users.update": {
+    "method": "POST",
+    "path": "/organization/users/{user_id}",
+    "source": "api.md"
+   },
+   "admin.organization.users.list": {
+    "method": "GET",
+    "path": "/organization/users",
+    "source": "api.md"
+   },
+   "admin.organization.users.delete": {
+    "method": "DELETE",
+    "path": "/organization/users/{user_id}",
+    "source": "api.md"
+   },
+   "admin.organization.users.roles.create": {
+    "method": "POST",
+    "path": "/organization/users/{user_id}/roles",
+    "source": "api.md"
+   },
+   "admin.organization.users.roles.retrieve": {
+    "method": "GET",
+    "path": "/organization/users/{user_id}/roles/{role_id}",
+    "source": "api.md"
+   },
+   "admin.organization.users.roles.list": {
+    "method": "GET",
+    "path": "/organization/users/{user_id}/roles",
+    "source": "api.md"
+   },
+   "admin.organization.users.roles.delete": {
+    "method": "DELETE",
+    "path": "/organization/users/{user_id}/roles/{role_id}",
+    "source": "api.md"
+   },
+   "admin.organization.groups.create": {
+    "method": "POST",
+    "path": "/organization/groups",
+    "source": "api.md"
+   },
+   "admin.organization.groups.retrieve": {
+    "method": "GET",
+    "path": "/organization/groups/{group_id}",
+    "source": "api.md"
+   },
+   "admin.organization.groups.update": {
+    "method": "POST",
+    "path": "/organization/groups/{group_id}",
+    "source": "api.md"
+   },
+   "admin.organization.groups.list": {
+    "method": "GET",
+    "path": "/organization/groups",
+    "source": "api.md"
+   },
+   "admin.organization.groups.delete": {
+    "method": "DELETE",
+    "path": "/organization/groups/{group_id}",
+    "source": "api.md"
+   },
+   "admin.organization.groups.users.create": {
+    "method": "POST",
+    "path": "/organization/groups/{group_id}/users",
+    "source": "api.md"
+   },
+   "admin.organization.groups.users.retrieve": {
+    "method": "GET",
+    "path": "/organization/groups/{group_id}/users/{user_id}",
+    "source": "api.md"
+   },
+   "admin.organization.groups.users.list": {
+    "method": "GET",
+    "path": "/organization/groups/{group_id}/users",
+    "source": "api.md"
+   },
+   "admin.organization.groups.users.delete": {
+    "method": "DELETE",
+    "path": "/organization/groups/{group_id}/users/{user_id}",
+    "source": "api.md"
+   },
+   "admin.organization.groups.roles.create": {
+    "method": "POST",
+    "path": "/organization/groups/{group_id}/roles",
+    "source": "api.md"
+   },
+   "admin.organization.groups.roles.retrieve": {
+    "method": "GET",
+    "path": "/organization/groups/{group_id}/roles/{role_id}",
+    "source": "api.md"
+   },
+   "admin.organization.groups.roles.list": {
+    "method": "GET",
+    "path": "/organization/groups/{group_id}/roles",
+    "source": "api.md"
+   },
+   "admin.organization.groups.roles.delete": {
+    "method": "DELETE",
+    "path": "/organization/groups/{group_id}/roles/{role_id}",
+    "source": "api.md"
+   },
+   "admin.organization.roles.create": {
+    "method": "POST",
+    "path": "/organization/roles",
+    "source": "api.md"
+   },
+   "admin.organization.roles.retrieve": {
+    "method": "GET",
+    "path": "/organization/roles/{role_id}",
+    "source": "api.md"
+   },
+   "admin.organization.roles.update": {
+    "method": "POST",
+    "path": "/organization/roles/{role_id}",
+    "source": "api.md"
+   },
+   "admin.organization.roles.list": {
+    "method": "GET",
+    "path": "/organization/roles",
+    "source": "api.md"
+   },
+   "admin.organization.roles.delete": {
+    "method": "DELETE",
+    "path": "/organization/roles/{role_id}",
+    "source": "api.md"
+   },
+   "admin.organization.data_retention.retrieve": {
+    "method": "GET",
+    "path": "/organization/data_retention",
+    "source": "api.md"
+   },
+   "admin.organization.data_retention.update": {
+    "method": "POST",
+    "path": "/organization/data_retention",
+    "source": "api.md"
+   },
+   "admin.organization.external_storage.create": {
+    "method": "POST",
+    "path": "/organization/external_storage",
+    "source": "api.md"
+   },
+   "admin.organization.external_storage.retrieve": {
+    "method": "GET",
+    "path": "/organization/external_storage/{external_storage_id}",
+    "source": "api.md"
+   },
+   "admin.organization.external_storage.list": {
+    "method": "GET",
+    "path": "/organization/external_storage",
+    "source": "api.md"
+   },
+   "admin.organization.external_storage.delete": {
+    "method": "DELETE",
+    "path": "/organization/external_storage/{external_storage_id}",
+    "source": "api.md"
+   },
+   "admin.organization.external_storage.validate": {
+    "method": "POST",
+    "path": "/organization/external_storage/{external_storage_id}/validate",
+    "source": "api.md"
+   },
+   "admin.organization.spend_limit.retrieve": {
+    "method": "GET",
+    "path": "/organization/spend_limit",
+    "source": "api.md"
+   },
+   "admin.organization.spend_limit.update": {
+    "method": "POST",
+    "path": "/organization/spend_limit",
+    "source": "api.md"
+   },
+   "admin.organization.spend_limit.delete": {
+    "method": "DELETE",
+    "path": "/organization/spend_limit",
+    "source": "api.md"
+   },
+   "admin.organization.spend_alerts.create": {
+    "method": "POST",
+    "path": "/organization/spend_alerts",
+    "source": "api.md"
+   },
+   "admin.organization.spend_alerts.retrieve": {
+    "method": "GET",
+    "path": "/organization/spend_alerts/{alert_id}",
+    "source": "api.md"
+   },
+   "admin.organization.spend_alerts.update": {
+    "method": "POST",
+    "path": "/organization/spend_alerts/{alert_id}",
+    "source": "api.md"
+   },
+   "admin.organization.spend_alerts.list": {
+    "method": "GET",
+    "path": "/organization/spend_alerts",
+    "source": "api.md"
+   },
+   "admin.organization.spend_alerts.delete": {
+    "method": "DELETE",
+    "path": "/organization/spend_alerts/{alert_id}",
+    "source": "api.md"
+   },
+   "admin.organization.certificates.create": {
+    "method": "POST",
+    "path": "/organization/certificates",
+    "source": "api.md"
+   },
+   "admin.organization.certificates.retrieve": {
+    "method": "GET",
+    "path": "/organization/certificates/{certificate_id}",
+    "source": "api.md"
+   },
+   "admin.organization.certificates.update": {
+    "method": "POST",
+    "path": "/organization/certificates/{certificate_id}",
+    "source": "api.md"
+   },
+   "admin.organization.certificates.list": {
+    "method": "GET",
+    "path": "/organization/certificates",
+    "source": "api.md"
+   },
+   "admin.organization.certificates.delete": {
+    "method": "DELETE",
+    "path": "/organization/certificates/{certificate_id}",
+    "source": "api.md"
+   },
+   "admin.organization.certificates.activate": {
+    "method": "POST",
+    "path": "/organization/certificates/activate",
+    "source": "api.md"
+   },
+   "admin.organization.certificates.deactivate": {
+    "method": "POST",
+    "path": "/organization/certificates/deactivate",
+    "source": "api.md"
+   },
+   "admin.organization.projects.create": {
+    "method": "POST",
+    "path": "/organization/projects",
+    "source": "api.md"
+   },
+   "admin.organization.projects.retrieve": {
+    "method": "GET",
+    "path": "/organization/projects/{project_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.update": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.list": {
+    "method": "GET",
+    "path": "/organization/projects",
+    "source": "api.md"
+   },
+   "admin.organization.projects.archive": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}/archive",
+    "source": "api.md"
+   },
+   "admin.organization.projects.users.create": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}/users",
+    "source": "api.md"
+   },
+   "admin.organization.projects.users.retrieve": {
+    "method": "GET",
+    "path": "/organization/projects/{project_id}/users/{user_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.users.update": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}/users/{user_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.users.list": {
+    "method": "GET",
+    "path": "/organization/projects/{project_id}/users",
+    "source": "api.md"
+   },
+   "admin.organization.projects.users.delete": {
+    "method": "DELETE",
+    "path": "/organization/projects/{project_id}/users/{user_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.users.roles.create": {
+    "method": "POST",
+    "path": "/projects/{project_id}/users/{user_id}/roles",
+    "source": "api.md"
+   },
+   "admin.organization.projects.users.roles.retrieve": {
+    "method": "GET",
+    "path": "/projects/{project_id}/users/{user_id}/roles/{role_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.users.roles.list": {
+    "method": "GET",
+    "path": "/projects/{project_id}/users/{user_id}/roles",
+    "source": "api.md"
+   },
+   "admin.organization.projects.users.roles.delete": {
+    "method": "DELETE",
+    "path": "/projects/{project_id}/users/{user_id}/roles/{role_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.service_accounts.create": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}/service_accounts",
+    "source": "api.md"
+   },
+   "admin.organization.projects.service_accounts.retrieve": {
+    "method": "GET",
+    "path": "/organization/projects/{project_id}/service_accounts/{service_account_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.service_accounts.update": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}/service_accounts/{service_account_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.service_accounts.list": {
+    "method": "GET",
+    "path": "/organization/projects/{project_id}/service_accounts",
+    "source": "api.md"
+   },
+   "admin.organization.projects.service_accounts.delete": {
+    "method": "DELETE",
+    "path": "/organization/projects/{project_id}/service_accounts/{service_account_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.service_accounts.api_keys.create": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}/service_accounts/{service_account_id}/api_keys",
+    "source": "api.md"
+   },
+   "admin.organization.projects.api_keys.retrieve": {
+    "method": "GET",
+    "path": "/organization/projects/{project_id}/api_keys/{api_key_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.api_keys.update": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}/api_keys/{api_key_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.api_keys.list": {
+    "method": "GET",
+    "path": "/organization/projects/{project_id}/api_keys",
+    "source": "api.md"
+   },
+   "admin.organization.projects.api_keys.delete": {
+    "method": "DELETE",
+    "path": "/organization/projects/{project_id}/api_keys/{api_key_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.rate_limits.list_rate_limits": {
+    "method": "GET",
+    "path": "/organization/projects/{project_id}/rate_limits",
+    "source": "api.md"
+   },
+   "admin.organization.projects.rate_limits.update_rate_limit": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}/rate_limits/{rate_limit_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.model_permissions.retrieve": {
+    "method": "GET",
+    "path": "/organization/projects/{project_id}/model_permissions",
+    "source": "api.md"
+   },
+   "admin.organization.projects.model_permissions.update": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}/model_permissions",
+    "source": "api.md"
+   },
+   "admin.organization.projects.model_permissions.delete": {
+    "method": "DELETE",
+    "path": "/organization/projects/{project_id}/model_permissions",
+    "source": "api.md"
+   },
+   "admin.organization.projects.hosted_tool_permissions.retrieve": {
+    "method": "GET",
+    "path": "/organization/projects/{project_id}/hosted_tool_permissions",
+    "source": "api.md"
+   },
+   "admin.organization.projects.hosted_tool_permissions.update": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}/hosted_tool_permissions",
+    "source": "api.md"
+   },
+   "admin.organization.projects.groups.create": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}/groups",
+    "source": "api.md"
+   },
+   "admin.organization.projects.groups.retrieve": {
+    "method": "GET",
+    "path": "/organization/projects/{project_id}/groups/{group_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.groups.list": {
+    "method": "GET",
+    "path": "/organization/projects/{project_id}/groups",
+    "source": "api.md"
+   },
+   "admin.organization.projects.groups.delete": {
+    "method": "DELETE",
+    "path": "/organization/projects/{project_id}/groups/{group_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.groups.roles.create": {
+    "method": "POST",
+    "path": "/projects/{project_id}/groups/{group_id}/roles",
+    "source": "api.md"
+   },
+   "admin.organization.projects.groups.roles.retrieve": {
+    "method": "GET",
+    "path": "/projects/{project_id}/groups/{group_id}/roles/{role_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.groups.roles.list": {
+    "method": "GET",
+    "path": "/projects/{project_id}/groups/{group_id}/roles",
+    "source": "api.md"
+   },
+   "admin.organization.projects.groups.roles.delete": {
+    "method": "DELETE",
+    "path": "/projects/{project_id}/groups/{group_id}/roles/{role_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.roles.create": {
+    "method": "POST",
+    "path": "/projects/{project_id}/roles",
+    "source": "api.md"
+   },
+   "admin.organization.projects.roles.retrieve": {
+    "method": "GET",
+    "path": "/projects/{project_id}/roles/{role_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.roles.update": {
+    "method": "POST",
+    "path": "/projects/{project_id}/roles/{role_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.roles.list": {
+    "method": "GET",
+    "path": "/projects/{project_id}/roles",
+    "source": "api.md"
+   },
+   "admin.organization.projects.roles.delete": {
+    "method": "DELETE",
+    "path": "/projects/{project_id}/roles/{role_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.data_retention.retrieve": {
+    "method": "GET",
+    "path": "/organization/projects/{project_id}/data_retention",
+    "source": "api.md"
+   },
+   "admin.organization.projects.data_retention.update": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}/data_retention",
+    "source": "api.md"
+   },
+   "admin.organization.projects.spend_limit.retrieve": {
+    "method": "GET",
+    "path": "/organization/projects/{project_id}/spend_limit",
+    "source": "api.md"
+   },
+   "admin.organization.projects.spend_limit.update": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}/spend_limit",
+    "source": "api.md"
+   },
+   "admin.organization.projects.spend_limit.delete": {
+    "method": "DELETE",
+    "path": "/organization/projects/{project_id}/spend_limit",
+    "source": "api.md"
+   },
+   "admin.organization.projects.spend_alerts.create": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}/spend_alerts",
+    "source": "api.md"
+   },
+   "admin.organization.projects.spend_alerts.retrieve": {
+    "method": "GET",
+    "path": "/organization/projects/{project_id}/spend_alerts/{alert_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.spend_alerts.update": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}/spend_alerts/{alert_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.spend_alerts.list": {
+    "method": "GET",
+    "path": "/organization/projects/{project_id}/spend_alerts",
+    "source": "api.md"
+   },
+   "admin.organization.projects.spend_alerts.delete": {
+    "method": "DELETE",
+    "path": "/organization/projects/{project_id}/spend_alerts/{alert_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.certificates.list": {
+    "method": "GET",
+    "path": "/organization/projects/{project_id}/certificates",
+    "source": "api.md"
+   },
+   "admin.organization.projects.certificates.activate": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}/certificates/activate",
+    "source": "api.md"
+   },
+   "admin.organization.projects.certificates.deactivate": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}/certificates/deactivate",
+    "source": "api.md"
+   },
+   "evals.create": {
+    "method": "POST",
+    "path": "/evals",
+    "source": "api.md"
+   },
+   "evals.retrieve": {
+    "method": "GET",
+    "path": "/evals/{eval_id}",
+    "source": "api.md"
+   },
+   "evals.update": {
+    "method": "POST",
+    "path": "/evals/{eval_id}",
+    "source": "api.md"
+   },
+   "evals.list": {
+    "method": "GET",
+    "path": "/evals",
+    "source": "api.md"
+   },
+   "evals.delete": {
+    "method": "DELETE",
+    "path": "/evals/{eval_id}",
+    "source": "api.md"
+   },
+   "evals.runs.create": {
+    "method": "POST",
+    "path": "/evals/{eval_id}/runs",
+    "source": "api.md"
+   },
+   "evals.runs.retrieve": {
+    "method": "GET",
+    "path": "/evals/{eval_id}/runs/{run_id}",
+    "source": "api.md"
+   },
+   "evals.runs.list": {
+    "method": "GET",
+    "path": "/evals/{eval_id}/runs",
+    "source": "api.md"
+   },
+   "evals.runs.delete": {
+    "method": "DELETE",
+    "path": "/evals/{eval_id}/runs/{run_id}",
+    "source": "api.md"
+   },
+   "evals.runs.cancel": {
+    "method": "POST",
+    "path": "/evals/{eval_id}/runs/{run_id}/cancel",
+    "source": "api.md"
+   },
+   "evals.runs.output_items.retrieve": {
+    "method": "GET",
+    "path": "/evals/{eval_id}/runs/{run_id}/output_items/{output_item_id}",
+    "source": "api.md"
+   },
+   "evals.runs.output_items.list": {
+    "method": "GET",
+    "path": "/evals/{eval_id}/runs/{run_id}/output_items",
+    "source": "api.md"
+   },
+   "containers.create": {
+    "method": "POST",
+    "path": "/containers",
+    "source": "api.md"
+   },
+   "containers.retrieve": {
+    "method": "GET",
+    "path": "/containers/{container_id}",
+    "source": "api.md"
+   },
+   "containers.list": {
+    "method": "GET",
+    "path": "/containers",
+    "source": "api.md"
+   },
+   "containers.delete": {
+    "method": "DELETE",
+    "path": "/containers/{container_id}",
+    "source": "api.md"
+   },
+   "containers.files.create": {
+    "method": "POST",
+    "path": "/containers/{container_id}/files",
+    "source": "api.md"
+   },
+   "containers.files.retrieve": {
+    "method": "GET",
+    "path": "/containers/{container_id}/files/{file_id}",
+    "source": "api.md"
+   },
+   "containers.files.list": {
+    "method": "GET",
+    "path": "/containers/{container_id}/files",
+    "source": "api.md"
+   },
+   "containers.files.delete": {
+    "method": "DELETE",
+    "path": "/containers/{container_id}/files/{file_id}",
+    "source": "api.md"
+   },
+   "containers.files.content.retrieve": {
+    "method": "GET",
+    "path": "/containers/{container_id}/files/{file_id}/content",
+    "source": "api.md"
+   },
+   "skills.create": {
+    "method": "POST",
+    "path": "/skills",
+    "source": "api.md"
+   },
+   "skills.retrieve": {
+    "method": "GET",
+    "path": "/skills/{skill_id}",
+    "source": "api.md"
+   },
+   "skills.update": {
+    "method": "POST",
+    "path": "/skills/{skill_id}",
+    "source": "api.md"
+   },
+   "skills.list": {
+    "method": "GET",
+    "path": "/skills",
+    "source": "api.md"
+   },
+   "skills.delete": {
+    "method": "DELETE",
+    "path": "/skills/{skill_id}",
+    "source": "api.md"
+   },
+   "skills.content.retrieve": {
+    "method": "GET",
+    "path": "/skills/{skill_id}/content",
+    "source": "api.md"
+   },
+   "skills.versions.create": {
+    "method": "POST",
+    "path": "/skills/{skill_id}/versions",
+    "source": "api.md"
+   },
+   "skills.versions.retrieve": {
+    "method": "GET",
+    "path": "/skills/{skill_id}/versions/{version}",
+    "source": "api.md"
+   },
+   "skills.versions.list": {
+    "method": "GET",
+    "path": "/skills/{skill_id}/versions",
+    "source": "api.md"
+   },
+   "skills.versions.delete": {
+    "method": "DELETE",
+    "path": "/skills/{skill_id}/versions/{version}",
+    "source": "api.md"
+   },
+   "skills.versions.content.retrieve": {
+    "method": "GET",
+    "path": "/skills/{skill_id}/versions/{version}/content",
+    "source": "api.md"
+   },
+   "videos.create": {
+    "method": "POST",
+    "path": "/videos",
+    "source": "api.md"
+   },
+   "videos.retrieve": {
+    "method": "GET",
+    "path": "/videos/{video_id}",
+    "source": "api.md"
+   },
+   "videos.list": {
+    "method": "GET",
+    "path": "/videos",
+    "source": "api.md"
+   },
+   "videos.delete": {
+    "method": "DELETE",
+    "path": "/videos/{video_id}",
+    "source": "api.md"
+   },
+   "videos.create_character": {
+    "method": "POST",
+    "path": "/videos/characters",
+    "source": "api.md"
+   },
+   "videos.download_content": {
+    "method": "GET",
+    "path": "/videos/{video_id}/content",
+    "source": "api.md"
+   },
+   "videos.edit": {
+    "method": "POST",
+    "path": "/videos/edits",
+    "source": "api.md"
+   },
+   "videos.extend": {
+    "method": "POST",
+    "path": "/videos/extensions",
+    "source": "api.md"
+   },
+   "videos.get_character": {
+    "method": "GET",
+    "path": "/videos/characters/{character_id}",
+    "source": "api.md"
+   },
+   "videos.remix": {
+    "method": "POST",
+    "path": "/videos/{video_id}/remix",
+    "source": "api.md"
+   }
+  },
+  "module": {
+   "decisions.create": {
+    "method": "POST",
+    "path": "/decisions",
+    "source": "api.md"
+   },
+   "completions.create": {
+    "method": "POST",
+    "path": "/completions",
+    "source": "api.md"
+   },
+   "chat.completions.create": {
+    "method": "POST",
+    "path": "/chat/completions",
+    "source": "api.md"
+   },
+   "chat.completions.retrieve": {
+    "method": "GET",
+    "path": "/chat/completions/{completion_id}",
+    "source": "api.md"
+   },
+   "chat.completions.update": {
+    "method": "POST",
+    "path": "/chat/completions/{completion_id}",
+    "source": "api.md"
+   },
+   "chat.completions.list": {
+    "method": "GET",
+    "path": "/chat/completions",
+    "source": "api.md"
+   },
+   "chat.completions.delete": {
+    "method": "DELETE",
+    "path": "/chat/completions/{completion_id}",
+    "source": "api.md"
+   },
+   "chat.completions.messages.list": {
+    "method": "GET",
+    "path": "/chat/completions/{completion_id}/messages",
+    "source": "api.md"
+   },
+   "embeddings.create": {
+    "method": "POST",
+    "path": "/embeddings",
+    "source": "api.md"
+   },
+   "files.create": {
+    "method": "POST",
+    "path": "/files",
+    "source": "api.md"
+   },
+   "files.retrieve": {
+    "method": "GET",
+    "path": "/files/{file_id}",
+    "source": "api.md"
+   },
+   "files.list": {
+    "method": "GET",
+    "path": "/files",
+    "source": "api.md"
+   },
+   "files.delete": {
+    "method": "DELETE",
+    "path": "/files/{file_id}",
+    "source": "api.md"
+   },
+   "files.content": {
+    "method": "GET",
+    "path": "/files/{file_id}/content",
+    "source": "api.md"
+   },
+   "files.retrieve_content": {
+    "method": "GET",
+    "path": "/files/{file_id}/content",
+    "source": "api.md"
+   },
+   "images.create_variation": {
+    "method": "POST",
+    "path": "/images/variations",
+    "source": "api.md"
+   },
+   "images.edit": {
+    "method": "POST",
+    "path": "/images/edits",
+    "source": "api.md"
+   },
+   "images.generate": {
+    "method": "POST",
+    "path": "/images/generations",
+    "source": "api.md"
+   },
+   "content_provenance_checks.create": {
+    "method": "POST",
+    "path": "/content_provenance_checks",
+    "source": "api.md"
+   },
+   "audio.transcriptions.create": {
+    "method": "POST",
+    "path": "/audio/transcriptions",
+    "source": "api.md"
+   },
+   "audio.translations.create": {
+    "method": "POST",
+    "path": "/audio/translations",
+    "source": "api.md"
+   },
+   "audio.speech.create": {
+    "method": "POST",
+    "path": "/audio/speech",
+    "source": "api.md"
+   },
+   "audio.voices.create": {
+    "method": "POST",
+    "path": "/audio/voices",
+    "source": "api.md"
+   },
+   "moderations.create": {
+    "method": "POST",
+    "path": "/moderations",
+    "source": "api.md"
+   },
+   "models.retrieve": {
+    "method": "GET",
+    "path": "/models/{model}",
+    "source": "api.md"
+   },
+   "models.list": {
+    "method": "GET",
+    "path": "/models",
+    "source": "api.md"
+   },
+   "models.delete": {
+    "method": "DELETE",
+    "path": "/models/{model}",
+    "source": "api.md"
+   },
+   "fine_tuning.jobs.create": {
+    "method": "POST",
+    "path": "/fine_tuning/jobs",
+    "source": "api.md"
+   },
+   "fine_tuning.jobs.retrieve": {
+    "method": "GET",
+    "path": "/fine_tuning/jobs/{fine_tuning_job_id}",
+    "source": "api.md"
+   },
+   "fine_tuning.jobs.list": {
+    "method": "GET",
+    "path": "/fine_tuning/jobs",
+    "source": "api.md"
+   },
+   "fine_tuning.jobs.cancel": {
+    "method": "POST",
+    "path": "/fine_tuning/jobs/{fine_tuning_job_id}/cancel",
+    "source": "api.md"
+   },
+   "fine_tuning.jobs.list_events": {
+    "method": "GET",
+    "path": "/fine_tuning/jobs/{fine_tuning_job_id}/events",
+    "source": "api.md"
+   },
+   "fine_tuning.jobs.pause": {
+    "method": "POST",
+    "path": "/fine_tuning/jobs/{fine_tuning_job_id}/pause",
+    "source": "api.md"
+   },
+   "fine_tuning.jobs.resume": {
+    "method": "POST",
+    "path": "/fine_tuning/jobs/{fine_tuning_job_id}/resume",
+    "source": "api.md"
+   },
+   "fine_tuning.jobs.checkpoints.list": {
+    "method": "GET",
+    "path": "/fine_tuning/jobs/{fine_tuning_job_id}/checkpoints",
+    "source": "api.md"
+   },
+   "fine_tuning.checkpoints.permissions.create": {
+    "method": "POST",
+    "path": "/fine_tuning/checkpoints/{fine_tuned_model_checkpoint}/permissions",
+    "source": "api.md"
+   },
+   "fine_tuning.checkpoints.permissions.retrieve": {
+    "method": "GET",
+    "path": "/fine_tuning/checkpoints/{fine_tuned_model_checkpoint}/permissions",
+    "source": "api.md"
+   },
+   "fine_tuning.checkpoints.permissions.list": {
+    "method": "GET",
+    "path": "/fine_tuning/checkpoints/{fine_tuned_model_checkpoint}/permissions",
+    "source": "api.md"
+   },
+   "fine_tuning.checkpoints.permissions.delete": {
+    "method": "DELETE",
+    "path": "/fine_tuning/checkpoints/{fine_tuned_model_checkpoint}/permissions/{permission_id}",
+    "source": "api.md"
+   },
+   "fine_tuning.alpha.graders.run": {
+    "method": "POST",
+    "path": "/fine_tuning/alpha/graders/run",
+    "source": "api.md"
+   },
+   "fine_tuning.alpha.graders.validate": {
+    "method": "POST",
+    "path": "/fine_tuning/alpha/graders/validate",
+    "source": "api.md"
+   },
+   "vector_stores.create": {
+    "method": "POST",
+    "path": "/vector_stores",
+    "source": "api.md"
+   },
+   "vector_stores.retrieve": {
+    "method": "GET",
+    "path": "/vector_stores/{vector_store_id}",
+    "source": "api.md"
+   },
+   "vector_stores.update": {
+    "method": "POST",
+    "path": "/vector_stores/{vector_store_id}",
+    "source": "api.md"
+   },
+   "vector_stores.list": {
+    "method": "GET",
+    "path": "/vector_stores",
+    "source": "api.md"
+   },
+   "vector_stores.delete": {
+    "method": "DELETE",
+    "path": "/vector_stores/{vector_store_id}",
+    "source": "api.md"
+   },
+   "vector_stores.search": {
+    "method": "POST",
+    "path": "/vector_stores/{vector_store_id}/search",
+    "source": "api.md"
+   },
+   "vector_stores.files.create": {
+    "method": "POST",
+    "path": "/vector_stores/{vector_store_id}/files",
+    "source": "api.md"
+   },
+   "vector_stores.files.retrieve": {
+    "method": "GET",
+    "path": "/vector_stores/{vector_store_id}/files/{file_id}",
+    "source": "api.md"
+   },
+   "vector_stores.files.update": {
+    "method": "POST",
+    "path": "/vector_stores/{vector_store_id}/files/{file_id}",
+    "source": "api.md"
+   },
+   "vector_stores.files.list": {
+    "method": "GET",
+    "path": "/vector_stores/{vector_store_id}/files",
+    "source": "api.md"
+   },
+   "vector_stores.files.delete": {
+    "method": "DELETE",
+    "path": "/vector_stores/{vector_store_id}/files/{file_id}",
+    "source": "api.md"
+   },
+   "vector_stores.files.content": {
+    "method": "GET",
+    "path": "/vector_stores/{vector_store_id}/files/{file_id}/content",
+    "source": "api.md"
+   },
+   "vector_stores.file_batches.create": {
+    "method": "POST",
+    "path": "/vector_stores/{vector_store_id}/file_batches",
+    "source": "api.md"
+   },
+   "vector_stores.file_batches.retrieve": {
+    "method": "GET",
+    "path": "/vector_stores/{vector_store_id}/file_batches/{batch_id}",
+    "source": "api.md"
+   },
+   "vector_stores.file_batches.cancel": {
+    "method": "POST",
+    "path": "/vector_stores/{vector_store_id}/file_batches/{batch_id}/cancel",
+    "source": "api.md"
+   },
+   "vector_stores.file_batches.list_files": {
+    "method": "GET",
+    "path": "/vector_stores/{vector_store_id}/file_batches/{batch_id}/files",
+    "source": "api.md"
+   },
+   "safety.alerts.retrieve": {
+    "method": "GET",
+    "path": "/safety/alerts/{id}",
+    "source": "api.md"
+   },
+   "safety.cases.retrieve": {
+    "method": "GET",
+    "path": "/safety/cases/{id}",
+    "source": "api.md"
+   },
+   "beta.agents.create": {
+    "method": "POST",
+    "path": "/agents",
+    "source": "api.md"
+   },
+   "beta.agents.retrieve": {
+    "method": "GET",
+    "path": "/agents/{agent_id}",
+    "source": "api.md"
+   },
+   "beta.agents.update": {
+    "method": "POST",
+    "path": "/agents/{agent_id}",
+    "source": "api.md"
+   },
+   "beta.agents.list": {
+    "method": "GET",
+    "path": "/agents",
+    "source": "api.md"
+   },
+   "beta.agents.delete": {
+    "method": "DELETE",
+    "path": "/agents/{agent_id}",
+    "source": "api.md"
+   },
+   "beta.agents.environments.create": {
+    "method": "POST",
+    "path": "/agents/environments",
+    "source": "api.md"
+   },
+   "beta.agents.environments.retrieve": {
+    "method": "GET",
+    "path": "/agents/environments/{environment_id}",
+    "source": "api.md"
+   },
+   "beta.agents.environments.list": {
+    "method": "GET",
+    "path": "/agents/environments",
+    "source": "api.md"
+   },
+   "beta.agents.environments.files.create": {
+    "method": "POST",
+    "path": "/agents/environments/{environment_id}/files",
+    "source": "api.md"
+   },
+   "beta.agents.environments.files.list": {
+    "method": "GET",
+    "path": "/agents/environments/{environment_id}/files",
+    "source": "api.md"
+   },
+   "beta.agents.environments.templates.create": {
+    "method": "POST",
+    "path": "/agents/environments/templates",
+    "source": "api.md"
+   },
+   "beta.agents.environments.templates.retrieve": {
+    "method": "GET",
+    "path": "/agents/environments/templates/{environment_template_id}",
+    "source": "api.md"
+   },
+   "beta.agents.environments.templates.update": {
+    "method": "POST",
+    "path": "/agents/environments/templates/{environment_template_id}",
+    "source": "api.md"
+   },
+   "beta.agents.environments.templates.list": {
+    "method": "GET",
+    "path": "/agents/environments/templates",
+    "source": "api.md"
+   },
+   "beta.agents.environments.templates.delete": {
+    "method": "DELETE",
+    "path": "/agents/environments/templates/{environment_template_id}",
+    "source": "api.md"
+   },
+   "beta.agents.vaults.create": {
+    "method": "POST",
+    "path": "/vaults",
+    "source": "api.md"
+   },
+   "beta.agents.vaults.retrieve": {
+    "method": "GET",
+    "path": "/vaults/{vault_id}",
+    "source": "api.md"
+   },
+   "beta.agents.vaults.update": {
+    "method": "POST",
+    "path": "/vaults/{vault_id}",
+    "source": "api.md"
+   },
+   "beta.agents.vaults.list": {
+    "method": "GET",
+    "path": "/vaults",
+    "source": "api.md"
+   },
+   "beta.agents.vaults.delete": {
+    "method": "DELETE",
+    "path": "/vaults/{vault_id}",
+    "source": "api.md"
+   },
+   "beta.agents.vaults.credentials.create": {
+    "method": "POST",
+    "path": "/vaults/{vault_id}/credentials",
+    "source": "api.md"
+   },
+   "beta.agents.vaults.credentials.retrieve": {
+    "method": "GET",
+    "path": "/vaults/{vault_id}/credentials/{credential_id}",
+    "source": "api.md"
+   },
+   "beta.agents.vaults.credentials.update": {
+    "method": "POST",
+    "path": "/vaults/{vault_id}/credentials/{credential_id}",
+    "source": "api.md"
+   },
+   "beta.agents.vaults.credentials.list": {
+    "method": "GET",
+    "path": "/vaults/{vault_id}/credentials",
+    "source": "api.md"
+   },
+   "beta.agents.vaults.credentials.delete": {
+    "method": "DELETE",
+    "path": "/vaults/{vault_id}/credentials/{credential_id}",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.create": {
+    "method": "POST",
+    "path": "/agents/sessions",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.retrieve": {
+    "method": "GET",
+    "path": "/agents/sessions/{session_id}",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.update": {
+    "method": "POST",
+    "path": "/agents/sessions/{session_id}",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.list": {
+    "method": "GET",
+    "path": "/agents/sessions",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.delete": {
+    "method": "DELETE",
+    "path": "/agents/sessions/{session_id}",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.subagents.retrieve": {
+    "method": "GET",
+    "path": "/agents/sessions/{session_id}/subagents/{subagent_id}",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.subagents.list": {
+    "method": "GET",
+    "path": "/agents/sessions/{session_id}/subagents",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.subagents.items.list": {
+    "method": "GET",
+    "path": "/agents/sessions/{session_id}/subagents/{subagent_id}/items",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.subagents.turns.retrieve": {
+    "method": "GET",
+    "path": "/agents/sessions/{session_id}/subagents/{subagent_id}/turns/{turn_id}",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.subagents.turns.list": {
+    "method": "GET",
+    "path": "/agents/sessions/{session_id}/subagents/{subagent_id}/turns",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.subagents.turns.items.list": {
+    "method": "GET",
+    "path": "/agents/sessions/{session_id}/subagents/{subagent_id}/turns/{turn_id}/items",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.artifacts.retrieve": {
+    "method": "GET",
+    "path": "/agents/sessions/{session_id}/artifacts/{artifact_id}",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.artifacts.list": {
+    "method": "GET",
+    "path": "/agents/sessions/{session_id}/artifacts",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.artifacts.delete": {
+    "method": "DELETE",
+    "path": "/agents/sessions/{session_id}/artifacts/{artifact_id}",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.artifacts.content": {
+    "method": "GET",
+    "path": "/agents/sessions/{session_id}/artifacts/{artifact_id}/content",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.items.list": {
+    "method": "GET",
+    "path": "/agents/sessions/{session_id}/items",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.events.create": {
+    "method": "POST",
+    "path": "/agents/sessions/{session_id}/events",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.events.stream": {
+    "method": "GET",
+    "path": "/agents/sessions/{session_id}/events",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.traces.list": {
+    "method": "GET",
+    "path": "/agents/sessions/{session_id}/traces",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.turns.retrieve": {
+    "method": "GET",
+    "path": "/agents/sessions/{session_id}/turns/{turn_id}",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.turns.list": {
+    "method": "GET",
+    "path": "/agents/sessions/{session_id}/turns",
+    "source": "api.md"
+   },
+   "beta.agents.sessions.turns.items.list": {
+    "method": "GET",
+    "path": "/agents/sessions/{session_id}/turns/{turn_id}/items",
+    "source": "api.md"
+   },
+   "beta.responses.create": {
+    "method": "POST",
+    "path": "/responses?beta=true",
+    "source": "api.md"
+   },
+   "beta.responses.retrieve": {
+    "method": "GET",
+    "path": "/responses/{response_id}?beta=true",
+    "source": "api.md"
+   },
+   "beta.responses.delete": {
+    "method": "DELETE",
+    "path": "/responses/{response_id}?beta=true",
+    "source": "api.md"
+   },
+   "beta.responses.cancel": {
+    "method": "POST",
+    "path": "/responses/{response_id}/cancel?beta=true",
+    "source": "api.md"
+   },
+   "beta.responses.compact": {
+    "method": "POST",
+    "path": "/responses/compact?beta=true",
+    "source": "api.md"
+   },
+   "beta.responses.input_items.list": {
+    "method": "GET",
+    "path": "/responses/{response_id}/input_items?beta=true",
+    "source": "api.md"
+   },
+   "beta.responses.input_tokens.count": {
+    "method": "POST",
+    "path": "/responses/input_tokens?beta=true",
+    "source": "api.md"
+   },
+   "beta.chatkit.sessions.create": {
+    "method": "POST",
+    "path": "/chatkit/sessions",
+    "source": "api.md"
+   },
+   "beta.chatkit.sessions.cancel": {
+    "method": "POST",
+    "path": "/chatkit/sessions/{session_id}/cancel",
+    "source": "api.md"
+   },
+   "beta.chatkit.threads.retrieve": {
+    "method": "GET",
+    "path": "/chatkit/threads/{thread_id}",
+    "source": "api.md"
+   },
+   "beta.chatkit.threads.list": {
+    "method": "GET",
+    "path": "/chatkit/threads",
+    "source": "api.md"
+   },
+   "beta.chatkit.threads.delete": {
+    "method": "DELETE",
+    "path": "/chatkit/threads/{thread_id}",
+    "source": "api.md"
+   },
+   "beta.chatkit.threads.list_items": {
+    "method": "GET",
+    "path": "/chatkit/threads/{thread_id}/items",
+    "source": "api.md"
+   },
+   "beta.realtime.sessions.create": {
+    "method": "POST",
+    "path": "/realtime/sessions",
+    "source": "api.md"
+   },
+   "beta.realtime.transcription_sessions.create": {
+    "method": "POST",
+    "path": "/realtime/transcription_sessions",
+    "source": "api.md"
+   },
+   "beta.assistants.create": {
+    "method": "POST",
+    "path": "/assistants",
+    "source": "api.md"
+   },
+   "beta.assistants.retrieve": {
+    "method": "GET",
+    "path": "/assistants/{assistant_id}",
+    "source": "api.md"
+   },
+   "beta.assistants.update": {
+    "method": "POST",
+    "path": "/assistants/{assistant_id}",
+    "source": "api.md"
+   },
+   "beta.assistants.list": {
+    "method": "GET",
+    "path": "/assistants",
+    "source": "api.md"
+   },
+   "beta.assistants.delete": {
+    "method": "DELETE",
+    "path": "/assistants/{assistant_id}",
+    "source": "api.md"
+   },
+   "beta.threads.create": {
+    "method": "POST",
+    "path": "/threads",
+    "source": "api.md"
+   },
+   "beta.threads.retrieve": {
+    "method": "GET",
+    "path": "/threads/{thread_id}",
+    "source": "api.md"
+   },
+   "beta.threads.update": {
+    "method": "POST",
+    "path": "/threads/{thread_id}",
+    "source": "api.md"
+   },
+   "beta.threads.delete": {
+    "method": "DELETE",
+    "path": "/threads/{thread_id}",
+    "source": "api.md"
+   },
+   "beta.threads.create_and_run": {
+    "method": "POST",
+    "path": "/threads/runs",
+    "source": "api.md"
+   },
+   "beta.threads.runs.create": {
+    "method": "POST",
+    "path": "/threads/{thread_id}/runs",
+    "source": "api.md"
+   },
+   "beta.threads.runs.retrieve": {
+    "method": "GET",
+    "path": "/threads/{thread_id}/runs/{run_id}",
+    "source": "api.md"
+   },
+   "beta.threads.runs.update": {
+    "method": "POST",
+    "path": "/threads/{thread_id}/runs/{run_id}",
+    "source": "api.md"
+   },
+   "beta.threads.runs.list": {
+    "method": "GET",
+    "path": "/threads/{thread_id}/runs",
+    "source": "api.md"
+   },
+   "beta.threads.runs.cancel": {
+    "method": "POST",
+    "path": "/threads/{thread_id}/runs/{run_id}/cancel",
+    "source": "api.md"
+   },
+   "beta.threads.runs.submit_tool_outputs": {
+    "method": "POST",
+    "path": "/threads/{thread_id}/runs/{run_id}/submit_tool_outputs",
+    "source": "api.md"
+   },
+   "beta.threads.runs.steps.retrieve": {
+    "method": "GET",
+    "path": "/threads/{thread_id}/runs/{run_id}/steps/{step_id}",
+    "source": "api.md"
+   },
+   "beta.threads.runs.steps.list": {
+    "method": "GET",
+    "path": "/threads/{thread_id}/runs/{run_id}/steps",
+    "source": "api.md"
+   },
+   "beta.threads.messages.create": {
+    "method": "POST",
+    "path": "/threads/{thread_id}/messages",
+    "source": "api.md"
+   },
+   "beta.threads.messages.retrieve": {
+    "method": "GET",
+    "path": "/threads/{thread_id}/messages/{message_id}",
+    "source": "api.md"
+   },
+   "beta.threads.messages.update": {
+    "method": "POST",
+    "path": "/threads/{thread_id}/messages/{message_id}",
+    "source": "api.md"
+   },
+   "beta.threads.messages.list": {
+    "method": "GET",
+    "path": "/threads/{thread_id}/messages",
+    "source": "api.md"
+   },
+   "beta.threads.messages.delete": {
+    "method": "DELETE",
+    "path": "/threads/{thread_id}/messages/{message_id}",
+    "source": "api.md"
+   },
+   "batches.create": {
+    "method": "POST",
+    "path": "/batches",
+    "source": "api.md"
+   },
+   "batches.retrieve": {
+    "method": "GET",
+    "path": "/batches/{batch_id}",
+    "source": "api.md"
+   },
+   "batches.list": {
+    "method": "GET",
+    "path": "/batches",
+    "source": "api.md"
+   },
+   "batches.cancel": {
+    "method": "POST",
+    "path": "/batches/{batch_id}/cancel",
+    "source": "api.md"
+   },
+   "uploads.create": {
+    "method": "POST",
+    "path": "/uploads",
+    "source": "api.md"
+   },
+   "uploads.cancel": {
+    "method": "POST",
+    "path": "/uploads/{upload_id}/cancel",
+    "source": "api.md"
+   },
+   "uploads.complete": {
+    "method": "POST",
+    "path": "/uploads/{upload_id}/complete",
+    "source": "api.md"
+   },
+   "uploads.parts.create": {
+    "method": "POST",
+    "path": "/uploads/{upload_id}/parts",
+    "source": "api.md"
+   },
+   "admin.organization.audit_logs.list": {
+    "method": "GET",
+    "path": "/organization/audit_logs",
+    "source": "api.md"
+   },
+   "admin.organization.admin_api_keys.create": {
+    "method": "POST",
+    "path": "/organization/admin_api_keys",
+    "source": "api.md"
+   },
+   "admin.organization.admin_api_keys.retrieve": {
+    "method": "GET",
+    "path": "/organization/admin_api_keys/{key_id}",
+    "source": "api.md"
+   },
+   "admin.organization.admin_api_keys.list": {
+    "method": "GET",
+    "path": "/organization/admin_api_keys",
+    "source": "api.md"
+   },
+   "admin.organization.admin_api_keys.delete": {
+    "method": "DELETE",
+    "path": "/organization/admin_api_keys/{key_id}",
+    "source": "api.md"
+   },
+   "admin.organization.usage.audio_speeches": {
+    "method": "GET",
+    "path": "/organization/usage/audio_speeches",
+    "source": "api.md"
+   },
+   "admin.organization.usage.audio_transcriptions": {
+    "method": "GET",
+    "path": "/organization/usage/audio_transcriptions",
+    "source": "api.md"
+   },
+   "admin.organization.usage.code_interpreter_sessions": {
+    "method": "GET",
+    "path": "/organization/usage/code_interpreter_sessions",
+    "source": "api.md"
+   },
+   "admin.organization.usage.completions": {
+    "method": "GET",
+    "path": "/organization/usage/completions",
+    "source": "api.md"
+   },
+   "admin.organization.usage.costs": {
+    "method": "GET",
+    "path": "/organization/costs",
+    "source": "api.md"
+   },
+   "admin.organization.usage.decisions": {
+    "method": "GET",
+    "path": "/organization/usage/decisions",
+    "source": "api.md"
+   },
+   "admin.organization.usage.embeddings": {
+    "method": "GET",
+    "path": "/organization/usage/embeddings",
+    "source": "api.md"
+   },
+   "admin.organization.usage.file_search_calls": {
+    "method": "GET",
+    "path": "/organization/usage/file_search_calls",
+    "source": "api.md"
+   },
+   "admin.organization.usage.images": {
+    "method": "GET",
+    "path": "/organization/usage/images",
+    "source": "api.md"
+   },
+   "admin.organization.usage.moderations": {
+    "method": "GET",
+    "path": "/organization/usage/moderations",
+    "source": "api.md"
+   },
+   "admin.organization.usage.vector_stores": {
+    "method": "GET",
+    "path": "/organization/usage/vector_stores",
+    "source": "api.md"
+   },
+   "admin.organization.usage.web_search_calls": {
+    "method": "GET",
+    "path": "/organization/usage/web_search_calls",
+    "source": "api.md"
+   },
+   "admin.organization.invites.create": {
+    "method": "POST",
+    "path": "/organization/invites",
+    "source": "api.md"
+   },
+   "admin.organization.invites.retrieve": {
+    "method": "GET",
+    "path": "/organization/invites/{invite_id}",
+    "source": "api.md"
+   },
+   "admin.organization.invites.list": {
+    "method": "GET",
+    "path": "/organization/invites",
+    "source": "api.md"
+   },
+   "admin.organization.invites.delete": {
+    "method": "DELETE",
+    "path": "/organization/invites/{invite_id}",
+    "source": "api.md"
+   },
+   "admin.organization.users.retrieve": {
+    "method": "GET",
+    "path": "/organization/users/{user_id}",
+    "source": "api.md"
+   },
+   "admin.organization.users.update": {
+    "method": "POST",
+    "path": "/organization/users/{user_id}",
+    "source": "api.md"
+   },
+   "admin.organization.users.list": {
+    "method": "GET",
+    "path": "/organization/users",
+    "source": "api.md"
+   },
+   "admin.organization.users.delete": {
+    "method": "DELETE",
+    "path": "/organization/users/{user_id}",
+    "source": "api.md"
+   },
+   "admin.organization.users.roles.create": {
+    "method": "POST",
+    "path": "/organization/users/{user_id}/roles",
+    "source": "api.md"
+   },
+   "admin.organization.users.roles.retrieve": {
+    "method": "GET",
+    "path": "/organization/users/{user_id}/roles/{role_id}",
+    "source": "api.md"
+   },
+   "admin.organization.users.roles.list": {
+    "method": "GET",
+    "path": "/organization/users/{user_id}/roles",
+    "source": "api.md"
+   },
+   "admin.organization.users.roles.delete": {
+    "method": "DELETE",
+    "path": "/organization/users/{user_id}/roles/{role_id}",
+    "source": "api.md"
+   },
+   "admin.organization.groups.create": {
+    "method": "POST",
+    "path": "/organization/groups",
+    "source": "api.md"
+   },
+   "admin.organization.groups.retrieve": {
+    "method": "GET",
+    "path": "/organization/groups/{group_id}",
+    "source": "api.md"
+   },
+   "admin.organization.groups.update": {
+    "method": "POST",
+    "path": "/organization/groups/{group_id}",
+    "source": "api.md"
+   },
+   "admin.organization.groups.list": {
+    "method": "GET",
+    "path": "/organization/groups",
+    "source": "api.md"
+   },
+   "admin.organization.groups.delete": {
+    "method": "DELETE",
+    "path": "/organization/groups/{group_id}",
+    "source": "api.md"
+   },
+   "admin.organization.groups.users.create": {
+    "method": "POST",
+    "path": "/organization/groups/{group_id}/users",
+    "source": "api.md"
+   },
+   "admin.organization.groups.users.retrieve": {
+    "method": "GET",
+    "path": "/organization/groups/{group_id}/users/{user_id}",
+    "source": "api.md"
+   },
+   "admin.organization.groups.users.list": {
+    "method": "GET",
+    "path": "/organization/groups/{group_id}/users",
+    "source": "api.md"
+   },
+   "admin.organization.groups.users.delete": {
+    "method": "DELETE",
+    "path": "/organization/groups/{group_id}/users/{user_id}",
+    "source": "api.md"
+   },
+   "admin.organization.groups.roles.create": {
+    "method": "POST",
+    "path": "/organization/groups/{group_id}/roles",
+    "source": "api.md"
+   },
+   "admin.organization.groups.roles.retrieve": {
+    "method": "GET",
+    "path": "/organization/groups/{group_id}/roles/{role_id}",
+    "source": "api.md"
+   },
+   "admin.organization.groups.roles.list": {
+    "method": "GET",
+    "path": "/organization/groups/{group_id}/roles",
+    "source": "api.md"
+   },
+   "admin.organization.groups.roles.delete": {
+    "method": "DELETE",
+    "path": "/organization/groups/{group_id}/roles/{role_id}",
+    "source": "api.md"
+   },
+   "admin.organization.roles.create": {
+    "method": "POST",
+    "path": "/organization/roles",
+    "source": "api.md"
+   },
+   "admin.organization.roles.retrieve": {
+    "method": "GET",
+    "path": "/organization/roles/{role_id}",
+    "source": "api.md"
+   },
+   "admin.organization.roles.update": {
+    "method": "POST",
+    "path": "/organization/roles/{role_id}",
+    "source": "api.md"
+   },
+   "admin.organization.roles.list": {
+    "method": "GET",
+    "path": "/organization/roles",
+    "source": "api.md"
+   },
+   "admin.organization.roles.delete": {
+    "method": "DELETE",
+    "path": "/organization/roles/{role_id}",
+    "source": "api.md"
+   },
+   "admin.organization.data_retention.retrieve": {
+    "method": "GET",
+    "path": "/organization/data_retention",
+    "source": "api.md"
+   },
+   "admin.organization.data_retention.update": {
+    "method": "POST",
+    "path": "/organization/data_retention",
+    "source": "api.md"
+   },
+   "admin.organization.external_storage.create": {
+    "method": "POST",
+    "path": "/organization/external_storage",
+    "source": "api.md"
+   },
+   "admin.organization.external_storage.retrieve": {
+    "method": "GET",
+    "path": "/organization/external_storage/{external_storage_id}",
+    "source": "api.md"
+   },
+   "admin.organization.external_storage.list": {
+    "method": "GET",
+    "path": "/organization/external_storage",
+    "source": "api.md"
+   },
+   "admin.organization.external_storage.delete": {
+    "method": "DELETE",
+    "path": "/organization/external_storage/{external_storage_id}",
+    "source": "api.md"
+   },
+   "admin.organization.external_storage.validate": {
+    "method": "POST",
+    "path": "/organization/external_storage/{external_storage_id}/validate",
+    "source": "api.md"
+   },
+   "admin.organization.spend_limit.retrieve": {
+    "method": "GET",
+    "path": "/organization/spend_limit",
+    "source": "api.md"
+   },
+   "admin.organization.spend_limit.update": {
+    "method": "POST",
+    "path": "/organization/spend_limit",
+    "source": "api.md"
+   },
+   "admin.organization.spend_limit.delete": {
+    "method": "DELETE",
+    "path": "/organization/spend_limit",
+    "source": "api.md"
+   },
+   "admin.organization.spend_alerts.create": {
+    "method": "POST",
+    "path": "/organization/spend_alerts",
+    "source": "api.md"
+   },
+   "admin.organization.spend_alerts.retrieve": {
+    "method": "GET",
+    "path": "/organization/spend_alerts/{alert_id}",
+    "source": "api.md"
+   },
+   "admin.organization.spend_alerts.update": {
+    "method": "POST",
+    "path": "/organization/spend_alerts/{alert_id}",
+    "source": "api.md"
+   },
+   "admin.organization.spend_alerts.list": {
+    "method": "GET",
+    "path": "/organization/spend_alerts",
+    "source": "api.md"
+   },
+   "admin.organization.spend_alerts.delete": {
+    "method": "DELETE",
+    "path": "/organization/spend_alerts/{alert_id}",
+    "source": "api.md"
+   },
+   "admin.organization.certificates.create": {
+    "method": "POST",
+    "path": "/organization/certificates",
+    "source": "api.md"
+   },
+   "admin.organization.certificates.retrieve": {
+    "method": "GET",
+    "path": "/organization/certificates/{certificate_id}",
+    "source": "api.md"
+   },
+   "admin.organization.certificates.update": {
+    "method": "POST",
+    "path": "/organization/certificates/{certificate_id}",
+    "source": "api.md"
+   },
+   "admin.organization.certificates.list": {
+    "method": "GET",
+    "path": "/organization/certificates",
+    "source": "api.md"
+   },
+   "admin.organization.certificates.delete": {
+    "method": "DELETE",
+    "path": "/organization/certificates/{certificate_id}",
+    "source": "api.md"
+   },
+   "admin.organization.certificates.activate": {
+    "method": "POST",
+    "path": "/organization/certificates/activate",
+    "source": "api.md"
+   },
+   "admin.organization.certificates.deactivate": {
+    "method": "POST",
+    "path": "/organization/certificates/deactivate",
+    "source": "api.md"
+   },
+   "admin.organization.projects.create": {
+    "method": "POST",
+    "path": "/organization/projects",
+    "source": "api.md"
+   },
+   "admin.organization.projects.retrieve": {
+    "method": "GET",
+    "path": "/organization/projects/{project_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.update": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.list": {
+    "method": "GET",
+    "path": "/organization/projects",
+    "source": "api.md"
+   },
+   "admin.organization.projects.archive": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}/archive",
+    "source": "api.md"
+   },
+   "admin.organization.projects.users.create": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}/users",
+    "source": "api.md"
+   },
+   "admin.organization.projects.users.retrieve": {
+    "method": "GET",
+    "path": "/organization/projects/{project_id}/users/{user_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.users.update": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}/users/{user_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.users.list": {
+    "method": "GET",
+    "path": "/organization/projects/{project_id}/users",
+    "source": "api.md"
+   },
+   "admin.organization.projects.users.delete": {
+    "method": "DELETE",
+    "path": "/organization/projects/{project_id}/users/{user_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.users.roles.create": {
+    "method": "POST",
+    "path": "/projects/{project_id}/users/{user_id}/roles",
+    "source": "api.md"
+   },
+   "admin.organization.projects.users.roles.retrieve": {
+    "method": "GET",
+    "path": "/projects/{project_id}/users/{user_id}/roles/{role_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.users.roles.list": {
+    "method": "GET",
+    "path": "/projects/{project_id}/users/{user_id}/roles",
+    "source": "api.md"
+   },
+   "admin.organization.projects.users.roles.delete": {
+    "method": "DELETE",
+    "path": "/projects/{project_id}/users/{user_id}/roles/{role_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.service_accounts.create": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}/service_accounts",
+    "source": "api.md"
+   },
+   "admin.organization.projects.service_accounts.retrieve": {
+    "method": "GET",
+    "path": "/organization/projects/{project_id}/service_accounts/{service_account_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.service_accounts.update": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}/service_accounts/{service_account_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.service_accounts.list": {
+    "method": "GET",
+    "path": "/organization/projects/{project_id}/service_accounts",
+    "source": "api.md"
+   },
+   "admin.organization.projects.service_accounts.delete": {
+    "method": "DELETE",
+    "path": "/organization/projects/{project_id}/service_accounts/{service_account_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.service_accounts.api_keys.create": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}/service_accounts/{service_account_id}/api_keys",
+    "source": "api.md"
+   },
+   "admin.organization.projects.api_keys.retrieve": {
+    "method": "GET",
+    "path": "/organization/projects/{project_id}/api_keys/{api_key_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.api_keys.update": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}/api_keys/{api_key_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.api_keys.list": {
+    "method": "GET",
+    "path": "/organization/projects/{project_id}/api_keys",
+    "source": "api.md"
+   },
+   "admin.organization.projects.api_keys.delete": {
+    "method": "DELETE",
+    "path": "/organization/projects/{project_id}/api_keys/{api_key_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.rate_limits.list_rate_limits": {
+    "method": "GET",
+    "path": "/organization/projects/{project_id}/rate_limits",
+    "source": "api.md"
+   },
+   "admin.organization.projects.rate_limits.update_rate_limit": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}/rate_limits/{rate_limit_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.model_permissions.retrieve": {
+    "method": "GET",
+    "path": "/organization/projects/{project_id}/model_permissions",
+    "source": "api.md"
+   },
+   "admin.organization.projects.model_permissions.update": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}/model_permissions",
+    "source": "api.md"
+   },
+   "admin.organization.projects.model_permissions.delete": {
+    "method": "DELETE",
+    "path": "/organization/projects/{project_id}/model_permissions",
+    "source": "api.md"
+   },
+   "admin.organization.projects.hosted_tool_permissions.retrieve": {
+    "method": "GET",
+    "path": "/organization/projects/{project_id}/hosted_tool_permissions",
+    "source": "api.md"
+   },
+   "admin.organization.projects.hosted_tool_permissions.update": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}/hosted_tool_permissions",
+    "source": "api.md"
+   },
+   "admin.organization.projects.groups.create": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}/groups",
+    "source": "api.md"
+   },
+   "admin.organization.projects.groups.retrieve": {
+    "method": "GET",
+    "path": "/organization/projects/{project_id}/groups/{group_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.groups.list": {
+    "method": "GET",
+    "path": "/organization/projects/{project_id}/groups",
+    "source": "api.md"
+   },
+   "admin.organization.projects.groups.delete": {
+    "method": "DELETE",
+    "path": "/organization/projects/{project_id}/groups/{group_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.groups.roles.create": {
+    "method": "POST",
+    "path": "/projects/{project_id}/groups/{group_id}/roles",
+    "source": "api.md"
+   },
+   "admin.organization.projects.groups.roles.retrieve": {
+    "method": "GET",
+    "path": "/projects/{project_id}/groups/{group_id}/roles/{role_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.groups.roles.list": {
+    "method": "GET",
+    "path": "/projects/{project_id}/groups/{group_id}/roles",
+    "source": "api.md"
+   },
+   "admin.organization.projects.groups.roles.delete": {
+    "method": "DELETE",
+    "path": "/projects/{project_id}/groups/{group_id}/roles/{role_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.roles.create": {
+    "method": "POST",
+    "path": "/projects/{project_id}/roles",
+    "source": "api.md"
+   },
+   "admin.organization.projects.roles.retrieve": {
+    "method": "GET",
+    "path": "/projects/{project_id}/roles/{role_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.roles.update": {
+    "method": "POST",
+    "path": "/projects/{project_id}/roles/{role_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.roles.list": {
+    "method": "GET",
+    "path": "/projects/{project_id}/roles",
+    "source": "api.md"
+   },
+   "admin.organization.projects.roles.delete": {
+    "method": "DELETE",
+    "path": "/projects/{project_id}/roles/{role_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.data_retention.retrieve": {
+    "method": "GET",
+    "path": "/organization/projects/{project_id}/data_retention",
+    "source": "api.md"
+   },
+   "admin.organization.projects.data_retention.update": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}/data_retention",
+    "source": "api.md"
+   },
+   "admin.organization.projects.spend_limit.retrieve": {
+    "method": "GET",
+    "path": "/organization/projects/{project_id}/spend_limit",
+    "source": "api.md"
+   },
+   "admin.organization.projects.spend_limit.update": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}/spend_limit",
+    "source": "api.md"
+   },
+   "admin.organization.projects.spend_limit.delete": {
+    "method": "DELETE",
+    "path": "/organization/projects/{project_id}/spend_limit",
+    "source": "api.md"
+   },
+   "admin.organization.projects.spend_alerts.create": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}/spend_alerts",
+    "source": "api.md"
+   },
+   "admin.organization.projects.spend_alerts.retrieve": {
+    "method": "GET",
+    "path": "/organization/projects/{project_id}/spend_alerts/{alert_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.spend_alerts.update": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}/spend_alerts/{alert_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.spend_alerts.list": {
+    "method": "GET",
+    "path": "/organization/projects/{project_id}/spend_alerts",
+    "source": "api.md"
+   },
+   "admin.organization.projects.spend_alerts.delete": {
+    "method": "DELETE",
+    "path": "/organization/projects/{project_id}/spend_alerts/{alert_id}",
+    "source": "api.md"
+   },
+   "admin.organization.projects.certificates.list": {
+    "method": "GET",
+    "path": "/organization/projects/{project_id}/certificates",
+    "source": "api.md"
+   },
+   "admin.organization.projects.certificates.activate": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}/certificates/activate",
+    "source": "api.md"
+   },
+   "admin.organization.projects.certificates.deactivate": {
+    "method": "POST",
+    "path": "/organization/projects/{project_id}/certificates/deactivate",
+    "source": "api.md"
+   },
+   "evals.create": {
+    "method": "POST",
+    "path": "/evals",
+    "source": "api.md"
+   },
+   "evals.retrieve": {
+    "method": "GET",
+    "path": "/evals/{eval_id}",
+    "source": "api.md"
+   },
+   "evals.update": {
+    "method": "POST",
+    "path": "/evals/{eval_id}",
+    "source": "api.md"
+   },
+   "evals.list": {
+    "method": "GET",
+    "path": "/evals",
+    "source": "api.md"
+   },
+   "evals.delete": {
+    "method": "DELETE",
+    "path": "/evals/{eval_id}",
+    "source": "api.md"
+   },
+   "evals.runs.create": {
+    "method": "POST",
+    "path": "/evals/{eval_id}/runs",
+    "source": "api.md"
+   },
+   "evals.runs.retrieve": {
+    "method": "GET",
+    "path": "/evals/{eval_id}/runs/{run_id}",
+    "source": "api.md"
+   },
+   "evals.runs.list": {
+    "method": "GET",
+    "path": "/evals/{eval_id}/runs",
+    "source": "api.md"
+   },
+   "evals.runs.delete": {
+    "method": "DELETE",
+    "path": "/evals/{eval_id}/runs/{run_id}",
+    "source": "api.md"
+   },
+   "evals.runs.cancel": {
+    "method": "POST",
+    "path": "/evals/{eval_id}/runs/{run_id}/cancel",
+    "source": "api.md"
+   },
+   "evals.runs.output_items.retrieve": {
+    "method": "GET",
+    "path": "/evals/{eval_id}/runs/{run_id}/output_items/{output_item_id}",
+    "source": "api.md"
+   },
+   "evals.runs.output_items.list": {
+    "method": "GET",
+    "path": "/evals/{eval_id}/runs/{run_id}/output_items",
+    "source": "api.md"
+   },
+   "containers.create": {
+    "method": "POST",
+    "path": "/containers",
+    "source": "api.md"
+   },
+   "containers.retrieve": {
+    "method": "GET",
+    "path": "/containers/{container_id}",
+    "source": "api.md"
+   },
+   "containers.list": {
+    "method": "GET",
+    "path": "/containers",
+    "source": "api.md"
+   },
+   "containers.delete": {
+    "method": "DELETE",
+    "path": "/containers/{container_id}",
+    "source": "api.md"
+   },
+   "containers.files.create": {
+    "method": "POST",
+    "path": "/containers/{container_id}/files",
+    "source": "api.md"
+   },
+   "containers.files.retrieve": {
+    "method": "GET",
+    "path": "/containers/{container_id}/files/{file_id}",
+    "source": "api.md"
+   },
+   "containers.files.list": {
+    "method": "GET",
+    "path": "/containers/{container_id}/files",
+    "source": "api.md"
+   },
+   "containers.files.delete": {
+    "method": "DELETE",
+    "path": "/containers/{container_id}/files/{file_id}",
+    "source": "api.md"
+   },
+   "containers.files.content.retrieve": {
+    "method": "GET",
+    "path": "/containers/{container_id}/files/{file_id}/content",
+    "source": "api.md"
+   },
+   "skills.create": {
+    "method": "POST",
+    "path": "/skills",
+    "source": "api.md"
+   },
+   "skills.retrieve": {
+    "method": "GET",
+    "path": "/skills/{skill_id}",
+    "source": "api.md"
+   },
+   "skills.update": {
+    "method": "POST",
+    "path": "/skills/{skill_id}",
+    "source": "api.md"
+   },
+   "skills.list": {
+    "method": "GET",
+    "path": "/skills",
+    "source": "api.md"
+   },
+   "skills.delete": {
+    "method": "DELETE",
+    "path": "/skills/{skill_id}",
+    "source": "api.md"
+   },
+   "skills.content.retrieve": {
+    "method": "GET",
+    "path": "/skills/{skill_id}/content",
+    "source": "api.md"
+   },
+   "skills.versions.create": {
+    "method": "POST",
+    "path": "/skills/{skill_id}/versions",
+    "source": "api.md"
+   },
+   "skills.versions.retrieve": {
+    "method": "GET",
+    "path": "/skills/{skill_id}/versions/{version}",
+    "source": "api.md"
+   },
+   "skills.versions.list": {
+    "method": "GET",
+    "path": "/skills/{skill_id}/versions",
+    "source": "api.md"
+   },
+   "skills.versions.delete": {
+    "method": "DELETE",
+    "path": "/skills/{skill_id}/versions/{version}",
+    "source": "api.md"
+   },
+   "skills.versions.content.retrieve": {
+    "method": "GET",
+    "path": "/skills/{skill_id}/versions/{version}/content",
+    "source": "api.md"
+   },
+   "videos.create": {
+    "method": "POST",
+    "path": "/videos",
+    "source": "api.md"
+   },
+   "videos.retrieve": {
+    "method": "GET",
+    "path": "/videos/{video_id}",
+    "source": "api.md"
+   },
+   "videos.list": {
+    "method": "GET",
+    "path": "/videos",
+    "source": "api.md"
+   },
+   "videos.delete": {
+    "method": "DELETE",
+    "path": "/videos/{video_id}",
+    "source": "api.md"
+   },
+   "videos.create_character": {
+    "method": "POST",
+    "path": "/videos/characters",
+    "source": "api.md"
+   },
+   "videos.download_content": {
+    "method": "GET",
+    "path": "/videos/{video_id}/content",
+    "source": "api.md"
+   },
+   "videos.edit": {
+    "method": "POST",
+    "path": "/videos/edits",
+    "source": "api.md"
+   },
+   "videos.extend": {
+    "method": "POST",
+    "path": "/videos/extensions",
+    "source": "api.md"
+   },
+   "videos.get_character": {
+    "method": "GET",
+    "path": "/videos/characters/{character_id}",
+    "source": "api.md"
+   },
+   "videos.remix": {
+    "method": "POST",
+    "path": "/videos/{video_id}/remix",
+    "source": "api.md"
+   }
+  }
+ },
+ "skipped": []
+}

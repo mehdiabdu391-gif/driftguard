@@ -1,0 +1,75 @@
+{
+  "specId": "openai",
+  "days": 90,
+  "base": {
+    "sha": "db3e53198a66732cfe161339ea63bf36fc0137ad",
+    "date": "2026-07-16T16:39:14Z",
+    "message": "Sync OpenAPI spec from ce8c9bed912f"
+  },
+  "revision": {
+    "sha": "33248a638234a53846ed3ab4b2a7c77069bc1030",
+    "date": "2026-10-19T05:35:43Z",
+    "message": "Add nullable input_cache_write_30m_tokens metric to token usage data"
+  },
+  "compareUrl": "https://github.com/openai/openai-openapi/compare/db3e53198a66732cfe161339ea63bf36fc0137ad...33248a638234a53846ed3ab4b2a7c77069bc1030",
+  "oasdiff": "oasdiff version 1.34.0",
+  "generatedAt": "2026-10-19T06:32:23.262Z",
+  "changes": [
+    {
+      "rule": "request-property-became-required",
+      "level": 3,
+      "text": "the request property `model` became required",
+      "method": "POST",
+      "path": "/images/generations",
+      "operationId": "createImage",
+      "source": null,
+      "kind": "request-field-required",
+      "target": {
+        "location": "body",
+        "path": [
+          "model"
+        ],
+        "viaArray": false,
+        "raw": "model"
+      },
+      "verification": {
+        "status": "verified",
+        "reason": "property \"model\" is required in the revision spec and was optional or absent before"
+      },
+      "specId": "openai",
+      "key": "request-property-became-required|POST /images/generations|the request property `model` became required",
+      "sourceUrl": null,
+      "compareUrl": "https://github.com/openai/openai-openapi/compare/db3e53198a66732cfe161339ea63bf36fc0137ad...33248a638234a53846ed3ab4b2a7c77069bc1030",
+      "introducedIn": null
+    },
+    {
+      "rule": "request-property-enum-value-removed",
+      "level": 3,
+      "text": "removed the enum value `high` of the request property `quality`",
+      "method": "POST",
+      "path": "/images/generations",
+      "operationId": "createImage",
+      "source": null,
+      "kind": "request-enum-value-removed",
+      "target": {
+        "location": "body",
+        "path": [
+          "quality"
+        ],
+        "viaArray": false,
+        "raw": "quality",
+        "value": "high"
+      },
+      "verification": {
+        "status": "refuted",
+        "reason": "value \"high\" is still listed for \"quality\" in the revision spec"
+      },
+      "specId": "openai",
+      "key": "request-property-enum-value-removed|POST /images/generations|removed the enum value `high` of the request property `quality`",
+      "sourceUrl": null,
+      "compareUrl": "https://github.com/openai/openai-openapi/compare/db3e53198a66732cfe161339ea63bf36fc0137ad...33248a638234a53846ed3ab4b2a7c77069bc1030",
+      "introducedIn": null
+    }
+  ],
+  "responseSummary": {}
+}

@@ -1,0 +1,80 @@
+name: DriftGuard API drift check
+description: Find the lines in your code that upstream API spec changes (Stripe, OpenAI, GitHub, Twilio) break.
+author: Mehdi Abdu Mohammed
+branding:
+  icon: git-pull-request
+  color: blue
+inputs:
+  path:
+    description: Directory to scan, relative to the workspace.
+    default: '.'
+  window:
+    description: Spec-change window in days (30, 90 or 180).
+    default: '90'
+  fail-on:
+    description: Fail the job on "confirmed" findings (default), on "possible" ones too, or "never".
+    default: confirmed
+  exclude:
+    description: Space-separated path prefixes to skip.
+    default: ''
+  data:
+    description: Tracker data directory. Default is the latest published data, downloaded at run time.
+    default: ''
+  comment:
+    description: Post or update a summary comment on pull requests (needs pull-requests write permission).
+    default: 'true'
+outputs:
+  confirmed:
+    description: Number of confirmed findings.
+    value: ${{ steps.scan.outputs.confirmed }}
+  possible:
+    description: Number of possible findings.
+    value: ${{ steps.scan.outputs.possible }}
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-node@v4
+      with:
+        node-version: '22'
+    - name: Install DriftGuard
+      shell: bash
+      run: cd "$GITHUB_ACTION_PATH" && npm ci --omit=dev --ignore-scripts --no-audit --no-fund
+    - name: Scan
+      id: scan
+      shell: bash
+      env:
+        INPUT_PATH: ${{ inputs.path }}
+        INPUT_WINDOW: ${{ inputs.window }}
+        INPUT_FAIL_ON: ${{ inputs.fail-on }}
+        INPUT_EXCLUDE: ${{ inputs.exclude }}
+        DRIFTGUARD_DATA: ${{ inputs.data }}
+      run: |
+        set +e
+        [ -z "$DRIFTGUARD_DATA" ] && unset DRIFTGUARD_DATA
+        excludes=()
+        for p in $INPUT_EXCLUDE; do excludes+=(--exclude "$p"); done
+        node "$GITHUB_ACTION_PATH/bin/drift.js" scan "$INPUT_PATH" --window "$INPUT_WINDOW" --format markdown --output "$RUNNER_TEMP/drift.md" --json-output "$RUNNER_TEMP/drift.json" --annotations "${excludes[@]}" --fail-on "$INPUT_FAIL_ON"
+        code=$?
+        if [ ! -s "$RUNNER_TEMP/drift.json" ]; then echo "::error::DriftGuard scan did not complete (exit $code)."; echo "exit_code=2" >> "$GITHUB_OUTPUT"; exit 0; fi
+        cat "$RUNNER_TEMP/drift.md" >> "$GITHUB_STEP_SUMMARY"
+        echo "confirmed=$(node -e 'console.log(require(process.argv[1]).summary.confirmed)' "$RUNNER_TEMP/drift.json")" >> "$GITHUB_OUTPUT"
+        echo "possible=$(node -e 'console.log(require(process.argv[1]).summary.possible)' "$RUNNER_TEMP/drift.json")" >> "$GITHUB_OUTPUT"
+        echo "exit_code=$code" >> "$GITHUB_OUTPUT"
+    - name: Comment on pull request
+      if: ${{ inputs.comment == 'true' && github.event_name == 'pull_request' && steps.scan.outputs.exit_code != '2' }}
+      shell: bash
+      env:
+        GH_TOKEN: ${{ github.token }}
+        PR: ${{ github.event.pull_request.number }}
+        REPO: ${{ github.repository }}
+      run: |
+        body="<!-- driftguard -->"$'\n'"$(cat "$RUNNER_TEMP/drift.md")"
+        id=$(gh api "repos/$REPO/issues/$PR/comments" --paginate --jq '.[] | select(.body | startswith("<!-- driftguard -->")) | .id' | head -n1)
+        if [ -n "$id" ]; then
+          gh api -X PATCH "repos/$REPO/issues/comments/$id" -f body="$body" > /dev/null || echo "::warning::DriftGuard could not update its PR comment (needs pull-requests: write)."
+        else
+          gh api -X POST "repos/$REPO/issues/$PR/comments" -f body="$body" > /dev/null || echo "::warning::DriftGuard could not post a PR comment (needs pull-requests: write)."
+        fi
+    - name: Result
+      shell: bash
+      run: exit ${{ steps.scan.outputs.exit_code }}

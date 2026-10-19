@@ -1,0 +1,39 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci --ignore-scripts
+      - run: npm run typecheck
+      - run: npm test
+  action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run the action against the bundled fixture app
+        id: drift
+        uses: ./
+        with:
+          path: test/fixtures/js-app
+          fail-on: never
+          comment: 'false'
+  promote:
+    # Users pin `@stable`. It only fast-forwards to main commits that passed both jobs.
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: [test, action]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - run: git push origin HEAD:refs/heads/stable

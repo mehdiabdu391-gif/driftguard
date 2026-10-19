@@ -1,0 +1,7 @@
+node_modules/
+.cache/
+*.log
+# Tracker output lives on the `data` branch; Pages output is deployed, not committed.
+/data/
+/_site/
+/docs/
