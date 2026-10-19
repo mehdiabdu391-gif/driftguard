@@ -1,0 +1,66 @@
+{
+  "specId": "openai",
+  "base": {
+    "sha": "55ec4ae46b19445aa09b0d2cc602b0df78ae030e",
+    "date": "2026-10-06T21:13:39Z",
+    "message": "Add 429 rate limit error response to Files API endpoints"
+  },
+  "revision": {
+    "sha": "d28f34e5d8b3adee2284b7ba6b903e953ebb5111",
+    "date": "2026-10-06T21:48:40Z",
+    "message": "Increase max length for safety_identifier to 128 characters"
+  },
+  "compareUrl": "https://github.com/openai/openai-openapi/compare/55ec4ae46b19445aa09b0d2cc602b0df78ae030e...d28f34e5d8b3adee2284b7ba6b903e953ebb5111",
+  "oasdiff": "oasdiff version 1.34.0",
+  "changes": [],
+  "responseSummary": {
+    "POST /responses": {
+      "method": "POST",
+      "path": "/responses",
+      "count": 2,
+      "rules": {
+        "response-property-max-length-increased": 2
+      }
+    },
+    "GET /responses/{}": {
+      "method": "GET",
+      "path": "/responses/{response_id}",
+      "count": 1,
+      "rules": {
+        "response-property-max-length-increased": 1
+      }
+    },
+    "POST /responses/{}/cancel": {
+      "method": "POST",
+      "path": "/responses/{response_id}/cancel",
+      "count": 1,
+      "rules": {
+        "response-property-max-length-increased": 1
+      }
+    },
+    "POST /responses/{}/cancel?beta=true": {
+      "method": "POST",
+      "path": "/responses/{response_id}/cancel?beta=true",
+      "count": 1,
+      "rules": {
+        "response-property-max-length-increased": 1
+      }
+    },
+    "GET /responses/{}?beta=true": {
+      "method": "GET",
+      "path": "/responses/{response_id}?beta=true",
+      "count": 1,
+      "rules": {
+        "response-property-max-length-increased": 1
+      }
+    },
+    "POST /responses?beta=true": {
+      "method": "POST",
+      "path": "/responses?beta=true",
+      "count": 2,
+      "rules": {
+        "response-property-max-length-increased": 2
+      }
+    }
+  }
+}

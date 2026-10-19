@@ -1,0 +1,409 @@
+{
+ "specId": "twilio-verify",
+ "snapshots": [
+  "157fb094bd08957183278242d7622c8560b7a4c4",
+  "5aa7f31977ce5812f7b7bc1f46a38555ebaa2888",
+  "d50069b44ea8cd23141385bdb6db48f16ff75bb5"
+ ],
+ "operations": [
+  {
+   "method": "GET",
+   "path": "/v2/Attempts/{Sid}",
+   "operationId": "FetchVerificationAttempt",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v2/Attempts/Summary",
+   "operationId": "FetchVerificationAttemptsSummary",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v2/Attempts",
+   "operationId": "ListVerificationAttempt",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v2/Forms/{FormType}",
+   "operationId": "FetchForm",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v2/SafeList/Numbers/{PhoneNumber}",
+   "operationId": "DeleteSafelist",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v2/SafeList/Numbers/{PhoneNumber}",
+   "operationId": "FetchSafelist",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/SafeList/Numbers",
+   "operationId": "CreateSafelist",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v2/Services/{ServiceSid}/AccessTokens/{Sid}",
+   "operationId": "FetchAccessToken",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/Services/{ServiceSid}/AccessTokens",
+   "operationId": "CreateAccessToken",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/Services/{ServiceSid}/Entities/{Identity}/Challenges/{ChallengeSid}/Notifications",
+   "operationId": "CreateNotification",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v2/Services/{ServiceSid}/Entities/{Identity}/Challenges/{Sid}",
+   "operationId": "FetchChallenge",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/Services/{ServiceSid}/Entities/{Identity}/Challenges/{Sid}",
+   "operationId": "UpdateChallenge",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v2/Services/{ServiceSid}/Entities/{Identity}/Challenges",
+   "operationId": "ListChallenge",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/Services/{ServiceSid}/Entities/{Identity}/Challenges",
+   "operationId": "CreateChallenge",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v2/Services/{ServiceSid}/Entities/{Identity}/Factors/{Sid}",
+   "operationId": "DeleteFactor",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v2/Services/{ServiceSid}/Entities/{Identity}/Factors/{Sid}",
+   "operationId": "FetchFactor",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/Services/{ServiceSid}/Entities/{Identity}/Factors/{Sid}",
+   "operationId": "UpdateFactor",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v2/Services/{ServiceSid}/Entities/{Identity}/Factors",
+   "operationId": "ListFactor",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/Services/{ServiceSid}/Entities/{Identity}/Factors",
+   "operationId": "CreateNewFactor",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v2/Services/{ServiceSid}/Entities/{Identity}",
+   "operationId": "DeleteEntity",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v2/Services/{ServiceSid}/Entities/{Identity}",
+   "operationId": "FetchEntity",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v2/Services/{ServiceSid}/Entities",
+   "operationId": "ListEntity",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/Services/{ServiceSid}/Entities",
+   "operationId": "CreateEntity",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v2/Services/{ServiceSid}/MessagingConfigurations/{Country}",
+   "operationId": "DeleteMessagingConfiguration",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v2/Services/{ServiceSid}/MessagingConfigurations/{Country}",
+   "operationId": "FetchMessagingConfiguration",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/Services/{ServiceSid}/MessagingConfigurations/{Country}",
+   "operationId": "UpdateMessagingConfiguration",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v2/Services/{ServiceSid}/MessagingConfigurations",
+   "operationId": "ListMessagingConfiguration",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/Services/{ServiceSid}/MessagingConfigurations",
+   "operationId": "CreateMessagingConfiguration",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/Services/{ServiceSid}/Passkeys/ApproveChallenge",
+   "operationId": "UpdateChallengePasskeys",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/Services/{ServiceSid}/Passkeys/Challenges",
+   "operationId": "CreateChallengePasskeys",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/Services/{ServiceSid}/Passkeys/Factors",
+   "operationId": "CreateNewFactorPasskey",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/Services/{ServiceSid}/Passkeys/VerifyFactor",
+   "operationId": "UpdatePasskeysFactor",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v2/Services/{ServiceSid}/RateLimits/{RateLimitSid}/Buckets/{Sid}",
+   "operationId": "DeleteBucket",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v2/Services/{ServiceSid}/RateLimits/{RateLimitSid}/Buckets/{Sid}",
+   "operationId": "FetchBucket",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/Services/{ServiceSid}/RateLimits/{RateLimitSid}/Buckets/{Sid}",
+   "operationId": "UpdateBucket",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v2/Services/{ServiceSid}/RateLimits/{RateLimitSid}/Buckets",
+   "operationId": "ListBucket",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/Services/{ServiceSid}/RateLimits/{RateLimitSid}/Buckets",
+   "operationId": "CreateBucket",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v2/Services/{ServiceSid}/RateLimits/{Sid}",
+   "operationId": "DeleteRateLimit",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v2/Services/{ServiceSid}/RateLimits/{Sid}",
+   "operationId": "FetchRateLimit",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/Services/{ServiceSid}/RateLimits/{Sid}",
+   "operationId": "UpdateRateLimit",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v2/Services/{ServiceSid}/RateLimits",
+   "operationId": "ListRateLimit",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/Services/{ServiceSid}/RateLimits",
+   "operationId": "CreateRateLimit",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/Services/{ServiceSid}/VerificationCheck",
+   "operationId": "CreateVerificationCheck",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v2/Services/{ServiceSid}/Verifications/{Sid}",
+   "operationId": "FetchVerification",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/Services/{ServiceSid}/Verifications/{Sid}",
+   "operationId": "UpdateVerification",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/Services/{ServiceSid}/Verifications",
+   "operationId": "CreateVerification",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v2/Services/{ServiceSid}/Webhooks/{Sid}",
+   "operationId": "DeleteWebhook",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v2/Services/{ServiceSid}/Webhooks/{Sid}",
+   "operationId": "FetchWebhook",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/Services/{ServiceSid}/Webhooks/{Sid}",
+   "operationId": "UpdateWebhook",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v2/Services/{ServiceSid}/Webhooks",
+   "operationId": "ListWebhook",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/Services/{ServiceSid}/Webhooks",
+   "operationId": "CreateWebhook",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/v2/Services/{Sid}",
+   "operationId": "DeleteService",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v2/Services/{Sid}",
+   "operationId": "FetchService",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/Services/{Sid}",
+   "operationId": "UpdateService",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v2/Services",
+   "operationId": "ListService",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/v2/Services",
+   "operationId": "CreateService",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/v2/Templates",
+   "operationId": "ListVerificationTemplate",
+   "deprecated": false,
+   "inHead": true
+  }
+ ]
+}

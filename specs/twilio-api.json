@@ -1,0 +1,59 @@
+{
+ "id": "twilio-api",
+ "repo": "twilio/twilio-oai",
+ "file": "spec/json/twilio_api_v2010.json",
+ "history": [
+  {
+   "sha": "157fb094bd08957183278242d7622c8560b7a4c4",
+   "date": "2026-10-06T11:03:20Z",
+   "message": "[Librarian] Regenerated @ 65f186ed432e7d4763681d0938b6100538958867 b912db512dedc5b551443d1f017bd90808b98733 (#166)",
+   "base": "218b7821602a93ae63e83e20ab5e8637e870250f",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "218b7821602a93ae63e83e20ab5e8637e870250f",
+   "date": "2026-09-28T08:41:05Z",
+   "message": "[Librarian] Regenerated @ 65f186ed432e7d4763681d0938b6100538958867 c0286c343096d9f96068fc34bee16c5c5f4460fc (#165)",
+   "base": "5aa7f31977ce5812f7b7bc1f46a38555ebaa2888",
+   "tracked": 0,
+   "responseChanges": 0
+  }
+ ],
+ "windows": {
+  "30d": {
+   "base": {
+    "sha": "5aa7f31977ce5812f7b7bc1f46a38555ebaa2888",
+    "date": "2026-09-09T10:42:33Z",
+    "message": "[Librarian] Regenerated @ f443c9dfa233e41d0e61c9ed6ca2b162467a08b5 c5c2de9152376e52624ec1944d1d0090a42cf016 (#163)"
+   },
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  "90d": {
+   "base": {
+    "sha": "bb6288e9f540d2d63540bbaadf6b73fd262c2df3",
+    "date": "2026-05-06T07:42:34Z",
+    "message": "[Librarian] Regenerated @ d39d243cf0f072a87b06d80cfd5d04f77cde8481 e2fda0239d5ac5204c1eb729268301177801eb2f"
+   },
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  "180d": {
+   "base": {
+    "sha": "d50069b44ea8cd23141385bdb6db48f16ff75bb5",
+    "date": "2026-04-14T09:26:42Z",
+    "message": "[Librarian] Regenerated @ 40ca64a22aef42a337cb49d1d4e4c4f48ae3b6e4 21ed5806eff8cf1f0967ad30bdc57d2a59e703cb"
+   },
+   "tracked": 1,
+   "responseChanges": 0
+  }
+ },
+ "head": {
+  "sha": "157fb094bd08957183278242d7622c8560b7a4c4",
+  "date": "2026-10-06T11:03:20Z",
+  "message": "[Librarian] Regenerated @ 65f186ed432e7d4763681d0938b6100538958867 b912db512dedc5b551443d1f017bd90808b98733 (#166)",
+  "specVersion": "1.0.0"
+ },
+ "updatedAt": "2026-10-19T08:24:16.409Z"
+}

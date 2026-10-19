@@ -1,0 +1,402 @@
+{
+  "specId": "openai",
+  "base": {
+    "sha": "3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d",
+    "date": "2026-10-08T07:31:43Z",
+    "message": "Deprecate text-prompt voice creation; require audio samples for custom T"
+  },
+  "revision": {
+    "sha": "506aff0a8099581b50e119b87f8f2692cdad043f",
+    "date": "2026-10-08T07:48:49Z",
+    "message": "Add detailed reasoning summary events and refine session query params"
+  },
+  "compareUrl": "https://github.com/openai/openai-openapi/compare/3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d...506aff0a8099581b50e119b87f8f2692cdad043f",
+  "oasdiff": "oasdiff version 1.34.0",
+  "changes": [
+    {
+      "rule": "request-parameter-became-not-nullable",
+      "level": 3,
+      "text": "the `query` request parameter `limit` became not nullable",
+      "method": "GET",
+      "path": "/agents",
+      "operationId": "listAgents",
+      "source": null,
+      "kind": "request-field-constrained",
+      "target": {
+        "location": "query",
+        "path": [
+          "limit"
+        ],
+        "viaArray": false,
+        "raw": "limit"
+      },
+      "verification": {
+        "status": "unverified",
+        "reason": "claim taken from oasdiff; no independent check for this change type"
+      },
+      "specId": "openai",
+      "key": "request-parameter-became-not-nullable|GET /agents|the `query` request parameter `limit` became not nullable",
+      "sourceUrl": null,
+      "compareUrl": "https://github.com/openai/openai-openapi/compare/3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d...506aff0a8099581b50e119b87f8f2692cdad043f",
+      "introducedIn": {
+        "sha": "506aff0a8099581b50e119b87f8f2692cdad043f",
+        "date": "2026-10-08T07:48:49Z",
+        "message": "Add detailed reasoning summary events and refine session query params",
+        "compareUrl": "https://github.com/openai/openai-openapi/compare/3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d...506aff0a8099581b50e119b87f8f2692cdad043f"
+      }
+    },
+    {
+      "rule": "request-parameter-max-set",
+      "level": 3,
+      "text": "for the `query` request parameter `limit`, the max was set to `100.00`",
+      "method": "GET",
+      "path": "/agents",
+      "operationId": "listAgents",
+      "source": null,
+      "kind": "request-field-constrained",
+      "target": {
+        "location": "query",
+        "path": [
+          "limit"
+        ],
+        "viaArray": false,
+        "raw": "limit"
+      },
+      "verification": {
+        "status": "unverified",
+        "reason": "claim taken from oasdiff; no independent check for this change type"
+      },
+      "specId": "openai",
+      "key": "request-parameter-max-set|GET /agents|for the `query` request parameter `limit`, the max was set to `100.00`",
+      "sourceUrl": null,
+      "compareUrl": "https://github.com/openai/openai-openapi/compare/3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d...506aff0a8099581b50e119b87f8f2692cdad043f",
+      "introducedIn": {
+        "sha": "506aff0a8099581b50e119b87f8f2692cdad043f",
+        "date": "2026-10-08T07:48:49Z",
+        "message": "Add detailed reasoning summary events and refine session query params",
+        "compareUrl": "https://github.com/openai/openai-openapi/compare/3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d...506aff0a8099581b50e119b87f8f2692cdad043f"
+      }
+    },
+    {
+      "rule": "request-parameter-became-not-nullable",
+      "level": 3,
+      "text": "the `query` request parameter `limit` became not nullable",
+      "method": "GET",
+      "path": "/agents/sessions",
+      "operationId": "listAgentSessions",
+      "source": null,
+      "kind": "request-field-constrained",
+      "target": {
+        "location": "query",
+        "path": [
+          "limit"
+        ],
+        "viaArray": false,
+        "raw": "limit"
+      },
+      "verification": {
+        "status": "unverified",
+        "reason": "claim taken from oasdiff; no independent check for this change type"
+      },
+      "specId": "openai",
+      "key": "request-parameter-became-not-nullable|GET /agents/sessions|the `query` request parameter `limit` became not nullable",
+      "sourceUrl": null,
+      "compareUrl": "https://github.com/openai/openai-openapi/compare/3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d...506aff0a8099581b50e119b87f8f2692cdad043f",
+      "introducedIn": {
+        "sha": "506aff0a8099581b50e119b87f8f2692cdad043f",
+        "date": "2026-10-08T07:48:49Z",
+        "message": "Add detailed reasoning summary events and refine session query params",
+        "compareUrl": "https://github.com/openai/openai-openapi/compare/3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d...506aff0a8099581b50e119b87f8f2692cdad043f"
+      }
+    },
+    {
+      "rule": "request-parameter-max-set",
+      "level": 3,
+      "text": "for the `query` request parameter `limit`, the max was set to `100.00`",
+      "method": "GET",
+      "path": "/agents/sessions",
+      "operationId": "listAgentSessions",
+      "source": null,
+      "kind": "request-field-constrained",
+      "target": {
+        "location": "query",
+        "path": [
+          "limit"
+        ],
+        "viaArray": false,
+        "raw": "limit"
+      },
+      "verification": {
+        "status": "unverified",
+        "reason": "claim taken from oasdiff; no independent check for this change type"
+      },
+      "specId": "openai",
+      "key": "request-parameter-max-set|GET /agents/sessions|for the `query` request parameter `limit`, the max was set to `100.00`",
+      "sourceUrl": null,
+      "compareUrl": "https://github.com/openai/openai-openapi/compare/3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d...506aff0a8099581b50e119b87f8f2692cdad043f",
+      "introducedIn": {
+        "sha": "506aff0a8099581b50e119b87f8f2692cdad043f",
+        "date": "2026-10-08T07:48:49Z",
+        "message": "Add detailed reasoning summary events and refine session query params",
+        "compareUrl": "https://github.com/openai/openai-openapi/compare/3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d...506aff0a8099581b50e119b87f8f2692cdad043f"
+      }
+    },
+    {
+      "rule": "request-parameter-became-not-nullable",
+      "level": 3,
+      "text": "the `query` request parameter `after` became not nullable",
+      "method": "GET",
+      "path": "/agents/sessions/{session_id}/artifacts",
+      "operationId": "listAgentSessionArtifacts",
+      "source": null,
+      "kind": "request-field-constrained",
+      "target": {
+        "location": "query",
+        "path": [
+          "after"
+        ],
+        "viaArray": false,
+        "raw": "after"
+      },
+      "verification": {
+        "status": "unverified",
+        "reason": "claim taken from oasdiff; no independent check for this change type"
+      },
+      "specId": "openai",
+      "key": "request-parameter-became-not-nullable|GET /agents/sessions/{}/artifacts|the `query` request parameter `after` became not nullable",
+      "sourceUrl": null,
+      "compareUrl": "https://github.com/openai/openai-openapi/compare/3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d...506aff0a8099581b50e119b87f8f2692cdad043f",
+      "introducedIn": {
+        "sha": "506aff0a8099581b50e119b87f8f2692cdad043f",
+        "date": "2026-10-08T07:48:49Z",
+        "message": "Add detailed reasoning summary events and refine session query params",
+        "compareUrl": "https://github.com/openai/openai-openapi/compare/3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d...506aff0a8099581b50e119b87f8f2692cdad043f"
+      }
+    },
+    {
+      "rule": "request-parameter-became-not-nullable",
+      "level": 3,
+      "text": "the `query` request parameter `limit` became not nullable",
+      "method": "GET",
+      "path": "/agents/sessions/{session_id}/artifacts",
+      "operationId": "listAgentSessionArtifacts",
+      "source": null,
+      "kind": "request-field-constrained",
+      "target": {
+        "location": "query",
+        "path": [
+          "limit"
+        ],
+        "viaArray": false,
+        "raw": "limit"
+      },
+      "verification": {
+        "status": "unverified",
+        "reason": "claim taken from oasdiff; no independent check for this change type"
+      },
+      "specId": "openai",
+      "key": "request-parameter-became-not-nullable|GET /agents/sessions/{}/artifacts|the `query` request parameter `limit` became not nullable",
+      "sourceUrl": null,
+      "compareUrl": "https://github.com/openai/openai-openapi/compare/3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d...506aff0a8099581b50e119b87f8f2692cdad043f",
+      "introducedIn": {
+        "sha": "506aff0a8099581b50e119b87f8f2692cdad043f",
+        "date": "2026-10-08T07:48:49Z",
+        "message": "Add detailed reasoning summary events and refine session query params",
+        "compareUrl": "https://github.com/openai/openai-openapi/compare/3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d...506aff0a8099581b50e119b87f8f2692cdad043f"
+      }
+    },
+    {
+      "rule": "request-parameter-became-not-nullable",
+      "level": 3,
+      "text": "the `query` request parameter `limit` became not nullable",
+      "method": "GET",
+      "path": "/vaults",
+      "operationId": "listVaults",
+      "source": null,
+      "kind": "request-field-constrained",
+      "target": {
+        "location": "query",
+        "path": [
+          "limit"
+        ],
+        "viaArray": false,
+        "raw": "limit"
+      },
+      "verification": {
+        "status": "unverified",
+        "reason": "claim taken from oasdiff; no independent check for this change type"
+      },
+      "specId": "openai",
+      "key": "request-parameter-became-not-nullable|GET /vaults|the `query` request parameter `limit` became not nullable",
+      "sourceUrl": null,
+      "compareUrl": "https://github.com/openai/openai-openapi/compare/3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d...506aff0a8099581b50e119b87f8f2692cdad043f",
+      "introducedIn": {
+        "sha": "506aff0a8099581b50e119b87f8f2692cdad043f",
+        "date": "2026-10-08T07:48:49Z",
+        "message": "Add detailed reasoning summary events and refine session query params",
+        "compareUrl": "https://github.com/openai/openai-openapi/compare/3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d...506aff0a8099581b50e119b87f8f2692cdad043f"
+      }
+    },
+    {
+      "rule": "request-parameter-max-set",
+      "level": 3,
+      "text": "for the `query` request parameter `limit`, the max was set to `100.00`",
+      "method": "GET",
+      "path": "/vaults",
+      "operationId": "listVaults",
+      "source": null,
+      "kind": "request-field-constrained",
+      "target": {
+        "location": "query",
+        "path": [
+          "limit"
+        ],
+        "viaArray": false,
+        "raw": "limit"
+      },
+      "verification": {
+        "status": "unverified",
+        "reason": "claim taken from oasdiff; no independent check for this change type"
+      },
+      "specId": "openai",
+      "key": "request-parameter-max-set|GET /vaults|for the `query` request parameter `limit`, the max was set to `100.00`",
+      "sourceUrl": null,
+      "compareUrl": "https://github.com/openai/openai-openapi/compare/3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d...506aff0a8099581b50e119b87f8f2692cdad043f",
+      "introducedIn": {
+        "sha": "506aff0a8099581b50e119b87f8f2692cdad043f",
+        "date": "2026-10-08T07:48:49Z",
+        "message": "Add detailed reasoning summary events and refine session query params",
+        "compareUrl": "https://github.com/openai/openai-openapi/compare/3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d...506aff0a8099581b50e119b87f8f2692cdad043f"
+      }
+    },
+    {
+      "rule": "request-parameter-min-increased",
+      "level": 3,
+      "text": "for the `query` request parameter `limit`, the min was increased from `0.00` to `1.00`",
+      "method": "GET",
+      "path": "/vaults",
+      "operationId": "listVaults",
+      "source": null,
+      "kind": "request-field-constrained",
+      "target": {
+        "location": "query",
+        "path": [
+          "limit"
+        ],
+        "viaArray": false,
+        "raw": "limit"
+      },
+      "verification": {
+        "status": "unverified",
+        "reason": "claim taken from oasdiff; no independent check for this change type"
+      },
+      "specId": "openai",
+      "key": "request-parameter-min-increased|GET /vaults|for the `query` request parameter `limit`, the min was increased from `0.00` to `1.00`",
+      "sourceUrl": null,
+      "compareUrl": "https://github.com/openai/openai-openapi/compare/3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d...506aff0a8099581b50e119b87f8f2692cdad043f",
+      "introducedIn": {
+        "sha": "506aff0a8099581b50e119b87f8f2692cdad043f",
+        "date": "2026-10-08T07:48:49Z",
+        "message": "Add detailed reasoning summary events and refine session query params",
+        "compareUrl": "https://github.com/openai/openai-openapi/compare/3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d...506aff0a8099581b50e119b87f8f2692cdad043f"
+      }
+    },
+    {
+      "rule": "request-parameter-became-not-nullable",
+      "level": 3,
+      "text": "the `query` request parameter `limit` became not nullable",
+      "method": "GET",
+      "path": "/vaults/{vault_id}/credentials",
+      "operationId": "listVaultCredentials",
+      "source": null,
+      "kind": "request-field-constrained",
+      "target": {
+        "location": "query",
+        "path": [
+          "limit"
+        ],
+        "viaArray": false,
+        "raw": "limit"
+      },
+      "verification": {
+        "status": "unverified",
+        "reason": "claim taken from oasdiff; no independent check for this change type"
+      },
+      "specId": "openai",
+      "key": "request-parameter-became-not-nullable|GET /vaults/{}/credentials|the `query` request parameter `limit` became not nullable",
+      "sourceUrl": null,
+      "compareUrl": "https://github.com/openai/openai-openapi/compare/3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d...506aff0a8099581b50e119b87f8f2692cdad043f",
+      "introducedIn": {
+        "sha": "506aff0a8099581b50e119b87f8f2692cdad043f",
+        "date": "2026-10-08T07:48:49Z",
+        "message": "Add detailed reasoning summary events and refine session query params",
+        "compareUrl": "https://github.com/openai/openai-openapi/compare/3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d...506aff0a8099581b50e119b87f8f2692cdad043f"
+      }
+    },
+    {
+      "rule": "request-parameter-max-set",
+      "level": 3,
+      "text": "for the `query` request parameter `limit`, the max was set to `100.00`",
+      "method": "GET",
+      "path": "/vaults/{vault_id}/credentials",
+      "operationId": "listVaultCredentials",
+      "source": null,
+      "kind": "request-field-constrained",
+      "target": {
+        "location": "query",
+        "path": [
+          "limit"
+        ],
+        "viaArray": false,
+        "raw": "limit"
+      },
+      "verification": {
+        "status": "unverified",
+        "reason": "claim taken from oasdiff; no independent check for this change type"
+      },
+      "specId": "openai",
+      "key": "request-parameter-max-set|GET /vaults/{}/credentials|for the `query` request parameter `limit`, the max was set to `100.00`",
+      "sourceUrl": null,
+      "compareUrl": "https://github.com/openai/openai-openapi/compare/3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d...506aff0a8099581b50e119b87f8f2692cdad043f",
+      "introducedIn": {
+        "sha": "506aff0a8099581b50e119b87f8f2692cdad043f",
+        "date": "2026-10-08T07:48:49Z",
+        "message": "Add detailed reasoning summary events and refine session query params",
+        "compareUrl": "https://github.com/openai/openai-openapi/compare/3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d...506aff0a8099581b50e119b87f8f2692cdad043f"
+      }
+    },
+    {
+      "rule": "request-parameter-min-increased",
+      "level": 3,
+      "text": "for the `query` request parameter `limit`, the min was increased from `0.00` to `1.00`",
+      "method": "GET",
+      "path": "/vaults/{vault_id}/credentials",
+      "operationId": "listVaultCredentials",
+      "source": null,
+      "kind": "request-field-constrained",
+      "target": {
+        "location": "query",
+        "path": [
+          "limit"
+        ],
+        "viaArray": false,
+        "raw": "limit"
+      },
+      "verification": {
+        "status": "unverified",
+        "reason": "claim taken from oasdiff; no independent check for this change type"
+      },
+      "specId": "openai",
+      "key": "request-parameter-min-increased|GET /vaults/{}/credentials|for the `query` request parameter `limit`, the min was increased from `0.00` to `1.00`",
+      "sourceUrl": null,
+      "compareUrl": "https://github.com/openai/openai-openapi/compare/3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d...506aff0a8099581b50e119b87f8f2692cdad043f",
+      "introducedIn": {
+        "sha": "506aff0a8099581b50e119b87f8f2692cdad043f",
+        "date": "2026-10-08T07:48:49Z",
+        "message": "Add detailed reasoning summary events and refine session query params",
+        "compareUrl": "https://github.com/openai/openai-openapi/compare/3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d...506aff0a8099581b50e119b87f8f2692cdad043f"
+      }
+    }
+  ],
+  "responseSummary": {}
+}

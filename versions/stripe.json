@@ -1,0 +1,845 @@
+{
+ "specId": "stripe",
+ "repo": "stripe/openapi",
+ "branch": "master",
+ "file": "openapi/spec3.json",
+ "head": {
+  "sha": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "date": "2026-09-29T22:06:08Z",
+  "message": "Update OpenAPI specification for GA and public preview"
+ },
+ "versions": [
+  {
+   "version": "2017-08-15",
+   "first": {
+    "sha": "e069733bf620ea04cf1d69758706b598d9f7b6e8",
+    "date": "2017-09-05T23:45:29Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "e9d2beb67f9280e29ad70139c1ae8ab0cbd4b3b3",
+    "date": "2017-12-06T17:51:31Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2017-12-14",
+   "first": {
+    "sha": "8241e4c03ca5229d59632d183dfbccae9782f901",
+    "date": "2018-01-10T20:21:59Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "8241e4c03ca5229d59632d183dfbccae9782f901",
+    "date": "2018-01-10T20:21:59Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2018-01-23",
+   "first": {
+    "sha": "24a70c4cfde055a90b36413e276ff6a896908a99",
+    "date": "2018-01-25T19:16:33Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "24a70c4cfde055a90b36413e276ff6a896908a99",
+    "date": "2018-01-25T19:16:33Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2018-02-05",
+   "first": {
+    "sha": "a3e18282699475b994329c59e0614208ad4c7720",
+    "date": "2018-02-05T20:55:53Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "a3e18282699475b994329c59e0614208ad4c7720",
+    "date": "2018-02-05T20:55:53Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2018-02-06",
+   "first": {
+    "sha": "c71408a2a208989157d993f635579eded090cf10",
+    "date": "2018-02-15T01:50:11Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "c71408a2a208989157d993f635579eded090cf10",
+    "date": "2018-02-15T01:50:11Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2018-02-28",
+   "first": {
+    "sha": "37faf932b495a3d80d58ec55a4e7a4109dc11db0",
+    "date": "2018-03-07T00:51:56Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "37faf932b495a3d80d58ec55a4e7a4109dc11db0",
+    "date": "2018-03-07T00:51:56Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2017-08-15",
+   "first": {
+    "sha": "f63a53ea1f030faa065f0907114bfbd55b48dcdf",
+    "date": "2018-03-29T23:39:56Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "f63a53ea1f030faa065f0907114bfbd55b48dcdf",
+    "date": "2018-03-29T23:39:56Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2018-02-28",
+   "first": {
+    "sha": "de79de124015807bb3c87d78533de8c3d48410a8",
+    "date": "2018-03-30T17:53:34Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "667d635852fbe61c5bf8af04873a32e7f846c20f",
+    "date": "2018-05-10T19:33:06Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2018-05-21",
+   "first": {
+    "sha": "33a4d4d78b0844356a332c30645ec6807d0c2e3d",
+    "date": "2018-05-23T17:04:32Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "2594a08507fc230d23ec5b7d49cbce838f1ee6ef",
+    "date": "2018-07-26T17:43:52Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2018-07-27",
+   "first": {
+    "sha": "06a2b4a8e241483e99fed59c1ef8246d6eca8d76",
+    "date": "2018-07-30T14:59:48Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "ac55ea1efdabbfe85720948e07cd87a8f8177824",
+    "date": "2018-08-20T18:25:01Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2018-08-23",
+   "first": {
+    "sha": "0a71b61a29c6db622d43a8a0458fb8dda077ddd9",
+    "date": "2018-08-23T21:31:35Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "0c06a51362d96310a142d21c437602d54a802799",
+    "date": "2018-08-29T23:49:38Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2018-09-06",
+   "first": {
+    "sha": "3d3b4d502c303c4f7204454db0576f8997aaf6c6",
+    "date": "2018-09-14T20:17:14Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "6595fb235a42db669a10ef3589b91957ca215365",
+    "date": "2018-09-21T22:38:37Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2018-09-24",
+   "first": {
+    "sha": "bcd17619c8732d0dea3b7c9240dce73d67422230",
+    "date": "2018-09-24T20:21:38Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "285ffcbbd8a182cbdd6eb553268e65c48816e3bc",
+    "date": "2018-10-26T00:19:07Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2018-10-31",
+   "first": {
+    "sha": "b9ff093112c091811b1cf452c281a778100daebb",
+    "date": "2018-11-08T00:57:41Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "b9ff093112c091811b1cf452c281a778100daebb",
+    "date": "2018-11-08T00:57:41Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2018-11-08",
+   "first": {
+    "sha": "a784a9ca831f72464df75744d9639e6b3b2b1ee4",
+    "date": "2018-11-10T02:20:20Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "7f139268dc50e321f53b206568c81d01a3cd3fa7",
+    "date": "2019-01-29T00:31:35Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2019-02-11",
+   "first": {
+    "sha": "887d6d9694302211d60b6fa884a5bb02ebcc89e5",
+    "date": "2019-02-12T01:14:40Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "862a91749ff19006e2354eb4d1a3b472100940bb",
+    "date": "2019-02-12T02:16:38Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2019-02-19",
+   "first": {
+    "sha": "35afa88433cd6991ab88847f33f0bbee03a97185",
+    "date": "2019-02-18T18:46:10Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "07222e925811fca912d6e6c0dff73d7e187ddf1d",
+    "date": "2019-02-28T15:11:56Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2019-03-14",
+   "first": {
+    "sha": "fad96617dc68f080f7d186e57f08bfa620f9f6c7",
+    "date": "2019-03-18T22:36:38Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "baa55171803637038c132060c0a43f5593fe7ff2",
+    "date": "2019-05-14T18:26:01Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2019-05-16",
+   "first": {
+    "sha": "389bc8553a113a9b9c2c313ccc734b9afbad646e",
+    "date": "2019-05-23T22:49:03Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "c806fa1f987eba8cac1a9842fb959b226de099a0",
+    "date": "2019-08-09T21:49:36Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2019-08-14",
+   "first": {
+    "sha": "63fe31af31d4f22ba329eda03026bb46d4c0cbda",
+    "date": "2019-08-14T19:13:53Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "bf174b8e25248ee9d22805044dfdec00bbde8153",
+    "date": "2019-09-05T21:32:25Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2019-09-09",
+   "first": {
+    "sha": "8535416fa3bda8021edd16797b107f5417d6b91d",
+    "date": "2019-09-10T17:06:56Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "4d4a107b8685aa01a4200c6d146b8d77e8608ee5",
+    "date": "2019-09-27T21:02:43Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2019-10-08",
+   "first": {
+    "sha": "abf97a685fd93ab67881035f2624368b2671170a",
+    "date": "2019-10-08T20:20:36Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "aea9f1ef8d0fc5d9e802cf1087c961ecc3afa4bb",
+    "date": "2019-10-17T21:12:16Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2019-10-17",
+   "first": {
+    "sha": "46aa16ec145389aee94f10759fd9c77c25eb79e7",
+    "date": "2019-10-18T17:34:58Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "e9e946fd19bd423879d639bab3a57dc53edda24a",
+    "date": "2019-11-05T00:40:28Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2019-11-05",
+   "first": {
+    "sha": "8698001ca269fddb230c5da40adbc0a6e1a8b2e9",
+    "date": "2019-11-05T20:55:46Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "7ff0c82c63b6fbd64afc60145c345a1842ee114a",
+    "date": "2019-11-26T20:57:12Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2019-12-03",
+   "first": {
+    "sha": "d98c81b0e6d34bfe856947c4cba71791bc76b742",
+    "date": "2019-12-03T22:11:12Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "d236f11f48b54c0179d2fa8a355398e3f6df6c8c",
+    "date": "2020-02-28T16:30:30Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2020-03-02",
+   "first": {
+    "sha": "0e77e37c1ad9375293fb8cc397130b9e4ed31393",
+    "date": "2020-03-03T16:55:02Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "84af9b11f480afd9974bb57e34ab501c3b7fda80",
+    "date": "2020-08-19T18:02:44Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2020-08-27",
+   "first": {
+    "sha": "adae467392d46f04ac1afca7b96e7d471c647e1c",
+    "date": "2020-08-27T21:44:22Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "eb6acd7da71782e1890c0018ff07b622e6b8e8f6",
+    "date": "2022-07-26T19:38:32Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2022-08-01",
+   "first": {
+    "sha": "91252fd53681c2c884f7462d6c6ec2b0f449261b",
+    "date": "2022-08-01T21:48:30Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "da4ef11c8691eb41e6b2a8d86c13343a973633e4",
+    "date": "2022-11-10T19:51:44Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2022-11-15",
+   "first": {
+    "sha": "90fbe90142a179784ad987a54b7b164beb4a4763",
+    "date": "2022-11-16T19:41:28Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "a1e2bbd3fdc47d78f13c9eab12a9390c8ceafe49",
+    "date": "2023-08-11T01:05:40Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2023-08-16",
+   "first": {
+    "sha": "78c87a4822adc4466aaf6c057ad3975fd6197dae",
+    "date": "2023-08-14T15:38:48Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "72a4af383c5689b6ded338fdc36a86abfe32de67",
+    "date": "2023-10-13T22:00:15Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2023-10-16",
+   "first": {
+    "sha": "fda9183b15a40339b11399a25f3bc6e698acd953",
+    "date": "2023-10-16T19:51:36Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "f2c0232e9a53f9691f2258ea27320f235cddac15",
+    "date": "2024-03-28T23:00:14Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2024-04-03",
+   "first": {
+    "sha": "71048ad751d635f9e80c8e0a475a5b239a8c934f",
+    "date": "2024-03-28T23:34:43Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "dc9615857c32bcea36b4ed88ab1e6291a71d649a",
+    "date": "2024-04-02T20:34:30Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2023-10-16",
+   "first": {
+    "sha": "68748f8fb74eb336dca6a4f375d5589beaa28cd7",
+    "date": "2024-04-02T21:01:54Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "0ba185f3d96c3fee739b01aaa46fa86245da1f0b",
+    "date": "2024-04-05T13:46:22Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2024-04-10",
+   "first": {
+    "sha": "f9d132dadd0e2a17524119f5cf4da357931ff22a",
+    "date": "2024-04-05T19:47:54Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "167690e89aae6261fdba2880be17909b8712df9b",
+    "date": "2024-06-18T19:21:43Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2024-06-20",
+   "first": {
+    "sha": "5ee6953f299f89260c84c709031d4ca8a7e6d0e0",
+    "date": "2024-06-18T20:36:45Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "5b109bff953a60ed3e50bd797dfeddb3e7dafe92",
+    "date": "2024-09-18T16:47:37Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2024-09-30.acacia",
+   "first": {
+    "sha": "d5c0875f9c7bda6824c65f4bd658378004c4c5bf",
+    "date": "2024-09-25T19:24:32Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "16014e560d26b8f426612bf3d2bb1de977795efd",
+    "date": "2024-10-18T23:52:22Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2024-10-28.acacia",
+   "first": {
+    "sha": "ed0a56c82088a3db74753de5bddd47527d4439f1",
+    "date": "2024-10-23T22:57:52Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "90562cb4a4974c272f4f063c92e7f901e99c1775",
+    "date": "2024-11-12T00:13:00Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2024-11-20.acacia",
+   "first": {
+    "sha": "b2893a015b95f318b434dee51cbaa968c3694714",
+    "date": "2024-11-13T18:10:15Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "b2893a015b95f318b434dee51cbaa968c3694714",
+    "date": "2024-11-13T18:10:15Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2024-12-18.acacia",
+   "first": {
+    "sha": "7b76ca0c14497c43d173e1f4ea76df027905de89",
+    "date": "2024-12-09T23:48:15Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "92c1e753bf35cfbe0c2b8cf1525224b1e78f2657",
+    "date": "2024-12-11T18:22:13Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2024-11-20.acacia",
+   "first": {
+    "sha": "7ad98dc0f5a62a726cc5cc15cd98af6ffca2ee9e",
+    "date": "2024-12-13T22:21:59Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "7ad98dc0f5a62a726cc5cc15cd98af6ffca2ee9e",
+    "date": "2024-12-13T22:21:59Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2024-12-18.acacia",
+   "first": {
+    "sha": "f0a1a3ef6a1f0deb7ddeb7ff8a65d36283477c5a",
+    "date": "2024-12-14T00:03:22Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "f0a1a3ef6a1f0deb7ddeb7ff8a65d36283477c5a",
+    "date": "2024-12-14T00:03:22Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2025-01-27.acacia",
+   "first": {
+    "sha": "d157c2e946b078c996be4bee7411b12d45f89c19",
+    "date": "2025-01-17T22:34:01Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "d157c2e946b078c996be4bee7411b12d45f89c19",
+    "date": "2025-01-17T22:34:01Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2025-02-24.acacia",
+   "first": {
+    "sha": "5a411d0d1e527229cdb4d6633197ab8009899ce6",
+    "date": "2025-02-14T21:58:23Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "5a411d0d1e527229cdb4d6633197ab8009899ce6",
+    "date": "2025-02-14T21:58:23Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2025-03-31.basil",
+   "first": {
+    "sha": "9fa5188b0933d46d2ac3c601d2d9c50904fb54de",
+    "date": "2025-03-25T13:29:18Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "072fe51d85959b0ca71c1296b32725c14a78f4a8",
+    "date": "2025-03-28T20:29:53Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2025-04-30.basil",
+   "first": {
+    "sha": "46e685e34c4fc7f56e8696936db2554e0c5b0fc1",
+    "date": "2025-04-21T20:19:33Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "46e685e34c4fc7f56e8696936db2554e0c5b0fc1",
+    "date": "2025-04-21T20:19:33Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2025-05-28.basil",
+   "first": {
+    "sha": "a2daacd414ad5c3cf88d79a4214e35595b239490",
+    "date": "2025-05-16T21:14:52Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "6c7b45018fdeb279042e6f74c5141efe1e90b3d6",
+    "date": "2025-05-22T20:08:24Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2025-06-30.basil",
+   "first": {
+    "sha": "1729cb1360263b054abb3c5146548630a86fb68c",
+    "date": "2025-06-23T15:55:22Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "1729cb1360263b054abb3c5146548630a86fb68c",
+    "date": "2025-06-23T15:55:22Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2025-07-30.basil",
+   "first": {
+    "sha": "805a9b8cc62f35d2673b28c34ca5fa27d0650b8b",
+    "date": "2025-07-22T16:35:01Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "805a9b8cc62f35d2673b28c34ca5fa27d0650b8b",
+    "date": "2025-07-22T16:35:01Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2025-08-27.basil",
+   "first": {
+    "sha": "ea6d566248e549196d8406153b6d4d75b1787019",
+    "date": "2025-08-18T23:34:24Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "62fbe0713198e910b8843f70fdcd351be3ec979c",
+    "date": "2025-08-19T19:54:23Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2025-09-30.clover",
+   "first": {
+    "sha": "7861d4985575906da4c2c8eafd8572e3bf0a3adf",
+    "date": "2025-09-22T23:56:20Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "053c4b35b25fdb4b8f2afa4294a046026715f820",
+    "date": "2025-09-29T22:44:22Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2025-10-29.clover",
+   "first": {
+    "sha": "b78688d1e7f2fcddb43e10bbb8e42c50c080a781",
+    "date": "2025-10-21T20:47:20Z",
+    "message": "Update OpenAPI specification"
+   },
+   "last": {
+    "sha": "260f91c74e44bcd2a819bac9428f6c9e57360105",
+    "date": "2025-10-28T07:33:09Z",
+    "message": "Update OpenAPI specification"
+   }
+  },
+  {
+   "version": "2025-11-17.clover",
+   "first": {
+    "sha": "c36976f8137ac93be4a1989e672905f556597ded",
+    "date": "2025-11-05T21:42:07Z",
+    "message": "Update OpenAPI specification for GA and public preview"
+   },
+   "last": {
+    "sha": "8820133ae30a4b968ea20d803c51f639ab5461c6",
+    "date": "2025-11-12T01:37:57Z",
+    "message": "Update OpenAPI specification for GA and public preview"
+   }
+  },
+  {
+   "version": "2025-12-15.clover",
+   "first": {
+    "sha": "14a40f813acc3a6a8f75bf80b2c06955f5d574d7",
+    "date": "2025-12-08T21:53:09Z",
+    "message": "Update OpenAPI specification for GA and public preview"
+   },
+   "last": {
+    "sha": "ed93b94259c55782b8b04e01f4ffdaa2872e9bcd",
+    "date": "2025-12-11T18:44:14Z",
+    "message": "Update OpenAPI specification for GA and public preview"
+   }
+  },
+  {
+   "version": "2026-01-28.clover",
+   "first": {
+    "sha": "03af40466c67b98705b1453e929eb801fd8b5b03",
+    "date": "2025-12-12T20:23:49Z",
+    "message": "Update OpenAPI specification for GA and public preview"
+   },
+   "last": {
+    "sha": "a402765c987f40ac7474547700da71a218428805",
+    "date": "2026-01-27T17:14:46Z",
+    "message": "Update OpenAPI specification for GA and public preview"
+   }
+  },
+  {
+   "version": "2026-02-25.clover",
+   "first": {
+    "sha": "0aaf9a65e5d411caa259ea00c9277d60ff2b0d81",
+    "date": "2026-02-23T17:47:50Z",
+    "message": "Update OpenAPI specification for GA and public preview"
+   },
+   "last": {
+    "sha": "da3eadb239b437b59cdf3459768bc2a6672165f6",
+    "date": "2026-02-23T22:03:04Z",
+    "message": "Update OpenAPI specification for GA and public preview"
+   }
+  },
+  {
+   "version": "2026-03-25.dahlia",
+   "first": {
+    "sha": "cfe95bf4b8074b8d8957b8ed9b10988e4fa0d9c3",
+    "date": "2026-03-17T22:39:37Z",
+    "message": "Update OpenAPI specification for GA and public preview"
+   },
+   "last": {
+    "sha": "a54c3888eb6f227e15eeaa97d0adbd561b01e2c2",
+    "date": "2026-03-23T20:52:43Z",
+    "message": "Update OpenAPI specification for GA and public preview"
+   }
+  },
+  {
+   "version": "2026-04-22.dahlia",
+   "first": {
+    "sha": "d771243fbfea51def29cebe79e6c458dda032dbd",
+    "date": "2026-04-20T18:28:01Z",
+    "message": "Update OpenAPI specification for GA and public preview"
+   },
+   "last": {
+    "sha": "d771243fbfea51def29cebe79e6c458dda032dbd",
+    "date": "2026-04-20T18:28:01Z",
+    "message": "Update OpenAPI specification for GA and public preview"
+   }
+  },
+  {
+   "version": "2026-05-27.dahlia",
+   "first": {
+    "sha": "6a1ea0ab2edca83b9fdeeac76355231745788cb4",
+    "date": "2026-05-23T11:56:50Z",
+    "message": "Update OpenAPI specification for GA and public preview"
+   },
+   "last": {
+    "sha": "fbd00919865b69647f714ba1c02adced187d4664",
+    "date": "2026-05-23T12:38:54Z",
+    "message": "Update OpenAPI specification for GA and public preview"
+   }
+  },
+  {
+   "version": "2026-06-24.dahlia",
+   "first": {
+    "sha": "f4ac6d9a7f40730f7f50c8c1d76c27f80178e4f5",
+    "date": "2026-06-23T22:37:50Z",
+    "message": "Update OpenAPI specification for GA and public preview"
+   },
+   "last": {
+    "sha": "f4ac6d9a7f40730f7f50c8c1d76c27f80178e4f5",
+    "date": "2026-06-23T22:37:50Z",
+    "message": "Update OpenAPI specification for GA and public preview"
+   }
+  },
+  {
+   "version": "2026-07-29.dahlia",
+   "first": {
+    "sha": "7061322ce765ba59b40b704e7d8198d6bb24955c",
+    "date": "2026-07-01T20:55:58Z",
+    "message": "Update OpenAPI specification for GA and public preview"
+   },
+   "last": {
+    "sha": "7061322ce765ba59b40b704e7d8198d6bb24955c",
+    "date": "2026-07-01T20:55:58Z",
+    "message": "Update OpenAPI specification for GA and public preview"
+   }
+  },
+  {
+   "version": "2026-06-24.dahlia",
+   "first": {
+    "sha": "d5d11f661d1180a847d6e26774517756e6a493a1",
+    "date": "2026-07-01T21:08:47Z",
+    "message": "Update OpenAPI specification for GA and public preview"
+   },
+   "last": {
+    "sha": "d5d11f661d1180a847d6e26774517756e6a493a1",
+    "date": "2026-07-01T21:08:47Z",
+    "message": "Update OpenAPI specification for GA and public preview"
+   }
+  },
+  {
+   "version": "2026-07-29.dahlia",
+   "first": {
+    "sha": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+    "date": "2026-07-29T18:38:34Z",
+    "message": "Update OpenAPI specification for GA and public preview"
+   },
+   "last": {
+    "sha": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+    "date": "2026-07-29T18:38:34Z",
+    "message": "Update OpenAPI specification for GA and public preview"
+   }
+  },
+  {
+   "version": "2026-08-26.dahlia",
+   "first": {
+    "sha": "30d3391cc09a0f67ad29bee002f570811b19e1da",
+    "date": "2026-08-26T17:57:44Z",
+    "message": "Update OpenAPI specification for GA and public preview"
+   },
+   "last": {
+    "sha": "30d3391cc09a0f67ad29bee002f570811b19e1da",
+    "date": "2026-08-26T17:57:44Z",
+    "message": "Update OpenAPI specification for GA and public preview"
+   }
+  },
+  {
+   "version": "2026-09-30.endive",
+   "first": {
+    "sha": "c8faccbde66b784ea916d3c28f5790d7a9c9aee2",
+    "date": "2026-09-23T23:02:43Z",
+    "message": "Update OpenAPI specification for GA and public preview"
+   },
+   "last": {
+    "sha": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+    "date": "2026-09-29T22:06:08Z",
+    "message": "Update OpenAPI specification for GA and public preview"
+   }
+  }
+ ]
+}

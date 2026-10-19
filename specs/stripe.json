@@ -1,0 +1,59 @@
+{
+ "id": "stripe",
+ "repo": "stripe/openapi",
+ "file": "latest/openapi.spec3.json",
+ "history": [
+  {
+   "sha": "969d8c308ea65b6dbdef4b6b4a71904027a010b8",
+   "date": "2026-09-30T00:25:06Z",
+   "message": "Update OpenAPI for 2026-09-30.endive",
+   "base": "18fa2cc768024b47789dc6fa243acd48478acac2",
+   "tracked": 0,
+   "responseChanges": 1928
+  },
+  {
+   "sha": "18fa2cc768024b47789dc6fa243acd48478acac2",
+   "date": "2026-09-25T23:17:55Z",
+   "message": "Update OpenAPI for 2026-09-30.endive",
+   "base": "9ac29c7795ab21c7711b4bc25bb2dd739552a5fa",
+   "tracked": 59,
+   "responseChanges": 23176
+  }
+ ],
+ "windows": {
+  "30d": {
+   "base": {
+    "sha": "9ac29c7795ab21c7711b4bc25bb2dd739552a5fa",
+    "date": "2026-09-04T22:00:42Z",
+    "message": "Update OpenAPI for 2026-08-26.dahlia"
+   },
+   "tracked": 59,
+   "responseChanges": 23176
+  },
+  "90d": {
+   "base": {
+    "sha": "a2de9917ac9c7be3ba11abd5151b5c2df3add59e",
+    "date": "2026-06-25T15:56:23Z",
+    "message": "Update OpenAPI for 2026-06-24.dahlia"
+   },
+   "tracked": 21,
+   "responseChanges": 42577
+  },
+  "180d": {
+   "base": {
+    "sha": "5146460c7a0c6dfcf9d4c92d1b0abab58719c6ff",
+    "date": "2026-03-26T00:10:41Z",
+    "message": "Update OpenAPI for 2026-03-25.dahlia"
+   },
+   "tracked": 30,
+   "responseChanges": 82903
+  }
+ },
+ "head": {
+  "sha": "969d8c308ea65b6dbdef4b6b4a71904027a010b8",
+  "date": "2026-09-30T00:25:06Z",
+  "message": "Update OpenAPI for 2026-09-30.endive",
+  "specVersion": "2026-09-30.endive"
+ },
+ "updatedAt": "2026-10-19T08:24:16.409Z"
+}

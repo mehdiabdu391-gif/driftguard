@@ -1,0 +1,1390 @@
+{
+ "specId": "twilio-api",
+ "snapshots": [
+  "157fb094bd08957183278242d7622c8560b7a4c4",
+  "5aa7f31977ce5812f7b7bc1f46a38555ebaa2888",
+  "bb6288e9f540d2d63540bbaadf6b73fd262c2df3",
+  "d50069b44ea8cd23141385bdb6db48f16ff75bb5"
+ ],
+ "operations": [
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts.json",
+   "operationId": "ListAccount",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts.json",
+   "operationId": "CreateAccount",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Addresses.json",
+   "operationId": "ListAddress",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Addresses.json",
+   "operationId": "CreateAddress",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Addresses/{AddressSid}/DependentPhoneNumbers.json",
+   "operationId": "ListDependentPhoneNumber",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Addresses/{Sid}.json",
+   "operationId": "DeleteAddress",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Addresses/{Sid}.json",
+   "operationId": "FetchAddress",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Addresses/{Sid}.json",
+   "operationId": "UpdateAddress",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Applications.json",
+   "operationId": "ListApplication",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Applications.json",
+   "operationId": "CreateApplication",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Applications/{Sid}.json",
+   "operationId": "DeleteApplication",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Applications/{Sid}.json",
+   "operationId": "FetchApplication",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Applications/{Sid}.json",
+   "operationId": "UpdateApplication",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/AuthorizedConnectApps.json",
+   "operationId": "ListAuthorizedConnectApp",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/AuthorizedConnectApps/{ConnectAppSid}.json",
+   "operationId": "FetchAuthorizedConnectApp",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/AvailablePhoneNumbers.json",
+   "operationId": "ListAvailablePhoneNumberCountry",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/AvailablePhoneNumbers/{CountryCode}.json",
+   "operationId": "FetchAvailablePhoneNumberCountry",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/AvailablePhoneNumbers/{CountryCode}/Local.json",
+   "operationId": "ListAvailablePhoneNumberLocal",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/AvailablePhoneNumbers/{CountryCode}/MachineToMachine.json",
+   "operationId": "ListAvailablePhoneNumberMachineToMachine",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/AvailablePhoneNumbers/{CountryCode}/Mobile.json",
+   "operationId": "ListAvailablePhoneNumberMobile",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/AvailablePhoneNumbers/{CountryCode}/National.json",
+   "operationId": "ListAvailablePhoneNumberNational",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/AvailablePhoneNumbers/{CountryCode}/SharedCost.json",
+   "operationId": "ListAvailablePhoneNumberSharedCost",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/AvailablePhoneNumbers/{CountryCode}/TollFree.json",
+   "operationId": "ListAvailablePhoneNumberTollFree",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/AvailablePhoneNumbers/{CountryCode}/Voip.json",
+   "operationId": "ListAvailablePhoneNumberVoip",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Balance.json",
+   "operationId": "FetchBalance",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Calls.json",
+   "operationId": "ListCall",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Calls.json",
+   "operationId": "CreateCall",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Calls/{CallSid}/Events.json",
+   "operationId": "ListCallEvent",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Calls/{CallSid}/Notifications.json",
+   "operationId": "ListCallNotification",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Calls/{CallSid}/Notifications/{Sid}.json",
+   "operationId": "FetchCallNotification",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Calls/{CallSid}/Payments.json",
+   "operationId": "CreatePayments",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Calls/{CallSid}/Payments/{Sid}.json",
+   "operationId": "UpdatePayments",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Calls/{CallSid}/Recordings.json",
+   "operationId": "ListCallRecording",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Calls/{CallSid}/Recordings.json",
+   "operationId": "CreateCallRecording",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Calls/{CallSid}/Recordings/{Sid}.json",
+   "operationId": "DeleteCallRecording",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Calls/{CallSid}/Recordings/{Sid}.json",
+   "operationId": "FetchCallRecording",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Calls/{CallSid}/Recordings/{Sid}.json",
+   "operationId": "UpdateCallRecording",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Calls/{CallSid}/Siprec.json",
+   "operationId": "CreateSiprec",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Calls/{CallSid}/Siprec/{Sid}.json",
+   "operationId": "UpdateSiprec",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Calls/{CallSid}/Streams.json",
+   "operationId": "CreateStream",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Calls/{CallSid}/Streams/{Sid}.json",
+   "operationId": "UpdateStream",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Calls/{CallSid}/Transcriptions.json",
+   "operationId": "CreateRealtimeTranscription",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Calls/{CallSid}/Transcriptions/{Sid}.json",
+   "operationId": "UpdateRealtimeTranscription",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Calls/{CallSid}/UserDefinedMessages.json",
+   "operationId": "CreateUserDefinedMessage",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Calls/{CallSid}/UserDefinedMessageSubscriptions.json",
+   "operationId": "CreateUserDefinedMessageSubscription",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Calls/{CallSid}/UserDefinedMessageSubscriptions/{Sid}.json",
+   "operationId": "DeleteUserDefinedMessageSubscription",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Calls/{Sid}.json",
+   "operationId": "DeleteCall",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Calls/{Sid}.json",
+   "operationId": "FetchCall",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Calls/{Sid}.json",
+   "operationId": "UpdateCall",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Conferences.json",
+   "operationId": "ListConference",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Conferences/{ConferenceSid}/Participants.json",
+   "operationId": "ListParticipant",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Conferences/{ConferenceSid}/Participants.json",
+   "operationId": "CreateParticipant",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Conferences/{ConferenceSid}/Participants/{CallSid}.json",
+   "operationId": "DeleteParticipant",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Conferences/{ConferenceSid}/Participants/{CallSid}.json",
+   "operationId": "FetchParticipant",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Conferences/{ConferenceSid}/Participants/{CallSid}.json",
+   "operationId": "UpdateParticipant",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Conferences/{ConferenceSid}/Recordings.json",
+   "operationId": "ListConferenceRecording",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Conferences/{ConferenceSid}/Recordings/{Sid}.json",
+   "operationId": "DeleteConferenceRecording",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Conferences/{ConferenceSid}/Recordings/{Sid}.json",
+   "operationId": "FetchConferenceRecording",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Conferences/{ConferenceSid}/Recordings/{Sid}.json",
+   "operationId": "UpdateConferenceRecording",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Conferences/{Sid}.json",
+   "operationId": "FetchConference",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Conferences/{Sid}.json",
+   "operationId": "UpdateConference",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/ConnectApps.json",
+   "operationId": "ListConnectApp",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/2010-04-01/Accounts/{AccountSid}/ConnectApps/{Sid}.json",
+   "operationId": "DeleteConnectApp",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/ConnectApps/{Sid}.json",
+   "operationId": "FetchConnectApp",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/ConnectApps/{Sid}.json",
+   "operationId": "UpdateConnectApp",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/IncomingPhoneNumbers.json",
+   "operationId": "ListIncomingPhoneNumber",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/IncomingPhoneNumbers.json",
+   "operationId": "CreateIncomingPhoneNumber",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/IncomingPhoneNumbers/{ResourceSid}/AssignedAddOns.json",
+   "operationId": "ListIncomingPhoneNumberAssignedAddOn",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/IncomingPhoneNumbers/{ResourceSid}/AssignedAddOns.json",
+   "operationId": "CreateIncomingPhoneNumberAssignedAddOn",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/IncomingPhoneNumbers/{ResourceSid}/AssignedAddOns/{AssignedAddOnSid}/Extensions.json",
+   "operationId": "ListIncomingPhoneNumberAssignedAddOnExtension",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/IncomingPhoneNumbers/{ResourceSid}/AssignedAddOns/{AssignedAddOnSid}/Extensions/{Sid}.json",
+   "operationId": "FetchIncomingPhoneNumberAssignedAddOnExtension",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/2010-04-01/Accounts/{AccountSid}/IncomingPhoneNumbers/{ResourceSid}/AssignedAddOns/{Sid}.json",
+   "operationId": "DeleteIncomingPhoneNumberAssignedAddOn",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/IncomingPhoneNumbers/{ResourceSid}/AssignedAddOns/{Sid}.json",
+   "operationId": "FetchIncomingPhoneNumberAssignedAddOn",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/2010-04-01/Accounts/{AccountSid}/IncomingPhoneNumbers/{Sid}.json",
+   "operationId": "DeleteIncomingPhoneNumber",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/IncomingPhoneNumbers/{Sid}.json",
+   "operationId": "FetchIncomingPhoneNumber",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/IncomingPhoneNumbers/{Sid}.json",
+   "operationId": "UpdateIncomingPhoneNumber",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/IncomingPhoneNumbers/Local.json",
+   "operationId": "ListIncomingPhoneNumberLocal",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/IncomingPhoneNumbers/Local.json",
+   "operationId": "CreateIncomingPhoneNumberLocal",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/IncomingPhoneNumbers/Mobile.json",
+   "operationId": "ListIncomingPhoneNumberMobile",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/IncomingPhoneNumbers/Mobile.json",
+   "operationId": "CreateIncomingPhoneNumberMobile",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/IncomingPhoneNumbers/TollFree.json",
+   "operationId": "ListIncomingPhoneNumberTollFree",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/IncomingPhoneNumbers/TollFree.json",
+   "operationId": "CreateIncomingPhoneNumberTollFree",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Keys.json",
+   "operationId": "ListKey",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Keys.json",
+   "operationId": "CreateNewKey",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Keys/{Sid}.json",
+   "operationId": "DeleteKey",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Keys/{Sid}.json",
+   "operationId": "FetchKey",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Keys/{Sid}.json",
+   "operationId": "UpdateKey",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Messages.json",
+   "operationId": "ListMessage",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Messages.json",
+   "operationId": "CreateMessage",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Messages/{MessageSid}/Feedback.json",
+   "operationId": "CreateMessageFeedback",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Messages/{MessageSid}/Media.json",
+   "operationId": "ListMedia",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Messages/{MessageSid}/Media/{Sid}.json",
+   "operationId": "DeleteMedia",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Messages/{MessageSid}/Media/{Sid}.json",
+   "operationId": "FetchMedia",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Messages/{Sid}.json",
+   "operationId": "DeleteMessage",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Messages/{Sid}.json",
+   "operationId": "FetchMessage",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Messages/{Sid}.json",
+   "operationId": "UpdateMessage",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Notifications.json",
+   "operationId": "ListNotification",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Notifications/{Sid}.json",
+   "operationId": "FetchNotification",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/OutgoingCallerIds.json",
+   "operationId": "ListOutgoingCallerId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/OutgoingCallerIds.json",
+   "operationId": "CreateValidationRequest",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/2010-04-01/Accounts/{AccountSid}/OutgoingCallerIds/{Sid}.json",
+   "operationId": "DeleteOutgoingCallerId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/OutgoingCallerIds/{Sid}.json",
+   "operationId": "FetchOutgoingCallerId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/OutgoingCallerIds/{Sid}.json",
+   "operationId": "UpdateOutgoingCallerId",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Queues.json",
+   "operationId": "ListQueue",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Queues.json",
+   "operationId": "CreateQueue",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Queues/{QueueSid}/Members.json",
+   "operationId": "ListMember",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Queues/{QueueSid}/Members/{CallSid}.json",
+   "operationId": "FetchMember",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Queues/{QueueSid}/Members/{CallSid}.json",
+   "operationId": "UpdateMember",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Queues/{Sid}.json",
+   "operationId": "DeleteQueue",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Queues/{Sid}.json",
+   "operationId": "FetchQueue",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Queues/{Sid}.json",
+   "operationId": "UpdateQueue",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Recordings.json",
+   "operationId": "ListRecording",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Recordings/{RecordingSid}/Transcriptions.json",
+   "operationId": "ListRecordingTranscription",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Recordings/{RecordingSid}/Transcriptions/{Sid}.json",
+   "operationId": "DeleteRecordingTranscription",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Recordings/{RecordingSid}/Transcriptions/{Sid}.json",
+   "operationId": "FetchRecordingTranscription",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Recordings/{ReferenceSid}/AddOnResults.json",
+   "operationId": "ListRecordingAddOnResult",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Recordings/{ReferenceSid}/AddOnResults/{AddOnResultSid}/Payloads.json",
+   "operationId": "ListRecordingAddOnResultPayload",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Recordings/{ReferenceSid}/AddOnResults/{AddOnResultSid}/Payloads/{PayloadSid}/Data.json",
+   "operationId": "FetchRecordingAddOnResultPayloadData",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Recordings/{ReferenceSid}/AddOnResults/{AddOnResultSid}/Payloads/{Sid}.json",
+   "operationId": "DeleteRecordingAddOnResultPayload",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Recordings/{ReferenceSid}/AddOnResults/{AddOnResultSid}/Payloads/{Sid}.json",
+   "operationId": "FetchRecordingAddOnResultPayload",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Recordings/{ReferenceSid}/AddOnResults/{Sid}.json",
+   "operationId": "DeleteRecordingAddOnResult",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Recordings/{ReferenceSid}/AddOnResults/{Sid}.json",
+   "operationId": "FetchRecordingAddOnResult",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Recordings/{Sid}.json",
+   "operationId": "DeleteRecording",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Recordings/{Sid}.json",
+   "operationId": "FetchRecording",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SigningKeys.json",
+   "operationId": "ListSigningKey",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SigningKeys.json",
+   "operationId": "CreateNewSigningKey",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SigningKeys/{Sid}.json",
+   "operationId": "DeleteSigningKey",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SigningKeys/{Sid}.json",
+   "operationId": "FetchSigningKey",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SigningKeys/{Sid}.json",
+   "operationId": "UpdateSigningKey",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/CredentialLists.json",
+   "operationId": "ListSipCredentialList",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/CredentialLists.json",
+   "operationId": "CreateSipCredentialList",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/CredentialLists/{CredentialListSid}/Credentials.json",
+   "operationId": "ListSipCredential",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/CredentialLists/{CredentialListSid}/Credentials.json",
+   "operationId": "CreateSipCredential",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/CredentialLists/{CredentialListSid}/Credentials/{Sid}.json",
+   "operationId": "DeleteSipCredential",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/CredentialLists/{CredentialListSid}/Credentials/{Sid}.json",
+   "operationId": "FetchSipCredential",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/CredentialLists/{CredentialListSid}/Credentials/{Sid}.json",
+   "operationId": "UpdateSipCredential",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/CredentialLists/{Sid}.json",
+   "operationId": "DeleteSipCredentialList",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/CredentialLists/{Sid}.json",
+   "operationId": "FetchSipCredentialList",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/CredentialLists/{Sid}.json",
+   "operationId": "UpdateSipCredentialList",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/Domains.json",
+   "operationId": "ListSipDomain",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/Domains.json",
+   "operationId": "CreateSipDomain",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/Domains/{DomainSid}/Auth/Calls/CredentialListMappings.json",
+   "operationId": "ListSipAuthCallsCredentialListMapping",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/Domains/{DomainSid}/Auth/Calls/CredentialListMappings.json",
+   "operationId": "CreateSipAuthCallsCredentialListMapping",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/Domains/{DomainSid}/Auth/Calls/CredentialListMappings/{Sid}.json",
+   "operationId": "DeleteSipAuthCallsCredentialListMapping",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/Domains/{DomainSid}/Auth/Calls/CredentialListMappings/{Sid}.json",
+   "operationId": "FetchSipAuthCallsCredentialListMapping",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/Domains/{DomainSid}/Auth/Calls/IpAccessControlListMappings.json",
+   "operationId": "ListSipAuthCallsIpAccessControlListMapping",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/Domains/{DomainSid}/Auth/Calls/IpAccessControlListMappings.json",
+   "operationId": "CreateSipAuthCallsIpAccessControlListMapping",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/Domains/{DomainSid}/Auth/Calls/IpAccessControlListMappings/{Sid}.json",
+   "operationId": "DeleteSipAuthCallsIpAccessControlListMapping",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/Domains/{DomainSid}/Auth/Calls/IpAccessControlListMappings/{Sid}.json",
+   "operationId": "FetchSipAuthCallsIpAccessControlListMapping",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/Domains/{DomainSid}/Auth/Registrations/CredentialListMappings.json",
+   "operationId": "ListSipAuthRegistrationsCredentialListMapping",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/Domains/{DomainSid}/Auth/Registrations/CredentialListMappings.json",
+   "operationId": "CreateSipAuthRegistrationsCredentialListMapping",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/Domains/{DomainSid}/Auth/Registrations/CredentialListMappings/{Sid}.json",
+   "operationId": "DeleteSipAuthRegistrationsCredentialListMapping",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/Domains/{DomainSid}/Auth/Registrations/CredentialListMappings/{Sid}.json",
+   "operationId": "FetchSipAuthRegistrationsCredentialListMapping",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/Domains/{DomainSid}/CredentialListMappings.json",
+   "operationId": "ListSipCredentialListMapping",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/Domains/{DomainSid}/CredentialListMappings.json",
+   "operationId": "CreateSipCredentialListMapping",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/Domains/{DomainSid}/CredentialListMappings/{Sid}.json",
+   "operationId": "DeleteSipCredentialListMapping",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/Domains/{DomainSid}/CredentialListMappings/{Sid}.json",
+   "operationId": "FetchSipCredentialListMapping",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/Domains/{DomainSid}/IpAccessControlListMappings.json",
+   "operationId": "ListSipIpAccessControlListMapping",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/Domains/{DomainSid}/IpAccessControlListMappings.json",
+   "operationId": "CreateSipIpAccessControlListMapping",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/Domains/{DomainSid}/IpAccessControlListMappings/{Sid}.json",
+   "operationId": "DeleteSipIpAccessControlListMapping",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/Domains/{DomainSid}/IpAccessControlListMappings/{Sid}.json",
+   "operationId": "FetchSipIpAccessControlListMapping",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/Domains/{Sid}.json",
+   "operationId": "DeleteSipDomain",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/Domains/{Sid}.json",
+   "operationId": "FetchSipDomain",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/Domains/{Sid}.json",
+   "operationId": "UpdateSipDomain",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/IpAccessControlLists.json",
+   "operationId": "ListSipIpAccessControlList",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/IpAccessControlLists.json",
+   "operationId": "CreateSipIpAccessControlList",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/IpAccessControlLists/{IpAccessControlListSid}/IpAddresses.json",
+   "operationId": "ListSipIpAddress",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/IpAccessControlLists/{IpAccessControlListSid}/IpAddresses.json",
+   "operationId": "CreateSipIpAddress",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/IpAccessControlLists/{IpAccessControlListSid}/IpAddresses/{Sid}.json",
+   "operationId": "DeleteSipIpAddress",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/IpAccessControlLists/{IpAccessControlListSid}/IpAddresses/{Sid}.json",
+   "operationId": "FetchSipIpAddress",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/IpAccessControlLists/{IpAccessControlListSid}/IpAddresses/{Sid}.json",
+   "operationId": "UpdateSipIpAddress",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/IpAccessControlLists/{Sid}.json",
+   "operationId": "DeleteSipIpAccessControlList",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/IpAccessControlLists/{Sid}.json",
+   "operationId": "FetchSipIpAccessControlList",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SIP/IpAccessControlLists/{Sid}.json",
+   "operationId": "UpdateSipIpAccessControlList",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SMS/ShortCodes.json",
+   "operationId": "ListShortCode",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SMS/ShortCodes/{Sid}.json",
+   "operationId": "FetchShortCode",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/SMS/ShortCodes/{Sid}.json",
+   "operationId": "UpdateShortCode",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Tokens.json",
+   "operationId": "CreateToken",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Transcriptions.json",
+   "operationId": "ListTranscription",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Transcriptions/{Sid}.json",
+   "operationId": "DeleteTranscription",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Transcriptions/{Sid}.json",
+   "operationId": "FetchTranscription",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Usage/Records.json",
+   "operationId": "ListUsageRecord",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Usage/Records/AllTime.json",
+   "operationId": "ListUsageRecordAllTime",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Usage/Records/Daily.json",
+   "operationId": "ListUsageRecordDaily",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Usage/Records/LastMonth.json",
+   "operationId": "ListUsageRecordLastMonth",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Usage/Records/Monthly.json",
+   "operationId": "ListUsageRecordMonthly",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Usage/Records/ThisMonth.json",
+   "operationId": "ListUsageRecordThisMonth",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Usage/Records/Today.json",
+   "operationId": "ListUsageRecordToday",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Usage/Records/Yearly.json",
+   "operationId": "ListUsageRecordYearly",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Usage/Records/Yesterday.json",
+   "operationId": "ListUsageRecordYesterday",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Usage/Triggers.json",
+   "operationId": "ListUsageTrigger",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Usage/Triggers.json",
+   "operationId": "CreateUsageTrigger",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "DELETE",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Usage/Triggers/{Sid}.json",
+   "operationId": "DeleteUsageTrigger",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Usage/Triggers/{Sid}.json",
+   "operationId": "FetchUsageTrigger",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{AccountSid}/Usage/Triggers/{Sid}.json",
+   "operationId": "UpdateUsageTrigger",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "GET",
+   "path": "/2010-04-01/Accounts/{Sid}.json",
+   "operationId": "FetchAccount",
+   "deprecated": false,
+   "inHead": true
+  },
+  {
+   "method": "POST",
+   "path": "/2010-04-01/Accounts/{Sid}.json",
+   "operationId": "UpdateAccount",
+   "deprecated": false,
+   "inHead": true
+  }
+ ]
+}

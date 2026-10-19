@@ -1,0 +1,178 @@
+{
+  "specId": "github",
+  "base": {
+    "sha": "01149204a19f69d6bac7909ceef0b571bbbe2798",
+    "date": "2026-09-23T01:47:51Z",
+    "message": "Update OpenAPI 3.0 Descriptions"
+  },
+  "revision": {
+    "sha": "677c1b8f9aa413b7f3d18ccccb80018982a3acd1",
+    "date": "2026-09-23T02:58:05Z",
+    "message": "Update OpenAPI 3.0 Descriptions"
+  },
+  "compareUrl": "https://github.com/github/rest-api-description/compare/01149204a19f69d6bac7909ceef0b571bbbe2798...677c1b8f9aa413b7f3d18ccccb80018982a3acd1",
+  "oasdiff": "oasdiff version 1.34.0",
+  "changes": [
+    {
+      "rule": "request-property-removed",
+      "level": 2,
+      "text": "removed the request property `budget_entity_name`",
+      "method": "PATCH",
+      "path": "/organizations/{org}/settings/billing/budgets/{budget_id}",
+      "operationId": "billing/update-budget-org",
+      "source": null,
+      "kind": "request-field-removed",
+      "target": {
+        "location": "body",
+        "path": [
+          "budget_entity_name"
+        ],
+        "viaArray": false,
+        "raw": "budget_entity_name"
+      },
+      "verification": {
+        "status": "verified",
+        "reason": "property \"budget_entity_name\" is no longer declared in the revision spec"
+      },
+      "specId": "github",
+      "key": "request-property-removed|PATCH /organizations/{}/settings/billing/budgets/{}|removed the request property `budget_entity_name`",
+      "sourceUrl": null,
+      "compareUrl": "https://github.com/github/rest-api-description/compare/01149204a19f69d6bac7909ceef0b571bbbe2798...677c1b8f9aa413b7f3d18ccccb80018982a3acd1",
+      "introducedIn": {
+        "sha": "677c1b8f9aa413b7f3d18ccccb80018982a3acd1",
+        "date": "2026-09-23T02:58:05Z",
+        "message": "Update OpenAPI 3.0 Descriptions",
+        "compareUrl": "https://github.com/github/rest-api-description/compare/01149204a19f69d6bac7909ceef0b571bbbe2798...677c1b8f9aa413b7f3d18ccccb80018982a3acd1"
+      }
+    },
+    {
+      "rule": "request-property-removed",
+      "level": 2,
+      "text": "removed the request property `budget_product_sku`",
+      "method": "PATCH",
+      "path": "/organizations/{org}/settings/billing/budgets/{budget_id}",
+      "operationId": "billing/update-budget-org",
+      "source": null,
+      "kind": "request-field-removed",
+      "target": {
+        "location": "body",
+        "path": [
+          "budget_product_sku"
+        ],
+        "viaArray": false,
+        "raw": "budget_product_sku"
+      },
+      "verification": {
+        "status": "verified",
+        "reason": "property \"budget_product_sku\" is no longer declared in the revision spec"
+      },
+      "specId": "github",
+      "key": "request-property-removed|PATCH /organizations/{}/settings/billing/budgets/{}|removed the request property `budget_product_sku`",
+      "sourceUrl": null,
+      "compareUrl": "https://github.com/github/rest-api-description/compare/01149204a19f69d6bac7909ceef0b571bbbe2798...677c1b8f9aa413b7f3d18ccccb80018982a3acd1",
+      "introducedIn": {
+        "sha": "677c1b8f9aa413b7f3d18ccccb80018982a3acd1",
+        "date": "2026-09-23T02:58:05Z",
+        "message": "Update OpenAPI 3.0 Descriptions",
+        "compareUrl": "https://github.com/github/rest-api-description/compare/01149204a19f69d6bac7909ceef0b571bbbe2798...677c1b8f9aa413b7f3d18ccccb80018982a3acd1"
+      }
+    },
+    {
+      "rule": "request-property-removed",
+      "level": 2,
+      "text": "removed the request property `budget_scope`",
+      "method": "PATCH",
+      "path": "/organizations/{org}/settings/billing/budgets/{budget_id}",
+      "operationId": "billing/update-budget-org",
+      "source": null,
+      "kind": "request-field-removed",
+      "target": {
+        "location": "body",
+        "path": [
+          "budget_scope"
+        ],
+        "viaArray": false,
+        "raw": "budget_scope"
+      },
+      "verification": {
+        "status": "verified",
+        "reason": "property \"budget_scope\" is no longer declared in the revision spec"
+      },
+      "specId": "github",
+      "key": "request-property-removed|PATCH /organizations/{}/settings/billing/budgets/{}|removed the request property `budget_scope`",
+      "sourceUrl": null,
+      "compareUrl": "https://github.com/github/rest-api-description/compare/01149204a19f69d6bac7909ceef0b571bbbe2798...677c1b8f9aa413b7f3d18ccccb80018982a3acd1",
+      "introducedIn": {
+        "sha": "677c1b8f9aa413b7f3d18ccccb80018982a3acd1",
+        "date": "2026-09-23T02:58:05Z",
+        "message": "Update OpenAPI 3.0 Descriptions",
+        "compareUrl": "https://github.com/github/rest-api-description/compare/01149204a19f69d6bac7909ceef0b571bbbe2798...677c1b8f9aa413b7f3d18ccccb80018982a3acd1"
+      }
+    },
+    {
+      "rule": "request-property-removed",
+      "level": 2,
+      "text": "removed the request property `budget_type`",
+      "method": "PATCH",
+      "path": "/organizations/{org}/settings/billing/budgets/{budget_id}",
+      "operationId": "billing/update-budget-org",
+      "source": null,
+      "kind": "request-field-removed",
+      "target": {
+        "location": "body",
+        "path": [
+          "budget_type"
+        ],
+        "viaArray": false,
+        "raw": "budget_type"
+      },
+      "verification": {
+        "status": "verified",
+        "reason": "property \"budget_type\" is no longer declared in the revision spec"
+      },
+      "specId": "github",
+      "key": "request-property-removed|PATCH /organizations/{}/settings/billing/budgets/{}|removed the request property `budget_type`",
+      "sourceUrl": null,
+      "compareUrl": "https://github.com/github/rest-api-description/compare/01149204a19f69d6bac7909ceef0b571bbbe2798...677c1b8f9aa413b7f3d18ccccb80018982a3acd1",
+      "introducedIn": {
+        "sha": "677c1b8f9aa413b7f3d18ccccb80018982a3acd1",
+        "date": "2026-09-23T02:58:05Z",
+        "message": "Update OpenAPI 3.0 Descriptions",
+        "compareUrl": "https://github.com/github/rest-api-description/compare/01149204a19f69d6bac7909ceef0b571bbbe2798...677c1b8f9aa413b7f3d18ccccb80018982a3acd1"
+      }
+    },
+    {
+      "rule": "request-property-removed",
+      "level": 2,
+      "text": "removed the request property `user`",
+      "method": "PATCH",
+      "path": "/organizations/{org}/settings/billing/budgets/{budget_id}",
+      "operationId": "billing/update-budget-org",
+      "source": null,
+      "kind": "request-field-removed",
+      "target": {
+        "location": "body",
+        "path": [
+          "user"
+        ],
+        "viaArray": false,
+        "raw": "user"
+      },
+      "verification": {
+        "status": "verified",
+        "reason": "property \"user\" is no longer declared in the revision spec"
+      },
+      "specId": "github",
+      "key": "request-property-removed|PATCH /organizations/{}/settings/billing/budgets/{}|removed the request property `user`",
+      "sourceUrl": null,
+      "compareUrl": "https://github.com/github/rest-api-description/compare/01149204a19f69d6bac7909ceef0b571bbbe2798...677c1b8f9aa413b7f3d18ccccb80018982a3acd1",
+      "introducedIn": {
+        "sha": "677c1b8f9aa413b7f3d18ccccb80018982a3acd1",
+        "date": "2026-09-23T02:58:05Z",
+        "message": "Update OpenAPI 3.0 Descriptions",
+        "compareUrl": "https://github.com/github/rest-api-description/compare/01149204a19f69d6bac7909ceef0b571bbbe2798...677c1b8f9aa413b7f3d18ccccb80018982a3acd1"
+      }
+    }
+  ],
+  "responseSummary": {}
+}

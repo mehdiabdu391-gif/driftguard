@@ -1,0 +1,26 @@
+{
+  "specId": "openai",
+  "base": {
+    "sha": "5bdf71b6a5085282b80d6810438c2a0a38037378",
+    "date": "2026-10-16T03:51:03Z",
+    "message": "Add text/event-stream response support for completions and beta APIs"
+  },
+  "revision": {
+    "sha": "35060f5bc1fdb11fba341dd6aa4313c4b1a05a12",
+    "date": "2026-10-16T17:57:24Z",
+    "message": "Add support for creating custom voices from text prompts"
+  },
+  "compareUrl": "https://github.com/openai/openai-openapi/compare/5bdf71b6a5085282b80d6810438c2a0a38037378...35060f5bc1fdb11fba341dd6aa4313c4b1a05a12",
+  "oasdiff": "oasdiff version 1.34.0",
+  "changes": [],
+  "responseSummary": {
+    "POST /audio/voices": {
+      "method": "POST",
+      "path": "/audio/voices",
+      "count": 1,
+      "rules": {
+        "response-property-enum-value-added": 1
+      }
+    }
+  }
+}

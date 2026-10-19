@@ -1,0 +1,50 @@
+{
+  "specId": "openai",
+  "base": {
+    "sha": "8ba0678ad5e656c11e29c110f71aa68ba18fcc03",
+    "date": "2026-10-16T23:28:15Z",
+    "message": "Add 'ultrafast' service tier option to model requests"
+  },
+  "revision": {
+    "sha": "c9fc5f8d99f539fc589a4294fc004ab0ac32364a",
+    "date": "2026-10-16T23:46:02Z",
+    "message": "Replace explicit text example in moderation endpoint with generic text"
+  },
+  "compareUrl": "https://github.com/openai/openai-openapi/compare/8ba0678ad5e656c11e29c110f71aa68ba18fcc03...c9fc5f8d99f539fc589a4294fc004ab0ac32364a",
+  "oasdiff": "oasdiff version 1.34.0",
+  "changes": [
+    {
+      "rule": "request-property-one-of-removed",
+      "level": 3,
+      "text": "removed `subschema #1, subschema #2, subschema #3` from the `input` request property `oneOf` list",
+      "method": "POST",
+      "path": "/moderations",
+      "operationId": "createModeration",
+      "source": null,
+      "kind": "request-field-constrained",
+      "target": {
+        "location": "body",
+        "path": [
+          "input"
+        ],
+        "viaArray": false,
+        "raw": "input"
+      },
+      "verification": {
+        "status": "unverified",
+        "reason": "claim taken from oasdiff; no independent check for this change type"
+      },
+      "specId": "openai",
+      "key": "request-property-one-of-removed|POST /moderations|removed `subschema #1, subschema #2, subschema #3` from the `input` request property `oneOf` list",
+      "sourceUrl": null,
+      "compareUrl": "https://github.com/openai/openai-openapi/compare/8ba0678ad5e656c11e29c110f71aa68ba18fcc03...c9fc5f8d99f539fc589a4294fc004ab0ac32364a",
+      "introducedIn": {
+        "sha": "c9fc5f8d99f539fc589a4294fc004ab0ac32364a",
+        "date": "2026-10-16T23:46:02Z",
+        "message": "Replace explicit text example in moderation endpoint with generic text",
+        "compareUrl": "https://github.com/openai/openai-openapi/compare/8ba0678ad5e656c11e29c110f71aa68ba18fcc03...c9fc5f8d99f539fc589a4294fc004ab0ac32364a"
+      }
+    }
+  ],
+  "responseSummary": {}
+}

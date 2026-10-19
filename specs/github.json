@@ -1,0 +1,283 @@
+{
+ "id": "github",
+ "repo": "github/rest-api-description",
+ "file": "descriptions/api.github.com/api.github.com.2022-11-28.json",
+ "history": [
+  {
+   "sha": "bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "date": "2026-10-17T23:38:25Z",
+   "message": "Update OpenAPI 3.0 Descriptions",
+   "base": "8eb34aece21c55830f8029c5da69b3058ae7d8b7",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "8eb34aece21c55830f8029c5da69b3058ae7d8b7",
+   "date": "2026-10-16T21:38:25Z",
+   "message": "Update OpenAPI 3.0 Descriptions",
+   "base": "e652b41dd89649bb46469915d40d3f217954959e",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "e652b41dd89649bb46469915d40d3f217954959e",
+   "date": "2026-10-16T00:07:59Z",
+   "message": "Update OpenAPI 3.0 Descriptions",
+   "base": "93c8981e7237e38ac78867b85805077ded92ab8b",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "93c8981e7237e38ac78867b85805077ded92ab8b",
+   "date": "2026-10-15T01:17:33Z",
+   "message": "Update OpenAPI 3.0 Descriptions",
+   "base": "02a2bc3d6b42b69c18938c31b434342aa08fcd2b",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "02a2bc3d6b42b69c18938c31b434342aa08fcd2b",
+   "date": "2026-10-14T19:35:28Z",
+   "message": "Update OpenAPI 3.0 Descriptions",
+   "base": "78739cdcca41c3f589156a9f8abcf44becfcf5f5",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "78739cdcca41c3f589156a9f8abcf44becfcf5f5",
+   "date": "2026-10-14T16:41:57Z",
+   "message": "Update OpenAPI 3.0 Descriptions",
+   "base": "ad351b19702b757bfd03a8ee85bcafe717878331",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "ad351b19702b757bfd03a8ee85bcafe717878331",
+   "date": "2026-10-13T21:17:40Z",
+   "message": "Update OpenAPI 3.0 Descriptions",
+   "base": "4cfb9c13ff3b090a9de0368587670157d708e6f1",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "4cfb9c13ff3b090a9de0368587670157d708e6f1",
+   "date": "2026-10-13T09:22:33Z",
+   "message": "Update OpenAPI 3.0 Descriptions",
+   "base": "9492527246942bb85a2e05ad167881076c27835a",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "9492527246942bb85a2e05ad167881076c27835a",
+   "date": "2026-10-13T02:18:32Z",
+   "message": "Update OpenAPI 3.0 Descriptions",
+   "base": "985340e18c33f33f788266c1bd4ba62c57d3298e",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "985340e18c33f33f788266c1bd4ba62c57d3298e",
+   "date": "2026-10-12T22:49:28Z",
+   "message": "Update OpenAPI 3.0 Descriptions",
+   "base": "e03f9ebeb33bd9a67c98ab200edf946ceae9d506",
+   "tracked": 0,
+   "responseChanges": 3
+  },
+  {
+   "sha": "e03f9ebeb33bd9a67c98ab200edf946ceae9d506",
+   "date": "2026-10-12T21:35:50Z",
+   "message": "Update OpenAPI 3.0 Descriptions",
+   "base": "1ddeb1b32190cef458422f2629cf9a5398126ca9",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "1ddeb1b32190cef458422f2629cf9a5398126ca9",
+   "date": "2026-10-10T02:23:10Z",
+   "message": "Update OpenAPI 3.0 Descriptions",
+   "base": "355db395991cb7e421fae2cc720189ad86558cbe",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "355db395991cb7e421fae2cc720189ad86558cbe",
+   "date": "2026-10-07T23:17:13Z",
+   "message": "Update OpenAPI 3.0 Descriptions",
+   "base": "0488d35fb85f4315146f7c770b01629cd76a9c6a",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "0488d35fb85f4315146f7c770b01629cd76a9c6a",
+   "date": "2026-10-07T20:59:15Z",
+   "message": "Update OpenAPI 3.0 Descriptions",
+   "base": "670d6845f9d3de5fd53b9d8a52a8106bc7e98ecf",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "670d6845f9d3de5fd53b9d8a52a8106bc7e98ecf",
+   "date": "2026-10-06T14:39:57Z",
+   "message": "Update OpenAPI 3.0 Descriptions",
+   "base": "a0b077167882b10fe68c96af1703c9b71684637e",
+   "tracked": 0,
+   "responseChanges": 1
+  },
+  {
+   "sha": "a0b077167882b10fe68c96af1703c9b71684637e",
+   "date": "2026-10-03T09:00:56Z",
+   "message": "Update OpenAPI 3.0 Descriptions",
+   "base": "fa705adfcb7e5c1e96a43a97838bd8daaab57049",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "fa705adfcb7e5c1e96a43a97838bd8daaab57049",
+   "date": "2026-10-01T23:18:10Z",
+   "message": "Update OpenAPI 3.0 Descriptions",
+   "base": "f84e6b18ac070988027c4a1fe256fcc593984275",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "f84e6b18ac070988027c4a1fe256fcc593984275",
+   "date": "2026-10-01T18:47:59Z",
+   "message": "Update OpenAPI 3.0 Descriptions",
+   "base": "f0e38355a9a7a29178d21651d1b389ba33fd55a2",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "f0e38355a9a7a29178d21651d1b389ba33fd55a2",
+   "date": "2026-09-30T15:58:28Z",
+   "message": "Update OpenAPI 3.0 Descriptions",
+   "base": "417dbcdbc615bff59f3a476385049a4c5bd0149b",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "417dbcdbc615bff59f3a476385049a4c5bd0149b",
+   "date": "2026-09-30T02:48:25Z",
+   "message": "Update OpenAPI 3.0 Descriptions",
+   "base": "0f1a412327a3b8047580bb92725d977092aa23c6",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "0f1a412327a3b8047580bb92725d977092aa23c6",
+   "date": "2026-09-29T21:04:52Z",
+   "message": "Update OpenAPI 3.0 Descriptions",
+   "base": "f6845928e7a72756db3758ca3018c634e5a06ae6",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "f6845928e7a72756db3758ca3018c634e5a06ae6",
+   "date": "2026-09-28T19:14:42Z",
+   "message": "Update OpenAPI 3.0 Descriptions",
+   "base": "8de50689eb9aef2b0195279c72b20a64ee7671a9",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "8de50689eb9aef2b0195279c72b20a64ee7671a9",
+   "date": "2026-09-28T15:46:50Z",
+   "message": "Update OpenAPI 3.0 Descriptions",
+   "base": "0029c0d4a6d330559abe0e45b22263bbe1c6b1a7",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "0029c0d4a6d330559abe0e45b22263bbe1c6b1a7",
+   "date": "2026-09-25T06:21:33Z",
+   "message": "Update OpenAPI 3.0 Descriptions",
+   "base": "4fc0ed66afba150d355d3908f8a443f4e1e784ea",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "4fc0ed66afba150d355d3908f8a443f4e1e784ea",
+   "date": "2026-09-24T22:01:28Z",
+   "message": "Update OpenAPI 3.0 Descriptions",
+   "base": "f4f0708fb8de458bd47bc2c9b3da8c5bf1780124",
+   "tracked": 0,
+   "responseChanges": 5
+  },
+  {
+   "sha": "f4f0708fb8de458bd47bc2c9b3da8c5bf1780124",
+   "date": "2026-09-24T15:25:50Z",
+   "message": "Update OpenAPI 3.0 Descriptions",
+   "base": "0b5823abf64cf5680ebd3d3c7ef22481f97e0e7d",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "0b5823abf64cf5680ebd3d3c7ef22481f97e0e7d",
+   "date": "2026-09-23T15:02:16Z",
+   "message": "Update OpenAPI 3.0 Descriptions",
+   "base": "677c1b8f9aa413b7f3d18ccccb80018982a3acd1",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "677c1b8f9aa413b7f3d18ccccb80018982a3acd1",
+   "date": "2026-09-23T02:58:05Z",
+   "message": "Update OpenAPI 3.0 Descriptions",
+   "base": "01149204a19f69d6bac7909ceef0b571bbbe2798",
+   "tracked": 5,
+   "responseChanges": 0
+  },
+  {
+   "sha": "01149204a19f69d6bac7909ceef0b571bbbe2798",
+   "date": "2026-09-23T01:47:51Z",
+   "message": "Update OpenAPI 3.0 Descriptions",
+   "base": "7026ef612efe011b970e81e96023771886b67b96",
+   "tracked": 18,
+   "responseChanges": 0
+  },
+  {
+   "sha": "7026ef612efe011b970e81e96023771886b67b96",
+   "date": "2026-09-22T14:11:28Z",
+   "message": "Update OpenAPI 3.0 Descriptions",
+   "base": "814de7ac96e215adeeec999308f41f98f94a15db",
+   "tracked": 0,
+   "responseChanges": 0
+  }
+ ],
+ "windows": {
+  "30d": {
+   "base": {
+    "sha": "814de7ac96e215adeeec999308f41f98f94a15db",
+    "date": "2026-09-18T14:31:50Z",
+    "message": "Update OpenAPI 3.0 Descriptions"
+   },
+   "tracked": 23,
+   "responseChanges": 9
+  },
+  "90d": {
+   "base": {
+    "sha": "bf7e007714988319f286ebbd102f1d3cea20dfc2",
+    "date": "2026-07-16T15:57:00Z",
+    "message": "Update OpenAPI 3.0 Descriptions"
+   },
+   "tracked": 55,
+   "responseChanges": 91
+  },
+  "180d": {
+   "base": {
+    "sha": "63e9be953f3d206eb0cd9c24ea92f6372c5a5d75",
+    "date": "2026-04-20T11:14:18Z",
+    "message": "Update OpenAPI 3.0 Descriptions"
+   },
+   "tracked": 64,
+   "responseChanges": 196
+  }
+ },
+ "head": {
+  "sha": "bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+  "date": "2026-10-17T23:38:25Z",
+  "message": "Update OpenAPI 3.0 Descriptions",
+  "specVersion": "1.1.4"
+ },
+ "updatedAt": "2026-10-19T08:24:16.409Z"
+}

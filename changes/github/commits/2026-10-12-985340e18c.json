@@ -1,0 +1,42 @@
+{
+  "specId": "github",
+  "base": {
+    "sha": "e03f9ebeb33bd9a67c98ab200edf946ceae9d506",
+    "date": "2026-10-12T21:35:50Z",
+    "message": "Update OpenAPI 3.0 Descriptions"
+  },
+  "revision": {
+    "sha": "985340e18c33f33f788266c1bd4ba62c57d3298e",
+    "date": "2026-10-12T22:49:28Z",
+    "message": "Update OpenAPI 3.0 Descriptions"
+  },
+  "compareUrl": "https://github.com/github/rest-api-description/compare/e03f9ebeb33bd9a67c98ab200edf946ceae9d506...985340e18c33f33f788266c1bd4ba62c57d3298e",
+  "oasdiff": "oasdiff version 1.34.0",
+  "changes": [],
+  "responseSummary": {
+    "GET /orgs/{}/private-registries": {
+      "method": "GET",
+      "path": "/orgs/{org}/private-registries",
+      "count": 1,
+      "rules": {
+        "response-property-enum-value-added": 1
+      }
+    },
+    "POST /orgs/{}/private-registries": {
+      "method": "POST",
+      "path": "/orgs/{org}/private-registries",
+      "count": 1,
+      "rules": {
+        "response-property-enum-value-added": 1
+      }
+    },
+    "GET /orgs/{}/private-registries/{}": {
+      "method": "GET",
+      "path": "/orgs/{org}/private-registries/{secret_name}",
+      "count": 1,
+      "rules": {
+        "response-property-enum-value-added": 1
+      }
+    }
+  }
+}

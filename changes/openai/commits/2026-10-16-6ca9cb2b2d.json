@@ -1,0 +1,82 @@
+{
+  "specId": "openai",
+  "base": {
+    "sha": "35060f5bc1fdb11fba341dd6aa4313c4b1a05a12",
+    "date": "2026-10-16T17:57:24Z",
+    "message": "Add support for creating custom voices from text prompts"
+  },
+  "revision": {
+    "sha": "6ca9cb2b2dd5fbe766c32f3ab898e2e479c29840",
+    "date": "2026-10-16T19:10:05Z",
+    "message": "Remove session spending control from API"
+  },
+  "compareUrl": "https://github.com/openai/openai-openapi/compare/35060f5bc1fdb11fba341dd6aa4313c4b1a05a12...6ca9cb2b2dd5fbe766c32f3ab898e2e479c29840",
+  "oasdiff": "oasdiff version 1.34.0",
+  "changes": [
+    {
+      "rule": "request-property-removed",
+      "level": 2,
+      "text": "removed the request property `spend_control`",
+      "method": "POST",
+      "path": "/agents/sessions",
+      "operationId": "createAgentSession",
+      "source": null,
+      "kind": "request-field-removed",
+      "target": {
+        "location": "body",
+        "path": [
+          "spend_control"
+        ],
+        "viaArray": false,
+        "raw": "spend_control"
+      },
+      "verification": {
+        "status": "verified",
+        "reason": "property \"spend_control\" is no longer declared in the revision spec"
+      },
+      "specId": "openai",
+      "key": "request-property-removed|POST /agents/sessions|removed the request property `spend_control`",
+      "sourceUrl": null,
+      "compareUrl": "https://github.com/openai/openai-openapi/compare/35060f5bc1fdb11fba341dd6aa4313c4b1a05a12...6ca9cb2b2dd5fbe766c32f3ab898e2e479c29840",
+      "introducedIn": {
+        "sha": "6ca9cb2b2dd5fbe766c32f3ab898e2e479c29840",
+        "date": "2026-10-16T19:10:05Z",
+        "message": "Remove session spending control from API",
+        "compareUrl": "https://github.com/openai/openai-openapi/compare/35060f5bc1fdb11fba341dd6aa4313c4b1a05a12...6ca9cb2b2dd5fbe766c32f3ab898e2e479c29840"
+      }
+    },
+    {
+      "rule": "request-property-removed",
+      "level": 2,
+      "text": "removed the request property `spend_control`",
+      "method": "POST",
+      "path": "/agents/sessions/{session_id}",
+      "operationId": "updateAgentSession",
+      "source": null,
+      "kind": "request-field-removed",
+      "target": {
+        "location": "body",
+        "path": [
+          "spend_control"
+        ],
+        "viaArray": false,
+        "raw": "spend_control"
+      },
+      "verification": {
+        "status": "verified",
+        "reason": "property \"spend_control\" is no longer declared in the revision spec"
+      },
+      "specId": "openai",
+      "key": "request-property-removed|POST /agents/sessions/{}|removed the request property `spend_control`",
+      "sourceUrl": null,
+      "compareUrl": "https://github.com/openai/openai-openapi/compare/35060f5bc1fdb11fba341dd6aa4313c4b1a05a12...6ca9cb2b2dd5fbe766c32f3ab898e2e479c29840",
+      "introducedIn": {
+        "sha": "6ca9cb2b2dd5fbe766c32f3ab898e2e479c29840",
+        "date": "2026-10-16T19:10:05Z",
+        "message": "Remove session spending control from API",
+        "compareUrl": "https://github.com/openai/openai-openapi/compare/35060f5bc1fdb11fba341dd6aa4313c4b1a05a12...6ca9cb2b2dd5fbe766c32f3ab898e2e479c29840"
+      }
+    }
+  ],
+  "responseSummary": {}
+}

@@ -1,0 +1,5232 @@
+{
+ "sdk": "octokit",
+ "specId": "github",
+ "repo": "octokit/plugin-rest-endpoint-methods.js",
+ "sha": "72b969439000425a16b46c61f369a3c9d52c2b0f",
+ "commitDate": "2026-08-01T16:12:50Z",
+ "styles": {
+  "client": {
+   "actions.addCustomLabelsToSelfHostedRunnerForOrg": {
+    "method": "POST",
+    "path": "/orgs/{org}/actions/runners/{runner_id}/labels",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.addCustomLabelsToSelfHostedRunnerForRepo": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/actions/runners/{runner_id}/labels",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.addRepoAccessToSelfHostedRunnerGroupInOrg": {
+    "method": "PUT",
+    "path": "/orgs/{org}/actions/runner-groups/{runner_group_id}/repositories/{repository_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.addSelectedRepoToOrgSecret": {
+    "method": "PUT",
+    "path": "/orgs/{org}/actions/secrets/{secret_name}/repositories/{repository_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.addSelectedRepoToOrgVariable": {
+    "method": "PUT",
+    "path": "/orgs/{org}/actions/variables/{name}/repositories/{repository_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.approveWorkflowRun": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/approve",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.cancelWorkflowRun": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/cancel",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.createEnvironmentVariable": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/environments/{environment_name}/variables",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.createHostedRunnerForOrg": {
+    "method": "POST",
+    "path": "/orgs/{org}/actions/hosted-runners",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.createOrUpdateEnvironmentSecret": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/environments/{environment_name}/secrets/{secret_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.createOrUpdateOrgSecret": {
+    "method": "PUT",
+    "path": "/orgs/{org}/actions/secrets/{secret_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.createOrUpdateRepoSecret": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/actions/secrets/{secret_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.createOrgVariable": {
+    "method": "POST",
+    "path": "/orgs/{org}/actions/variables",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.createRegistrationTokenForOrg": {
+    "method": "POST",
+    "path": "/orgs/{org}/actions/runners/registration-token",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.createRegistrationTokenForRepo": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/actions/runners/registration-token",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.createRemoveTokenForOrg": {
+    "method": "POST",
+    "path": "/orgs/{org}/actions/runners/remove-token",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.createRemoveTokenForRepo": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/actions/runners/remove-token",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.createRepoVariable": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/actions/variables",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.createWorkflowDispatch": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/actions/workflows/{workflow_id}/dispatches",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.deleteActionsCacheById": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/actions/caches/{cache_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.deleteActionsCacheByKey": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/actions/caches{?key,ref}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.deleteArtifact": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/actions/artifacts/{artifact_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.deleteCustomImageFromOrg": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/actions/hosted-runners/images/custom/{image_definition_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.deleteCustomImageVersionFromOrg": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/actions/hosted-runners/images/custom/{image_definition_id}/versions/{version}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.deleteEnvironmentSecret": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/environments/{environment_name}/secrets/{secret_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.deleteEnvironmentVariable": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/environments/{environment_name}/variables/{name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.deleteHostedRunnerForOrg": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/actions/hosted-runners/{hosted_runner_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.deleteOrgSecret": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/actions/secrets/{secret_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.deleteOrgVariable": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/actions/variables/{name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.deleteRepoSecret": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/actions/secrets/{secret_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.deleteRepoVariable": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/actions/variables/{name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.deleteSelfHostedRunnerFromOrg": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/actions/runners/{runner_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.deleteSelfHostedRunnerFromRepo": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/actions/runners/{runner_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.deleteWorkflowRun": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/actions/runs/{run_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.deleteWorkflowRunLogs": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/logs",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.disableSelectedRepositoryGithubActionsOrganization": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/actions/permissions/repositories/{repository_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.disableWorkflow": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/actions/workflows/{workflow_id}/disable",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.downloadArtifact": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/artifacts/{artifact_id}/{archive_format}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.downloadJobLogsForWorkflowRun": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/jobs/{job_id}/logs",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.downloadWorkflowRunAttemptLogs": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/attempts/{attempt_number}/logs",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.downloadWorkflowRunLogs": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/logs",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.enableSelectedRepositoryGithubActionsOrganization": {
+    "method": "PUT",
+    "path": "/orgs/{org}/actions/permissions/repositories/{repository_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.enableWorkflow": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/actions/workflows/{workflow_id}/enable",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.forceCancelWorkflowRun": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/force-cancel",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.generateRunnerJitconfigForOrg": {
+    "method": "POST",
+    "path": "/orgs/{org}/actions/runners/generate-jitconfig",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.generateRunnerJitconfigForRepo": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/actions/runners/generate-jitconfig",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getActionsCacheList": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/caches",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getActionsCacheRetentionLimitForEnterprise": {
+    "method": "GET",
+    "path": "/enterprises/{enterprise}/actions/cache/retention-limit",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getActionsCacheRetentionLimitForOrganization": {
+    "method": "GET",
+    "path": "/organizations/{org}/actions/cache/retention-limit",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getActionsCacheRetentionLimitForRepository": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/cache/retention-limit",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getActionsCacheStorageLimitForEnterprise": {
+    "method": "GET",
+    "path": "/enterprises/{enterprise}/actions/cache/storage-limit",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getActionsCacheStorageLimitForOrganization": {
+    "method": "GET",
+    "path": "/organizations/{org}/actions/cache/storage-limit",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getActionsCacheStorageLimitForRepository": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/cache/storage-limit",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getActionsCacheUsage": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/cache/usage",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getActionsCacheUsageByRepoForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/actions/cache/usage-by-repository",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getActionsCacheUsageForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/actions/cache/usage",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getAllowedActionsOrganization": {
+    "method": "GET",
+    "path": "/orgs/{org}/actions/permissions/selected-actions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getAllowedActionsRepository": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/permissions/selected-actions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getArtifact": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/artifacts/{artifact_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getCustomImageForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/actions/hosted-runners/images/custom/{image_definition_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getCustomImageVersionForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/actions/hosted-runners/images/custom/{image_definition_id}/versions/{version}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getCustomOidcSubClaimForRepo": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/oidc/customization/sub",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getEnvironmentPublicKey": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/environments/{environment_name}/secrets/public-key",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getEnvironmentSecret": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/environments/{environment_name}/secrets/{secret_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getEnvironmentVariable": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/environments/{environment_name}/variables/{name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getGithubActionsDefaultWorkflowPermissionsOrganization": {
+    "method": "GET",
+    "path": "/orgs/{org}/actions/permissions/workflow",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getGithubActionsDefaultWorkflowPermissionsRepository": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/permissions/workflow",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getGithubActionsPermissionsOrganization": {
+    "method": "GET",
+    "path": "/orgs/{org}/actions/permissions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getGithubActionsPermissionsRepository": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/permissions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getHostedRunnerForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/actions/hosted-runners/{hosted_runner_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getHostedRunnersGithubOwnedImagesForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/actions/hosted-runners/images/github-owned",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getHostedRunnersLimitsForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/actions/hosted-runners/limits",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getHostedRunnersMachineSpecsForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/actions/hosted-runners/machine-sizes",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getHostedRunnersPartnerImagesForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/actions/hosted-runners/images/partner",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getHostedRunnersPlatformsForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/actions/hosted-runners/platforms",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getJobForWorkflowRun": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/jobs/{job_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getOrgPublicKey": {
+    "method": "GET",
+    "path": "/orgs/{org}/actions/secrets/public-key",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getOrgSecret": {
+    "method": "GET",
+    "path": "/orgs/{org}/actions/secrets/{secret_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getOrgVariable": {
+    "method": "GET",
+    "path": "/orgs/{org}/actions/variables/{name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getPendingDeploymentsForRun": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/pending_deployments",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getRepoPermissions": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/permissions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getRepoPublicKey": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/secrets/public-key",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getRepoSecret": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/secrets/{secret_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getRepoVariable": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/variables/{name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getReviewsForRun": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/approvals",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getSelfHostedRunnerForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/actions/runners/{runner_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getSelfHostedRunnerForRepo": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/runners/{runner_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getWorkflow": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/workflows/{workflow_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getWorkflowAccessToRepository": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/permissions/access",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getWorkflowRun": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/runs/{run_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getWorkflowRunAttempt": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/attempts/{attempt_number}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getWorkflowRunUsage": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/timing",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.getWorkflowUsage": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/workflows/{workflow_id}/timing",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.listArtifactsForRepo": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/artifacts",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.listCustomImageVersionsForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/actions/hosted-runners/images/custom/{image_definition_id}/versions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.listCustomImagesForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/actions/hosted-runners/images/custom",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.listEnvironmentSecrets": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/environments/{environment_name}/secrets",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.listEnvironmentVariables": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/environments/{environment_name}/variables",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.listGithubHostedRunnersInGroupForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/actions/runner-groups/{runner_group_id}/hosted-runners",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.listHostedRunnersForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/actions/hosted-runners",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.listJobsForWorkflowRun": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/jobs",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.listJobsForWorkflowRunAttempt": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/attempts/{attempt_number}/jobs",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.listLabelsForSelfHostedRunnerForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/actions/runners/{runner_id}/labels",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.listLabelsForSelfHostedRunnerForRepo": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/runners/{runner_id}/labels",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.listOrgSecrets": {
+    "method": "GET",
+    "path": "/orgs/{org}/actions/secrets",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.listOrgVariables": {
+    "method": "GET",
+    "path": "/orgs/{org}/actions/variables",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.listRepoOrganizationSecrets": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/organization-secrets",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.listRepoOrganizationVariables": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/organization-variables",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.listRepoSecrets": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/secrets",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.listRepoVariables": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/variables",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.listRepoWorkflows": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/workflows",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.listRunnerApplicationsForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/actions/runners/downloads",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.listRunnerApplicationsForRepo": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/runners/downloads",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.listSelectedReposForOrgSecret": {
+    "method": "GET",
+    "path": "/orgs/{org}/actions/secrets/{secret_name}/repositories",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.listSelectedReposForOrgVariable": {
+    "method": "GET",
+    "path": "/orgs/{org}/actions/variables/{name}/repositories",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.listSelectedRepositoriesEnabledGithubActionsOrganization": {
+    "method": "GET",
+    "path": "/orgs/{org}/actions/permissions/repositories",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.listSelfHostedRunnersForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/actions/runners",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.listSelfHostedRunnersForRepo": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/runners",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.listWorkflowRunArtifacts": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/artifacts",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.listWorkflowRuns": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/workflows/{workflow_id}/runs",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.listWorkflowRunsForRepo": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/actions/runs",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.reRunJobForWorkflowRun": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/actions/jobs/{job_id}/rerun",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.reRunWorkflow": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/rerun",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.reRunWorkflowFailedJobs": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/rerun-failed-jobs",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.removeAllCustomLabelsFromSelfHostedRunnerForOrg": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/actions/runners/{runner_id}/labels",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.removeAllCustomLabelsFromSelfHostedRunnerForRepo": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/actions/runners/{runner_id}/labels",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.removeCustomLabelFromSelfHostedRunnerForOrg": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/actions/runners/{runner_id}/labels/{name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.removeCustomLabelFromSelfHostedRunnerForRepo": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/actions/runners/{runner_id}/labels/{name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.removeSelectedRepoFromOrgSecret": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/actions/secrets/{secret_name}/repositories/{repository_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.removeSelectedRepoFromOrgVariable": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/actions/variables/{name}/repositories/{repository_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.reviewCustomGatesForRun": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/deployment_protection_rule",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.reviewPendingDeploymentsForRun": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/pending_deployments",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.setActionsCacheRetentionLimitForEnterprise": {
+    "method": "PUT",
+    "path": "/enterprises/{enterprise}/actions/cache/retention-limit",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.setActionsCacheRetentionLimitForOrganization": {
+    "method": "PUT",
+    "path": "/organizations/{org}/actions/cache/retention-limit",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.setActionsCacheRetentionLimitForRepository": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/actions/cache/retention-limit",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.setActionsCacheStorageLimitForEnterprise": {
+    "method": "PUT",
+    "path": "/enterprises/{enterprise}/actions/cache/storage-limit",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.setActionsCacheStorageLimitForOrganization": {
+    "method": "PUT",
+    "path": "/organizations/{org}/actions/cache/storage-limit",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.setActionsCacheStorageLimitForRepository": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/actions/cache/storage-limit",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.setAllowedActionsOrganization": {
+    "method": "PUT",
+    "path": "/orgs/{org}/actions/permissions/selected-actions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.setAllowedActionsRepository": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/actions/permissions/selected-actions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.setCustomLabelsForSelfHostedRunnerForOrg": {
+    "method": "PUT",
+    "path": "/orgs/{org}/actions/runners/{runner_id}/labels",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.setCustomLabelsForSelfHostedRunnerForRepo": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/actions/runners/{runner_id}/labels",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.setCustomOidcSubClaimForRepo": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/actions/oidc/customization/sub",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.setGithubActionsDefaultWorkflowPermissionsOrganization": {
+    "method": "PUT",
+    "path": "/orgs/{org}/actions/permissions/workflow",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.setGithubActionsDefaultWorkflowPermissionsRepository": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/actions/permissions/workflow",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.setGithubActionsPermissionsOrganization": {
+    "method": "PUT",
+    "path": "/orgs/{org}/actions/permissions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.setGithubActionsPermissionsRepository": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/actions/permissions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.setSelectedReposForOrgSecret": {
+    "method": "PUT",
+    "path": "/orgs/{org}/actions/secrets/{secret_name}/repositories",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.setSelectedReposForOrgVariable": {
+    "method": "PUT",
+    "path": "/orgs/{org}/actions/variables/{name}/repositories",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.setSelectedRepositoriesEnabledGithubActionsOrganization": {
+    "method": "PUT",
+    "path": "/orgs/{org}/actions/permissions/repositories",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.setWorkflowAccessToRepository": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/actions/permissions/access",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.updateEnvironmentVariable": {
+    "method": "PATCH",
+    "path": "/repos/{owner}/{repo}/environments/{environment_name}/variables/{name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.updateHostedRunnerForOrg": {
+    "method": "PATCH",
+    "path": "/orgs/{org}/actions/hosted-runners/{hosted_runner_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.updateOrgVariable": {
+    "method": "PATCH",
+    "path": "/orgs/{org}/actions/variables/{name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "actions.updateRepoVariable": {
+    "method": "PATCH",
+    "path": "/repos/{owner}/{repo}/actions/variables/{name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "activity.checkRepoIsStarredByAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/starred/{owner}/{repo}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "activity.deleteRepoSubscription": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/subscription",
+    "source": "src/generated/endpoints.ts"
+   },
+   "activity.deleteThreadSubscription": {
+    "method": "DELETE",
+    "path": "/notifications/threads/{thread_id}/subscription",
+    "source": "src/generated/endpoints.ts"
+   },
+   "activity.getFeeds": {
+    "method": "GET",
+    "path": "/feeds",
+    "source": "src/generated/endpoints.ts"
+   },
+   "activity.getRepoSubscription": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/subscription",
+    "source": "src/generated/endpoints.ts"
+   },
+   "activity.getThread": {
+    "method": "GET",
+    "path": "/notifications/threads/{thread_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "activity.getThreadSubscriptionForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/notifications/threads/{thread_id}/subscription",
+    "source": "src/generated/endpoints.ts"
+   },
+   "activity.listEventsForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/users/{username}/events",
+    "source": "src/generated/endpoints.ts"
+   },
+   "activity.listNotificationsForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/notifications",
+    "source": "src/generated/endpoints.ts"
+   },
+   "activity.listOrgEventsForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/users/{username}/events/orgs/{org}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "activity.listPublicEvents": {
+    "method": "GET",
+    "path": "/events",
+    "source": "src/generated/endpoints.ts"
+   },
+   "activity.listPublicEventsForRepoNetwork": {
+    "method": "GET",
+    "path": "/networks/{owner}/{repo}/events",
+    "source": "src/generated/endpoints.ts"
+   },
+   "activity.listPublicEventsForUser": {
+    "method": "GET",
+    "path": "/users/{username}/events/public",
+    "source": "src/generated/endpoints.ts"
+   },
+   "activity.listPublicOrgEvents": {
+    "method": "GET",
+    "path": "/orgs/{org}/events",
+    "source": "src/generated/endpoints.ts"
+   },
+   "activity.listReceivedEventsForUser": {
+    "method": "GET",
+    "path": "/users/{username}/received_events",
+    "source": "src/generated/endpoints.ts"
+   },
+   "activity.listReceivedPublicEventsForUser": {
+    "method": "GET",
+    "path": "/users/{username}/received_events/public",
+    "source": "src/generated/endpoints.ts"
+   },
+   "activity.listRepoEvents": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/events",
+    "source": "src/generated/endpoints.ts"
+   },
+   "activity.listRepoNotificationsForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/notifications",
+    "source": "src/generated/endpoints.ts"
+   },
+   "activity.listReposStarredByAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/starred",
+    "source": "src/generated/endpoints.ts"
+   },
+   "activity.listReposStarredByUser": {
+    "method": "GET",
+    "path": "/users/{username}/starred",
+    "source": "src/generated/endpoints.ts"
+   },
+   "activity.listReposWatchedByUser": {
+    "method": "GET",
+    "path": "/users/{username}/subscriptions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "activity.listStargazersForRepo": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/stargazers",
+    "source": "src/generated/endpoints.ts"
+   },
+   "activity.listWatchedReposForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/subscriptions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "activity.listWatchersForRepo": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/subscribers",
+    "source": "src/generated/endpoints.ts"
+   },
+   "activity.markNotificationsAsRead": {
+    "method": "PUT",
+    "path": "/notifications",
+    "source": "src/generated/endpoints.ts"
+   },
+   "activity.markRepoNotificationsAsRead": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/notifications",
+    "source": "src/generated/endpoints.ts"
+   },
+   "activity.markThreadAsDone": {
+    "method": "DELETE",
+    "path": "/notifications/threads/{thread_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "activity.markThreadAsRead": {
+    "method": "PATCH",
+    "path": "/notifications/threads/{thread_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "activity.setRepoSubscription": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/subscription",
+    "source": "src/generated/endpoints.ts"
+   },
+   "activity.setThreadSubscription": {
+    "method": "PUT",
+    "path": "/notifications/threads/{thread_id}/subscription",
+    "source": "src/generated/endpoints.ts"
+   },
+   "activity.starRepoForAuthenticatedUser": {
+    "method": "PUT",
+    "path": "/user/starred/{owner}/{repo}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "activity.unstarRepoForAuthenticatedUser": {
+    "method": "DELETE",
+    "path": "/user/starred/{owner}/{repo}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.addRepoToInstallation": {
+    "method": "PUT",
+    "path": "/user/installations/{installation_id}/repositories/{repository_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.addRepoToInstallationForAuthenticatedUser": {
+    "method": "PUT",
+    "path": "/user/installations/{installation_id}/repositories/{repository_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.checkToken": {
+    "method": "POST",
+    "path": "/applications/{client_id}/token",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.createFromManifest": {
+    "method": "POST",
+    "path": "/app-manifests/{code}/conversions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.createInstallationAccessToken": {
+    "method": "POST",
+    "path": "/app/installations/{installation_id}/access_tokens",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.deleteAuthorization": {
+    "method": "DELETE",
+    "path": "/applications/{client_id}/grant",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.deleteInstallation": {
+    "method": "DELETE",
+    "path": "/app/installations/{installation_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.deleteToken": {
+    "method": "DELETE",
+    "path": "/applications/{client_id}/token",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.getAuthenticated": {
+    "method": "GET",
+    "path": "/app",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.getBySlug": {
+    "method": "GET",
+    "path": "/apps/{app_slug}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.getInstallation": {
+    "method": "GET",
+    "path": "/app/installations/{installation_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.getOrgInstallation": {
+    "method": "GET",
+    "path": "/orgs/{org}/installation",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.getRepoInstallation": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/installation",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.getSubscriptionPlanForAccount": {
+    "method": "GET",
+    "path": "/marketplace_listing/accounts/{account_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.getSubscriptionPlanForAccountStubbed": {
+    "method": "GET",
+    "path": "/marketplace_listing/stubbed/accounts/{account_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.getUserInstallation": {
+    "method": "GET",
+    "path": "/users/{username}/installation",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.getWebhookConfigForApp": {
+    "method": "GET",
+    "path": "/app/hook/config",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.getWebhookDelivery": {
+    "method": "GET",
+    "path": "/app/hook/deliveries/{delivery_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.listAccountsForPlan": {
+    "method": "GET",
+    "path": "/marketplace_listing/plans/{plan_id}/accounts",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.listAccountsForPlanStubbed": {
+    "method": "GET",
+    "path": "/marketplace_listing/stubbed/plans/{plan_id}/accounts",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.listInstallationReposForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/installations/{installation_id}/repositories",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.listInstallationRequestsForAuthenticatedApp": {
+    "method": "GET",
+    "path": "/app/installation-requests",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.listInstallations": {
+    "method": "GET",
+    "path": "/app/installations",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.listInstallationsForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/installations",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.listPlans": {
+    "method": "GET",
+    "path": "/marketplace_listing/plans",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.listPlansStubbed": {
+    "method": "GET",
+    "path": "/marketplace_listing/stubbed/plans",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.listReposAccessibleToInstallation": {
+    "method": "GET",
+    "path": "/installation/repositories",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.listSubscriptionsForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/marketplace_purchases",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.listSubscriptionsForAuthenticatedUserStubbed": {
+    "method": "GET",
+    "path": "/user/marketplace_purchases/stubbed",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.listWebhookDeliveries": {
+    "method": "GET",
+    "path": "/app/hook/deliveries",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.redeliverWebhookDelivery": {
+    "method": "POST",
+    "path": "/app/hook/deliveries/{delivery_id}/attempts",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.removeRepoFromInstallation": {
+    "method": "DELETE",
+    "path": "/user/installations/{installation_id}/repositories/{repository_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.removeRepoFromInstallationForAuthenticatedUser": {
+    "method": "DELETE",
+    "path": "/user/installations/{installation_id}/repositories/{repository_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.resetToken": {
+    "method": "PATCH",
+    "path": "/applications/{client_id}/token",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.revokeInstallationAccessToken": {
+    "method": "DELETE",
+    "path": "/installation/token",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.scopeToken": {
+    "method": "POST",
+    "path": "/applications/{client_id}/token/scoped",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.suspendInstallation": {
+    "method": "PUT",
+    "path": "/app/installations/{installation_id}/suspended",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.unsuspendInstallation": {
+    "method": "DELETE",
+    "path": "/app/installations/{installation_id}/suspended",
+    "source": "src/generated/endpoints.ts"
+   },
+   "apps.updateWebhookConfigForApp": {
+    "method": "PATCH",
+    "path": "/app/hook/config",
+    "source": "src/generated/endpoints.ts"
+   },
+   "billing.deleteBudgetOrg": {
+    "method": "DELETE",
+    "path": "/organizations/{org}/settings/billing/budgets/{budget_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "billing.getAllBudgetsOrg": {
+    "method": "GET",
+    "path": "/organizations/{org}/settings/billing/budgets",
+    "source": "src/generated/endpoints.ts"
+   },
+   "billing.getBudgetOrg": {
+    "method": "GET",
+    "path": "/organizations/{org}/settings/billing/budgets/{budget_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "billing.getGithubBillingPremiumRequestUsageReportOrg": {
+    "method": "GET",
+    "path": "/organizations/{org}/settings/billing/premium_request/usage",
+    "source": "src/generated/endpoints.ts"
+   },
+   "billing.getGithubBillingPremiumRequestUsageReportUser": {
+    "method": "GET",
+    "path": "/users/{username}/settings/billing/premium_request/usage",
+    "source": "src/generated/endpoints.ts"
+   },
+   "billing.getGithubBillingUsageReportOrg": {
+    "method": "GET",
+    "path": "/organizations/{org}/settings/billing/usage",
+    "source": "src/generated/endpoints.ts"
+   },
+   "billing.getGithubBillingUsageReportUser": {
+    "method": "GET",
+    "path": "/users/{username}/settings/billing/usage",
+    "source": "src/generated/endpoints.ts"
+   },
+   "billing.getGithubBillingUsageSummaryReportOrg": {
+    "method": "GET",
+    "path": "/organizations/{org}/settings/billing/usage/summary",
+    "source": "src/generated/endpoints.ts"
+   },
+   "billing.getGithubBillingUsageSummaryReportUser": {
+    "method": "GET",
+    "path": "/users/{username}/settings/billing/usage/summary",
+    "source": "src/generated/endpoints.ts"
+   },
+   "billing.updateBudgetOrg": {
+    "method": "PATCH",
+    "path": "/organizations/{org}/settings/billing/budgets/{budget_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "campaigns.createCampaign": {
+    "method": "POST",
+    "path": "/orgs/{org}/campaigns",
+    "source": "src/generated/endpoints.ts"
+   },
+   "campaigns.deleteCampaign": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/campaigns/{campaign_number}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "campaigns.getCampaignSummary": {
+    "method": "GET",
+    "path": "/orgs/{org}/campaigns/{campaign_number}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "campaigns.listOrgCampaigns": {
+    "method": "GET",
+    "path": "/orgs/{org}/campaigns",
+    "source": "src/generated/endpoints.ts"
+   },
+   "campaigns.updateCampaign": {
+    "method": "PATCH",
+    "path": "/orgs/{org}/campaigns/{campaign_number}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "checks.create": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/check-runs",
+    "source": "src/generated/endpoints.ts"
+   },
+   "checks.createSuite": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/check-suites",
+    "source": "src/generated/endpoints.ts"
+   },
+   "checks.get": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/check-runs/{check_run_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "checks.getSuite": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/check-suites/{check_suite_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "checks.listAnnotations": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/check-runs/{check_run_id}/annotations",
+    "source": "src/generated/endpoints.ts"
+   },
+   "checks.listForRef": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/commits/{ref}/check-runs",
+    "source": "src/generated/endpoints.ts"
+   },
+   "checks.listForSuite": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/check-suites/{check_suite_id}/check-runs",
+    "source": "src/generated/endpoints.ts"
+   },
+   "checks.listSuitesForRef": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/commits/{ref}/check-suites",
+    "source": "src/generated/endpoints.ts"
+   },
+   "checks.rerequestRun": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/check-runs/{check_run_id}/rerequest",
+    "source": "src/generated/endpoints.ts"
+   },
+   "checks.rerequestSuite": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/check-suites/{check_suite_id}/rerequest",
+    "source": "src/generated/endpoints.ts"
+   },
+   "checks.setSuitesPreferences": {
+    "method": "PATCH",
+    "path": "/repos/{owner}/{repo}/check-suites/preferences",
+    "source": "src/generated/endpoints.ts"
+   },
+   "checks.update": {
+    "method": "PATCH",
+    "path": "/repos/{owner}/{repo}/check-runs/{check_run_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeScanning.commitAutofix": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/code-scanning/alerts/{alert_number}/autofix/commits",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeScanning.createAutofix": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/code-scanning/alerts/{alert_number}/autofix",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeScanning.createVariantAnalysis": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/code-scanning/codeql/variant-analyses",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeScanning.deleteAnalysis": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/code-scanning/analyses/{analysis_id}{?confirm_delete}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeScanning.deleteCodeqlDatabase": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/code-scanning/codeql/databases/{language}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeScanning.getAlert": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/code-scanning/alerts/{alert_number}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeScanning.getAnalysis": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/code-scanning/analyses/{analysis_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeScanning.getAutofix": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/code-scanning/alerts/{alert_number}/autofix",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeScanning.getCodeqlDatabase": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/code-scanning/codeql/databases/{language}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeScanning.getDefaultSetup": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/code-scanning/default-setup",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeScanning.getSarif": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/code-scanning/sarifs/{sarif_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeScanning.getVariantAnalysis": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/code-scanning/codeql/variant-analyses/{codeql_variant_analysis_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeScanning.getVariantAnalysisRepoTask": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/code-scanning/codeql/variant-analyses/{codeql_variant_analysis_id}/repos/{repo_owner}/{repo_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeScanning.listAlertInstances": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/code-scanning/alerts/{alert_number}/instances",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeScanning.listAlertsForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/code-scanning/alerts",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeScanning.listAlertsForRepo": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/code-scanning/alerts",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeScanning.listAlertsInstances": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/code-scanning/alerts/{alert_number}/instances",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeScanning.listCodeqlDatabases": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/code-scanning/codeql/databases",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeScanning.listRecentAnalyses": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/code-scanning/analyses",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeScanning.updateAlert": {
+    "method": "PATCH",
+    "path": "/repos/{owner}/{repo}/code-scanning/alerts/{alert_number}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeScanning.updateDefaultSetup": {
+    "method": "PATCH",
+    "path": "/repos/{owner}/{repo}/code-scanning/default-setup",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeScanning.uploadSarif": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/code-scanning/sarifs",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeSecurity.attachConfiguration": {
+    "method": "POST",
+    "path": "/orgs/{org}/code-security/configurations/{configuration_id}/attach",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeSecurity.attachEnterpriseConfiguration": {
+    "method": "POST",
+    "path": "/enterprises/{enterprise}/code-security/configurations/{configuration_id}/attach",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeSecurity.createConfiguration": {
+    "method": "POST",
+    "path": "/orgs/{org}/code-security/configurations",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeSecurity.createConfigurationForEnterprise": {
+    "method": "POST",
+    "path": "/enterprises/{enterprise}/code-security/configurations",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeSecurity.deleteConfiguration": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/code-security/configurations/{configuration_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeSecurity.deleteConfigurationForEnterprise": {
+    "method": "DELETE",
+    "path": "/enterprises/{enterprise}/code-security/configurations/{configuration_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeSecurity.detachConfiguration": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/code-security/configurations/detach",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeSecurity.getConfiguration": {
+    "method": "GET",
+    "path": "/orgs/{org}/code-security/configurations/{configuration_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeSecurity.getConfigurationForRepository": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/code-security-configuration",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeSecurity.getConfigurationsForEnterprise": {
+    "method": "GET",
+    "path": "/enterprises/{enterprise}/code-security/configurations",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeSecurity.getConfigurationsForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/code-security/configurations",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeSecurity.getDefaultConfigurations": {
+    "method": "GET",
+    "path": "/orgs/{org}/code-security/configurations/defaults",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeSecurity.getDefaultConfigurationsForEnterprise": {
+    "method": "GET",
+    "path": "/enterprises/{enterprise}/code-security/configurations/defaults",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeSecurity.getRepositoriesForConfiguration": {
+    "method": "GET",
+    "path": "/orgs/{org}/code-security/configurations/{configuration_id}/repositories",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeSecurity.getRepositoriesForEnterpriseConfiguration": {
+    "method": "GET",
+    "path": "/enterprises/{enterprise}/code-security/configurations/{configuration_id}/repositories",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeSecurity.getSingleConfigurationForEnterprise": {
+    "method": "GET",
+    "path": "/enterprises/{enterprise}/code-security/configurations/{configuration_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeSecurity.setConfigurationAsDefault": {
+    "method": "PUT",
+    "path": "/orgs/{org}/code-security/configurations/{configuration_id}/defaults",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeSecurity.setConfigurationAsDefaultForEnterprise": {
+    "method": "PUT",
+    "path": "/enterprises/{enterprise}/code-security/configurations/{configuration_id}/defaults",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeSecurity.updateConfiguration": {
+    "method": "PATCH",
+    "path": "/orgs/{org}/code-security/configurations/{configuration_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codeSecurity.updateEnterpriseConfiguration": {
+    "method": "PATCH",
+    "path": "/enterprises/{enterprise}/code-security/configurations/{configuration_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codesOfConduct.getAllCodesOfConduct": {
+    "method": "GET",
+    "path": "/codes_of_conduct",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codesOfConduct.getConductCode": {
+    "method": "GET",
+    "path": "/codes_of_conduct/{key}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.addRepositoryForSecretForAuthenticatedUser": {
+    "method": "PUT",
+    "path": "/user/codespaces/secrets/{secret_name}/repositories/{repository_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.addSelectedRepoToOrgSecret": {
+    "method": "PUT",
+    "path": "/orgs/{org}/codespaces/secrets/{secret_name}/repositories/{repository_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.checkPermissionsForDevcontainer": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/codespaces/permissions_check",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.codespaceMachinesForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/codespaces/{codespace_name}/machines",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.createForAuthenticatedUser": {
+    "method": "POST",
+    "path": "/user/codespaces",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.createOrUpdateOrgSecret": {
+    "method": "PUT",
+    "path": "/orgs/{org}/codespaces/secrets/{secret_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.createOrUpdateRepoSecret": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/codespaces/secrets/{secret_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.createOrUpdateSecretForAuthenticatedUser": {
+    "method": "PUT",
+    "path": "/user/codespaces/secrets/{secret_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.createWithPrForAuthenticatedUser": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/pulls/{pull_number}/codespaces",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.createWithRepoForAuthenticatedUser": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/codespaces",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.deleteForAuthenticatedUser": {
+    "method": "DELETE",
+    "path": "/user/codespaces/{codespace_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.deleteFromOrganization": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/members/{username}/codespaces/{codespace_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.deleteOrgSecret": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/codespaces/secrets/{secret_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.deleteRepoSecret": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/codespaces/secrets/{secret_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.deleteSecretForAuthenticatedUser": {
+    "method": "DELETE",
+    "path": "/user/codespaces/secrets/{secret_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.exportForAuthenticatedUser": {
+    "method": "POST",
+    "path": "/user/codespaces/{codespace_name}/exports",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.getCodespacesForUserInOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/members/{username}/codespaces",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.getExportDetailsForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/codespaces/{codespace_name}/exports/{export_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.getForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/codespaces/{codespace_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.getOrgPublicKey": {
+    "method": "GET",
+    "path": "/orgs/{org}/codespaces/secrets/public-key",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.getOrgSecret": {
+    "method": "GET",
+    "path": "/orgs/{org}/codespaces/secrets/{secret_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.getPublicKeyForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/codespaces/secrets/public-key",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.getRepoPublicKey": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/codespaces/secrets/public-key",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.getRepoSecret": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/codespaces/secrets/{secret_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.getSecretForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/codespaces/secrets/{secret_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.listDevcontainersInRepositoryForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/codespaces/devcontainers",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.listForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/codespaces",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.listInOrganization": {
+    "method": "GET",
+    "path": "/orgs/{org}/codespaces",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.listInRepositoryForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/codespaces",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.listOrgSecrets": {
+    "method": "GET",
+    "path": "/orgs/{org}/codespaces/secrets",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.listRepoSecrets": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/codespaces/secrets",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.listRepositoriesForSecretForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/codespaces/secrets/{secret_name}/repositories",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.listSecretsForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/codespaces/secrets",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.listSelectedReposForOrgSecret": {
+    "method": "GET",
+    "path": "/orgs/{org}/codespaces/secrets/{secret_name}/repositories",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.preFlightWithRepoForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/codespaces/new",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.publishForAuthenticatedUser": {
+    "method": "POST",
+    "path": "/user/codespaces/{codespace_name}/publish",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.removeRepositoryForSecretForAuthenticatedUser": {
+    "method": "DELETE",
+    "path": "/user/codespaces/secrets/{secret_name}/repositories/{repository_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.removeSelectedRepoFromOrgSecret": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/codespaces/secrets/{secret_name}/repositories/{repository_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.repoMachinesForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/codespaces/machines",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.setRepositoriesForSecretForAuthenticatedUser": {
+    "method": "PUT",
+    "path": "/user/codespaces/secrets/{secret_name}/repositories",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.setSelectedReposForOrgSecret": {
+    "method": "PUT",
+    "path": "/orgs/{org}/codespaces/secrets/{secret_name}/repositories",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.startForAuthenticatedUser": {
+    "method": "POST",
+    "path": "/user/codespaces/{codespace_name}/start",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.stopForAuthenticatedUser": {
+    "method": "POST",
+    "path": "/user/codespaces/{codespace_name}/stop",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.stopInOrganization": {
+    "method": "POST",
+    "path": "/orgs/{org}/members/{username}/codespaces/{codespace_name}/stop",
+    "source": "src/generated/endpoints.ts"
+   },
+   "codespaces.updateForAuthenticatedUser": {
+    "method": "PATCH",
+    "path": "/user/codespaces/{codespace_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "copilot.addCopilotSeatsForTeams": {
+    "method": "POST",
+    "path": "/orgs/{org}/copilot/billing/selected_teams",
+    "source": "src/generated/endpoints.ts"
+   },
+   "copilot.addCopilotSeatsForUsers": {
+    "method": "POST",
+    "path": "/orgs/{org}/copilot/billing/selected_users",
+    "source": "src/generated/endpoints.ts"
+   },
+   "copilot.cancelCopilotSeatAssignmentForTeams": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/copilot/billing/selected_teams",
+    "source": "src/generated/endpoints.ts"
+   },
+   "copilot.cancelCopilotSeatAssignmentForUsers": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/copilot/billing/selected_users",
+    "source": "src/generated/endpoints.ts"
+   },
+   "copilot.copilotMetricsForOrganization": {
+    "method": "GET",
+    "path": "/orgs/{org}/copilot/metrics",
+    "source": "src/generated/endpoints.ts"
+   },
+   "copilot.copilotMetricsForTeam": {
+    "method": "GET",
+    "path": "/orgs/{org}/team/{team_slug}/copilot/metrics",
+    "source": "src/generated/endpoints.ts"
+   },
+   "copilot.getCopilotOrganizationDetails": {
+    "method": "GET",
+    "path": "/orgs/{org}/copilot/billing",
+    "source": "src/generated/endpoints.ts"
+   },
+   "copilot.getCopilotSeatDetailsForUser": {
+    "method": "GET",
+    "path": "/orgs/{org}/members/{username}/copilot",
+    "source": "src/generated/endpoints.ts"
+   },
+   "copilot.listCopilotSeats": {
+    "method": "GET",
+    "path": "/orgs/{org}/copilot/billing/seats",
+    "source": "src/generated/endpoints.ts"
+   },
+   "credentials.revoke": {
+    "method": "POST",
+    "path": "/credentials/revoke",
+    "source": "src/generated/endpoints.ts"
+   },
+   "dependabot.addSelectedRepoToOrgSecret": {
+    "method": "PUT",
+    "path": "/orgs/{org}/dependabot/secrets/{secret_name}/repositories/{repository_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "dependabot.createOrUpdateOrgSecret": {
+    "method": "PUT",
+    "path": "/orgs/{org}/dependabot/secrets/{secret_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "dependabot.createOrUpdateRepoSecret": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/dependabot/secrets/{secret_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "dependabot.deleteOrgSecret": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/dependabot/secrets/{secret_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "dependabot.deleteRepoSecret": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/dependabot/secrets/{secret_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "dependabot.getAlert": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/dependabot/alerts/{alert_number}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "dependabot.getOrgPublicKey": {
+    "method": "GET",
+    "path": "/orgs/{org}/dependabot/secrets/public-key",
+    "source": "src/generated/endpoints.ts"
+   },
+   "dependabot.getOrgSecret": {
+    "method": "GET",
+    "path": "/orgs/{org}/dependabot/secrets/{secret_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "dependabot.getRepoPublicKey": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/dependabot/secrets/public-key",
+    "source": "src/generated/endpoints.ts"
+   },
+   "dependabot.getRepoSecret": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/dependabot/secrets/{secret_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "dependabot.listAlertsForEnterprise": {
+    "method": "GET",
+    "path": "/enterprises/{enterprise}/dependabot/alerts",
+    "source": "src/generated/endpoints.ts"
+   },
+   "dependabot.listAlertsForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/dependabot/alerts",
+    "source": "src/generated/endpoints.ts"
+   },
+   "dependabot.listAlertsForRepo": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/dependabot/alerts",
+    "source": "src/generated/endpoints.ts"
+   },
+   "dependabot.listOrgSecrets": {
+    "method": "GET",
+    "path": "/orgs/{org}/dependabot/secrets",
+    "source": "src/generated/endpoints.ts"
+   },
+   "dependabot.listRepoSecrets": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/dependabot/secrets",
+    "source": "src/generated/endpoints.ts"
+   },
+   "dependabot.listSelectedReposForOrgSecret": {
+    "method": "GET",
+    "path": "/orgs/{org}/dependabot/secrets/{secret_name}/repositories",
+    "source": "src/generated/endpoints.ts"
+   },
+   "dependabot.removeSelectedRepoFromOrgSecret": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/dependabot/secrets/{secret_name}/repositories/{repository_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "dependabot.repositoryAccessForOrg": {
+    "method": "GET",
+    "path": "/organizations/{org}/dependabot/repository-access",
+    "source": "src/generated/endpoints.ts"
+   },
+   "dependabot.setRepositoryAccessDefaultLevel": {
+    "method": "PUT",
+    "path": "/organizations/{org}/dependabot/repository-access/default-level",
+    "source": "src/generated/endpoints.ts"
+   },
+   "dependabot.setSelectedReposForOrgSecret": {
+    "method": "PUT",
+    "path": "/orgs/{org}/dependabot/secrets/{secret_name}/repositories",
+    "source": "src/generated/endpoints.ts"
+   },
+   "dependabot.updateAlert": {
+    "method": "PATCH",
+    "path": "/repos/{owner}/{repo}/dependabot/alerts/{alert_number}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "dependabot.updateRepositoryAccessForOrg": {
+    "method": "PATCH",
+    "path": "/organizations/{org}/dependabot/repository-access",
+    "source": "src/generated/endpoints.ts"
+   },
+   "dependencyGraph.createRepositorySnapshot": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/dependency-graph/snapshots",
+    "source": "src/generated/endpoints.ts"
+   },
+   "dependencyGraph.diffRange": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/dependency-graph/compare/{basehead}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "dependencyGraph.exportSbom": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/dependency-graph/sbom",
+    "source": "src/generated/endpoints.ts"
+   },
+   "emojis.get": {
+    "method": "GET",
+    "path": "/emojis",
+    "source": "src/generated/endpoints.ts"
+   },
+   "enterpriseTeamMemberships.add": {
+    "method": "PUT",
+    "path": "/enterprises/{enterprise}/teams/{enterprise-team}/memberships/{username}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "enterpriseTeamMemberships.bulkAdd": {
+    "method": "POST",
+    "path": "/enterprises/{enterprise}/teams/{enterprise-team}/memberships/add",
+    "source": "src/generated/endpoints.ts"
+   },
+   "enterpriseTeamMemberships.bulkRemove": {
+    "method": "POST",
+    "path": "/enterprises/{enterprise}/teams/{enterprise-team}/memberships/remove",
+    "source": "src/generated/endpoints.ts"
+   },
+   "enterpriseTeamMemberships.get": {
+    "method": "GET",
+    "path": "/enterprises/{enterprise}/teams/{enterprise-team}/memberships/{username}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "enterpriseTeamMemberships.list": {
+    "method": "GET",
+    "path": "/enterprises/{enterprise}/teams/{enterprise-team}/memberships",
+    "source": "src/generated/endpoints.ts"
+   },
+   "enterpriseTeamMemberships.remove": {
+    "method": "DELETE",
+    "path": "/enterprises/{enterprise}/teams/{enterprise-team}/memberships/{username}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "enterpriseTeamOrganizations.add": {
+    "method": "PUT",
+    "path": "/enterprises/{enterprise}/teams/{enterprise-team}/organizations/{org}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "enterpriseTeamOrganizations.bulkAdd": {
+    "method": "POST",
+    "path": "/enterprises/{enterprise}/teams/{enterprise-team}/organizations/add",
+    "source": "src/generated/endpoints.ts"
+   },
+   "enterpriseTeamOrganizations.bulkRemove": {
+    "method": "POST",
+    "path": "/enterprises/{enterprise}/teams/{enterprise-team}/organizations/remove",
+    "source": "src/generated/endpoints.ts"
+   },
+   "enterpriseTeamOrganizations.delete": {
+    "method": "DELETE",
+    "path": "/enterprises/{enterprise}/teams/{enterprise-team}/organizations/{org}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "enterpriseTeamOrganizations.getAssignment": {
+    "method": "GET",
+    "path": "/enterprises/{enterprise}/teams/{enterprise-team}/organizations/{org}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "enterpriseTeamOrganizations.getAssignments": {
+    "method": "GET",
+    "path": "/enterprises/{enterprise}/teams/{enterprise-team}/organizations",
+    "source": "src/generated/endpoints.ts"
+   },
+   "enterpriseTeams.create": {
+    "method": "POST",
+    "path": "/enterprises/{enterprise}/teams",
+    "source": "src/generated/endpoints.ts"
+   },
+   "enterpriseTeams.delete": {
+    "method": "DELETE",
+    "path": "/enterprises/{enterprise}/teams/{team_slug}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "enterpriseTeams.get": {
+    "method": "GET",
+    "path": "/enterprises/{enterprise}/teams/{team_slug}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "enterpriseTeams.list": {
+    "method": "GET",
+    "path": "/enterprises/{enterprise}/teams",
+    "source": "src/generated/endpoints.ts"
+   },
+   "enterpriseTeams.update": {
+    "method": "PATCH",
+    "path": "/enterprises/{enterprise}/teams/{team_slug}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "gists.checkIsStarred": {
+    "method": "GET",
+    "path": "/gists/{gist_id}/star",
+    "source": "src/generated/endpoints.ts"
+   },
+   "gists.create": {
+    "method": "POST",
+    "path": "/gists",
+    "source": "src/generated/endpoints.ts"
+   },
+   "gists.createComment": {
+    "method": "POST",
+    "path": "/gists/{gist_id}/comments",
+    "source": "src/generated/endpoints.ts"
+   },
+   "gists.delete": {
+    "method": "DELETE",
+    "path": "/gists/{gist_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "gists.deleteComment": {
+    "method": "DELETE",
+    "path": "/gists/{gist_id}/comments/{comment_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "gists.fork": {
+    "method": "POST",
+    "path": "/gists/{gist_id}/forks",
+    "source": "src/generated/endpoints.ts"
+   },
+   "gists.get": {
+    "method": "GET",
+    "path": "/gists/{gist_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "gists.getComment": {
+    "method": "GET",
+    "path": "/gists/{gist_id}/comments/{comment_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "gists.getRevision": {
+    "method": "GET",
+    "path": "/gists/{gist_id}/{sha}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "gists.list": {
+    "method": "GET",
+    "path": "/gists",
+    "source": "src/generated/endpoints.ts"
+   },
+   "gists.listComments": {
+    "method": "GET",
+    "path": "/gists/{gist_id}/comments",
+    "source": "src/generated/endpoints.ts"
+   },
+   "gists.listCommits": {
+    "method": "GET",
+    "path": "/gists/{gist_id}/commits",
+    "source": "src/generated/endpoints.ts"
+   },
+   "gists.listForUser": {
+    "method": "GET",
+    "path": "/users/{username}/gists",
+    "source": "src/generated/endpoints.ts"
+   },
+   "gists.listForks": {
+    "method": "GET",
+    "path": "/gists/{gist_id}/forks",
+    "source": "src/generated/endpoints.ts"
+   },
+   "gists.listPublic": {
+    "method": "GET",
+    "path": "/gists/public",
+    "source": "src/generated/endpoints.ts"
+   },
+   "gists.listStarred": {
+    "method": "GET",
+    "path": "/gists/starred",
+    "source": "src/generated/endpoints.ts"
+   },
+   "gists.star": {
+    "method": "PUT",
+    "path": "/gists/{gist_id}/star",
+    "source": "src/generated/endpoints.ts"
+   },
+   "gists.unstar": {
+    "method": "DELETE",
+    "path": "/gists/{gist_id}/star",
+    "source": "src/generated/endpoints.ts"
+   },
+   "gists.update": {
+    "method": "PATCH",
+    "path": "/gists/{gist_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "gists.updateComment": {
+    "method": "PATCH",
+    "path": "/gists/{gist_id}/comments/{comment_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "git.createBlob": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/git/blobs",
+    "source": "src/generated/endpoints.ts"
+   },
+   "git.createCommit": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/git/commits",
+    "source": "src/generated/endpoints.ts"
+   },
+   "git.createRef": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/git/refs",
+    "source": "src/generated/endpoints.ts"
+   },
+   "git.createTag": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/git/tags",
+    "source": "src/generated/endpoints.ts"
+   },
+   "git.createTree": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/git/trees",
+    "source": "src/generated/endpoints.ts"
+   },
+   "git.deleteRef": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/git/refs/{ref}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "git.getBlob": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/git/blobs/{file_sha}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "git.getCommit": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/git/commits/{commit_sha}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "git.getRef": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/git/ref/{ref}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "git.getTag": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/git/tags/{tag_sha}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "git.getTree": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/git/trees/{tree_sha}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "git.listMatchingRefs": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/git/matching-refs/{ref}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "git.updateRef": {
+    "method": "PATCH",
+    "path": "/repos/{owner}/{repo}/git/refs/{ref}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "gitignore.getAllTemplates": {
+    "method": "GET",
+    "path": "/gitignore/templates",
+    "source": "src/generated/endpoints.ts"
+   },
+   "gitignore.getTemplate": {
+    "method": "GET",
+    "path": "/gitignore/templates/{name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "hostedCompute.createNetworkConfigurationForOrg": {
+    "method": "POST",
+    "path": "/orgs/{org}/settings/network-configurations",
+    "source": "src/generated/endpoints.ts"
+   },
+   "hostedCompute.deleteNetworkConfigurationFromOrg": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/settings/network-configurations/{network_configuration_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "hostedCompute.getNetworkConfigurationForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/settings/network-configurations/{network_configuration_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "hostedCompute.getNetworkSettingsForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/settings/network-settings/{network_settings_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "hostedCompute.listNetworkConfigurationsForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/settings/network-configurations",
+    "source": "src/generated/endpoints.ts"
+   },
+   "hostedCompute.updateNetworkConfigurationForOrg": {
+    "method": "PATCH",
+    "path": "/orgs/{org}/settings/network-configurations/{network_configuration_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "interactions.getRestrictionsForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/interaction-limits",
+    "source": "src/generated/endpoints.ts"
+   },
+   "interactions.getRestrictionsForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/interaction-limits",
+    "source": "src/generated/endpoints.ts"
+   },
+   "interactions.getRestrictionsForRepo": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/interaction-limits",
+    "source": "src/generated/endpoints.ts"
+   },
+   "interactions.getRestrictionsForYourPublicRepos": {
+    "method": "GET",
+    "path": "/user/interaction-limits",
+    "source": "src/generated/endpoints.ts"
+   },
+   "interactions.removeRestrictionsForAuthenticatedUser": {
+    "method": "DELETE",
+    "path": "/user/interaction-limits",
+    "source": "src/generated/endpoints.ts"
+   },
+   "interactions.removeRestrictionsForOrg": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/interaction-limits",
+    "source": "src/generated/endpoints.ts"
+   },
+   "interactions.removeRestrictionsForRepo": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/interaction-limits",
+    "source": "src/generated/endpoints.ts"
+   },
+   "interactions.removeRestrictionsForYourPublicRepos": {
+    "method": "DELETE",
+    "path": "/user/interaction-limits",
+    "source": "src/generated/endpoints.ts"
+   },
+   "interactions.setRestrictionsForAuthenticatedUser": {
+    "method": "PUT",
+    "path": "/user/interaction-limits",
+    "source": "src/generated/endpoints.ts"
+   },
+   "interactions.setRestrictionsForOrg": {
+    "method": "PUT",
+    "path": "/orgs/{org}/interaction-limits",
+    "source": "src/generated/endpoints.ts"
+   },
+   "interactions.setRestrictionsForRepo": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/interaction-limits",
+    "source": "src/generated/endpoints.ts"
+   },
+   "interactions.setRestrictionsForYourPublicRepos": {
+    "method": "PUT",
+    "path": "/user/interaction-limits",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.addAssignees": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/issues/{issue_number}/assignees",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.addBlockedByDependency": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/issues/{issue_number}/dependencies/blocked_by",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.addLabels": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/issues/{issue_number}/labels",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.addSubIssue": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/issues/{issue_number}/sub_issues",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.checkUserCanBeAssigned": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/assignees/{assignee}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.checkUserCanBeAssignedToIssue": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/issues/{issue_number}/assignees/{assignee}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.create": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/issues",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.createComment": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/issues/{issue_number}/comments",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.createLabel": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/labels",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.createMilestone": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/milestones",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.deleteComment": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/issues/comments/{comment_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.deleteLabel": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/labels/{name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.deleteMilestone": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/milestones/{milestone_number}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.get": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/issues/{issue_number}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.getComment": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/issues/comments/{comment_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.getEvent": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/issues/events/{event_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.getLabel": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/labels/{name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.getMilestone": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/milestones/{milestone_number}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.getParent": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/issues/{issue_number}/parent",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.list": {
+    "method": "GET",
+    "path": "/issues",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.listAssignees": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/assignees",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.listComments": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/issues/{issue_number}/comments",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.listCommentsForRepo": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/issues/comments",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.listDependenciesBlockedBy": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/issues/{issue_number}/dependencies/blocked_by",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.listDependenciesBlocking": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/issues/{issue_number}/dependencies/blocking",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.listEvents": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/issues/{issue_number}/events",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.listEventsForRepo": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/issues/events",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.listEventsForTimeline": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/issues/{issue_number}/timeline",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.listForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/issues",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.listForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/issues",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.listForRepo": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/issues",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.listLabelsForMilestone": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/milestones/{milestone_number}/labels",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.listLabelsForRepo": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/labels",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.listLabelsOnIssue": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/issues/{issue_number}/labels",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.listMilestones": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/milestones",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.listSubIssues": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/issues/{issue_number}/sub_issues",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.lock": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/issues/{issue_number}/lock",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.removeAllLabels": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/issues/{issue_number}/labels",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.removeAssignees": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/issues/{issue_number}/assignees",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.removeDependencyBlockedBy": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/issues/{issue_number}/dependencies/blocked_by/{issue_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.removeLabel": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/issues/{issue_number}/labels/{name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.removeSubIssue": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/issues/{issue_number}/sub_issue",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.reprioritizeSubIssue": {
+    "method": "PATCH",
+    "path": "/repos/{owner}/{repo}/issues/{issue_number}/sub_issues/priority",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.setLabels": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/issues/{issue_number}/labels",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.unlock": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/issues/{issue_number}/lock",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.update": {
+    "method": "PATCH",
+    "path": "/repos/{owner}/{repo}/issues/{issue_number}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.updateComment": {
+    "method": "PATCH",
+    "path": "/repos/{owner}/{repo}/issues/comments/{comment_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.updateLabel": {
+    "method": "PATCH",
+    "path": "/repos/{owner}/{repo}/labels/{name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "issues.updateMilestone": {
+    "method": "PATCH",
+    "path": "/repos/{owner}/{repo}/milestones/{milestone_number}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "licenses.get": {
+    "method": "GET",
+    "path": "/licenses/{license}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "licenses.getAllCommonlyUsed": {
+    "method": "GET",
+    "path": "/licenses",
+    "source": "src/generated/endpoints.ts"
+   },
+   "licenses.getForRepo": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/license",
+    "source": "src/generated/endpoints.ts"
+   },
+   "markdown.render": {
+    "method": "POST",
+    "path": "/markdown",
+    "source": "src/generated/endpoints.ts"
+   },
+   "markdown.renderRaw": {
+    "method": "POST",
+    "path": "/markdown/raw",
+    "source": "src/generated/endpoints.ts"
+   },
+   "meta.get": {
+    "method": "GET",
+    "path": "/meta",
+    "source": "src/generated/endpoints.ts"
+   },
+   "meta.getAllVersions": {
+    "method": "GET",
+    "path": "/versions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "meta.getOctocat": {
+    "method": "GET",
+    "path": "/octocat",
+    "source": "src/generated/endpoints.ts"
+   },
+   "meta.getZen": {
+    "method": "GET",
+    "path": "/zen",
+    "source": "src/generated/endpoints.ts"
+   },
+   "meta.root": {
+    "method": "GET",
+    "path": "/",
+    "source": "src/generated/endpoints.ts"
+   },
+   "migrations.deleteArchiveForAuthenticatedUser": {
+    "method": "DELETE",
+    "path": "/user/migrations/{migration_id}/archive",
+    "source": "src/generated/endpoints.ts"
+   },
+   "migrations.deleteArchiveForOrg": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/migrations/{migration_id}/archive",
+    "source": "src/generated/endpoints.ts"
+   },
+   "migrations.downloadArchiveForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/migrations/{migration_id}/archive",
+    "source": "src/generated/endpoints.ts"
+   },
+   "migrations.getArchiveForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/migrations/{migration_id}/archive",
+    "source": "src/generated/endpoints.ts"
+   },
+   "migrations.getStatusForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/migrations/{migration_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "migrations.getStatusForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/migrations/{migration_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "migrations.listForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/migrations",
+    "source": "src/generated/endpoints.ts"
+   },
+   "migrations.listForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/migrations",
+    "source": "src/generated/endpoints.ts"
+   },
+   "migrations.listReposForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/migrations/{migration_id}/repositories",
+    "source": "src/generated/endpoints.ts"
+   },
+   "migrations.listReposForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/migrations/{migration_id}/repositories",
+    "source": "src/generated/endpoints.ts"
+   },
+   "migrations.listReposForUser": {
+    "method": "GET",
+    "path": "/user/migrations/{migration_id}/repositories",
+    "source": "src/generated/endpoints.ts"
+   },
+   "migrations.startForAuthenticatedUser": {
+    "method": "POST",
+    "path": "/user/migrations",
+    "source": "src/generated/endpoints.ts"
+   },
+   "migrations.startForOrg": {
+    "method": "POST",
+    "path": "/orgs/{org}/migrations",
+    "source": "src/generated/endpoints.ts"
+   },
+   "migrations.unlockRepoForAuthenticatedUser": {
+    "method": "DELETE",
+    "path": "/user/migrations/{migration_id}/repos/{repo_name}/lock",
+    "source": "src/generated/endpoints.ts"
+   },
+   "migrations.unlockRepoForOrg": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/migrations/{migration_id}/repos/{repo_name}/lock",
+    "source": "src/generated/endpoints.ts"
+   },
+   "oidc.getOidcCustomSubTemplateForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/actions/oidc/customization/sub",
+    "source": "src/generated/endpoints.ts"
+   },
+   "oidc.updateOidcCustomSubTemplateForOrg": {
+    "method": "PUT",
+    "path": "/orgs/{org}/actions/oidc/customization/sub",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.assignTeamToOrgRole": {
+    "method": "PUT",
+    "path": "/orgs/{org}/organization-roles/teams/{team_slug}/{role_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.assignUserToOrgRole": {
+    "method": "PUT",
+    "path": "/orgs/{org}/organization-roles/users/{username}/{role_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.blockUser": {
+    "method": "PUT",
+    "path": "/orgs/{org}/blocks/{username}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.cancelInvitation": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/invitations/{invitation_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.checkBlockedUser": {
+    "method": "GET",
+    "path": "/orgs/{org}/blocks/{username}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.checkMembershipForUser": {
+    "method": "GET",
+    "path": "/orgs/{org}/members/{username}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.checkPublicMembershipForUser": {
+    "method": "GET",
+    "path": "/orgs/{org}/public_members/{username}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.convertMemberToOutsideCollaborator": {
+    "method": "PUT",
+    "path": "/orgs/{org}/outside_collaborators/{username}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.createArtifactDeploymentRecord": {
+    "method": "POST",
+    "path": "/orgs/{org}/artifacts/metadata/deployment-record",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.createArtifactStorageRecord": {
+    "method": "POST",
+    "path": "/orgs/{org}/artifacts/metadata/storage-record",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.createInvitation": {
+    "method": "POST",
+    "path": "/orgs/{org}/invitations",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.createIssueType": {
+    "method": "POST",
+    "path": "/orgs/{org}/issue-types",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.createWebhook": {
+    "method": "POST",
+    "path": "/orgs/{org}/hooks",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.customPropertiesForOrgsCreateOrUpdateOrganizationValues": {
+    "method": "PATCH",
+    "path": "/organizations/{org}/org-properties/values",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.customPropertiesForOrgsGetOrganizationValues": {
+    "method": "GET",
+    "path": "/organizations/{org}/org-properties/values",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.customPropertiesForReposCreateOrUpdateOrganizationDefinition": {
+    "method": "PUT",
+    "path": "/orgs/{org}/properties/schema/{custom_property_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.customPropertiesForReposCreateOrUpdateOrganizationDefinitions": {
+    "method": "PATCH",
+    "path": "/orgs/{org}/properties/schema",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.customPropertiesForReposCreateOrUpdateOrganizationValues": {
+    "method": "PATCH",
+    "path": "/orgs/{org}/properties/values",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.customPropertiesForReposDeleteOrganizationDefinition": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/properties/schema/{custom_property_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.customPropertiesForReposGetOrganizationDefinition": {
+    "method": "GET",
+    "path": "/orgs/{org}/properties/schema/{custom_property_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.customPropertiesForReposGetOrganizationDefinitions": {
+    "method": "GET",
+    "path": "/orgs/{org}/properties/schema",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.customPropertiesForReposGetOrganizationValues": {
+    "method": "GET",
+    "path": "/orgs/{org}/properties/values",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.delete": {
+    "method": "DELETE",
+    "path": "/orgs/{org}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.deleteAttestationsBulk": {
+    "method": "POST",
+    "path": "/orgs/{org}/attestations/delete-request",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.deleteAttestationsById": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/attestations/{attestation_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.deleteAttestationsBySubjectDigest": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/attestations/digest/{subject_digest}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.deleteIssueType": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/issue-types/{issue_type_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.deleteWebhook": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/hooks/{hook_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.disableSelectedRepositoryImmutableReleasesOrganization": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/settings/immutable-releases/repositories/{repository_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.enableSelectedRepositoryImmutableReleasesOrganization": {
+    "method": "PUT",
+    "path": "/orgs/{org}/settings/immutable-releases/repositories/{repository_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.get": {
+    "method": "GET",
+    "path": "/orgs/{org}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.getImmutableReleasesSettings": {
+    "method": "GET",
+    "path": "/orgs/{org}/settings/immutable-releases",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.getImmutableReleasesSettingsRepositories": {
+    "method": "GET",
+    "path": "/orgs/{org}/settings/immutable-releases/repositories",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.getMembershipForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/memberships/orgs/{org}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.getMembershipForUser": {
+    "method": "GET",
+    "path": "/orgs/{org}/memberships/{username}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.getOrgRole": {
+    "method": "GET",
+    "path": "/orgs/{org}/organization-roles/{role_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.getOrgRulesetHistory": {
+    "method": "GET",
+    "path": "/orgs/{org}/rulesets/{ruleset_id}/history",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.getOrgRulesetVersion": {
+    "method": "GET",
+    "path": "/orgs/{org}/rulesets/{ruleset_id}/history/{version_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.getWebhook": {
+    "method": "GET",
+    "path": "/orgs/{org}/hooks/{hook_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.getWebhookConfigForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/hooks/{hook_id}/config",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.getWebhookDelivery": {
+    "method": "GET",
+    "path": "/orgs/{org}/hooks/{hook_id}/deliveries/{delivery_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.list": {
+    "method": "GET",
+    "path": "/organizations",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.listAppInstallations": {
+    "method": "GET",
+    "path": "/orgs/{org}/installations",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.listArtifactDeploymentRecords": {
+    "method": "GET",
+    "path": "/orgs/{org}/artifacts/{subject_digest}/metadata/deployment-records",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.listArtifactStorageRecords": {
+    "method": "GET",
+    "path": "/orgs/{org}/artifacts/{subject_digest}/metadata/storage-records",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.listAttestationRepositories": {
+    "method": "GET",
+    "path": "/orgs/{org}/attestations/repositories",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.listAttestations": {
+    "method": "GET",
+    "path": "/orgs/{org}/attestations/{subject_digest}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.listAttestationsBulk": {
+    "method": "POST",
+    "path": "/orgs/{org}/attestations/bulk-list{?per_page,before,after}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.listBlockedUsers": {
+    "method": "GET",
+    "path": "/orgs/{org}/blocks",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.listFailedInvitations": {
+    "method": "GET",
+    "path": "/orgs/{org}/failed_invitations",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.listForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/orgs",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.listForUser": {
+    "method": "GET",
+    "path": "/users/{username}/orgs",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.listInvitationTeams": {
+    "method": "GET",
+    "path": "/orgs/{org}/invitations/{invitation_id}/teams",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.listIssueTypes": {
+    "method": "GET",
+    "path": "/orgs/{org}/issue-types",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.listMembers": {
+    "method": "GET",
+    "path": "/orgs/{org}/members",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.listMembershipsForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/memberships/orgs",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.listOrgRoleTeams": {
+    "method": "GET",
+    "path": "/orgs/{org}/organization-roles/{role_id}/teams",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.listOrgRoleUsers": {
+    "method": "GET",
+    "path": "/orgs/{org}/organization-roles/{role_id}/users",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.listOrgRoles": {
+    "method": "GET",
+    "path": "/orgs/{org}/organization-roles",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.listOrganizationFineGrainedPermissions": {
+    "method": "GET",
+    "path": "/orgs/{org}/organization-fine-grained-permissions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.listOutsideCollaborators": {
+    "method": "GET",
+    "path": "/orgs/{org}/outside_collaborators",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.listPatGrantRepositories": {
+    "method": "GET",
+    "path": "/orgs/{org}/personal-access-tokens/{pat_id}/repositories",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.listPatGrantRequestRepositories": {
+    "method": "GET",
+    "path": "/orgs/{org}/personal-access-token-requests/{pat_request_id}/repositories",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.listPatGrantRequests": {
+    "method": "GET",
+    "path": "/orgs/{org}/personal-access-token-requests",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.listPatGrants": {
+    "method": "GET",
+    "path": "/orgs/{org}/personal-access-tokens",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.listPendingInvitations": {
+    "method": "GET",
+    "path": "/orgs/{org}/invitations",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.listPublicMembers": {
+    "method": "GET",
+    "path": "/orgs/{org}/public_members",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.listWebhookDeliveries": {
+    "method": "GET",
+    "path": "/orgs/{org}/hooks/{hook_id}/deliveries",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.listWebhooks": {
+    "method": "GET",
+    "path": "/orgs/{org}/hooks",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.pingWebhook": {
+    "method": "POST",
+    "path": "/orgs/{org}/hooks/{hook_id}/pings",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.redeliverWebhookDelivery": {
+    "method": "POST",
+    "path": "/orgs/{org}/hooks/{hook_id}/deliveries/{delivery_id}/attempts",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.removeMember": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/members/{username}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.removeMembershipForUser": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/memberships/{username}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.removeOutsideCollaborator": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/outside_collaborators/{username}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.removePublicMembershipForAuthenticatedUser": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/public_members/{username}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.reviewPatGrantRequest": {
+    "method": "POST",
+    "path": "/orgs/{org}/personal-access-token-requests/{pat_request_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.reviewPatGrantRequestsInBulk": {
+    "method": "POST",
+    "path": "/orgs/{org}/personal-access-token-requests",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.revokeAllOrgRolesTeam": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/organization-roles/teams/{team_slug}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.revokeAllOrgRolesUser": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/organization-roles/users/{username}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.revokeOrgRoleTeam": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/organization-roles/teams/{team_slug}/{role_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.revokeOrgRoleUser": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/organization-roles/users/{username}/{role_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.setClusterDeploymentRecords": {
+    "method": "POST",
+    "path": "/orgs/{org}/artifacts/metadata/deployment-record/cluster/{cluster}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.setImmutableReleasesSettings": {
+    "method": "PUT",
+    "path": "/orgs/{org}/settings/immutable-releases",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.setImmutableReleasesSettingsRepositories": {
+    "method": "PUT",
+    "path": "/orgs/{org}/settings/immutable-releases/repositories",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.setMembershipForUser": {
+    "method": "PUT",
+    "path": "/orgs/{org}/memberships/{username}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.setPublicMembershipForAuthenticatedUser": {
+    "method": "PUT",
+    "path": "/orgs/{org}/public_members/{username}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.unblockUser": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/blocks/{username}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.update": {
+    "method": "PATCH",
+    "path": "/orgs/{org}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.updateIssueType": {
+    "method": "PUT",
+    "path": "/orgs/{org}/issue-types/{issue_type_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.updateMembershipForAuthenticatedUser": {
+    "method": "PATCH",
+    "path": "/user/memberships/orgs/{org}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.updatePatAccess": {
+    "method": "POST",
+    "path": "/orgs/{org}/personal-access-tokens/{pat_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.updatePatAccesses": {
+    "method": "POST",
+    "path": "/orgs/{org}/personal-access-tokens",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.updateWebhook": {
+    "method": "PATCH",
+    "path": "/orgs/{org}/hooks/{hook_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "orgs.updateWebhookConfigForOrg": {
+    "method": "PATCH",
+    "path": "/orgs/{org}/hooks/{hook_id}/config",
+    "source": "src/generated/endpoints.ts"
+   },
+   "packages.deletePackageForAuthenticatedUser": {
+    "method": "DELETE",
+    "path": "/user/packages/{package_type}/{package_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "packages.deletePackageForOrg": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/packages/{package_type}/{package_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "packages.deletePackageForUser": {
+    "method": "DELETE",
+    "path": "/users/{username}/packages/{package_type}/{package_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "packages.deletePackageVersionForAuthenticatedUser": {
+    "method": "DELETE",
+    "path": "/user/packages/{package_type}/{package_name}/versions/{package_version_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "packages.deletePackageVersionForOrg": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/packages/{package_type}/{package_name}/versions/{package_version_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "packages.deletePackageVersionForUser": {
+    "method": "DELETE",
+    "path": "/users/{username}/packages/{package_type}/{package_name}/versions/{package_version_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "packages.getAllPackageVersionsForAPackageOwnedByAnOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/packages/{package_type}/{package_name}/versions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "packages.getAllPackageVersionsForAPackageOwnedByTheAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/packages/{package_type}/{package_name}/versions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "packages.getAllPackageVersionsForPackageOwnedByAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/packages/{package_type}/{package_name}/versions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "packages.getAllPackageVersionsForPackageOwnedByOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/packages/{package_type}/{package_name}/versions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "packages.getAllPackageVersionsForPackageOwnedByUser": {
+    "method": "GET",
+    "path": "/users/{username}/packages/{package_type}/{package_name}/versions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "packages.getPackageForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/packages/{package_type}/{package_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "packages.getPackageForOrganization": {
+    "method": "GET",
+    "path": "/orgs/{org}/packages/{package_type}/{package_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "packages.getPackageForUser": {
+    "method": "GET",
+    "path": "/users/{username}/packages/{package_type}/{package_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "packages.getPackageVersionForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/packages/{package_type}/{package_name}/versions/{package_version_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "packages.getPackageVersionForOrganization": {
+    "method": "GET",
+    "path": "/orgs/{org}/packages/{package_type}/{package_name}/versions/{package_version_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "packages.getPackageVersionForUser": {
+    "method": "GET",
+    "path": "/users/{username}/packages/{package_type}/{package_name}/versions/{package_version_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "packages.listDockerMigrationConflictingPackagesForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/docker/conflicts",
+    "source": "src/generated/endpoints.ts"
+   },
+   "packages.listDockerMigrationConflictingPackagesForOrganization": {
+    "method": "GET",
+    "path": "/orgs/{org}/docker/conflicts",
+    "source": "src/generated/endpoints.ts"
+   },
+   "packages.listDockerMigrationConflictingPackagesForUser": {
+    "method": "GET",
+    "path": "/users/{username}/docker/conflicts",
+    "source": "src/generated/endpoints.ts"
+   },
+   "packages.listPackagesForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/packages",
+    "source": "src/generated/endpoints.ts"
+   },
+   "packages.listPackagesForOrganization": {
+    "method": "GET",
+    "path": "/orgs/{org}/packages",
+    "source": "src/generated/endpoints.ts"
+   },
+   "packages.listPackagesForUser": {
+    "method": "GET",
+    "path": "/users/{username}/packages",
+    "source": "src/generated/endpoints.ts"
+   },
+   "packages.restorePackageForAuthenticatedUser": {
+    "method": "POST",
+    "path": "/user/packages/{package_type}/{package_name}/restore{?token}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "packages.restorePackageForOrg": {
+    "method": "POST",
+    "path": "/orgs/{org}/packages/{package_type}/{package_name}/restore{?token}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "packages.restorePackageForUser": {
+    "method": "POST",
+    "path": "/users/{username}/packages/{package_type}/{package_name}/restore{?token}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "packages.restorePackageVersionForAuthenticatedUser": {
+    "method": "POST",
+    "path": "/user/packages/{package_type}/{package_name}/versions/{package_version_id}/restore",
+    "source": "src/generated/endpoints.ts"
+   },
+   "packages.restorePackageVersionForOrg": {
+    "method": "POST",
+    "path": "/orgs/{org}/packages/{package_type}/{package_name}/versions/{package_version_id}/restore",
+    "source": "src/generated/endpoints.ts"
+   },
+   "packages.restorePackageVersionForUser": {
+    "method": "POST",
+    "path": "/users/{username}/packages/{package_type}/{package_name}/versions/{package_version_id}/restore",
+    "source": "src/generated/endpoints.ts"
+   },
+   "privateRegistries.createOrgPrivateRegistry": {
+    "method": "POST",
+    "path": "/orgs/{org}/private-registries",
+    "source": "src/generated/endpoints.ts"
+   },
+   "privateRegistries.deleteOrgPrivateRegistry": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/private-registries/{secret_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "privateRegistries.getOrgPrivateRegistry": {
+    "method": "GET",
+    "path": "/orgs/{org}/private-registries/{secret_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "privateRegistries.getOrgPublicKey": {
+    "method": "GET",
+    "path": "/orgs/{org}/private-registries/public-key",
+    "source": "src/generated/endpoints.ts"
+   },
+   "privateRegistries.listOrgPrivateRegistries": {
+    "method": "GET",
+    "path": "/orgs/{org}/private-registries",
+    "source": "src/generated/endpoints.ts"
+   },
+   "privateRegistries.updateOrgPrivateRegistry": {
+    "method": "PATCH",
+    "path": "/orgs/{org}/private-registries/{secret_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "projects.addFieldForOrg": {
+    "method": "POST",
+    "path": "/orgs/{org}/projectsV2/{project_number}/fields",
+    "source": "src/generated/endpoints.ts"
+   },
+   "projects.addFieldForUser": {
+    "method": "POST",
+    "path": "/users/{username}/projectsV2/{project_number}/fields",
+    "source": "src/generated/endpoints.ts"
+   },
+   "projects.addItemForOrg": {
+    "method": "POST",
+    "path": "/orgs/{org}/projectsV2/{project_number}/items",
+    "source": "src/generated/endpoints.ts"
+   },
+   "projects.addItemForUser": {
+    "method": "POST",
+    "path": "/users/{username}/projectsV2/{project_number}/items",
+    "source": "src/generated/endpoints.ts"
+   },
+   "projects.createDraftItemForAuthenticatedUser": {
+    "method": "POST",
+    "path": "/user/{user_id}/projectsV2/{project_number}/drafts",
+    "source": "src/generated/endpoints.ts"
+   },
+   "projects.createDraftItemForOrg": {
+    "method": "POST",
+    "path": "/orgs/{org}/projectsV2/{project_number}/drafts",
+    "source": "src/generated/endpoints.ts"
+   },
+   "projects.deleteItemForOrg": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/projectsV2/{project_number}/items/{item_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "projects.deleteItemForUser": {
+    "method": "DELETE",
+    "path": "/users/{username}/projectsV2/{project_number}/items/{item_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "projects.getFieldForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/projectsV2/{project_number}/fields/{field_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "projects.getFieldForUser": {
+    "method": "GET",
+    "path": "/users/{username}/projectsV2/{project_number}/fields/{field_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "projects.getForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/projectsV2/{project_number}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "projects.getForUser": {
+    "method": "GET",
+    "path": "/users/{username}/projectsV2/{project_number}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "projects.getOrgItem": {
+    "method": "GET",
+    "path": "/orgs/{org}/projectsV2/{project_number}/items/{item_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "projects.getUserItem": {
+    "method": "GET",
+    "path": "/users/{username}/projectsV2/{project_number}/items/{item_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "projects.listFieldsForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/projectsV2/{project_number}/fields",
+    "source": "src/generated/endpoints.ts"
+   },
+   "projects.listFieldsForUser": {
+    "method": "GET",
+    "path": "/users/{username}/projectsV2/{project_number}/fields",
+    "source": "src/generated/endpoints.ts"
+   },
+   "projects.listForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/projectsV2",
+    "source": "src/generated/endpoints.ts"
+   },
+   "projects.listForUser": {
+    "method": "GET",
+    "path": "/users/{username}/projectsV2",
+    "source": "src/generated/endpoints.ts"
+   },
+   "projects.listItemsForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/projectsV2/{project_number}/items",
+    "source": "src/generated/endpoints.ts"
+   },
+   "projects.listItemsForUser": {
+    "method": "GET",
+    "path": "/users/{username}/projectsV2/{project_number}/items",
+    "source": "src/generated/endpoints.ts"
+   },
+   "projects.updateItemForOrg": {
+    "method": "PATCH",
+    "path": "/orgs/{org}/projectsV2/{project_number}/items/{item_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "projects.updateItemForUser": {
+    "method": "PATCH",
+    "path": "/users/{username}/projectsV2/{project_number}/items/{item_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "pulls.checkIfMerged": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/pulls/{pull_number}/merge",
+    "source": "src/generated/endpoints.ts"
+   },
+   "pulls.create": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/pulls",
+    "source": "src/generated/endpoints.ts"
+   },
+   "pulls.createReplyForReviewComment": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/pulls/{pull_number}/comments/{comment_id}/replies",
+    "source": "src/generated/endpoints.ts"
+   },
+   "pulls.createReview": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/pulls/{pull_number}/reviews",
+    "source": "src/generated/endpoints.ts"
+   },
+   "pulls.createReviewComment": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/pulls/{pull_number}/comments",
+    "source": "src/generated/endpoints.ts"
+   },
+   "pulls.deletePendingReview": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "pulls.deleteReviewComment": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/pulls/comments/{comment_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "pulls.dismissReview": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}/dismissals",
+    "source": "src/generated/endpoints.ts"
+   },
+   "pulls.get": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/pulls/{pull_number}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "pulls.getReview": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "pulls.getReviewComment": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/pulls/comments/{comment_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "pulls.list": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/pulls",
+    "source": "src/generated/endpoints.ts"
+   },
+   "pulls.listCommentsForReview": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}/comments",
+    "source": "src/generated/endpoints.ts"
+   },
+   "pulls.listCommits": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/pulls/{pull_number}/commits",
+    "source": "src/generated/endpoints.ts"
+   },
+   "pulls.listFiles": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/pulls/{pull_number}/files",
+    "source": "src/generated/endpoints.ts"
+   },
+   "pulls.listRequestedReviewers": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers",
+    "source": "src/generated/endpoints.ts"
+   },
+   "pulls.listReviewComments": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/pulls/{pull_number}/comments",
+    "source": "src/generated/endpoints.ts"
+   },
+   "pulls.listReviewCommentsForRepo": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/pulls/comments",
+    "source": "src/generated/endpoints.ts"
+   },
+   "pulls.listReviews": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/pulls/{pull_number}/reviews",
+    "source": "src/generated/endpoints.ts"
+   },
+   "pulls.merge": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/pulls/{pull_number}/merge",
+    "source": "src/generated/endpoints.ts"
+   },
+   "pulls.removeRequestedReviewers": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers",
+    "source": "src/generated/endpoints.ts"
+   },
+   "pulls.requestReviewers": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers",
+    "source": "src/generated/endpoints.ts"
+   },
+   "pulls.submitReview": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}/events",
+    "source": "src/generated/endpoints.ts"
+   },
+   "pulls.update": {
+    "method": "PATCH",
+    "path": "/repos/{owner}/{repo}/pulls/{pull_number}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "pulls.updateBranch": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/pulls/{pull_number}/update-branch",
+    "source": "src/generated/endpoints.ts"
+   },
+   "pulls.updateReview": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "pulls.updateReviewComment": {
+    "method": "PATCH",
+    "path": "/repos/{owner}/{repo}/pulls/comments/{comment_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "rateLimit.get": {
+    "method": "GET",
+    "path": "/rate_limit",
+    "source": "src/generated/endpoints.ts"
+   },
+   "reactions.createForCommitComment": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/comments/{comment_id}/reactions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "reactions.createForIssue": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/issues/{issue_number}/reactions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "reactions.createForIssueComment": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/issues/comments/{comment_id}/reactions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "reactions.createForPullRequestReviewComment": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/pulls/comments/{comment_id}/reactions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "reactions.createForRelease": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/releases/{release_id}/reactions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "reactions.createForTeamDiscussionCommentInOrg": {
+    "method": "POST",
+    "path": "/orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments/{comment_number}/reactions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "reactions.createForTeamDiscussionInOrg": {
+    "method": "POST",
+    "path": "/orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/reactions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "reactions.deleteForCommitComment": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/comments/{comment_id}/reactions/{reaction_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "reactions.deleteForIssue": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/issues/{issue_number}/reactions/{reaction_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "reactions.deleteForIssueComment": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/issues/comments/{comment_id}/reactions/{reaction_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "reactions.deleteForPullRequestComment": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/pulls/comments/{comment_id}/reactions/{reaction_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "reactions.deleteForRelease": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/releases/{release_id}/reactions/{reaction_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "reactions.deleteForTeamDiscussion": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/reactions/{reaction_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "reactions.deleteForTeamDiscussionComment": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments/{comment_number}/reactions/{reaction_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "reactions.listForCommitComment": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/comments/{comment_id}/reactions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "reactions.listForIssue": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/issues/{issue_number}/reactions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "reactions.listForIssueComment": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/issues/comments/{comment_id}/reactions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "reactions.listForPullRequestReviewComment": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/pulls/comments/{comment_id}/reactions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "reactions.listForRelease": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/releases/{release_id}/reactions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "reactions.listForTeamDiscussionCommentInOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments/{comment_number}/reactions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "reactions.listForTeamDiscussionInOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/reactions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.acceptInvitation": {
+    "method": "PATCH",
+    "path": "/user/repository_invitations/{invitation_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.acceptInvitationForAuthenticatedUser": {
+    "method": "PATCH",
+    "path": "/user/repository_invitations/{invitation_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.addAppAccessRestrictions": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions/apps",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.addCollaborator": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/collaborators/{username}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.addStatusCheckContexts": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks/contexts",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.addTeamAccessRestrictions": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions/teams",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.addUserAccessRestrictions": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions/users",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.cancelPagesDeployment": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/pages/deployments/{pages_deployment_id}/cancel",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.checkAutomatedSecurityFixes": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/automated-security-fixes",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.checkCollaborator": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/collaborators/{username}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.checkImmutableReleases": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/immutable-releases",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.checkPrivateVulnerabilityReporting": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/private-vulnerability-reporting",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.checkVulnerabilityAlerts": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/vulnerability-alerts",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.codeownersErrors": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/codeowners/errors",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.compareCommits": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/compare/{base}...{head}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.compareCommitsWithBasehead": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/compare/{basehead}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.createAttestation": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/attestations",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.createAutolink": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/autolinks",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.createCommitComment": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/commits/{commit_sha}/comments",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.createCommitSignatureProtection": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/branches/{branch}/protection/required_signatures",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.createCommitStatus": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/statuses/{sha}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.createDeployKey": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/keys",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.createDeployment": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/deployments",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.createDeploymentBranchPolicy": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.createDeploymentProtectionRule": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/environments/{environment_name}/deployment_protection_rules",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.createDeploymentStatus": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/deployments/{deployment_id}/statuses",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.createDispatchEvent": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/dispatches",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.createForAuthenticatedUser": {
+    "method": "POST",
+    "path": "/user/repos",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.createFork": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/forks",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.createInOrg": {
+    "method": "POST",
+    "path": "/orgs/{org}/repos",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.createOrUpdateEnvironment": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/environments/{environment_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.createOrUpdateFileContents": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/contents/{path}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.createOrgRuleset": {
+    "method": "POST",
+    "path": "/orgs/{org}/rulesets",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.createPagesDeployment": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/pages/deployments",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.createPagesSite": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/pages",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.createRelease": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/releases",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.createRepoRuleset": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/rulesets",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.createUsingTemplate": {
+    "method": "POST",
+    "path": "/repos/{template_owner}/{template_repo}/generate",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.createWebhook": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/hooks",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.customPropertiesForReposCreateOrUpdateRepositoryValues": {
+    "method": "PATCH",
+    "path": "/repos/{owner}/{repo}/properties/values",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.customPropertiesForReposGetRepositoryValues": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/properties/values",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.declineInvitation": {
+    "method": "DELETE",
+    "path": "/user/repository_invitations/{invitation_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.declineInvitationForAuthenticatedUser": {
+    "method": "DELETE",
+    "path": "/user/repository_invitations/{invitation_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.delete": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.deleteAccessRestrictions": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.deleteAdminBranchProtection": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/branches/{branch}/protection/enforce_admins",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.deleteAnEnvironment": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/environments/{environment_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.deleteAutolink": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/autolinks/{autolink_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.deleteBranchProtection": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/branches/{branch}/protection",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.deleteCommitComment": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/comments/{comment_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.deleteCommitSignatureProtection": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/branches/{branch}/protection/required_signatures",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.deleteDeployKey": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/keys/{key_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.deleteDeployment": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/deployments/{deployment_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.deleteDeploymentBranchPolicy": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies/{branch_policy_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.deleteFile": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/contents/{path}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.deleteInvitation": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/invitations/{invitation_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.deleteOrgRuleset": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/rulesets/{ruleset_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.deletePagesSite": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/pages",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.deletePullRequestReviewProtection": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/branches/{branch}/protection/required_pull_request_reviews",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.deleteRelease": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/releases/{release_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.deleteReleaseAsset": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/releases/assets/{asset_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.deleteRepoRuleset": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/rulesets/{ruleset_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.deleteWebhook": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/hooks/{hook_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.disableAutomatedSecurityFixes": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/automated-security-fixes",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.disableDeploymentProtectionRule": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/environments/{environment_name}/deployment_protection_rules/{protection_rule_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.disableImmutableReleases": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/immutable-releases",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.disablePrivateVulnerabilityReporting": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/private-vulnerability-reporting",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.disableVulnerabilityAlerts": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/vulnerability-alerts",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.downloadArchive": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/zipball/{ref}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.downloadTarballArchive": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/tarball/{ref}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.downloadZipballArchive": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/zipball/{ref}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.enableAutomatedSecurityFixes": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/automated-security-fixes",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.enableImmutableReleases": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/immutable-releases",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.enablePrivateVulnerabilityReporting": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/private-vulnerability-reporting",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.enableVulnerabilityAlerts": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/vulnerability-alerts",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.generateReleaseNotes": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/releases/generate-notes",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.get": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getAccessRestrictions": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getAdminBranchProtection": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/branches/{branch}/protection/enforce_admins",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getAllDeploymentProtectionRules": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/environments/{environment_name}/deployment_protection_rules",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getAllEnvironments": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/environments",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getAllStatusCheckContexts": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks/contexts",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getAllTopics": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/topics",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getAppsWithAccessToProtectedBranch": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions/apps",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getAutolink": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/autolinks/{autolink_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getBranch": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/branches/{branch}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getBranchProtection": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/branches/{branch}/protection",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getBranchRules": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/rules/branches/{branch}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getClones": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/traffic/clones",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getCodeFrequencyStats": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/stats/code_frequency",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getCollaboratorPermissionLevel": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/collaborators/{username}/permission",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getCombinedStatusForRef": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/commits/{ref}/status",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getCommit": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/commits/{ref}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getCommitActivityStats": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/stats/commit_activity",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getCommitComment": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/comments/{comment_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getCommitSignatureProtection": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/branches/{branch}/protection/required_signatures",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getCommunityProfileMetrics": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/community/profile",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getContent": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/contents/{path}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getContributorsStats": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/stats/contributors",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getCustomDeploymentProtectionRule": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/environments/{environment_name}/deployment_protection_rules/{protection_rule_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getDeployKey": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/keys/{key_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getDeployment": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/deployments/{deployment_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getDeploymentBranchPolicy": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies/{branch_policy_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getDeploymentStatus": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/deployments/{deployment_id}/statuses/{status_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getEnvironment": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/environments/{environment_name}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getLatestPagesBuild": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/pages/builds/latest",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getLatestRelease": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/releases/latest",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getOrgRuleSuite": {
+    "method": "GET",
+    "path": "/orgs/{org}/rulesets/rule-suites/{rule_suite_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getOrgRuleSuites": {
+    "method": "GET",
+    "path": "/orgs/{org}/rulesets/rule-suites",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getOrgRuleset": {
+    "method": "GET",
+    "path": "/orgs/{org}/rulesets/{ruleset_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getOrgRulesets": {
+    "method": "GET",
+    "path": "/orgs/{org}/rulesets",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getPages": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/pages",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getPagesBuild": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/pages/builds/{build_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getPagesDeployment": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/pages/deployments/{pages_deployment_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getPagesHealthCheck": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/pages/health",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getParticipationStats": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/stats/participation",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getPullRequestReviewProtection": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/branches/{branch}/protection/required_pull_request_reviews",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getPunchCardStats": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/stats/punch_card",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getReadme": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/readme",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getReadmeInDirectory": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/readme/{dir}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getRelease": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/releases/{release_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getReleaseAsset": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/releases/assets/{asset_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getReleaseByTag": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/releases/tags/{tag}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getRepoRuleSuite": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/rulesets/rule-suites/{rule_suite_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getRepoRuleSuites": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/rulesets/rule-suites",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getRepoRuleset": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/rulesets/{ruleset_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getRepoRulesetHistory": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/rulesets/{ruleset_id}/history",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getRepoRulesetVersion": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/rulesets/{ruleset_id}/history/{version_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getRepoRulesets": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/rulesets",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getStatusChecksProtection": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getTeamsWithAccessToProtectedBranch": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions/teams",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getTopPaths": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/traffic/popular/paths",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getTopReferrers": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/traffic/popular/referrers",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getUsersWithAccessToProtectedBranch": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions/users",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getViews": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/traffic/views",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getWebhook": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/hooks/{hook_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getWebhookConfigForRepo": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/hooks/{hook_id}/config",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.getWebhookDelivery": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/hooks/{hook_id}/deliveries/{delivery_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.listActivities": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/activity",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.listAttestations": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/attestations/{subject_digest}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.listAutolinks": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/autolinks",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.listBranches": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/branches",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.listBranchesForHeadCommit": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/commits/{commit_sha}/branches-where-head",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.listCollaborators": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/collaborators",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.listCommentsForCommit": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/commits/{commit_sha}/comments",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.listCommitCommentsForRepo": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/comments",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.listCommitStatusesForRef": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/commits/{ref}/statuses",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.listCommits": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/commits",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.listContributors": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/contributors",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.listCustomDeploymentRuleIntegrations": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/environments/{environment_name}/deployment_protection_rules/apps",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.listDeployKeys": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/keys",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.listDeploymentBranchPolicies": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.listDeploymentStatuses": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/deployments/{deployment_id}/statuses",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.listDeployments": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/deployments",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.listForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/repos",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.listForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/repos",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.listForUser": {
+    "method": "GET",
+    "path": "/users/{username}/repos",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.listForks": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/forks",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.listInvitations": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/invitations",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.listInvitationsForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/repository_invitations",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.listLanguages": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/languages",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.listPagesBuilds": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/pages/builds",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.listPublic": {
+    "method": "GET",
+    "path": "/repositories",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.listPullRequestsAssociatedWithCommit": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/commits/{commit_sha}/pulls",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.listReleaseAssets": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/releases/{release_id}/assets",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.listReleases": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/releases",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.listTags": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/tags",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.listTeams": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/teams",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.listWebhookDeliveries": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/hooks/{hook_id}/deliveries",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.listWebhooks": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/hooks",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.merge": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/merges",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.mergeUpstream": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/merge-upstream",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.pingWebhook": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/hooks/{hook_id}/pings",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.redeliverWebhookDelivery": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/hooks/{hook_id}/deliveries/{delivery_id}/attempts",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.removeAppAccessRestrictions": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions/apps",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.removeCollaborator": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/collaborators/{username}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.removeStatusCheckContexts": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks/contexts",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.removeStatusCheckProtection": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.removeTeamAccessRestrictions": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions/teams",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.removeUserAccessRestrictions": {
+    "method": "DELETE",
+    "path": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions/users",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.renameBranch": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/branches/{branch}/rename",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.replaceAllTopics": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/topics",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.requestPagesBuild": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/pages/builds",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.setAdminBranchProtection": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/branches/{branch}/protection/enforce_admins",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.setAppAccessRestrictions": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions/apps",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.setStatusCheckContexts": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks/contexts",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.setTeamAccessRestrictions": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions/teams",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.setUserAccessRestrictions": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions/users",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.testPushWebhook": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/hooks/{hook_id}/tests",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.transfer": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/transfer",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.update": {
+    "method": "PATCH",
+    "path": "/repos/{owner}/{repo}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.updateBranchProtection": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/branches/{branch}/protection",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.updateCommitComment": {
+    "method": "PATCH",
+    "path": "/repos/{owner}/{repo}/comments/{comment_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.updateDeploymentBranchPolicy": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies/{branch_policy_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.updateInformationAboutPagesSite": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/pages",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.updateInvitation": {
+    "method": "PATCH",
+    "path": "/repos/{owner}/{repo}/invitations/{invitation_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.updateOrgRuleset": {
+    "method": "PUT",
+    "path": "/orgs/{org}/rulesets/{ruleset_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.updatePullRequestReviewProtection": {
+    "method": "PATCH",
+    "path": "/repos/{owner}/{repo}/branches/{branch}/protection/required_pull_request_reviews",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.updateRelease": {
+    "method": "PATCH",
+    "path": "/repos/{owner}/{repo}/releases/{release_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.updateReleaseAsset": {
+    "method": "PATCH",
+    "path": "/repos/{owner}/{repo}/releases/assets/{asset_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.updateRepoRuleset": {
+    "method": "PUT",
+    "path": "/repos/{owner}/{repo}/rulesets/{ruleset_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.updateStatusCheckPotection": {
+    "method": "PATCH",
+    "path": "/repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.updateStatusCheckProtection": {
+    "method": "PATCH",
+    "path": "/repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.updateWebhook": {
+    "method": "PATCH",
+    "path": "/repos/{owner}/{repo}/hooks/{hook_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.updateWebhookConfigForRepo": {
+    "method": "PATCH",
+    "path": "/repos/{owner}/{repo}/hooks/{hook_id}/config",
+    "source": "src/generated/endpoints.ts"
+   },
+   "repos.uploadReleaseAsset": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/releases/{release_id}/assets{?name,label}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "search.code": {
+    "method": "GET",
+    "path": "/search/code",
+    "source": "src/generated/endpoints.ts"
+   },
+   "search.commits": {
+    "method": "GET",
+    "path": "/search/commits",
+    "source": "src/generated/endpoints.ts"
+   },
+   "search.issuesAndPullRequests": {
+    "method": "GET",
+    "path": "/search/issues",
+    "source": "src/generated/endpoints.ts"
+   },
+   "search.labels": {
+    "method": "GET",
+    "path": "/search/labels",
+    "source": "src/generated/endpoints.ts"
+   },
+   "search.repos": {
+    "method": "GET",
+    "path": "/search/repositories",
+    "source": "src/generated/endpoints.ts"
+   },
+   "search.topics": {
+    "method": "GET",
+    "path": "/search/topics",
+    "source": "src/generated/endpoints.ts"
+   },
+   "search.users": {
+    "method": "GET",
+    "path": "/search/users",
+    "source": "src/generated/endpoints.ts"
+   },
+   "secretScanning.createPushProtectionBypass": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/secret-scanning/push-protection-bypasses",
+    "source": "src/generated/endpoints.ts"
+   },
+   "secretScanning.getAlert": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/secret-scanning/alerts/{alert_number}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "secretScanning.getScanHistory": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/secret-scanning/scan-history",
+    "source": "src/generated/endpoints.ts"
+   },
+   "secretScanning.listAlertsForOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/secret-scanning/alerts",
+    "source": "src/generated/endpoints.ts"
+   },
+   "secretScanning.listAlertsForRepo": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/secret-scanning/alerts",
+    "source": "src/generated/endpoints.ts"
+   },
+   "secretScanning.listLocationsForAlert": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/secret-scanning/alerts/{alert_number}/locations",
+    "source": "src/generated/endpoints.ts"
+   },
+   "secretScanning.listOrgPatternConfigs": {
+    "method": "GET",
+    "path": "/orgs/{org}/secret-scanning/pattern-configurations",
+    "source": "src/generated/endpoints.ts"
+   },
+   "secretScanning.updateAlert": {
+    "method": "PATCH",
+    "path": "/repos/{owner}/{repo}/secret-scanning/alerts/{alert_number}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "secretScanning.updateOrgPatternConfigs": {
+    "method": "PATCH",
+    "path": "/orgs/{org}/secret-scanning/pattern-configurations",
+    "source": "src/generated/endpoints.ts"
+   },
+   "securityAdvisories.createFork": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/security-advisories/{ghsa_id}/forks",
+    "source": "src/generated/endpoints.ts"
+   },
+   "securityAdvisories.createPrivateVulnerabilityReport": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/security-advisories/reports",
+    "source": "src/generated/endpoints.ts"
+   },
+   "securityAdvisories.createRepositoryAdvisory": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/security-advisories",
+    "source": "src/generated/endpoints.ts"
+   },
+   "securityAdvisories.createRepositoryAdvisoryCveRequest": {
+    "method": "POST",
+    "path": "/repos/{owner}/{repo}/security-advisories/{ghsa_id}/cve",
+    "source": "src/generated/endpoints.ts"
+   },
+   "securityAdvisories.getGlobalAdvisory": {
+    "method": "GET",
+    "path": "/advisories/{ghsa_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "securityAdvisories.getRepositoryAdvisory": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/security-advisories/{ghsa_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "securityAdvisories.listGlobalAdvisories": {
+    "method": "GET",
+    "path": "/advisories",
+    "source": "src/generated/endpoints.ts"
+   },
+   "securityAdvisories.listOrgRepositoryAdvisories": {
+    "method": "GET",
+    "path": "/orgs/{org}/security-advisories",
+    "source": "src/generated/endpoints.ts"
+   },
+   "securityAdvisories.listRepositoryAdvisories": {
+    "method": "GET",
+    "path": "/repos/{owner}/{repo}/security-advisories",
+    "source": "src/generated/endpoints.ts"
+   },
+   "securityAdvisories.updateRepositoryAdvisory": {
+    "method": "PATCH",
+    "path": "/repos/{owner}/{repo}/security-advisories/{ghsa_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "teams.addOrUpdateMembershipForUserInOrg": {
+    "method": "PUT",
+    "path": "/orgs/{org}/teams/{team_slug}/memberships/{username}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "teams.addOrUpdateRepoPermissionsInOrg": {
+    "method": "PUT",
+    "path": "/orgs/{org}/teams/{team_slug}/repos/{owner}/{repo}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "teams.checkPermissionsForRepoInOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/teams/{team_slug}/repos/{owner}/{repo}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "teams.create": {
+    "method": "POST",
+    "path": "/orgs/{org}/teams",
+    "source": "src/generated/endpoints.ts"
+   },
+   "teams.createDiscussionCommentInOrg": {
+    "method": "POST",
+    "path": "/orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments",
+    "source": "src/generated/endpoints.ts"
+   },
+   "teams.createDiscussionInOrg": {
+    "method": "POST",
+    "path": "/orgs/{org}/teams/{team_slug}/discussions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "teams.deleteDiscussionCommentInOrg": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments/{comment_number}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "teams.deleteDiscussionInOrg": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/teams/{team_slug}/discussions/{discussion_number}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "teams.deleteInOrg": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/teams/{team_slug}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "teams.getByName": {
+    "method": "GET",
+    "path": "/orgs/{org}/teams/{team_slug}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "teams.getDiscussionCommentInOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments/{comment_number}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "teams.getDiscussionInOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/teams/{team_slug}/discussions/{discussion_number}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "teams.getMembershipForUserInOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/teams/{team_slug}/memberships/{username}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "teams.list": {
+    "method": "GET",
+    "path": "/orgs/{org}/teams",
+    "source": "src/generated/endpoints.ts"
+   },
+   "teams.listChildInOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/teams/{team_slug}/teams",
+    "source": "src/generated/endpoints.ts"
+   },
+   "teams.listDiscussionCommentsInOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments",
+    "source": "src/generated/endpoints.ts"
+   },
+   "teams.listDiscussionsInOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/teams/{team_slug}/discussions",
+    "source": "src/generated/endpoints.ts"
+   },
+   "teams.listForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/teams",
+    "source": "src/generated/endpoints.ts"
+   },
+   "teams.listMembersInOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/teams/{team_slug}/members",
+    "source": "src/generated/endpoints.ts"
+   },
+   "teams.listPendingInvitationsInOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/teams/{team_slug}/invitations",
+    "source": "src/generated/endpoints.ts"
+   },
+   "teams.listReposInOrg": {
+    "method": "GET",
+    "path": "/orgs/{org}/teams/{team_slug}/repos",
+    "source": "src/generated/endpoints.ts"
+   },
+   "teams.removeMembershipForUserInOrg": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/teams/{team_slug}/memberships/{username}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "teams.removeRepoInOrg": {
+    "method": "DELETE",
+    "path": "/orgs/{org}/teams/{team_slug}/repos/{owner}/{repo}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "teams.updateDiscussionCommentInOrg": {
+    "method": "PATCH",
+    "path": "/orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments/{comment_number}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "teams.updateDiscussionInOrg": {
+    "method": "PATCH",
+    "path": "/orgs/{org}/teams/{team_slug}/discussions/{discussion_number}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "teams.updateInOrg": {
+    "method": "PATCH",
+    "path": "/orgs/{org}/teams/{team_slug}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.addEmailForAuthenticated": {
+    "method": "POST",
+    "path": "/user/emails",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.addEmailForAuthenticatedUser": {
+    "method": "POST",
+    "path": "/user/emails",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.addSocialAccountForAuthenticatedUser": {
+    "method": "POST",
+    "path": "/user/social_accounts",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.block": {
+    "method": "PUT",
+    "path": "/user/blocks/{username}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.checkBlocked": {
+    "method": "GET",
+    "path": "/user/blocks/{username}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.checkFollowingForUser": {
+    "method": "GET",
+    "path": "/users/{username}/following/{target_user}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.checkPersonIsFollowedByAuthenticated": {
+    "method": "GET",
+    "path": "/user/following/{username}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.createGpgKeyForAuthenticated": {
+    "method": "POST",
+    "path": "/user/gpg_keys",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.createGpgKeyForAuthenticatedUser": {
+    "method": "POST",
+    "path": "/user/gpg_keys",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.createPublicSshKeyForAuthenticated": {
+    "method": "POST",
+    "path": "/user/keys",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.createPublicSshKeyForAuthenticatedUser": {
+    "method": "POST",
+    "path": "/user/keys",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.createSshSigningKeyForAuthenticatedUser": {
+    "method": "POST",
+    "path": "/user/ssh_signing_keys",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.deleteAttestationsBulk": {
+    "method": "POST",
+    "path": "/users/{username}/attestations/delete-request",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.deleteAttestationsById": {
+    "method": "DELETE",
+    "path": "/users/{username}/attestations/{attestation_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.deleteAttestationsBySubjectDigest": {
+    "method": "DELETE",
+    "path": "/users/{username}/attestations/digest/{subject_digest}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.deleteEmailForAuthenticated": {
+    "method": "DELETE",
+    "path": "/user/emails",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.deleteEmailForAuthenticatedUser": {
+    "method": "DELETE",
+    "path": "/user/emails",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.deleteGpgKeyForAuthenticated": {
+    "method": "DELETE",
+    "path": "/user/gpg_keys/{gpg_key_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.deleteGpgKeyForAuthenticatedUser": {
+    "method": "DELETE",
+    "path": "/user/gpg_keys/{gpg_key_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.deletePublicSshKeyForAuthenticated": {
+    "method": "DELETE",
+    "path": "/user/keys/{key_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.deletePublicSshKeyForAuthenticatedUser": {
+    "method": "DELETE",
+    "path": "/user/keys/{key_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.deleteSocialAccountForAuthenticatedUser": {
+    "method": "DELETE",
+    "path": "/user/social_accounts",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.deleteSshSigningKeyForAuthenticatedUser": {
+    "method": "DELETE",
+    "path": "/user/ssh_signing_keys/{ssh_signing_key_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.follow": {
+    "method": "PUT",
+    "path": "/user/following/{username}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.getAuthenticated": {
+    "method": "GET",
+    "path": "/user",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.getById": {
+    "method": "GET",
+    "path": "/user/{account_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.getByUsername": {
+    "method": "GET",
+    "path": "/users/{username}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.getContextForUser": {
+    "method": "GET",
+    "path": "/users/{username}/hovercard",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.getGpgKeyForAuthenticated": {
+    "method": "GET",
+    "path": "/user/gpg_keys/{gpg_key_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.getGpgKeyForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/gpg_keys/{gpg_key_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.getPublicSshKeyForAuthenticated": {
+    "method": "GET",
+    "path": "/user/keys/{key_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.getPublicSshKeyForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/keys/{key_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.getSshSigningKeyForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/ssh_signing_keys/{ssh_signing_key_id}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.list": {
+    "method": "GET",
+    "path": "/users",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.listAttestations": {
+    "method": "GET",
+    "path": "/users/{username}/attestations/{subject_digest}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.listAttestationsBulk": {
+    "method": "POST",
+    "path": "/users/{username}/attestations/bulk-list{?per_page,before,after}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.listBlockedByAuthenticated": {
+    "method": "GET",
+    "path": "/user/blocks",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.listBlockedByAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/blocks",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.listEmailsForAuthenticated": {
+    "method": "GET",
+    "path": "/user/emails",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.listEmailsForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/emails",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.listFollowedByAuthenticated": {
+    "method": "GET",
+    "path": "/user/following",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.listFollowedByAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/following",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.listFollowersForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/followers",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.listFollowersForUser": {
+    "method": "GET",
+    "path": "/users/{username}/followers",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.listFollowingForUser": {
+    "method": "GET",
+    "path": "/users/{username}/following",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.listGpgKeysForAuthenticated": {
+    "method": "GET",
+    "path": "/user/gpg_keys",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.listGpgKeysForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/gpg_keys",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.listGpgKeysForUser": {
+    "method": "GET",
+    "path": "/users/{username}/gpg_keys",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.listPublicEmailsForAuthenticated": {
+    "method": "GET",
+    "path": "/user/public_emails",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.listPublicEmailsForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/public_emails",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.listPublicKeysForUser": {
+    "method": "GET",
+    "path": "/users/{username}/keys",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.listPublicSshKeysForAuthenticated": {
+    "method": "GET",
+    "path": "/user/keys",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.listPublicSshKeysForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/keys",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.listSocialAccountsForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/social_accounts",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.listSocialAccountsForUser": {
+    "method": "GET",
+    "path": "/users/{username}/social_accounts",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.listSshSigningKeysForAuthenticatedUser": {
+    "method": "GET",
+    "path": "/user/ssh_signing_keys",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.listSshSigningKeysForUser": {
+    "method": "GET",
+    "path": "/users/{username}/ssh_signing_keys",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.setPrimaryEmailVisibilityForAuthenticated": {
+    "method": "PATCH",
+    "path": "/user/email/visibility",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.setPrimaryEmailVisibilityForAuthenticatedUser": {
+    "method": "PATCH",
+    "path": "/user/email/visibility",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.unblock": {
+    "method": "DELETE",
+    "path": "/user/blocks/{username}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.unfollow": {
+    "method": "DELETE",
+    "path": "/user/following/{username}",
+    "source": "src/generated/endpoints.ts"
+   },
+   "users.updateAuthenticated": {
+    "method": "PATCH",
+    "path": "/user",
+    "source": "src/generated/endpoints.ts"
+   }
+  }
+ },
+ "skipped": []
+}

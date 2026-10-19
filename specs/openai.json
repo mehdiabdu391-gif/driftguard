@@ -1,0 +1,355 @@
+{
+ "id": "openai",
+ "repo": "openai/openai-openapi",
+ "file": "openapi.json",
+ "history": [
+  {
+   "sha": "33248a638234a53846ed3ab4b2a7c77069bc1030",
+   "date": "2026-10-19T05:35:43Z",
+   "message": "Add nullable input_cache_write_30m_tokens metric to token usage data",
+   "base": "f88d2f78b75f46b53b0baef3f5f47dc991add4a2",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "f88d2f78b75f46b53b0baef3f5f47dc991add4a2",
+   "date": "2026-10-18T03:52:37Z",
+   "message": "Remove example response from moderation create endpoint",
+   "base": "d156763a484eb247e116e0ea345e16344b0049ba",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "d156763a484eb247e116e0ea345e16344b0049ba",
+   "date": "2026-10-17T04:24:53Z",
+   "message": "Add new event types for reasoning summary updates in sessions",
+   "base": "c9fc5f8d99f539fc589a4294fc004ab0ac32364a",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "c9fc5f8d99f539fc589a4294fc004ab0ac32364a",
+   "date": "2026-10-16T23:46:02Z",
+   "message": "Replace explicit text example in moderation endpoint with generic text",
+   "base": "8ba0678ad5e656c11e29c110f71aa68ba18fcc03",
+   "tracked": 1,
+   "responseChanges": 0
+  },
+  {
+   "sha": "8ba0678ad5e656c11e29c110f71aa68ba18fcc03",
+   "date": "2026-10-16T23:28:15Z",
+   "message": "Add 'ultrafast' service tier option to model requests",
+   "base": "6ca9cb2b2dd5fbe766c32f3ab898e2e479c29840",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "6ca9cb2b2dd5fbe766c32f3ab898e2e479c29840",
+   "date": "2026-10-16T19:10:05Z",
+   "message": "Remove session spending control from API",
+   "base": "35060f5bc1fdb11fba341dd6aa4313c4b1a05a12",
+   "tracked": 2,
+   "responseChanges": 0
+  },
+  {
+   "sha": "35060f5bc1fdb11fba341dd6aa4313c4b1a05a12",
+   "date": "2026-10-16T17:57:24Z",
+   "message": "Add support for creating custom voices from text prompts",
+   "base": "5bdf71b6a5085282b80d6810438c2a0a38037378",
+   "tracked": 0,
+   "responseChanges": 1
+  },
+  {
+   "sha": "5bdf71b6a5085282b80d6810438c2a0a38037378",
+   "date": "2026-10-16T03:51:03Z",
+   "message": "Add text/event-stream response support for completions and beta APIs",
+   "base": "ee5b185a184300191f079596210c3632d591219f",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "ee5b185a184300191f079596210c3632d591219f",
+   "date": "2026-10-16T00:03:34Z",
+   "message": "Add 'degraded' to status enum values",
+   "base": "f192b578eef466a1a1469a47b1851f57ba812c2e",
+   "tracked": 0,
+   "responseChanges": 4
+  },
+  {
+   "sha": "f192b578eef466a1a1469a47b1851f57ba812c2e",
+   "date": "2026-10-15T23:26:03Z",
+   "message": "Make URL property optional and nullable in pattern search actions",
+   "base": "45a0efe4c14b6a15401055076357df869cc16f0d",
+   "tracked": 0,
+   "responseChanges": 34
+  },
+  {
+   "sha": "45a0efe4c14b6a15401055076357df869cc16f0d",
+   "date": "2026-10-15T22:17:31Z",
+   "message": "Add Decision API integration to Live sessions",
+   "base": "a2bae4f18855d2a55eb6d193a6a0802fabf41f10",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "a2bae4f18855d2a55eb6d193a6a0802fabf41f10",
+   "date": "2026-10-15T21:42:29Z",
+   "message": "Deprecate specific GPT-4 model variants with shutdown notice",
+   "base": "f601a440c21397028cad2218eca1afd701bf12ec",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "f601a440c21397028cad2218eca1afd701bf12ec",
+   "date": "2026-10-15T20:48:51Z",
+   "message": "Add safety_identifier parameter to replace deprecated user field",
+   "base": "e7cfd6242d5d39e67e6fe172bf973b57ecafba2d",
+   "tracked": 3,
+   "responseChanges": 0
+  },
+  {
+   "sha": "e7cfd6242d5d39e67e6fe172bf973b57ecafba2d",
+   "date": "2026-10-15T19:34:26Z",
+   "message": "Add shutdown notices for additional GPT-4 variants",
+   "base": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+   "date": "2026-10-15T17:41:30Z",
+   "message": "Clarify token limit as configurable in message history input",
+   "base": "2cc9e14c68e9155615b2eb2c22dfd59b075922d2",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "2cc9e14c68e9155615b2eb2c22dfd59b075922d2",
+   "date": "2026-10-15T05:16:50Z",
+   "message": "Extend input schema with new message and function call types",
+   "base": "aeb6a041dc56c011ca9f12127ec898f911100aa0",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "aeb6a041dc56c011ca9f12127ec898f911100aa0",
+   "date": "2026-10-15T03:31:14Z",
+   "message": "Add detailed description for raw audio encoding in API",
+   "base": "92e6a99ec0d7b04a467728ca43b8307046036c35",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "92e6a99ec0d7b04a467728ca43b8307046036c35",
+   "date": "2026-10-15T03:29:38Z",
+   "message": "Add prompt caching support with explicit breakpoints and options",
+   "base": "08c3481801c51d7e427cd7265b3be04976e8a175",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "08c3481801c51d7e427cd7265b3be04976e8a175",
+   "date": "2026-10-15T02:19:32Z",
+   "message": "Add Live output audio fixture playback events",
+   "base": "0fce13ce46465f8876e4a968a73c7bca3aa8e335",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "0fce13ce46465f8876e4a968a73c7bca3aa8e335",
+   "date": "2026-10-14T19:53:41Z",
+   "message": "Allow updating API key scopes and add Live audio fixture events",
+   "base": "803527048c4b4d059cee8129eac9630f2130bc75",
+   "tracked": 0,
+   "responseChanges": 18
+  },
+  {
+   "sha": "803527048c4b4d059cee8129eac9630f2130bc75",
+   "date": "2026-10-13T16:20:46Z",
+   "message": "Add detailed error and moderation info to image generation responses",
+   "base": "77618e641a840768f1e58197ca53ddedffea6df9",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "77618e641a840768f1e58197ca53ddedffea6df9",
+   "date": "2026-10-13T01:46:00Z",
+   "message": "Add endpoint to update project API key expiration",
+   "base": "e95c0fe615f45a19e8878af923a729948445a6bd",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "e95c0fe615f45a19e8878af923a729948445a6bd",
+   "date": "2026-10-09T20:00:47Z",
+   "message": "Add new endpoint for organization-wide Decisions API usage reporting",
+   "base": "0ef225c4f701046f8fe88cae9d29d0df4d1a9fa9",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "0ef225c4f701046f8fe88cae9d29d0df4d1a9fa9",
+   "date": "2026-10-08T23:43:19Z",
+   "message": "Add new agent.environment event statuses to API",
+   "base": "05dbd425520dc216de5dedab86bdcdaed7372097",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "05dbd425520dc216de5dedab86bdcdaed7372097",
+   "date": "2026-10-08T23:12:37Z",
+   "message": "Add new webhook events for agent environment suspended and expired",
+   "base": "fd15e7a8c492008db728bd079d936b7b7bf13e23",
+   "tracked": 0,
+   "responseChanges": 9
+  },
+  {
+   "sha": "fd15e7a8c492008db728bd079d936b7b7bf13e23",
+   "date": "2026-10-08T22:45:35Z",
+   "message": "Allow HTTP(S) image URLs in decision input alongside data URLs",
+   "base": "c72241375fbe33a7192f5660b173e541b56e4b2f",
+   "tracked": 1,
+   "responseChanges": 0
+  },
+  {
+   "sha": "c72241375fbe33a7192f5660b173e541b56e4b2f",
+   "date": "2026-10-08T21:46:20Z",
+   "message": "Add new agent environment event types to event enum",
+   "base": "978d0571e61ab2b18b80a84d17276f05403aace7",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "978d0571e61ab2b18b80a84d17276f05403aace7",
+   "date": "2026-10-08T21:10:05Z",
+   "message": "Add OpenAI-hosted agent environments API and lifecycle webhooks",
+   "base": "f6f80b90bb96d74c22b05a68295af6e7359a48a6",
+   "tracked": 0,
+   "responseChanges": 1
+  },
+  {
+   "sha": "f6f80b90bb96d74c22b05a68295af6e7359a48a6",
+   "date": "2026-10-08T20:44:03Z",
+   "message": "Add detailed schemas for Live tool selection parameters",
+   "base": "b2751c6625493c9c64db21b1b26a4d9300e589e3",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "b2751c6625493c9c64db21b1b26a4d9300e589e3",
+   "date": "2026-10-08T17:55:47Z",
+   "message": "Restrict 'type' field in voice object to 'audio_sample' enum only",
+   "base": "239c481c5fd75052acb3e93cf72c15a7b4a45e74",
+   "tracked": 0,
+   "responseChanges": 1
+  },
+  {
+   "sha": "239c481c5fd75052acb3e93cf72c15a7b4a45e74",
+   "date": "2026-10-08T17:10:28Z",
+   "message": "Add OCI external storage provider support to API",
+   "base": "35b0d4ebb841f2706e1c0aa31c7d47ecdd43c71d",
+   "tracked": 0,
+   "responseChanges": 5
+  },
+  {
+   "sha": "35b0d4ebb841f2706e1c0aa31c7d47ecdd43c71d",
+   "date": "2026-10-08T16:33:26Z",
+   "message": "Add session spend control for optional spending limits",
+   "base": "506aff0a8099581b50e119b87f8f2692cdad043f",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "506aff0a8099581b50e119b87f8f2692cdad043f",
+   "date": "2026-10-08T07:48:49Z",
+   "message": "Add detailed reasoning summary events and refine session query params",
+   "base": "3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d",
+   "tracked": 12,
+   "responseChanges": 0
+  },
+  {
+   "sha": "3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d",
+   "date": "2026-10-08T07:31:43Z",
+   "message": "Deprecate text-prompt voice creation; require audio samples for custom T",
+   "base": "234829e2b634b8fb159df7fcddbffad204173ffd",
+   "tracked": 2,
+   "responseChanges": 2
+  },
+  {
+   "sha": "234829e2b634b8fb159df7fcddbffad204173ffd",
+   "date": "2026-10-07T19:23:06Z",
+   "message": "Add description for choice options array constraints",
+   "base": "17f9a665031777071b26e63356d78280bf7c128c",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "17f9a665031777071b26e63356d78280bf7c128c",
+   "date": "2026-10-07T18:45:20Z",
+   "message": "Clarify createDecision endpoint description and input requirements",
+   "base": "ee483b4b26b2695fedc5c8af7b187e5986bd0add",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "ee483b4b26b2695fedc5c8af7b187e5986bd0add",
+   "date": "2026-10-07T01:19:46Z",
+   "message": "Update supported color options in the API",
+   "base": "4a4020d8c2ed211f795b98a14a6c8fa2b633cad0",
+   "tracked": 2,
+   "responseChanges": 0
+  },
+  {
+   "sha": "4a4020d8c2ed211f795b98a14a6c8fa2b633cad0",
+   "date": "2026-10-06T23:31:16Z",
+   "message": "Add billing_not_active error to usage limit error codes",
+   "base": "94cb547c2bf60e7bd8512af270e063e58266a095",
+   "tracked": 0,
+   "responseChanges": 6
+  },
+  {
+   "sha": "94cb547c2bf60e7bd8512af270e063e58266a095",
+   "date": "2026-10-06T23:25:56Z",
+   "message": "Clarify input data and add descriptions for question parameter types",
+   "base": "d28f34e5d8b3adee2284b7ba6b903e953ebb5111",
+   "tracked": 0,
+   "responseChanges": 0
+  },
+  {
+   "sha": "d28f34e5d8b3adee2284b7ba6b903e953ebb5111",
+   "date": "2026-10-06T21:48:40Z",
+   "message": "Increase max length for safety_identifier to 128 characters",
+   "base": "55ec4ae46b19445aa09b0d2cc602b0df78ae030e",
+   "tracked": 0,
+   "responseChanges": 8
+  }
+ ],
+ "windows": {
+  "30d": {
+   "base": {
+    "sha": "ddface9bd361f5fe37943291d23ee2ca72cbcc2b",
+    "date": "2026-09-19T01:29:08Z",
+    "message": "Add SessionEventAgentSessionEnvironmentReset event to API"
+   },
+   "tracked": 174,
+   "responseChanges": 564
+  },
+  "90d": {
+   "base": {
+    "sha": "db3e53198a66732cfe161339ea63bf36fc0137ad",
+    "date": "2026-07-16T16:39:14Z",
+    "message": "Sync OpenAPI spec from ce8c9bed912f"
+   },
+   "tracked": 192,
+   "responseChanges": 919
+  },
+  "180d": null
+ },
+ "head": {
+  "sha": "33248a638234a53846ed3ab4b2a7c77069bc1030",
+  "date": "2026-10-19T05:35:43Z",
+  "message": "Add nullable input_cache_write_30m_tokens metric to token usage data",
+  "specVersion": "2.3.0"
+ },
+ "updatedAt": "2026-10-19T08:24:16.409Z"
+}

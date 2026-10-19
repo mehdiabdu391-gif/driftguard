@@ -1,0 +1,60 @@
+{
+  "specId": "openai",
+  "base": {
+    "sha": "fd15e7a8c492008db728bd079d936b7b7bf13e23",
+    "date": "2026-10-08T22:45:35Z",
+    "message": "Allow HTTP(S) image URLs in decision input alongside data URLs"
+  },
+  "revision": {
+    "sha": "05dbd425520dc216de5dedab86bdcdaed7372097",
+    "date": "2026-10-08T23:12:37Z",
+    "message": "Add new webhook events for agent environment suspended and expired"
+  },
+  "compareUrl": "https://github.com/openai/openai-openapi/compare/fd15e7a8c492008db728bd079d936b7b7bf13e23...05dbd425520dc216de5dedab86bdcdaed7372097",
+  "oasdiff": "oasdiff version 1.34.0",
+  "changes": [],
+  "responseSummary": {
+    "GET /agents/environments": {
+      "method": "GET",
+      "path": "/agents/environments",
+      "count": 1,
+      "rules": {
+        "response-property-enum-value-added": 1
+      }
+    },
+    "POST /agents/environments": {
+      "method": "POST",
+      "path": "/agents/environments",
+      "count": 1,
+      "rules": {
+        "response-property-enum-value-added": 1
+      }
+    },
+    "GET /agents/environments/{}": {
+      "method": "GET",
+      "path": "/agents/environments/{environment_id}",
+      "count": 1,
+      "rules": {
+        "response-property-enum-value-added": 1
+      }
+    },
+    "POST /agents/sessions": {
+      "method": "POST",
+      "path": "/agents/sessions",
+      "count": 3,
+      "rules": {
+        "response-body-one-of-added": 1,
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /agents/sessions/{}/events": {
+      "method": "GET",
+      "path": "/agents/sessions/{session_id}/events",
+      "count": 3,
+      "rules": {
+        "response-body-one-of-added": 1,
+        "response-property-enum-value-added": 2
+      }
+    }
+  }
+}

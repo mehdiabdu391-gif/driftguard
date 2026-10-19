@@ -1,0 +1,114 @@
+{
+  "specId": "openai",
+  "base": {
+    "sha": "e7cfd6242d5d39e67e6fe172bf973b57ecafba2d",
+    "date": "2026-10-15T19:34:26Z",
+    "message": "Add shutdown notices for additional GPT-4 variants"
+  },
+  "revision": {
+    "sha": "f601a440c21397028cad2218eca1afd701bf12ec",
+    "date": "2026-10-15T20:48:51Z",
+    "message": "Add safety_identifier parameter to replace deprecated user field"
+  },
+  "compareUrl": "https://github.com/openai/openai-openapi/compare/e7cfd6242d5d39e67e6fe172bf973b57ecafba2d...f601a440c21397028cad2218eca1afd701bf12ec",
+  "oasdiff": "oasdiff version 1.34.0",
+  "changes": [
+    {
+      "rule": "request-property-deprecated",
+      "level": 1,
+      "text": "request property `user` deprecated (media type: application/json)",
+      "method": "POST",
+      "path": "/images/edits",
+      "operationId": "createImageEdit",
+      "source": null,
+      "kind": "request-field-deprecated",
+      "target": {
+        "location": "body",
+        "path": [
+          "user"
+        ],
+        "viaArray": false,
+        "raw": "user"
+      },
+      "verification": {
+        "status": "verified",
+        "reason": "property \"user\" is marked deprecated in the revision spec"
+      },
+      "specId": "openai",
+      "key": "request-property-deprecated|POST /images/edits|request property `user` deprecated (media type: application/json)",
+      "sourceUrl": null,
+      "compareUrl": "https://github.com/openai/openai-openapi/compare/e7cfd6242d5d39e67e6fe172bf973b57ecafba2d...f601a440c21397028cad2218eca1afd701bf12ec",
+      "introducedIn": {
+        "sha": "f601a440c21397028cad2218eca1afd701bf12ec",
+        "date": "2026-10-15T20:48:51Z",
+        "message": "Add safety_identifier parameter to replace deprecated user field",
+        "compareUrl": "https://github.com/openai/openai-openapi/compare/e7cfd6242d5d39e67e6fe172bf973b57ecafba2d...f601a440c21397028cad2218eca1afd701bf12ec"
+      }
+    },
+    {
+      "rule": "request-property-deprecated",
+      "level": 1,
+      "text": "request property `user` deprecated (media type: multipart/form-data)",
+      "method": "POST",
+      "path": "/images/edits",
+      "operationId": "createImageEdit",
+      "source": null,
+      "kind": "request-field-deprecated",
+      "target": {
+        "location": "body",
+        "path": [
+          "user"
+        ],
+        "viaArray": false,
+        "raw": "user"
+      },
+      "verification": {
+        "status": "verified",
+        "reason": "property \"user\" is marked deprecated in the revision spec"
+      },
+      "specId": "openai",
+      "key": "request-property-deprecated|POST /images/edits|request property `user` deprecated (media type: multipart/form-data)",
+      "sourceUrl": null,
+      "compareUrl": "https://github.com/openai/openai-openapi/compare/e7cfd6242d5d39e67e6fe172bf973b57ecafba2d...f601a440c21397028cad2218eca1afd701bf12ec",
+      "introducedIn": {
+        "sha": "f601a440c21397028cad2218eca1afd701bf12ec",
+        "date": "2026-10-15T20:48:51Z",
+        "message": "Add safety_identifier parameter to replace deprecated user field",
+        "compareUrl": "https://github.com/openai/openai-openapi/compare/e7cfd6242d5d39e67e6fe172bf973b57ecafba2d...f601a440c21397028cad2218eca1afd701bf12ec"
+      }
+    },
+    {
+      "rule": "request-property-deprecated",
+      "level": 1,
+      "text": "request property `user` deprecated",
+      "method": "POST",
+      "path": "/images/generations",
+      "operationId": "createImage",
+      "source": null,
+      "kind": "request-field-deprecated",
+      "target": {
+        "location": "body",
+        "path": [
+          "user"
+        ],
+        "viaArray": false,
+        "raw": "user"
+      },
+      "verification": {
+        "status": "verified",
+        "reason": "property \"user\" is marked deprecated in the revision spec"
+      },
+      "specId": "openai",
+      "key": "request-property-deprecated|POST /images/generations|request property `user` deprecated",
+      "sourceUrl": null,
+      "compareUrl": "https://github.com/openai/openai-openapi/compare/e7cfd6242d5d39e67e6fe172bf973b57ecafba2d...f601a440c21397028cad2218eca1afd701bf12ec",
+      "introducedIn": {
+        "sha": "f601a440c21397028cad2218eca1afd701bf12ec",
+        "date": "2026-10-15T20:48:51Z",
+        "message": "Add safety_identifier parameter to replace deprecated user field",
+        "compareUrl": "https://github.com/openai/openai-openapi/compare/e7cfd6242d5d39e67e6fe172bf973b57ecafba2d...f601a440c21397028cad2218eca1afd701bf12ec"
+      }
+    }
+  ],
+  "responseSummary": {}
+}

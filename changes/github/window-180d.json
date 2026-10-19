@@ -1,0 +1,2558 @@
+{
+ "specId": "github",
+ "days": 180,
+ "base": {
+  "sha": "63e9be953f3d206eb0cd9c24ea92f6372c5a5d75",
+  "date": "2026-04-20T11:14:18Z",
+  "message": "Update OpenAPI 3.0 Descriptions"
+ },
+ "revision": {
+  "sha": "bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+  "date": "2026-10-17T23:38:25Z",
+  "message": "Update OpenAPI 3.0 Descriptions"
+ },
+ "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+ "oasdiff": "oasdiff version 1.34.0",
+ "generatedAt": "2026-10-19T08:24:16.409Z",
+ "changes": [
+  {
+   "rule": "api-path-removed-without-deprecation",
+   "level": 3,
+   "text": "api path removed without deprecation",
+   "method": "GET",
+   "path": "/enterprises/{enterprise}/teams",
+   "operationId": "enterprise-teams/list",
+   "source": null,
+   "kind": "endpoint-removed",
+   "target": null,
+   "verification": {
+    "status": "verified",
+    "reason": "GET /enterprises/{enterprise}/teams is absent from the revision spec"
+   },
+   "specId": "github",
+   "key": "api-path-removed-without-deprecation|GET /enterprises/{}/teams|api path removed without deprecation",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": {
+    "sha": "01149204a19f69d6bac7909ceef0b571bbbe2798",
+    "date": "2026-09-23T01:47:51Z",
+    "message": "Update OpenAPI 3.0 Descriptions",
+    "compareUrl": "https://github.com/github/rest-api-description/compare/7026ef612efe011b970e81e96023771886b67b96...01149204a19f69d6bac7909ceef0b571bbbe2798"
+   }
+  },
+  {
+   "rule": "api-path-removed-without-deprecation",
+   "level": 3,
+   "text": "api path removed without deprecation",
+   "method": "POST",
+   "path": "/enterprises/{enterprise}/teams",
+   "operationId": "enterprise-teams/create",
+   "source": null,
+   "kind": "endpoint-removed",
+   "target": null,
+   "verification": {
+    "status": "verified",
+    "reason": "POST /enterprises/{enterprise}/teams is absent from the revision spec"
+   },
+   "specId": "github",
+   "key": "api-path-removed-without-deprecation|POST /enterprises/{}/teams|api path removed without deprecation",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": {
+    "sha": "01149204a19f69d6bac7909ceef0b571bbbe2798",
+    "date": "2026-09-23T01:47:51Z",
+    "message": "Update OpenAPI 3.0 Descriptions",
+    "compareUrl": "https://github.com/github/rest-api-description/compare/7026ef612efe011b970e81e96023771886b67b96...01149204a19f69d6bac7909ceef0b571bbbe2798"
+   }
+  },
+  {
+   "rule": "api-path-removed-without-deprecation",
+   "level": 3,
+   "text": "api path removed without deprecation",
+   "method": "GET",
+   "path": "/enterprises/{enterprise}/teams/{enterprise-team}/memberships",
+   "operationId": "enterprise-team-memberships/list",
+   "source": null,
+   "kind": "endpoint-removed",
+   "target": null,
+   "verification": {
+    "status": "verified",
+    "reason": "GET /enterprises/{enterprise}/teams/{enterprise-team}/memberships is absent from the revision spec"
+   },
+   "specId": "github",
+   "key": "api-path-removed-without-deprecation|GET /enterprises/{}/teams/{}/memberships|api path removed without deprecation",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": {
+    "sha": "01149204a19f69d6bac7909ceef0b571bbbe2798",
+    "date": "2026-09-23T01:47:51Z",
+    "message": "Update OpenAPI 3.0 Descriptions",
+    "compareUrl": "https://github.com/github/rest-api-description/compare/7026ef612efe011b970e81e96023771886b67b96...01149204a19f69d6bac7909ceef0b571bbbe2798"
+   }
+  },
+  {
+   "rule": "api-path-removed-without-deprecation",
+   "level": 3,
+   "text": "api path removed without deprecation",
+   "method": "POST",
+   "path": "/enterprises/{enterprise}/teams/{enterprise-team}/memberships/add",
+   "operationId": "enterprise-team-memberships/bulk-add",
+   "source": null,
+   "kind": "endpoint-removed",
+   "target": null,
+   "verification": {
+    "status": "verified",
+    "reason": "POST /enterprises/{enterprise}/teams/{enterprise-team}/memberships/add is absent from the revision spec"
+   },
+   "specId": "github",
+   "key": "api-path-removed-without-deprecation|POST /enterprises/{}/teams/{}/memberships/add|api path removed without deprecation",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": {
+    "sha": "01149204a19f69d6bac7909ceef0b571bbbe2798",
+    "date": "2026-09-23T01:47:51Z",
+    "message": "Update OpenAPI 3.0 Descriptions",
+    "compareUrl": "https://github.com/github/rest-api-description/compare/7026ef612efe011b970e81e96023771886b67b96...01149204a19f69d6bac7909ceef0b571bbbe2798"
+   }
+  },
+  {
+   "rule": "api-path-removed-without-deprecation",
+   "level": 3,
+   "text": "api path removed without deprecation",
+   "method": "POST",
+   "path": "/enterprises/{enterprise}/teams/{enterprise-team}/memberships/remove",
+   "operationId": "enterprise-team-memberships/bulk-remove",
+   "source": null,
+   "kind": "endpoint-removed",
+   "target": null,
+   "verification": {
+    "status": "verified",
+    "reason": "POST /enterprises/{enterprise}/teams/{enterprise-team}/memberships/remove is absent from the revision spec"
+   },
+   "specId": "github",
+   "key": "api-path-removed-without-deprecation|POST /enterprises/{}/teams/{}/memberships/remove|api path removed without deprecation",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": {
+    "sha": "01149204a19f69d6bac7909ceef0b571bbbe2798",
+    "date": "2026-09-23T01:47:51Z",
+    "message": "Update OpenAPI 3.0 Descriptions",
+    "compareUrl": "https://github.com/github/rest-api-description/compare/7026ef612efe011b970e81e96023771886b67b96...01149204a19f69d6bac7909ceef0b571bbbe2798"
+   }
+  },
+  {
+   "rule": "api-path-removed-without-deprecation",
+   "level": 3,
+   "text": "api path removed without deprecation",
+   "method": "DELETE",
+   "path": "/enterprises/{enterprise}/teams/{enterprise-team}/memberships/{username}",
+   "operationId": "enterprise-team-memberships/remove",
+   "source": null,
+   "kind": "endpoint-removed",
+   "target": null,
+   "verification": {
+    "status": "verified",
+    "reason": "DELETE /enterprises/{enterprise}/teams/{enterprise-team}/memberships/{username} is absent from the revision spec"
+   },
+   "specId": "github",
+   "key": "api-path-removed-without-deprecation|DELETE /enterprises/{}/teams/{}/memberships/{}|api path removed without deprecation",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": {
+    "sha": "01149204a19f69d6bac7909ceef0b571bbbe2798",
+    "date": "2026-09-23T01:47:51Z",
+    "message": "Update OpenAPI 3.0 Descriptions",
+    "compareUrl": "https://github.com/github/rest-api-description/compare/7026ef612efe011b970e81e96023771886b67b96...01149204a19f69d6bac7909ceef0b571bbbe2798"
+   }
+  },
+  {
+   "rule": "api-path-removed-without-deprecation",
+   "level": 3,
+   "text": "api path removed without deprecation",
+   "method": "GET",
+   "path": "/enterprises/{enterprise}/teams/{enterprise-team}/memberships/{username}",
+   "operationId": "enterprise-team-memberships/get",
+   "source": null,
+   "kind": "endpoint-removed",
+   "target": null,
+   "verification": {
+    "status": "verified",
+    "reason": "GET /enterprises/{enterprise}/teams/{enterprise-team}/memberships/{username} is absent from the revision spec"
+   },
+   "specId": "github",
+   "key": "api-path-removed-without-deprecation|GET /enterprises/{}/teams/{}/memberships/{}|api path removed without deprecation",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": {
+    "sha": "01149204a19f69d6bac7909ceef0b571bbbe2798",
+    "date": "2026-09-23T01:47:51Z",
+    "message": "Update OpenAPI 3.0 Descriptions",
+    "compareUrl": "https://github.com/github/rest-api-description/compare/7026ef612efe011b970e81e96023771886b67b96...01149204a19f69d6bac7909ceef0b571bbbe2798"
+   }
+  },
+  {
+   "rule": "api-path-removed-without-deprecation",
+   "level": 3,
+   "text": "api path removed without deprecation",
+   "method": "PUT",
+   "path": "/enterprises/{enterprise}/teams/{enterprise-team}/memberships/{username}",
+   "operationId": "enterprise-team-memberships/add",
+   "source": null,
+   "kind": "endpoint-removed",
+   "target": null,
+   "verification": {
+    "status": "verified",
+    "reason": "PUT /enterprises/{enterprise}/teams/{enterprise-team}/memberships/{username} is absent from the revision spec"
+   },
+   "specId": "github",
+   "key": "api-path-removed-without-deprecation|PUT /enterprises/{}/teams/{}/memberships/{}|api path removed without deprecation",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": {
+    "sha": "01149204a19f69d6bac7909ceef0b571bbbe2798",
+    "date": "2026-09-23T01:47:51Z",
+    "message": "Update OpenAPI 3.0 Descriptions",
+    "compareUrl": "https://github.com/github/rest-api-description/compare/7026ef612efe011b970e81e96023771886b67b96...01149204a19f69d6bac7909ceef0b571bbbe2798"
+   }
+  },
+  {
+   "rule": "api-path-removed-without-deprecation",
+   "level": 3,
+   "text": "api path removed without deprecation",
+   "method": "GET",
+   "path": "/enterprises/{enterprise}/teams/{enterprise-team}/organizations",
+   "operationId": "enterprise-team-organizations/get-assignments",
+   "source": null,
+   "kind": "endpoint-removed",
+   "target": null,
+   "verification": {
+    "status": "verified",
+    "reason": "GET /enterprises/{enterprise}/teams/{enterprise-team}/organizations is absent from the revision spec"
+   },
+   "specId": "github",
+   "key": "api-path-removed-without-deprecation|GET /enterprises/{}/teams/{}/organizations|api path removed without deprecation",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": {
+    "sha": "01149204a19f69d6bac7909ceef0b571bbbe2798",
+    "date": "2026-09-23T01:47:51Z",
+    "message": "Update OpenAPI 3.0 Descriptions",
+    "compareUrl": "https://github.com/github/rest-api-description/compare/7026ef612efe011b970e81e96023771886b67b96...01149204a19f69d6bac7909ceef0b571bbbe2798"
+   }
+  },
+  {
+   "rule": "api-path-removed-without-deprecation",
+   "level": 3,
+   "text": "api path removed without deprecation",
+   "method": "POST",
+   "path": "/enterprises/{enterprise}/teams/{enterprise-team}/organizations/add",
+   "operationId": "enterprise-team-organizations/bulk-add",
+   "source": null,
+   "kind": "endpoint-removed",
+   "target": null,
+   "verification": {
+    "status": "verified",
+    "reason": "POST /enterprises/{enterprise}/teams/{enterprise-team}/organizations/add is absent from the revision spec"
+   },
+   "specId": "github",
+   "key": "api-path-removed-without-deprecation|POST /enterprises/{}/teams/{}/organizations/add|api path removed without deprecation",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": {
+    "sha": "01149204a19f69d6bac7909ceef0b571bbbe2798",
+    "date": "2026-09-23T01:47:51Z",
+    "message": "Update OpenAPI 3.0 Descriptions",
+    "compareUrl": "https://github.com/github/rest-api-description/compare/7026ef612efe011b970e81e96023771886b67b96...01149204a19f69d6bac7909ceef0b571bbbe2798"
+   }
+  },
+  {
+   "rule": "api-path-removed-without-deprecation",
+   "level": 3,
+   "text": "api path removed without deprecation",
+   "method": "POST",
+   "path": "/enterprises/{enterprise}/teams/{enterprise-team}/organizations/remove",
+   "operationId": "enterprise-team-organizations/bulk-remove",
+   "source": null,
+   "kind": "endpoint-removed",
+   "target": null,
+   "verification": {
+    "status": "verified",
+    "reason": "POST /enterprises/{enterprise}/teams/{enterprise-team}/organizations/remove is absent from the revision spec"
+   },
+   "specId": "github",
+   "key": "api-path-removed-without-deprecation|POST /enterprises/{}/teams/{}/organizations/remove|api path removed without deprecation",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": {
+    "sha": "01149204a19f69d6bac7909ceef0b571bbbe2798",
+    "date": "2026-09-23T01:47:51Z",
+    "message": "Update OpenAPI 3.0 Descriptions",
+    "compareUrl": "https://github.com/github/rest-api-description/compare/7026ef612efe011b970e81e96023771886b67b96...01149204a19f69d6bac7909ceef0b571bbbe2798"
+   }
+  },
+  {
+   "rule": "api-path-removed-without-deprecation",
+   "level": 3,
+   "text": "api path removed without deprecation",
+   "method": "DELETE",
+   "path": "/enterprises/{enterprise}/teams/{enterprise-team}/organizations/{org}",
+   "operationId": "enterprise-team-organizations/delete",
+   "source": null,
+   "kind": "endpoint-removed",
+   "target": null,
+   "verification": {
+    "status": "verified",
+    "reason": "DELETE /enterprises/{enterprise}/teams/{enterprise-team}/organizations/{org} is absent from the revision spec"
+   },
+   "specId": "github",
+   "key": "api-path-removed-without-deprecation|DELETE /enterprises/{}/teams/{}/organizations/{}|api path removed without deprecation",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": {
+    "sha": "01149204a19f69d6bac7909ceef0b571bbbe2798",
+    "date": "2026-09-23T01:47:51Z",
+    "message": "Update OpenAPI 3.0 Descriptions",
+    "compareUrl": "https://github.com/github/rest-api-description/compare/7026ef612efe011b970e81e96023771886b67b96...01149204a19f69d6bac7909ceef0b571bbbe2798"
+   }
+  },
+  {
+   "rule": "api-path-removed-without-deprecation",
+   "level": 3,
+   "text": "api path removed without deprecation",
+   "method": "GET",
+   "path": "/enterprises/{enterprise}/teams/{enterprise-team}/organizations/{org}",
+   "operationId": "enterprise-team-organizations/get-assignment",
+   "source": null,
+   "kind": "endpoint-removed",
+   "target": null,
+   "verification": {
+    "status": "verified",
+    "reason": "GET /enterprises/{enterprise}/teams/{enterprise-team}/organizations/{org} is absent from the revision spec"
+   },
+   "specId": "github",
+   "key": "api-path-removed-without-deprecation|GET /enterprises/{}/teams/{}/organizations/{}|api path removed without deprecation",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": {
+    "sha": "01149204a19f69d6bac7909ceef0b571bbbe2798",
+    "date": "2026-09-23T01:47:51Z",
+    "message": "Update OpenAPI 3.0 Descriptions",
+    "compareUrl": "https://github.com/github/rest-api-description/compare/7026ef612efe011b970e81e96023771886b67b96...01149204a19f69d6bac7909ceef0b571bbbe2798"
+   }
+  },
+  {
+   "rule": "api-path-removed-without-deprecation",
+   "level": 3,
+   "text": "api path removed without deprecation",
+   "method": "PUT",
+   "path": "/enterprises/{enterprise}/teams/{enterprise-team}/organizations/{org}",
+   "operationId": "enterprise-team-organizations/add",
+   "source": null,
+   "kind": "endpoint-removed",
+   "target": null,
+   "verification": {
+    "status": "verified",
+    "reason": "PUT /enterprises/{enterprise}/teams/{enterprise-team}/organizations/{org} is absent from the revision spec"
+   },
+   "specId": "github",
+   "key": "api-path-removed-without-deprecation|PUT /enterprises/{}/teams/{}/organizations/{}|api path removed without deprecation",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": {
+    "sha": "01149204a19f69d6bac7909ceef0b571bbbe2798",
+    "date": "2026-09-23T01:47:51Z",
+    "message": "Update OpenAPI 3.0 Descriptions",
+    "compareUrl": "https://github.com/github/rest-api-description/compare/7026ef612efe011b970e81e96023771886b67b96...01149204a19f69d6bac7909ceef0b571bbbe2798"
+   }
+  },
+  {
+   "rule": "api-path-removed-without-deprecation",
+   "level": 3,
+   "text": "api path removed without deprecation",
+   "method": "DELETE",
+   "path": "/enterprises/{enterprise}/teams/{team_slug}",
+   "operationId": "enterprise-teams/delete",
+   "source": null,
+   "kind": "endpoint-removed",
+   "target": null,
+   "verification": {
+    "status": "verified",
+    "reason": "DELETE /enterprises/{enterprise}/teams/{team_slug} is absent from the revision spec"
+   },
+   "specId": "github",
+   "key": "api-path-removed-without-deprecation|DELETE /enterprises/{}/teams/{}|api path removed without deprecation",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": {
+    "sha": "01149204a19f69d6bac7909ceef0b571bbbe2798",
+    "date": "2026-09-23T01:47:51Z",
+    "message": "Update OpenAPI 3.0 Descriptions",
+    "compareUrl": "https://github.com/github/rest-api-description/compare/7026ef612efe011b970e81e96023771886b67b96...01149204a19f69d6bac7909ceef0b571bbbe2798"
+   }
+  },
+  {
+   "rule": "api-path-removed-without-deprecation",
+   "level": 3,
+   "text": "api path removed without deprecation",
+   "method": "GET",
+   "path": "/enterprises/{enterprise}/teams/{team_slug}",
+   "operationId": "enterprise-teams/get",
+   "source": null,
+   "kind": "endpoint-removed",
+   "target": null,
+   "verification": {
+    "status": "verified",
+    "reason": "GET /enterprises/{enterprise}/teams/{team_slug} is absent from the revision spec"
+   },
+   "specId": "github",
+   "key": "api-path-removed-without-deprecation|GET /enterprises/{}/teams/{}|api path removed without deprecation",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": {
+    "sha": "01149204a19f69d6bac7909ceef0b571bbbe2798",
+    "date": "2026-09-23T01:47:51Z",
+    "message": "Update OpenAPI 3.0 Descriptions",
+    "compareUrl": "https://github.com/github/rest-api-description/compare/7026ef612efe011b970e81e96023771886b67b96...01149204a19f69d6bac7909ceef0b571bbbe2798"
+   }
+  },
+  {
+   "rule": "api-path-removed-without-deprecation",
+   "level": 3,
+   "text": "api path removed without deprecation",
+   "method": "PATCH",
+   "path": "/enterprises/{enterprise}/teams/{team_slug}",
+   "operationId": "enterprise-teams/update",
+   "source": null,
+   "kind": "endpoint-removed",
+   "target": null,
+   "verification": {
+    "status": "verified",
+    "reason": "PATCH /enterprises/{enterprise}/teams/{team_slug} is absent from the revision spec"
+   },
+   "specId": "github",
+   "key": "api-path-removed-without-deprecation|PATCH /enterprises/{}/teams/{}|api path removed without deprecation",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": {
+    "sha": "01149204a19f69d6bac7909ceef0b571bbbe2798",
+    "date": "2026-09-23T01:47:51Z",
+    "message": "Update OpenAPI 3.0 Descriptions",
+    "compareUrl": "https://github.com/github/rest-api-description/compare/7026ef612efe011b970e81e96023771886b67b96...01149204a19f69d6bac7909ceef0b571bbbe2798"
+   }
+  },
+  {
+   "rule": "request-property-max-length-set",
+   "level": 3,
+   "text": "the `artifact_url` request property's maxLength was set to `152`",
+   "method": "POST",
+   "path": "/orgs/{org}/artifacts/metadata/storage-record",
+   "operationId": "orgs/create-artifact-storage-record",
+   "source": null,
+   "kind": "request-field-constrained",
+   "target": {
+    "location": "body",
+    "path": [
+     "artifact_url"
+    ],
+    "viaArray": false,
+    "raw": "artifact_url"
+   },
+   "verification": {
+    "status": "unverified",
+    "reason": "claim taken from oasdiff; no independent check for this change type"
+   },
+   "specId": "github",
+   "key": "request-property-max-length-set|POST /orgs/{}/artifacts/metadata/storage-record|the `artifact_url` request property's maxLength was set to `152`",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "request-property-max-length-set",
+   "level": 3,
+   "text": "the `path` request property's maxLength was set to `512`",
+   "method": "POST",
+   "path": "/orgs/{org}/artifacts/metadata/storage-record",
+   "operationId": "orgs/create-artifact-storage-record",
+   "source": null,
+   "kind": "request-field-constrained",
+   "target": {
+    "location": "body",
+    "path": [
+     "path"
+    ],
+    "viaArray": false,
+    "raw": "path"
+   },
+   "verification": {
+    "status": "unverified",
+    "reason": "claim taken from oasdiff; no independent check for this change type"
+   },
+   "specId": "github",
+   "key": "request-property-max-length-set|POST /orgs/{}/artifacts/metadata/storage-record|the `path` request property's maxLength was set to `512`",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "request-property-max-length-set",
+   "level": 3,
+   "text": "the `registry_url` request property's maxLength was set to `256`",
+   "method": "POST",
+   "path": "/orgs/{org}/artifacts/metadata/storage-record",
+   "operationId": "orgs/create-artifact-storage-record",
+   "source": null,
+   "kind": "request-field-constrained",
+   "target": {
+    "location": "body",
+    "path": [
+     "registry_url"
+    ],
+    "viaArray": false,
+    "raw": "registry_url"
+   },
+   "verification": {
+    "status": "unverified",
+    "reason": "claim taken from oasdiff; no independent check for this change type"
+   },
+   "specId": "github",
+   "key": "request-property-max-length-set|POST /orgs/{}/artifacts/metadata/storage-record|the `registry_url` request property's maxLength was set to `256`",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "request-property-max-length-set",
+   "level": 3,
+   "text": "the `repository` request property's maxLength was set to `128`",
+   "method": "POST",
+   "path": "/orgs/{org}/artifacts/metadata/storage-record",
+   "operationId": "orgs/create-artifact-storage-record",
+   "source": null,
+   "kind": "request-field-constrained",
+   "target": {
+    "location": "body",
+    "path": [
+     "repository"
+    ],
+    "viaArray": false,
+    "raw": "repository"
+   },
+   "verification": {
+    "status": "unverified",
+    "reason": "claim taken from oasdiff; no independent check for this change type"
+   },
+   "specId": "github",
+   "key": "request-property-max-length-set|POST /orgs/{}/artifacts/metadata/storage-record|the `repository` request property's maxLength was set to `128`",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "request-property-became-required",
+   "level": 3,
+   "text": "the request property `selected_repository_ids` became required",
+   "method": "DELETE",
+   "path": "/orgs/{org}/code-security/configurations/detach",
+   "operationId": "code-security/detach-configuration",
+   "source": null,
+   "kind": "request-field-required",
+   "target": {
+    "location": "body",
+    "path": [
+     "selected_repository_ids"
+    ],
+    "viaArray": false,
+    "raw": "selected_repository_ids"
+   },
+   "verification": {
+    "status": "verified",
+    "reason": "property \"selected_repository_ids\" is required in the revision spec and was optional or absent before"
+   },
+   "specId": "github",
+   "key": "request-property-became-required|DELETE /orgs/{}/code-security/configurations/detach|the request property `selected_repository_ids` became required",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "api-path-removed-without-deprecation",
+   "level": 3,
+   "text": "api path removed without deprecation",
+   "method": "GET",
+   "path": "/orgs/{org}/copilot/metrics",
+   "operationId": "copilot/copilot-metrics-for-organization",
+   "source": null,
+   "kind": "endpoint-removed",
+   "target": null,
+   "verification": {
+    "status": "verified",
+    "reason": "GET /orgs/{org}/copilot/metrics is absent from the revision spec"
+   },
+   "specId": "github",
+   "key": "api-path-removed-without-deprecation|GET /orgs/{}/copilot/metrics|api path removed without deprecation",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "request-property-became-required",
+   "level": 3,
+   "text": "the request property `oneOf[subschema #4]/iteration_configuration/duration` became required",
+   "method": "POST",
+   "path": "/orgs/{org}/projectsV2/{project_number}/fields",
+   "operationId": "projects/add-field-for-org",
+   "source": null,
+   "kind": "request-field-required",
+   "target": {
+    "location": "body",
+    "path": [
+     "iteration_configuration",
+     "duration"
+    ],
+    "viaArray": false,
+    "raw": "oneOf[subschema #4]/iteration_configuration/duration"
+   },
+   "verification": {
+    "status": "verified",
+    "reason": "property \"oneOf[subschema #4]/iteration_configuration/duration\" is required in the revision spec and was optional or absent before"
+   },
+   "specId": "github",
+   "key": "request-property-became-required|POST /orgs/{}/projectsV2/{}/fields|the request property `oneOf[subschema #4]/iteration_configuration/duration` became required",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "request-property-became-required",
+   "level": 3,
+   "text": "the request property `oneOf[subschema #4]/iteration_configuration/iterations/items/duration` became required",
+   "method": "POST",
+   "path": "/orgs/{org}/projectsV2/{project_number}/fields",
+   "operationId": "projects/add-field-for-org",
+   "source": null,
+   "kind": "request-field-required",
+   "target": {
+    "location": "body",
+    "path": [
+     "iteration_configuration",
+     "iterations",
+     "duration"
+    ],
+    "viaArray": true,
+    "raw": "oneOf[subschema #4]/iteration_configuration/iterations/items/duration"
+   },
+   "verification": {
+    "status": "verified",
+    "reason": "property \"oneOf[subschema #4]/iteration_configuration/iterations/items/duration\" is required in the revision spec and was optional or absent before"
+   },
+   "specId": "github",
+   "key": "request-property-became-required|POST /orgs/{}/projectsV2/{}/fields|the request property `oneOf[subschema #4]/iteration_configuration/iterations/items/duration` became required",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "request-property-became-required",
+   "level": 3,
+   "text": "the request property `oneOf[subschema #4]/iteration_configuration/iterations/items/start_date` became required",
+   "method": "POST",
+   "path": "/orgs/{org}/projectsV2/{project_number}/fields",
+   "operationId": "projects/add-field-for-org",
+   "source": null,
+   "kind": "request-field-required",
+   "target": {
+    "location": "body",
+    "path": [
+     "iteration_configuration",
+     "iterations",
+     "start_date"
+    ],
+    "viaArray": true,
+    "raw": "oneOf[subschema #4]/iteration_configuration/iterations/items/start_date"
+   },
+   "verification": {
+    "status": "verified",
+    "reason": "property \"oneOf[subschema #4]/iteration_configuration/iterations/items/start_date\" is required in the revision spec and was optional or absent before"
+   },
+   "specId": "github",
+   "key": "request-property-became-required|POST /orgs/{}/projectsV2/{}/fields|the request property `oneOf[subschema #4]/iteration_configuration/iterations/items/start_date` became required",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "request-property-became-required",
+   "level": 3,
+   "text": "the request property `oneOf[subschema #4]/iteration_configuration/iterations/items/title` became required",
+   "method": "POST",
+   "path": "/orgs/{org}/projectsV2/{project_number}/fields",
+   "operationId": "projects/add-field-for-org",
+   "source": null,
+   "kind": "request-field-required",
+   "target": {
+    "location": "body",
+    "path": [
+     "iteration_configuration",
+     "iterations",
+     "title"
+    ],
+    "viaArray": true,
+    "raw": "oneOf[subschema #4]/iteration_configuration/iterations/items/title"
+   },
+   "verification": {
+    "status": "verified",
+    "reason": "property \"oneOf[subschema #4]/iteration_configuration/iterations/items/title\" is required in the revision spec and was optional or absent before"
+   },
+   "specId": "github",
+   "key": "request-property-became-required|POST /orgs/{}/projectsV2/{}/fields|the request property `oneOf[subschema #4]/iteration_configuration/iterations/items/title` became required",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "request-property-became-required",
+   "level": 3,
+   "text": "the request property `oneOf[subschema #4]/iteration_configuration/start_date` became required",
+   "method": "POST",
+   "path": "/orgs/{org}/projectsV2/{project_number}/fields",
+   "operationId": "projects/add-field-for-org",
+   "source": null,
+   "kind": "request-field-required",
+   "target": {
+    "location": "body",
+    "path": [
+     "iteration_configuration",
+     "start_date"
+    ],
+    "viaArray": false,
+    "raw": "oneOf[subschema #4]/iteration_configuration/start_date"
+   },
+   "verification": {
+    "status": "verified",
+    "reason": "property \"oneOf[subschema #4]/iteration_configuration/start_date\" is required in the revision spec and was optional or absent before"
+   },
+   "specId": "github",
+   "key": "request-property-became-required|POST /orgs/{}/projectsV2/{}/fields|the request property `oneOf[subschema #4]/iteration_configuration/start_date` became required",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "api-path-removed-without-deprecation",
+   "level": 3,
+   "text": "api path removed without deprecation",
+   "method": "GET",
+   "path": "/orgs/{org}/team/{team_slug}/copilot/metrics",
+   "operationId": "copilot/copilot-metrics-for-team",
+   "source": null,
+   "kind": "endpoint-removed",
+   "target": null,
+   "verification": {
+    "status": "verified",
+    "reason": "GET /orgs/{org}/team/{team_slug}/copilot/metrics is absent from the revision spec"
+   },
+   "specId": "github",
+   "key": "api-path-removed-without-deprecation|GET /orgs/{}/team/{}/copilot/metrics|api path removed without deprecation",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "request-parameter-type-changed",
+   "level": 3,
+   "text": "for the `path` request parameter `job_id`, the `format` was changed from `none` to `int64`",
+   "method": "GET",
+   "path": "/repos/{owner}/{repo}/actions/jobs/{job_id}",
+   "operationId": "actions/get-job-for-workflow-run",
+   "source": null,
+   "kind": "request-field-type-changed",
+   "target": {
+    "location": "path",
+    "path": [
+     "job_id"
+    ],
+    "viaArray": false,
+    "raw": "job_id"
+   },
+   "verification": {
+    "status": "unverified",
+    "reason": "claim taken from oasdiff; no independent check for this change type"
+   },
+   "specId": "github",
+   "key": "request-parameter-type-changed|GET /repos/{}/{}/actions/jobs/{}|for the `path` request parameter `job_id`, the `format` was changed from `none` to `int64`",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "request-parameter-type-changed",
+   "level": 3,
+   "text": "for the `path` request parameter `job_id`, the `format` was changed from `none` to `int64`",
+   "method": "GET",
+   "path": "/repos/{owner}/{repo}/actions/jobs/{job_id}/logs",
+   "operationId": "actions/download-job-logs-for-workflow-run",
+   "source": null,
+   "kind": "request-field-type-changed",
+   "target": {
+    "location": "path",
+    "path": [
+     "job_id"
+    ],
+    "viaArray": false,
+    "raw": "job_id"
+   },
+   "verification": {
+    "status": "unverified",
+    "reason": "claim taken from oasdiff; no independent check for this change type"
+   },
+   "specId": "github",
+   "key": "request-parameter-type-changed|GET /repos/{}/{}/actions/jobs/{}/logs|for the `path` request parameter `job_id`, the `format` was changed from `none` to `int64`",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "request-parameter-type-changed",
+   "level": 3,
+   "text": "for the `path` request parameter `job_id`, the `format` was changed from `none` to `int64`",
+   "method": "POST",
+   "path": "/repos/{owner}/{repo}/actions/jobs/{job_id}/rerun",
+   "operationId": "actions/re-run-job-for-workflow-run",
+   "source": null,
+   "kind": "request-field-type-changed",
+   "target": {
+    "location": "path",
+    "path": [
+     "job_id"
+    ],
+    "viaArray": false,
+    "raw": "job_id"
+   },
+   "verification": {
+    "status": "unverified",
+    "reason": "claim taken from oasdiff; no independent check for this change type"
+   },
+   "specId": "github",
+   "key": "request-parameter-type-changed|POST /repos/{}/{}/actions/jobs/{}/rerun|for the `path` request parameter `job_id`, the `format` was changed from `none` to `int64`",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "request-parameter-type-changed",
+   "level": 3,
+   "text": "for the `query` request parameter `check_suite_id`, the `format` was changed from `none` to `int64`",
+   "method": "GET",
+   "path": "/repos/{owner}/{repo}/actions/runs",
+   "operationId": "actions/list-workflow-runs-for-repo",
+   "source": null,
+   "kind": "request-field-type-changed",
+   "target": {
+    "location": "query",
+    "path": [
+     "check_suite_id"
+    ],
+    "viaArray": false,
+    "raw": "check_suite_id"
+   },
+   "verification": {
+    "status": "unverified",
+    "reason": "claim taken from oasdiff; no independent check for this change type"
+   },
+   "specId": "github",
+   "key": "request-parameter-type-changed|GET /repos/{}/{}/actions/runs|for the `query` request parameter `check_suite_id`, the `format` was changed from `none` to `int64`",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "request-parameter-type-changed",
+   "level": 3,
+   "text": "for the `query` request parameter `check_suite_id`, the `format` was changed from `none` to `int64`",
+   "method": "GET",
+   "path": "/repos/{owner}/{repo}/actions/workflows/{workflow_id}/runs",
+   "operationId": "actions/list-workflow-runs",
+   "source": null,
+   "kind": "request-field-type-changed",
+   "target": {
+    "location": "query",
+    "path": [
+     "check_suite_id"
+    ],
+    "viaArray": false,
+    "raw": "check_suite_id"
+   },
+   "verification": {
+    "status": "unverified",
+    "reason": "claim taken from oasdiff; no independent check for this change type"
+   },
+   "specId": "github",
+   "key": "request-parameter-type-changed|GET /repos/{}/{}/actions/workflows/{}/runs|for the `query` request parameter `check_suite_id`, the `format` was changed from `none` to `int64`",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "request-parameter-type-changed",
+   "level": 3,
+   "text": "for the `path` request parameter `check_run_id`, the `format` was changed from `none` to `int64`",
+   "method": "GET",
+   "path": "/repos/{owner}/{repo}/check-runs/{check_run_id}",
+   "operationId": "checks/get",
+   "source": null,
+   "kind": "request-field-type-changed",
+   "target": {
+    "location": "path",
+    "path": [
+     "check_run_id"
+    ],
+    "viaArray": false,
+    "raw": "check_run_id"
+   },
+   "verification": {
+    "status": "unverified",
+    "reason": "claim taken from oasdiff; no independent check for this change type"
+   },
+   "specId": "github",
+   "key": "request-parameter-type-changed|GET /repos/{}/{}/check-runs/{}|for the `path` request parameter `check_run_id`, the `format` was changed from `none` to `int64`",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "request-parameter-type-changed",
+   "level": 3,
+   "text": "for the `path` request parameter `check_run_id`, the `format` was changed from `none` to `int64`",
+   "method": "PATCH",
+   "path": "/repos/{owner}/{repo}/check-runs/{check_run_id}",
+   "operationId": "checks/update",
+   "source": null,
+   "kind": "request-field-type-changed",
+   "target": {
+    "location": "path",
+    "path": [
+     "check_run_id"
+    ],
+    "viaArray": false,
+    "raw": "check_run_id"
+   },
+   "verification": {
+    "status": "unverified",
+    "reason": "claim taken from oasdiff; no independent check for this change type"
+   },
+   "specId": "github",
+   "key": "request-parameter-type-changed|PATCH /repos/{}/{}/check-runs/{}|for the `path` request parameter `check_run_id`, the `format` was changed from `none` to `int64`",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "request-parameter-type-changed",
+   "level": 3,
+   "text": "for the `path` request parameter `check_run_id`, the `format` was changed from `none` to `int64`",
+   "method": "GET",
+   "path": "/repos/{owner}/{repo}/check-runs/{check_run_id}/annotations",
+   "operationId": "checks/list-annotations",
+   "source": null,
+   "kind": "request-field-type-changed",
+   "target": {
+    "location": "path",
+    "path": [
+     "check_run_id"
+    ],
+    "viaArray": false,
+    "raw": "check_run_id"
+   },
+   "verification": {
+    "status": "unverified",
+    "reason": "claim taken from oasdiff; no independent check for this change type"
+   },
+   "specId": "github",
+   "key": "request-parameter-type-changed|GET /repos/{}/{}/check-runs/{}/annotations|for the `path` request parameter `check_run_id`, the `format` was changed from `none` to `int64`",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "request-parameter-type-changed",
+   "level": 3,
+   "text": "for the `path` request parameter `check_run_id`, the `format` was changed from `none` to `int64`",
+   "method": "POST",
+   "path": "/repos/{owner}/{repo}/check-runs/{check_run_id}/rerequest",
+   "operationId": "checks/rerequest-run",
+   "source": null,
+   "kind": "request-field-type-changed",
+   "target": {
+    "location": "path",
+    "path": [
+     "check_run_id"
+    ],
+    "viaArray": false,
+    "raw": "check_run_id"
+   },
+   "verification": {
+    "status": "unverified",
+    "reason": "claim taken from oasdiff; no independent check for this change type"
+   },
+   "specId": "github",
+   "key": "request-parameter-type-changed|POST /repos/{}/{}/check-runs/{}/rerequest|for the `path` request parameter `check_run_id`, the `format` was changed from `none` to `int64`",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "request-body-one-of-removed",
+   "level": 3,
+   "text": "removed `subschema #1, subschema #3` from the request body `oneOf` list",
+   "method": "POST",
+   "path": "/repos/{owner}/{repo}/issues/{issue_number}/labels",
+   "operationId": "issues/add-labels",
+   "source": null,
+   "kind": "request-other",
+   "target": null,
+   "verification": {
+    "status": "unverified",
+    "reason": "no field-level target to check"
+   },
+   "specId": "github",
+   "key": "request-body-one-of-removed|POST /repos/{}/{}/issues/{}/labels|removed `subschema #1, subschema #3` from the request body `oneOf` list",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "api-path-removed-without-deprecation",
+   "level": 3,
+   "text": "api path removed without deprecation",
+   "method": "DELETE",
+   "path": "/repos/{owner}/{repo}/pulls/{pull_number}/archive",
+   "operationId": "pulls/unarchive",
+   "source": null,
+   "kind": "endpoint-removed",
+   "target": null,
+   "verification": {
+    "status": "verified",
+    "reason": "DELETE /repos/{owner}/{repo}/pulls/{pull_number}/archive is absent from the revision spec"
+   },
+   "specId": "github",
+   "key": "api-path-removed-without-deprecation|DELETE /repos/{}/{}/pulls/{}/archive|api path removed without deprecation",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "api-path-removed-without-deprecation",
+   "level": 3,
+   "text": "api path removed without deprecation",
+   "method": "PUT",
+   "path": "/repos/{owner}/{repo}/pulls/{pull_number}/archive",
+   "operationId": "pulls/archive",
+   "source": null,
+   "kind": "endpoint-removed",
+   "target": null,
+   "verification": {
+    "status": "verified",
+    "reason": "PUT /repos/{owner}/{repo}/pulls/{pull_number}/archive is absent from the revision spec"
+   },
+   "specId": "github",
+   "key": "api-path-removed-without-deprecation|PUT /repos/{}/{}/pulls/{}/archive|api path removed without deprecation",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "request-property-became-required",
+   "level": 3,
+   "text": "the request property `oneOf[subschema #3]/iteration_configuration/duration` became required",
+   "method": "POST",
+   "path": "/users/{username}/projectsV2/{project_number}/fields",
+   "operationId": "projects/add-field-for-user",
+   "source": null,
+   "kind": "request-field-required",
+   "target": {
+    "location": "body",
+    "path": [
+     "iteration_configuration",
+     "duration"
+    ],
+    "viaArray": false,
+    "raw": "oneOf[subschema #3]/iteration_configuration/duration"
+   },
+   "verification": {
+    "status": "verified",
+    "reason": "property \"oneOf[subschema #3]/iteration_configuration/duration\" is required in the revision spec and was optional or absent before"
+   },
+   "specId": "github",
+   "key": "request-property-became-required|POST /users/{}/projectsV2/{}/fields|the request property `oneOf[subschema #3]/iteration_configuration/duration` became required",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "request-property-became-required",
+   "level": 3,
+   "text": "the request property `oneOf[subschema #3]/iteration_configuration/iterations/items/duration` became required",
+   "method": "POST",
+   "path": "/users/{username}/projectsV2/{project_number}/fields",
+   "operationId": "projects/add-field-for-user",
+   "source": null,
+   "kind": "request-field-required",
+   "target": {
+    "location": "body",
+    "path": [
+     "iteration_configuration",
+     "iterations",
+     "duration"
+    ],
+    "viaArray": true,
+    "raw": "oneOf[subschema #3]/iteration_configuration/iterations/items/duration"
+   },
+   "verification": {
+    "status": "verified",
+    "reason": "property \"oneOf[subschema #3]/iteration_configuration/iterations/items/duration\" is required in the revision spec and was optional or absent before"
+   },
+   "specId": "github",
+   "key": "request-property-became-required|POST /users/{}/projectsV2/{}/fields|the request property `oneOf[subschema #3]/iteration_configuration/iterations/items/duration` became required",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "request-property-became-required",
+   "level": 3,
+   "text": "the request property `oneOf[subschema #3]/iteration_configuration/iterations/items/start_date` became required",
+   "method": "POST",
+   "path": "/users/{username}/projectsV2/{project_number}/fields",
+   "operationId": "projects/add-field-for-user",
+   "source": null,
+   "kind": "request-field-required",
+   "target": {
+    "location": "body",
+    "path": [
+     "iteration_configuration",
+     "iterations",
+     "start_date"
+    ],
+    "viaArray": true,
+    "raw": "oneOf[subschema #3]/iteration_configuration/iterations/items/start_date"
+   },
+   "verification": {
+    "status": "verified",
+    "reason": "property \"oneOf[subschema #3]/iteration_configuration/iterations/items/start_date\" is required in the revision spec and was optional or absent before"
+   },
+   "specId": "github",
+   "key": "request-property-became-required|POST /users/{}/projectsV2/{}/fields|the request property `oneOf[subschema #3]/iteration_configuration/iterations/items/start_date` became required",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "request-property-became-required",
+   "level": 3,
+   "text": "the request property `oneOf[subschema #3]/iteration_configuration/iterations/items/title` became required",
+   "method": "POST",
+   "path": "/users/{username}/projectsV2/{project_number}/fields",
+   "operationId": "projects/add-field-for-user",
+   "source": null,
+   "kind": "request-field-required",
+   "target": {
+    "location": "body",
+    "path": [
+     "iteration_configuration",
+     "iterations",
+     "title"
+    ],
+    "viaArray": true,
+    "raw": "oneOf[subschema #3]/iteration_configuration/iterations/items/title"
+   },
+   "verification": {
+    "status": "verified",
+    "reason": "property \"oneOf[subschema #3]/iteration_configuration/iterations/items/title\" is required in the revision spec and was optional or absent before"
+   },
+   "specId": "github",
+   "key": "request-property-became-required|POST /users/{}/projectsV2/{}/fields|the request property `oneOf[subschema #3]/iteration_configuration/iterations/items/title` became required",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "request-property-became-required",
+   "level": 3,
+   "text": "the request property `oneOf[subschema #3]/iteration_configuration/start_date` became required",
+   "method": "POST",
+   "path": "/users/{username}/projectsV2/{project_number}/fields",
+   "operationId": "projects/add-field-for-user",
+   "source": null,
+   "kind": "request-field-required",
+   "target": {
+    "location": "body",
+    "path": [
+     "iteration_configuration",
+     "start_date"
+    ],
+    "viaArray": false,
+    "raw": "oneOf[subschema #3]/iteration_configuration/start_date"
+   },
+   "verification": {
+    "status": "verified",
+    "reason": "property \"oneOf[subschema #3]/iteration_configuration/start_date\" is required in the revision spec and was optional or absent before"
+   },
+   "specId": "github",
+   "key": "request-property-became-required|POST /users/{}/projectsV2/{}/fields|the request property `oneOf[subschema #3]/iteration_configuration/start_date` became required",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "request-parameter-removed",
+   "level": 2,
+   "text": "deleted the `query` request parameter `page`",
+   "method": "GET",
+   "path": "/assignments/{assignment_id}/accepted_assignments",
+   "operationId": "classroom/list-accepted-assignments-for-an-assignment",
+   "source": null,
+   "kind": "request-field-removed",
+   "target": {
+    "location": "query",
+    "path": [
+     "page"
+    ],
+    "viaArray": false,
+    "raw": "page"
+   },
+   "verification": {
+    "status": "verified",
+    "reason": "query parameter \"page\" is absent from the revision spec"
+   },
+   "specId": "github",
+   "key": "request-parameter-removed|GET /assignments/{}/accepted_assignments|deleted the `query` request parameter `page`",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "request-parameter-removed",
+   "level": 2,
+   "text": "deleted the `query` request parameter `per_page`",
+   "method": "GET",
+   "path": "/assignments/{assignment_id}/accepted_assignments",
+   "operationId": "classroom/list-accepted-assignments-for-an-assignment",
+   "source": null,
+   "kind": "request-field-removed",
+   "target": {
+    "location": "query",
+    "path": [
+     "per_page"
+    ],
+    "viaArray": false,
+    "raw": "per_page"
+   },
+   "verification": {
+    "status": "verified",
+    "reason": "query parameter \"per_page\" is absent from the revision spec"
+   },
+   "specId": "github",
+   "key": "request-parameter-removed|GET /assignments/{}/accepted_assignments|deleted the `query` request parameter `per_page`",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "request-parameter-removed",
+   "level": 2,
+   "text": "deleted the `query` request parameter `page`",
+   "method": "GET",
+   "path": "/classrooms",
+   "operationId": "classroom/list-classrooms",
+   "source": null,
+   "kind": "request-field-removed",
+   "target": {
+    "location": "query",
+    "path": [
+     "page"
+    ],
+    "viaArray": false,
+    "raw": "page"
+   },
+   "verification": {
+    "status": "verified",
+    "reason": "query parameter \"page\" is absent from the revision spec"
+   },
+   "specId": "github",
+   "key": "request-parameter-removed|GET /classrooms|deleted the `query` request parameter `page`",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "request-parameter-removed",
+   "level": 2,
+   "text": "deleted the `query` request parameter `per_page`",
+   "method": "GET",
+   "path": "/classrooms",
+   "operationId": "classroom/list-classrooms",
+   "source": null,
+   "kind": "request-field-removed",
+   "target": {
+    "location": "query",
+    "path": [
+     "per_page"
+    ],
+    "viaArray": false,
+    "raw": "per_page"
+   },
+   "verification": {
+    "status": "verified",
+    "reason": "query parameter \"per_page\" is absent from the revision spec"
+   },
+   "specId": "github",
+   "key": "request-parameter-removed|GET /classrooms|deleted the `query` request parameter `per_page`",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "request-parameter-removed",
+   "level": 2,
+   "text": "deleted the `query` request parameter `page`",
+   "method": "GET",
+   "path": "/classrooms/{classroom_id}/assignments",
+   "operationId": "classroom/list-assignments-for-a-classroom",
+   "source": null,
+   "kind": "request-field-removed",
+   "target": {
+    "location": "query",
+    "path": [
+     "page"
+    ],
+    "viaArray": false,
+    "raw": "page"
+   },
+   "verification": {
+    "status": "verified",
+    "reason": "query parameter \"page\" is absent from the revision spec"
+   },
+   "specId": "github",
+   "key": "request-parameter-removed|GET /classrooms/{}/assignments|deleted the `query` request parameter `page`",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "request-parameter-removed",
+   "level": 2,
+   "text": "deleted the `query` request parameter `per_page`",
+   "method": "GET",
+   "path": "/classrooms/{classroom_id}/assignments",
+   "operationId": "classroom/list-assignments-for-a-classroom",
+   "source": null,
+   "kind": "request-field-removed",
+   "target": {
+    "location": "query",
+    "path": [
+     "per_page"
+    ],
+    "viaArray": false,
+    "raw": "per_page"
+   },
+   "verification": {
+    "status": "verified",
+    "reason": "query parameter \"per_page\" is absent from the revision spec"
+   },
+   "specId": "github",
+   "key": "request-parameter-removed|GET /classrooms/{}/assignments|deleted the `query` request parameter `per_page`",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "request-property-removed",
+   "level": 2,
+   "text": "removed the request property `budget_entity_name`",
+   "method": "PATCH",
+   "path": "/organizations/{org}/settings/billing/budgets/{budget_id}",
+   "operationId": "billing/update-budget-org",
+   "source": null,
+   "kind": "request-field-removed",
+   "target": {
+    "location": "body",
+    "path": [
+     "budget_entity_name"
+    ],
+    "viaArray": false,
+    "raw": "budget_entity_name"
+   },
+   "verification": {
+    "status": "verified",
+    "reason": "property \"budget_entity_name\" is no longer declared in the revision spec"
+   },
+   "specId": "github",
+   "key": "request-property-removed|PATCH /organizations/{}/settings/billing/budgets/{}|removed the request property `budget_entity_name`",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": {
+    "sha": "677c1b8f9aa413b7f3d18ccccb80018982a3acd1",
+    "date": "2026-09-23T02:58:05Z",
+    "message": "Update OpenAPI 3.0 Descriptions",
+    "compareUrl": "https://github.com/github/rest-api-description/compare/01149204a19f69d6bac7909ceef0b571bbbe2798...677c1b8f9aa413b7f3d18ccccb80018982a3acd1"
+   }
+  },
+  {
+   "rule": "request-property-removed",
+   "level": 2,
+   "text": "removed the request property `budget_product_sku`",
+   "method": "PATCH",
+   "path": "/organizations/{org}/settings/billing/budgets/{budget_id}",
+   "operationId": "billing/update-budget-org",
+   "source": null,
+   "kind": "request-field-removed",
+   "target": {
+    "location": "body",
+    "path": [
+     "budget_product_sku"
+    ],
+    "viaArray": false,
+    "raw": "budget_product_sku"
+   },
+   "verification": {
+    "status": "verified",
+    "reason": "property \"budget_product_sku\" is no longer declared in the revision spec"
+   },
+   "specId": "github",
+   "key": "request-property-removed|PATCH /organizations/{}/settings/billing/budgets/{}|removed the request property `budget_product_sku`",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": {
+    "sha": "677c1b8f9aa413b7f3d18ccccb80018982a3acd1",
+    "date": "2026-09-23T02:58:05Z",
+    "message": "Update OpenAPI 3.0 Descriptions",
+    "compareUrl": "https://github.com/github/rest-api-description/compare/01149204a19f69d6bac7909ceef0b571bbbe2798...677c1b8f9aa413b7f3d18ccccb80018982a3acd1"
+   }
+  },
+  {
+   "rule": "request-property-removed",
+   "level": 2,
+   "text": "removed the request property `budget_scope`",
+   "method": "PATCH",
+   "path": "/organizations/{org}/settings/billing/budgets/{budget_id}",
+   "operationId": "billing/update-budget-org",
+   "source": null,
+   "kind": "request-field-removed",
+   "target": {
+    "location": "body",
+    "path": [
+     "budget_scope"
+    ],
+    "viaArray": false,
+    "raw": "budget_scope"
+   },
+   "verification": {
+    "status": "verified",
+    "reason": "property \"budget_scope\" is no longer declared in the revision spec"
+   },
+   "specId": "github",
+   "key": "request-property-removed|PATCH /organizations/{}/settings/billing/budgets/{}|removed the request property `budget_scope`",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": {
+    "sha": "677c1b8f9aa413b7f3d18ccccb80018982a3acd1",
+    "date": "2026-09-23T02:58:05Z",
+    "message": "Update OpenAPI 3.0 Descriptions",
+    "compareUrl": "https://github.com/github/rest-api-description/compare/01149204a19f69d6bac7909ceef0b571bbbe2798...677c1b8f9aa413b7f3d18ccccb80018982a3acd1"
+   }
+  },
+  {
+   "rule": "request-property-removed",
+   "level": 2,
+   "text": "removed the request property `budget_type`",
+   "method": "PATCH",
+   "path": "/organizations/{org}/settings/billing/budgets/{budget_id}",
+   "operationId": "billing/update-budget-org",
+   "source": null,
+   "kind": "request-field-removed",
+   "target": {
+    "location": "body",
+    "path": [
+     "budget_type"
+    ],
+    "viaArray": false,
+    "raw": "budget_type"
+   },
+   "verification": {
+    "status": "verified",
+    "reason": "property \"budget_type\" is no longer declared in the revision spec"
+   },
+   "specId": "github",
+   "key": "request-property-removed|PATCH /organizations/{}/settings/billing/budgets/{}|removed the request property `budget_type`",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": {
+    "sha": "677c1b8f9aa413b7f3d18ccccb80018982a3acd1",
+    "date": "2026-09-23T02:58:05Z",
+    "message": "Update OpenAPI 3.0 Descriptions",
+    "compareUrl": "https://github.com/github/rest-api-description/compare/01149204a19f69d6bac7909ceef0b571bbbe2798...677c1b8f9aa413b7f3d18ccccb80018982a3acd1"
+   }
+  },
+  {
+   "rule": "request-property-pattern-changed",
+   "level": 2,
+   "text": "changed the pattern of the request property `commit_sha` from `^[0-9a-fA-F]+$` to `^([0-9a-fA-F]{40}(?:[0-9a-fA-F]{24})?)$`",
+   "method": "POST",
+   "path": "/repos/{owner}/{repo}/code-scanning/sarifs",
+   "operationId": "code-scanning/upload-sarif",
+   "source": null,
+   "kind": "request-field-constrained",
+   "target": {
+    "location": "body",
+    "path": [
+     "commit_sha"
+    ],
+    "viaArray": false,
+    "raw": "commit_sha"
+   },
+   "verification": {
+    "status": "unverified",
+    "reason": "claim taken from oasdiff; no independent check for this change type"
+   },
+   "specId": "github",
+   "key": "request-property-pattern-changed|POST /repos/{}/{}/code-scanning/sarifs|changed the pattern of the request property `commit_sha` from `^[0-9a-fA-F]+$` to `^([0-9a-fA-F]{40}(?:[0-9a-fA-F]{24})?)$`",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "endpoint-deprecated",
+   "level": 1,
+   "text": "endpoint deprecated",
+   "method": "GET",
+   "path": "/assignments/{assignment_id}",
+   "operationId": "classroom/get-an-assignment",
+   "source": null,
+   "kind": "endpoint-deprecated",
+   "target": null,
+   "verification": {
+    "status": "verified",
+    "reason": "operation is marked deprecated in the revision spec"
+   },
+   "specId": "github",
+   "key": "endpoint-deprecated|GET /assignments/{}|endpoint deprecated",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "endpoint-deprecated",
+   "level": 1,
+   "text": "endpoint deprecated",
+   "method": "GET",
+   "path": "/assignments/{assignment_id}/accepted_assignments",
+   "operationId": "classroom/list-accepted-assignments-for-an-assignment",
+   "source": null,
+   "kind": "endpoint-deprecated",
+   "target": null,
+   "verification": {
+    "status": "verified",
+    "reason": "operation is marked deprecated in the revision spec"
+   },
+   "specId": "github",
+   "key": "endpoint-deprecated|GET /assignments/{}/accepted_assignments|endpoint deprecated",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "endpoint-deprecated",
+   "level": 1,
+   "text": "endpoint deprecated",
+   "method": "GET",
+   "path": "/assignments/{assignment_id}/grades",
+   "operationId": "classroom/get-assignment-grades",
+   "source": null,
+   "kind": "endpoint-deprecated",
+   "target": null,
+   "verification": {
+    "status": "verified",
+    "reason": "operation is marked deprecated in the revision spec"
+   },
+   "specId": "github",
+   "key": "endpoint-deprecated|GET /assignments/{}/grades|endpoint deprecated",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "endpoint-deprecated",
+   "level": 1,
+   "text": "endpoint deprecated",
+   "method": "GET",
+   "path": "/classrooms",
+   "operationId": "classroom/list-classrooms",
+   "source": null,
+   "kind": "endpoint-deprecated",
+   "target": null,
+   "verification": {
+    "status": "verified",
+    "reason": "operation is marked deprecated in the revision spec"
+   },
+   "specId": "github",
+   "key": "endpoint-deprecated|GET /classrooms|endpoint deprecated",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "endpoint-deprecated",
+   "level": 1,
+   "text": "endpoint deprecated",
+   "method": "GET",
+   "path": "/classrooms/{classroom_id}",
+   "operationId": "classroom/get-a-classroom",
+   "source": null,
+   "kind": "endpoint-deprecated",
+   "target": null,
+   "verification": {
+    "status": "verified",
+    "reason": "operation is marked deprecated in the revision spec"
+   },
+   "specId": "github",
+   "key": "endpoint-deprecated|GET /classrooms/{}|endpoint deprecated",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "endpoint-deprecated",
+   "level": 1,
+   "text": "endpoint deprecated",
+   "method": "GET",
+   "path": "/classrooms/{classroom_id}/assignments",
+   "operationId": "classroom/list-assignments-for-a-classroom",
+   "source": null,
+   "kind": "endpoint-deprecated",
+   "target": null,
+   "verification": {
+    "status": "verified",
+    "reason": "operation is marked deprecated in the revision spec"
+   },
+   "specId": "github",
+   "key": "endpoint-deprecated|GET /classrooms/{}/assignments|endpoint deprecated",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  },
+  {
+   "rule": "endpoint-deprecated",
+   "level": 1,
+   "text": "endpoint deprecated",
+   "method": "GET",
+   "path": "/repos/{owner}/{repo}/dependency-graph/sbom",
+   "operationId": "dependency-graph/export-sbom",
+   "source": null,
+   "kind": "endpoint-deprecated",
+   "target": null,
+   "verification": {
+    "status": "verified",
+    "reason": "operation is marked deprecated in the revision spec"
+   },
+   "specId": "github",
+   "key": "endpoint-deprecated|GET /repos/{}/{}/dependency-graph/sbom|endpoint deprecated",
+   "sourceUrl": null,
+   "compareUrl": "https://github.com/github/rest-api-description/compare/63e9be953f3d206eb0cd9c24ea92f6372c5a5d75...bb754941722779d8a5b3a2f25a5fbb7ce794e1ea",
+   "introducedIn": null
+  }
+ ],
+ "responseSummary": {
+  "GET /app/installations": {
+   "method": "GET",
+   "path": "/app/installations",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /app/installations/{}": {
+   "method": "GET",
+   "path": "/app/installations/{installation_id}",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "POST /app/installations/{}/access_tokens": {
+   "method": "POST",
+   "path": "/app/installations/{installation_id}/access_tokens",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "PATCH /applications/{}/token": {
+   "method": "PATCH",
+   "path": "/applications/{client_id}/token",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "POST /applications/{}/token": {
+   "method": "POST",
+   "path": "/applications/{client_id}/token",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "POST /applications/{}/token/scoped": {
+   "method": "POST",
+   "path": "/applications/{client_id}/token/scoped",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /assignments/{}": {
+   "method": "GET",
+   "path": "/assignments/{assignment_id}",
+   "count": 1,
+   "rules": {
+    "response-success-status-removed": 1
+   }
+  },
+  "GET /assignments/{}/accepted_assignments": {
+   "method": "GET",
+   "path": "/assignments/{assignment_id}/accepted_assignments",
+   "count": 1,
+   "rules": {
+    "response-success-status-removed": 1
+   }
+  },
+  "GET /assignments/{}/grades": {
+   "method": "GET",
+   "path": "/assignments/{assignment_id}/grades",
+   "count": 1,
+   "rules": {
+    "response-success-status-removed": 1
+   }
+  },
+  "GET /classrooms": {
+   "method": "GET",
+   "path": "/classrooms",
+   "count": 1,
+   "rules": {
+    "response-success-status-removed": 1
+   }
+  },
+  "GET /classrooms/{}": {
+   "method": "GET",
+   "path": "/classrooms/{classroom_id}",
+   "count": 1,
+   "rules": {
+    "response-success-status-removed": 1
+   }
+  },
+  "GET /classrooms/{}/assignments": {
+   "method": "GET",
+   "path": "/classrooms/{classroom_id}/assignments",
+   "count": 1,
+   "rules": {
+    "response-success-status-removed": 1
+   }
+  },
+  "GET /enterprises/{}/code-security/configurations": {
+   "method": "GET",
+   "path": "/enterprises/{enterprise}/code-security/configurations",
+   "count": 2,
+   "rules": {
+    "response-property-became-nullable": 1,
+    "response-property-enum-value-added": 1
+   }
+  },
+  "POST /enterprises/{}/code-security/configurations": {
+   "method": "POST",
+   "path": "/enterprises/{enterprise}/code-security/configurations",
+   "count": 2,
+   "rules": {
+    "response-property-became-nullable": 1,
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /enterprises/{}/code-security/configurations/defaults": {
+   "method": "GET",
+   "path": "/enterprises/{enterprise}/code-security/configurations/defaults",
+   "count": 2,
+   "rules": {
+    "response-property-became-nullable": 1,
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /enterprises/{}/code-security/configurations/{}": {
+   "method": "GET",
+   "path": "/enterprises/{enterprise}/code-security/configurations/{configuration_id}",
+   "count": 2,
+   "rules": {
+    "response-property-became-nullable": 1,
+    "response-property-enum-value-added": 1
+   }
+  },
+  "PATCH /enterprises/{}/code-security/configurations/{}": {
+   "method": "PATCH",
+   "path": "/enterprises/{enterprise}/code-security/configurations/{configuration_id}",
+   "count": 2,
+   "rules": {
+    "response-property-became-nullable": 1,
+    "response-property-enum-value-added": 1
+   }
+  },
+  "PUT /enterprises/{}/code-security/configurations/{}/defaults": {
+   "method": "PUT",
+   "path": "/enterprises/{enterprise}/code-security/configurations/{configuration_id}/defaults",
+   "count": 2,
+   "rules": {
+    "response-property-became-nullable": 1,
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /enterprises/{}/code-security/configurations/{}/repositories": {
+   "method": "GET",
+   "path": "/enterprises/{enterprise}/code-security/configurations/{configuration_id}/repositories",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /events": {
+   "method": "GET",
+   "path": "/events",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /issues": {
+   "method": "GET",
+   "path": "/issues",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /networks/{}/{}/events": {
+   "method": "GET",
+   "path": "/networks/{owner}/{repo}/events",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /organizations/{}/settings/billing/budgets/{}": {
+   "method": "GET",
+   "path": "/organizations/{org}/settings/billing/budgets/{budget_id}",
+   "count": 3,
+   "rules": {
+    "response-property-enum-value-added": 3
+   }
+  },
+  "PATCH /organizations/{}/settings/billing/budgets/{}": {
+   "method": "PATCH",
+   "path": "/organizations/{org}/settings/billing/budgets/{budget_id}",
+   "count": 6,
+   "rules": {
+    "response-property-became-optional": 2,
+    "response-property-enum-value-added": 3,
+    "response-property-type-changed": 1
+   }
+  },
+  "GET /orgs/{}": {
+   "method": "GET",
+   "path": "/orgs/{org}",
+   "count": 4,
+   "rules": {
+    "response-property-became-nullable": 4
+   }
+  },
+  "PATCH /orgs/{}": {
+   "method": "PATCH",
+   "path": "/orgs/{org}",
+   "count": 4,
+   "rules": {
+    "response-property-became-nullable": 4
+   }
+  },
+  "GET /orgs/{}/code-scanning/alerts": {
+   "method": "GET",
+   "path": "/orgs/{org}/code-scanning/alerts",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /orgs/{}/code-security/configurations": {
+   "method": "GET",
+   "path": "/orgs/{org}/code-security/configurations",
+   "count": 2,
+   "rules": {
+    "response-property-became-nullable": 1,
+    "response-property-enum-value-added": 1
+   }
+  },
+  "POST /orgs/{}/code-security/configurations": {
+   "method": "POST",
+   "path": "/orgs/{org}/code-security/configurations",
+   "count": 2,
+   "rules": {
+    "response-property-became-nullable": 1,
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /orgs/{}/code-security/configurations/defaults": {
+   "method": "GET",
+   "path": "/orgs/{org}/code-security/configurations/defaults",
+   "count": 2,
+   "rules": {
+    "response-property-became-nullable": 1,
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /orgs/{}/code-security/configurations/{}": {
+   "method": "GET",
+   "path": "/orgs/{org}/code-security/configurations/{configuration_id}",
+   "count": 2,
+   "rules": {
+    "response-property-became-nullable": 1,
+    "response-property-enum-value-added": 1
+   }
+  },
+  "PATCH /orgs/{}/code-security/configurations/{}": {
+   "method": "PATCH",
+   "path": "/orgs/{org}/code-security/configurations/{configuration_id}",
+   "count": 2,
+   "rules": {
+    "response-property-became-nullable": 1,
+    "response-property-enum-value-added": 1
+   }
+  },
+  "PUT /orgs/{}/code-security/configurations/{}/defaults": {
+   "method": "PUT",
+   "path": "/orgs/{org}/code-security/configurations/{configuration_id}/defaults",
+   "count": 2,
+   "rules": {
+    "response-property-became-nullable": 1,
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /orgs/{}/code-security/configurations/{}/repositories": {
+   "method": "GET",
+   "path": "/orgs/{org}/code-security/configurations/{configuration_id}/repositories",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /orgs/{}/events": {
+   "method": "GET",
+   "path": "/orgs/{org}/events",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /orgs/{}/installation": {
+   "method": "GET",
+   "path": "/orgs/{org}/installation",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /orgs/{}/installations": {
+   "method": "GET",
+   "path": "/orgs/{org}/installations",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /orgs/{}/issue-fields": {
+   "method": "GET",
+   "path": "/orgs/{org}/issue-fields",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "POST /orgs/{}/issue-fields": {
+   "method": "POST",
+   "path": "/orgs/{org}/issue-fields",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "PATCH /orgs/{}/issue-fields/{}": {
+   "method": "PATCH",
+   "path": "/orgs/{org}/issue-fields/{issue_field_id}",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /orgs/{}/issues": {
+   "method": "GET",
+   "path": "/orgs/{org}/issues",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /orgs/{}/private-registries": {
+   "method": "GET",
+   "path": "/orgs/{org}/private-registries",
+   "count": 2,
+   "rules": {
+    "response-property-enum-value-added": 2
+   }
+  },
+  "POST /orgs/{}/private-registries": {
+   "method": "POST",
+   "path": "/orgs/{org}/private-registries",
+   "count": 2,
+   "rules": {
+    "response-property-enum-value-added": 2
+   }
+  },
+  "GET /orgs/{}/private-registries/{}": {
+   "method": "GET",
+   "path": "/orgs/{org}/private-registries/{secret_name}",
+   "count": 2,
+   "rules": {
+    "response-property-enum-value-added": 2
+   }
+  },
+  "POST /orgs/{}/projectsV2/{}/drafts": {
+   "method": "POST",
+   "path": "/orgs/{org}/projectsV2/{project_number}/drafts",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "POST /orgs/{}/projectsV2/{}/items": {
+   "method": "POST",
+   "path": "/orgs/{org}/projectsV2/{project_number}/items",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /orgs/{}/properties/values": {
+   "method": "GET",
+   "path": "/orgs/{org}/properties/values",
+   "count": 1,
+   "rules": {
+    "response-property-became-nullable": 1
+   }
+  },
+  "GET /orgs/{}/rulesets": {
+   "method": "GET",
+   "path": "/orgs/{org}/rulesets",
+   "count": 2,
+   "rules": {
+    "response-property-enum-value-added": 1,
+    "response-property-one-of-added": 1
+   }
+  },
+  "POST /orgs/{}/rulesets": {
+   "method": "POST",
+   "path": "/orgs/{org}/rulesets",
+   "count": 2,
+   "rules": {
+    "response-property-enum-value-added": 1,
+    "response-property-one-of-added": 1
+   }
+  },
+  "GET /orgs/{}/rulesets/{}": {
+   "method": "GET",
+   "path": "/orgs/{org}/rulesets/{ruleset_id}",
+   "count": 2,
+   "rules": {
+    "response-property-enum-value-added": 1,
+    "response-property-one-of-added": 1
+   }
+  },
+  "PUT /orgs/{}/rulesets/{}": {
+   "method": "PUT",
+   "path": "/orgs/{org}/rulesets/{ruleset_id}",
+   "count": 2,
+   "rules": {
+    "response-property-enum-value-added": 1,
+    "response-property-one-of-added": 1
+   }
+  },
+  "POST /orgs/{}/teams": {
+   "method": "POST",
+   "path": "/orgs/{org}/teams",
+   "count": 4,
+   "rules": {
+    "response-property-became-nullable": 4
+   }
+  },
+  "GET /orgs/{}/teams/{}": {
+   "method": "GET",
+   "path": "/orgs/{org}/teams/{team_slug}",
+   "count": 4,
+   "rules": {
+    "response-property-became-nullable": 4
+   }
+  },
+  "PATCH /orgs/{}/teams/{}": {
+   "method": "PATCH",
+   "path": "/orgs/{org}/teams/{team_slug}",
+   "count": 8,
+   "rules": {
+    "response-property-became-nullable": 8
+   }
+  },
+  "GET /repos/{}/{}/code-scanning/alerts": {
+   "method": "GET",
+   "path": "/repos/{owner}/{repo}/code-scanning/alerts",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /repos/{}/{}/code-scanning/alerts/{}": {
+   "method": "GET",
+   "path": "/repos/{owner}/{repo}/code-scanning/alerts/{alert_number}",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "PATCH /repos/{}/{}/code-scanning/alerts/{}": {
+   "method": "PATCH",
+   "path": "/repos/{owner}/{repo}/code-scanning/alerts/{alert_number}",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /repos/{}/{}/code-scanning/analyses": {
+   "method": "GET",
+   "path": "/repos/{owner}/{repo}/code-scanning/analyses",
+   "count": 2,
+   "rules": {
+    "response-property-max-length-increased": 1,
+    "response-property-pattern-changed": 1
+   }
+  },
+  "GET /repos/{}/{}/code-scanning/analyses/{}": {
+   "method": "GET",
+   "path": "/repos/{owner}/{repo}/code-scanning/analyses/{analysis_id}",
+   "count": 2,
+   "rules": {
+    "response-property-max-length-increased": 1,
+    "response-property-pattern-changed": 1
+   }
+  },
+  "GET /repos/{}/{}/code-security-configuration": {
+   "method": "GET",
+   "path": "/repos/{owner}/{repo}/code-security-configuration",
+   "count": 3,
+   "rules": {
+    "response-property-became-nullable": 1,
+    "response-property-enum-value-added": 2
+   }
+  },
+  "PUT /repos/{}/{}/collaborators/{}": {
+   "method": "PUT",
+   "path": "/repos/{owner}/{repo}/collaborators/{username}",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /repos/{}/{}/events": {
+   "method": "GET",
+   "path": "/repos/{owner}/{repo}/events",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /repos/{}/{}/installation": {
+   "method": "GET",
+   "path": "/repos/{owner}/{repo}/installation",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /repos/{}/{}/invitations": {
+   "method": "GET",
+   "path": "/repos/{owner}/{repo}/invitations",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "PATCH /repos/{}/{}/invitations/{}": {
+   "method": "PATCH",
+   "path": "/repos/{owner}/{repo}/invitations/{invitation_id}",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /repos/{}/{}/issues": {
+   "method": "GET",
+   "path": "/repos/{owner}/{repo}/issues",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "POST /repos/{}/{}/issues": {
+   "method": "POST",
+   "path": "/repos/{owner}/{repo}/issues",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /repos/{}/{}/issues/events": {
+   "method": "GET",
+   "path": "/repos/{owner}/{repo}/issues/events",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /repos/{}/{}/issues/events/{}": {
+   "method": "GET",
+   "path": "/repos/{owner}/{repo}/issues/events/{event_id}",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /repos/{}/{}/issues/{}": {
+   "method": "GET",
+   "path": "/repos/{owner}/{repo}/issues/{issue_number}",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "DELETE /repos/{}/{}/issues/{}/assignees": {
+   "method": "DELETE",
+   "path": "/repos/{owner}/{repo}/issues/{issue_number}/assignees",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "POST /repos/{}/{}/issues/{}/assignees": {
+   "method": "POST",
+   "path": "/repos/{owner}/{repo}/issues/{issue_number}/assignees",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /repos/{}/{}/issues/{}/dependencies/blocked_by": {
+   "method": "GET",
+   "path": "/repos/{owner}/{repo}/issues/{issue_number}/dependencies/blocked_by",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "POST /repos/{}/{}/issues/{}/dependencies/blocked_by": {
+   "method": "POST",
+   "path": "/repos/{owner}/{repo}/issues/{issue_number}/dependencies/blocked_by",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "DELETE /repos/{}/{}/issues/{}/dependencies/blocked_by/{}": {
+   "method": "DELETE",
+   "path": "/repos/{owner}/{repo}/issues/{issue_number}/dependencies/blocked_by/{issue_id}",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /repos/{}/{}/issues/{}/dependencies/blocking": {
+   "method": "GET",
+   "path": "/repos/{owner}/{repo}/issues/{issue_number}/dependencies/blocking",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /repos/{}/{}/issues/{}/events": {
+   "method": "GET",
+   "path": "/repos/{owner}/{repo}/issues/{issue_number}/events",
+   "count": 1,
+   "rules": {
+    "response-property-any-of-added": 1
+   }
+  },
+  "GET /repos/{}/{}/issues/{}/issue-field-values": {
+   "method": "GET",
+   "path": "/repos/{owner}/{repo}/issues/{issue_number}/issue-field-values",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "POST /repos/{}/{}/issues/{}/issue-field-values": {
+   "method": "POST",
+   "path": "/repos/{owner}/{repo}/issues/{issue_number}/issue-field-values",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "PUT /repos/{}/{}/issues/{}/issue-field-values": {
+   "method": "PUT",
+   "path": "/repos/{owner}/{repo}/issues/{issue_number}/issue-field-values",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /repos/{}/{}/issues/{}/parent": {
+   "method": "GET",
+   "path": "/repos/{owner}/{repo}/issues/{issue_number}/parent",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "DELETE /repos/{}/{}/issues/{}/sub_issue": {
+   "method": "DELETE",
+   "path": "/repos/{owner}/{repo}/issues/{issue_number}/sub_issue",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /repos/{}/{}/issues/{}/sub_issues": {
+   "method": "GET",
+   "path": "/repos/{owner}/{repo}/issues/{issue_number}/sub_issues",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "POST /repos/{}/{}/issues/{}/sub_issues": {
+   "method": "POST",
+   "path": "/repos/{owner}/{repo}/issues/{issue_number}/sub_issues",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "PATCH /repos/{}/{}/issues/{}/sub_issues/priority": {
+   "method": "PATCH",
+   "path": "/repos/{owner}/{repo}/issues/{issue_number}/sub_issues/priority",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /repos/{}/{}/issues/{}/timeline": {
+   "method": "GET",
+   "path": "/repos/{owner}/{repo}/issues/{issue_number}/timeline",
+   "count": 2,
+   "rules": {
+    "response-property-any-of-added": 1,
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /repos/{}/{}/properties/values": {
+   "method": "GET",
+   "path": "/repos/{owner}/{repo}/properties/values",
+   "count": 1,
+   "rules": {
+    "response-property-became-nullable": 1
+   }
+  },
+  "GET /repos/{}/{}/rules/branches/{}": {
+   "method": "GET",
+   "path": "/repos/{owner}/{repo}/rules/branches/{branch}",
+   "count": 1,
+   "rules": {
+    "response-property-one-of-added": 1
+   }
+  },
+  "GET /repos/{}/{}/rulesets": {
+   "method": "GET",
+   "path": "/repos/{owner}/{repo}/rulesets",
+   "count": 2,
+   "rules": {
+    "response-property-enum-value-added": 1,
+    "response-property-one-of-added": 1
+   }
+  },
+  "POST /repos/{}/{}/rulesets": {
+   "method": "POST",
+   "path": "/repos/{owner}/{repo}/rulesets",
+   "count": 2,
+   "rules": {
+    "response-property-enum-value-added": 1,
+    "response-property-one-of-added": 1
+   }
+  },
+  "GET /repos/{}/{}/rulesets/{}": {
+   "method": "GET",
+   "path": "/repos/{owner}/{repo}/rulesets/{ruleset_id}",
+   "count": 2,
+   "rules": {
+    "response-property-enum-value-added": 1,
+    "response-property-one-of-added": 1
+   }
+  },
+  "PUT /repos/{}/{}/rulesets/{}": {
+   "method": "PUT",
+   "path": "/repos/{owner}/{repo}/rulesets/{ruleset_id}",
+   "count": 2,
+   "rules": {
+    "response-property-enum-value-added": 1,
+    "response-property-one-of-added": 1
+   }
+  },
+  "GET /search/issues": {
+   "method": "GET",
+   "path": "/search/issues",
+   "count": 2,
+   "rules": {
+    "response-property-enum-value-added": 2
+   }
+  },
+  "GET /teams/{}": {
+   "method": "GET",
+   "path": "/teams/{team_id}",
+   "count": 4,
+   "rules": {
+    "response-property-became-nullable": 4
+   }
+  },
+  "PATCH /teams/{}": {
+   "method": "PATCH",
+   "path": "/teams/{team_id}",
+   "count": 8,
+   "rules": {
+    "response-property-became-nullable": 8
+   }
+  },
+  "GET /user/installations": {
+   "method": "GET",
+   "path": "/user/installations",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /user/issues": {
+   "method": "GET",
+   "path": "/user/issues",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /user/repository_invitations": {
+   "method": "GET",
+   "path": "/user/repository_invitations",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /user/teams": {
+   "method": "GET",
+   "path": "/user/teams",
+   "count": 4,
+   "rules": {
+    "response-property-became-nullable": 4
+   }
+  },
+  "POST /user/{}/projectsV2/{}/drafts": {
+   "method": "POST",
+   "path": "/user/{user_id}/projectsV2/{project_number}/drafts",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /users/{}/events": {
+   "method": "GET",
+   "path": "/users/{username}/events",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /users/{}/events/orgs/{}": {
+   "method": "GET",
+   "path": "/users/{username}/events/orgs/{org}",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /users/{}/events/public": {
+   "method": "GET",
+   "path": "/users/{username}/events/public",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /users/{}/installation": {
+   "method": "GET",
+   "path": "/users/{username}/installation",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "POST /users/{}/projectsV2/{}/items": {
+   "method": "POST",
+   "path": "/users/{username}/projectsV2/{project_number}/items",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /users/{}/received_events": {
+   "method": "GET",
+   "path": "/users/{username}/received_events",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "GET /users/{}/received_events/public": {
+   "method": "GET",
+   "path": "/users/{username}/received_events/public",
+   "count": 1,
+   "rules": {
+    "response-property-enum-value-added": 1
+   }
+  },
+  "PATCH /repos/{}/{}/issues/{}": {
+   "method": "PATCH",
+   "path": "/repos/{owner}/{repo}/issues/{issue_number}",
+   "count": 21,
+   "rules": {
+    "response-body-type-changed": 1,
+    "response-required-property-removed": 20
+   }
+  }
+ }
+}

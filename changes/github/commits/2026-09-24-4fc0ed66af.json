@@ -1,0 +1,34 @@
+{
+  "specId": "github",
+  "base": {
+    "sha": "f4f0708fb8de458bd47bc2c9b3da8c5bf1780124",
+    "date": "2026-09-24T15:25:50Z",
+    "message": "Update OpenAPI 3.0 Descriptions"
+  },
+  "revision": {
+    "sha": "4fc0ed66afba150d355d3908f8a443f4e1e784ea",
+    "date": "2026-09-24T22:01:28Z",
+    "message": "Update OpenAPI 3.0 Descriptions"
+  },
+  "compareUrl": "https://github.com/github/rest-api-description/compare/f4f0708fb8de458bd47bc2c9b3da8c5bf1780124...4fc0ed66afba150d355d3908f8a443f4e1e784ea",
+  "oasdiff": "oasdiff version 1.34.0",
+  "changes": [],
+  "responseSummary": {
+    "PUT /repos/{}/{}/pulls/{}/merge-async": {
+      "method": "PUT",
+      "path": "/repos/{owner}/{repo}/pulls/{pull_number}/merge-async",
+      "count": 4,
+      "rules": {
+        "response-property-any-of-added": 4
+      }
+    },
+    "GET /repos/{}/{}/pulls/{}/merge-async/{}": {
+      "method": "GET",
+      "path": "/repos/{owner}/{repo}/pulls/{pull_number}/merge-async/{uuid}",
+      "count": 1,
+      "rules": {
+        "response-property-any-of-added": 1
+      }
+    }
+  }
+}

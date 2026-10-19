@@ -1,0 +1,58 @@
+{
+  "specId": "openai",
+  "base": {
+    "sha": "c72241375fbe33a7192f5660b173e541b56e4b2f",
+    "date": "2026-10-08T21:46:20Z",
+    "message": "Add new agent environment event types to event enum"
+  },
+  "revision": {
+    "sha": "fd15e7a8c492008db728bd079d936b7b7bf13e23",
+    "date": "2026-10-08T22:45:35Z",
+    "message": "Allow HTTP(S) image URLs in decision input alongside data URLs"
+  },
+  "compareUrl": "https://github.com/openai/openai-openapi/compare/c72241375fbe33a7192f5660b173e541b56e4b2f...fd15e7a8c492008db728bd079d936b7b7bf13e23",
+  "oasdiff": "oasdiff version 1.34.0",
+  "changes": [
+    {
+      "rule": "request-property-pattern-changed",
+      "level": 2,
+      "text": "changed the pattern of the request property `input/oneOf[subschema #2]/items/oneOf[#/components/schemas/DecisionInputMessage]/content/oneOf[subschema #2: Parts]/items/oneOf[#/components/schemas/DecisionInputImage]/image_url` from `^data:` to `^(data:|https?://)`",
+      "method": "POST",
+      "path": "/decisions",
+      "operationId": "createDecision",
+      "source": null,
+      "kind": "request-field-constrained",
+      "target": {
+        "location": "body",
+        "path": [
+          "input",
+          "components",
+          "schemas",
+          "DecisionInputMessage]",
+          "content",
+          "components",
+          "schemas",
+          "DecisionInputImage]",
+          "image_url"
+        ],
+        "viaArray": true,
+        "raw": "input/oneOf[subschema #2]/items/oneOf[#/components/schemas/DecisionInputMessage]/content/oneOf[subschema #2: Parts]/items/oneOf[#/components/schemas/DecisionInputImage]/image_url"
+      },
+      "verification": {
+        "status": "unverified",
+        "reason": "claim taken from oasdiff; no independent check for this change type"
+      },
+      "specId": "openai",
+      "key": "request-property-pattern-changed|POST /decisions|changed the pattern of the request property `input/oneOf[subschema #2]/items/oneOf[#/components/schemas/DecisionInputMessage]/content/oneOf[subschema #2: Parts]/items/oneOf[#/components/schemas/DecisionInputImage]/image_url` from `^data:` to `^(data:|https?://)`",
+      "sourceUrl": null,
+      "compareUrl": "https://github.com/openai/openai-openapi/compare/c72241375fbe33a7192f5660b173e541b56e4b2f...fd15e7a8c492008db728bd079d936b7b7bf13e23",
+      "introducedIn": {
+        "sha": "fd15e7a8c492008db728bd079d936b7b7bf13e23",
+        "date": "2026-10-08T22:45:35Z",
+        "message": "Allow HTTP(S) image URLs in decision input alongside data URLs",
+        "compareUrl": "https://github.com/openai/openai-openapi/compare/c72241375fbe33a7192f5660b173e541b56e4b2f...fd15e7a8c492008db728bd079d936b7b7bf13e23"
+      }
+    }
+  ],
+  "responseSummary": {}
+}

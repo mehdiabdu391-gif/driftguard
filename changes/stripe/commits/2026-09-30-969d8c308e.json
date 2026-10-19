@@ -1,0 +1,4914 @@
+{
+  "specId": "stripe",
+  "base": {
+    "sha": "18fa2cc768024b47789dc6fa243acd48478acac2",
+    "date": "2026-09-25T23:17:55Z",
+    "message": "Update OpenAPI for 2026-09-30.endive"
+  },
+  "revision": {
+    "sha": "969d8c308ea65b6dbdef4b6b4a71904027a010b8",
+    "date": "2026-09-30T00:25:06Z",
+    "message": "Update OpenAPI for 2026-09-30.endive"
+  },
+  "compareUrl": "https://github.com/stripe/openapi/compare/18fa2cc768024b47789dc6fa243acd48478acac2...969d8c308ea65b6dbdef4b6b4a71904027a010b8",
+  "oasdiff": "oasdiff version 1.34.0",
+  "changes": [],
+  "responseSummary": {
+    "GET /v1/account": {
+      "method": "GET",
+      "path": "/v1/account",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/account_links": {
+      "method": "POST",
+      "path": "/v1/account_links",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/account_sessions": {
+      "method": "POST",
+      "path": "/v1/account_sessions",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/accounts": {
+      "method": "GET",
+      "path": "/v1/accounts",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/accounts": {
+      "method": "POST",
+      "path": "/v1/accounts",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "DELETE /v1/accounts/{}": {
+      "method": "DELETE",
+      "path": "/v1/accounts/{account}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/accounts/{}": {
+      "method": "GET",
+      "path": "/v1/accounts/{account}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/accounts/{}": {
+      "method": "POST",
+      "path": "/v1/accounts/{account}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/accounts/{}/bank_accounts": {
+      "method": "POST",
+      "path": "/v1/accounts/{account}/bank_accounts",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "DELETE /v1/accounts/{}/bank_accounts/{}": {
+      "method": "DELETE",
+      "path": "/v1/accounts/{account}/bank_accounts/{id}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/accounts/{}/bank_accounts/{}": {
+      "method": "GET",
+      "path": "/v1/accounts/{account}/bank_accounts/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/accounts/{}/bank_accounts/{}": {
+      "method": "POST",
+      "path": "/v1/accounts/{account}/bank_accounts/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/accounts/{}/capabilities": {
+      "method": "GET",
+      "path": "/v1/accounts/{account}/capabilities",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/accounts/{}/capabilities/{}": {
+      "method": "GET",
+      "path": "/v1/accounts/{account}/capabilities/{capability}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/accounts/{}/capabilities/{}": {
+      "method": "POST",
+      "path": "/v1/accounts/{account}/capabilities/{capability}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/accounts/{}/external_accounts": {
+      "method": "GET",
+      "path": "/v1/accounts/{account}/external_accounts",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/accounts/{}/external_accounts": {
+      "method": "POST",
+      "path": "/v1/accounts/{account}/external_accounts",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "DELETE /v1/accounts/{}/external_accounts/{}": {
+      "method": "DELETE",
+      "path": "/v1/accounts/{account}/external_accounts/{id}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/accounts/{}/external_accounts/{}": {
+      "method": "GET",
+      "path": "/v1/accounts/{account}/external_accounts/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/accounts/{}/external_accounts/{}": {
+      "method": "POST",
+      "path": "/v1/accounts/{account}/external_accounts/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/accounts/{}/login_links": {
+      "method": "POST",
+      "path": "/v1/accounts/{account}/login_links",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/accounts/{}/people": {
+      "method": "GET",
+      "path": "/v1/accounts/{account}/people",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/accounts/{}/people": {
+      "method": "POST",
+      "path": "/v1/accounts/{account}/people",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "DELETE /v1/accounts/{}/people/{}": {
+      "method": "DELETE",
+      "path": "/v1/accounts/{account}/people/{person}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/accounts/{}/people/{}": {
+      "method": "GET",
+      "path": "/v1/accounts/{account}/people/{person}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/accounts/{}/people/{}": {
+      "method": "POST",
+      "path": "/v1/accounts/{account}/people/{person}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/accounts/{}/persons": {
+      "method": "GET",
+      "path": "/v1/accounts/{account}/persons",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/accounts/{}/persons": {
+      "method": "POST",
+      "path": "/v1/accounts/{account}/persons",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "DELETE /v1/accounts/{}/persons/{}": {
+      "method": "DELETE",
+      "path": "/v1/accounts/{account}/persons/{person}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/accounts/{}/persons/{}": {
+      "method": "GET",
+      "path": "/v1/accounts/{account}/persons/{person}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/accounts/{}/persons/{}": {
+      "method": "POST",
+      "path": "/v1/accounts/{account}/persons/{person}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/accounts/{}/reject": {
+      "method": "POST",
+      "path": "/v1/accounts/{account}/reject",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/accounts/{}/unreject": {
+      "method": "POST",
+      "path": "/v1/accounts/{account}/unreject",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/apple_pay/domains": {
+      "method": "GET",
+      "path": "/v1/apple_pay/domains",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/apple_pay/domains": {
+      "method": "POST",
+      "path": "/v1/apple_pay/domains",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "DELETE /v1/apple_pay/domains/{}": {
+      "method": "DELETE",
+      "path": "/v1/apple_pay/domains/{domain}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/apple_pay/domains/{}": {
+      "method": "GET",
+      "path": "/v1/apple_pay/domains/{domain}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/application_fees": {
+      "method": "GET",
+      "path": "/v1/application_fees",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/application_fees/{}/refunds/{}": {
+      "method": "GET",
+      "path": "/v1/application_fees/{fee}/refunds/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/application_fees/{}/refunds/{}": {
+      "method": "POST",
+      "path": "/v1/application_fees/{fee}/refunds/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/application_fees/{}": {
+      "method": "GET",
+      "path": "/v1/application_fees/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/application_fees/{}/refund": {
+      "method": "POST",
+      "path": "/v1/application_fees/{id}/refund",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/application_fees/{}/refunds": {
+      "method": "GET",
+      "path": "/v1/application_fees/{id}/refunds",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/application_fees/{}/refunds": {
+      "method": "POST",
+      "path": "/v1/application_fees/{id}/refunds",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/apps/installs": {
+      "method": "GET",
+      "path": "/v1/apps/installs",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/apps/installs": {
+      "method": "POST",
+      "path": "/v1/apps/installs",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/apps/installs/{}": {
+      "method": "GET",
+      "path": "/v1/apps/installs/{id}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/apps/installs/{}": {
+      "method": "POST",
+      "path": "/v1/apps/installs/{id}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/apps/installs/{}/uninstall": {
+      "method": "POST",
+      "path": "/v1/apps/installs/{id}/uninstall",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/apps/secrets": {
+      "method": "GET",
+      "path": "/v1/apps/secrets",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/apps/secrets": {
+      "method": "POST",
+      "path": "/v1/apps/secrets",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/apps/secrets/delete": {
+      "method": "POST",
+      "path": "/v1/apps/secrets/delete",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/apps/secrets/find": {
+      "method": "GET",
+      "path": "/v1/apps/secrets/find",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/balance": {
+      "method": "GET",
+      "path": "/v1/balance",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/balance/history": {
+      "method": "GET",
+      "path": "/v1/balance/history",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/balance/history/{}": {
+      "method": "GET",
+      "path": "/v1/balance/history/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/balance_settings": {
+      "method": "GET",
+      "path": "/v1/balance_settings",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/balance_settings": {
+      "method": "POST",
+      "path": "/v1/balance_settings",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/balance_transactions": {
+      "method": "GET",
+      "path": "/v1/balance_transactions",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/balance_transactions/{}": {
+      "method": "GET",
+      "path": "/v1/balance_transactions/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/billing/alerts": {
+      "method": "GET",
+      "path": "/v1/billing/alerts",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/billing/alerts": {
+      "method": "POST",
+      "path": "/v1/billing/alerts",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/billing/alerts/{}": {
+      "method": "GET",
+      "path": "/v1/billing/alerts/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/billing/alerts/{}/activate": {
+      "method": "POST",
+      "path": "/v1/billing/alerts/{id}/activate",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/billing/alerts/{}/archive": {
+      "method": "POST",
+      "path": "/v1/billing/alerts/{id}/archive",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/billing/alerts/{}/deactivate": {
+      "method": "POST",
+      "path": "/v1/billing/alerts/{id}/deactivate",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/billing/credit_balance_summary": {
+      "method": "GET",
+      "path": "/v1/billing/credit_balance_summary",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/billing/credit_balance_transactions": {
+      "method": "GET",
+      "path": "/v1/billing/credit_balance_transactions",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/billing/credit_balance_transactions/{}": {
+      "method": "GET",
+      "path": "/v1/billing/credit_balance_transactions/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/billing/credit_grants": {
+      "method": "GET",
+      "path": "/v1/billing/credit_grants",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/billing/credit_grants": {
+      "method": "POST",
+      "path": "/v1/billing/credit_grants",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/billing/credit_grants/{}": {
+      "method": "GET",
+      "path": "/v1/billing/credit_grants/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/billing/credit_grants/{}": {
+      "method": "POST",
+      "path": "/v1/billing/credit_grants/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/billing/credit_grants/{}/expire": {
+      "method": "POST",
+      "path": "/v1/billing/credit_grants/{id}/expire",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/billing/credit_grants/{}/void": {
+      "method": "POST",
+      "path": "/v1/billing/credit_grants/{id}/void",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/billing/feedback_options": {
+      "method": "GET",
+      "path": "/v1/billing/feedback_options",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/billing/feedback_options": {
+      "method": "POST",
+      "path": "/v1/billing/feedback_options",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/billing/feedback_options/{}": {
+      "method": "GET",
+      "path": "/v1/billing/feedback_options/{id}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/billing/feedback_options/{}": {
+      "method": "POST",
+      "path": "/v1/billing/feedback_options/{id}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/billing/feedback_options/{}/deactivate": {
+      "method": "POST",
+      "path": "/v1/billing/feedback_options/{id}/deactivate",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/billing/meter_event_adjustments": {
+      "method": "POST",
+      "path": "/v1/billing/meter_event_adjustments",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/billing/meter_events": {
+      "method": "POST",
+      "path": "/v1/billing/meter_events",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/billing/meters": {
+      "method": "GET",
+      "path": "/v1/billing/meters",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/billing/meters": {
+      "method": "POST",
+      "path": "/v1/billing/meters",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/billing/meters/{}": {
+      "method": "GET",
+      "path": "/v1/billing/meters/{id}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/billing/meters/{}": {
+      "method": "POST",
+      "path": "/v1/billing/meters/{id}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/billing/meters/{}/deactivate": {
+      "method": "POST",
+      "path": "/v1/billing/meters/{id}/deactivate",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/billing/meters/{}/event_summaries": {
+      "method": "GET",
+      "path": "/v1/billing/meters/{id}/event_summaries",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/billing/meters/{}/reactivate": {
+      "method": "POST",
+      "path": "/v1/billing/meters/{id}/reactivate",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/billing_portal/configurations": {
+      "method": "GET",
+      "path": "/v1/billing_portal/configurations",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/billing_portal/configurations": {
+      "method": "POST",
+      "path": "/v1/billing_portal/configurations",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/billing_portal/configurations/{}": {
+      "method": "GET",
+      "path": "/v1/billing_portal/configurations/{configuration}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/billing_portal/configurations/{}": {
+      "method": "POST",
+      "path": "/v1/billing_portal/configurations/{configuration}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/billing_portal/sessions": {
+      "method": "POST",
+      "path": "/v1/billing_portal/sessions",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/charges": {
+      "method": "GET",
+      "path": "/v1/charges",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/charges": {
+      "method": "POST",
+      "path": "/v1/charges",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/charges/search": {
+      "method": "GET",
+      "path": "/v1/charges/search",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/charges/{}": {
+      "method": "GET",
+      "path": "/v1/charges/{charge}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/charges/{}": {
+      "method": "POST",
+      "path": "/v1/charges/{charge}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/charges/{}/capture": {
+      "method": "POST",
+      "path": "/v1/charges/{charge}/capture",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/charges/{}/dispute": {
+      "method": "GET",
+      "path": "/v1/charges/{charge}/dispute",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/charges/{}/dispute": {
+      "method": "POST",
+      "path": "/v1/charges/{charge}/dispute",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/charges/{}/dispute/close": {
+      "method": "POST",
+      "path": "/v1/charges/{charge}/dispute/close",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/charges/{}/refund": {
+      "method": "POST",
+      "path": "/v1/charges/{charge}/refund",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/charges/{}/refunds": {
+      "method": "GET",
+      "path": "/v1/charges/{charge}/refunds",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/charges/{}/refunds": {
+      "method": "POST",
+      "path": "/v1/charges/{charge}/refunds",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/charges/{}/refunds/{}": {
+      "method": "GET",
+      "path": "/v1/charges/{charge}/refunds/{refund}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/charges/{}/refunds/{}": {
+      "method": "POST",
+      "path": "/v1/charges/{charge}/refunds/{refund}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/checkout/sessions": {
+      "method": "GET",
+      "path": "/v1/checkout/sessions",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/checkout/sessions": {
+      "method": "POST",
+      "path": "/v1/checkout/sessions",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/checkout/sessions/{}": {
+      "method": "GET",
+      "path": "/v1/checkout/sessions/{session}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/checkout/sessions/{}": {
+      "method": "POST",
+      "path": "/v1/checkout/sessions/{session}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/checkout/sessions/{}/expire": {
+      "method": "POST",
+      "path": "/v1/checkout/sessions/{session}/expire",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/checkout/sessions/{}/line_items": {
+      "method": "GET",
+      "path": "/v1/checkout/sessions/{session}/line_items",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/climate/orders": {
+      "method": "GET",
+      "path": "/v1/climate/orders",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/climate/orders": {
+      "method": "POST",
+      "path": "/v1/climate/orders",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/climate/orders/{}": {
+      "method": "GET",
+      "path": "/v1/climate/orders/{order}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/climate/orders/{}": {
+      "method": "POST",
+      "path": "/v1/climate/orders/{order}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/climate/orders/{}/cancel": {
+      "method": "POST",
+      "path": "/v1/climate/orders/{order}/cancel",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/climate/products": {
+      "method": "GET",
+      "path": "/v1/climate/products",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/climate/products/{}": {
+      "method": "GET",
+      "path": "/v1/climate/products/{product}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/climate/suppliers": {
+      "method": "GET",
+      "path": "/v1/climate/suppliers",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/climate/suppliers/{}": {
+      "method": "GET",
+      "path": "/v1/climate/suppliers/{supplier}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/confirmation_tokens/{}": {
+      "method": "GET",
+      "path": "/v1/confirmation_tokens/{confirmation_token}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/country_specs": {
+      "method": "GET",
+      "path": "/v1/country_specs",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/country_specs/{}": {
+      "method": "GET",
+      "path": "/v1/country_specs/{country}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/coupons": {
+      "method": "GET",
+      "path": "/v1/coupons",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/coupons": {
+      "method": "POST",
+      "path": "/v1/coupons",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "DELETE /v1/coupons/{}": {
+      "method": "DELETE",
+      "path": "/v1/coupons/{coupon}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/coupons/{}": {
+      "method": "GET",
+      "path": "/v1/coupons/{coupon}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/coupons/{}": {
+      "method": "POST",
+      "path": "/v1/coupons/{coupon}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/credit_notes": {
+      "method": "GET",
+      "path": "/v1/credit_notes",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/credit_notes": {
+      "method": "POST",
+      "path": "/v1/credit_notes",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/credit_notes/preview": {
+      "method": "GET",
+      "path": "/v1/credit_notes/preview",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/credit_notes/preview/lines": {
+      "method": "GET",
+      "path": "/v1/credit_notes/preview/lines",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/credit_notes/{}/lines": {
+      "method": "GET",
+      "path": "/v1/credit_notes/{credit_note}/lines",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/credit_notes/{}": {
+      "method": "GET",
+      "path": "/v1/credit_notes/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/credit_notes/{}": {
+      "method": "POST",
+      "path": "/v1/credit_notes/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/credit_notes/{}/void": {
+      "method": "POST",
+      "path": "/v1/credit_notes/{id}/void",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/customer_sessions": {
+      "method": "POST",
+      "path": "/v1/customer_sessions",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/customers": {
+      "method": "GET",
+      "path": "/v1/customers",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/customers": {
+      "method": "POST",
+      "path": "/v1/customers",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/customers/search": {
+      "method": "GET",
+      "path": "/v1/customers/search",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "DELETE /v1/customers/{}": {
+      "method": "DELETE",
+      "path": "/v1/customers/{customer}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/customers/{}": {
+      "method": "GET",
+      "path": "/v1/customers/{customer}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/customers/{}": {
+      "method": "POST",
+      "path": "/v1/customers/{customer}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/customers/{}/balance_transactions": {
+      "method": "GET",
+      "path": "/v1/customers/{customer}/balance_transactions",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/customers/{}/balance_transactions": {
+      "method": "POST",
+      "path": "/v1/customers/{customer}/balance_transactions",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/customers/{}/balance_transactions/{}": {
+      "method": "GET",
+      "path": "/v1/customers/{customer}/balance_transactions/{transaction}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/customers/{}/balance_transactions/{}": {
+      "method": "POST",
+      "path": "/v1/customers/{customer}/balance_transactions/{transaction}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/customers/{}/bank_accounts": {
+      "method": "GET",
+      "path": "/v1/customers/{customer}/bank_accounts",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/customers/{}/bank_accounts": {
+      "method": "POST",
+      "path": "/v1/customers/{customer}/bank_accounts",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "DELETE /v1/customers/{}/bank_accounts/{}": {
+      "method": "DELETE",
+      "path": "/v1/customers/{customer}/bank_accounts/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/customers/{}/bank_accounts/{}": {
+      "method": "GET",
+      "path": "/v1/customers/{customer}/bank_accounts/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/customers/{}/bank_accounts/{}": {
+      "method": "POST",
+      "path": "/v1/customers/{customer}/bank_accounts/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/customers/{}/bank_accounts/{}/verify": {
+      "method": "POST",
+      "path": "/v1/customers/{customer}/bank_accounts/{id}/verify",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/customers/{}/cards": {
+      "method": "GET",
+      "path": "/v1/customers/{customer}/cards",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/customers/{}/cards": {
+      "method": "POST",
+      "path": "/v1/customers/{customer}/cards",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "DELETE /v1/customers/{}/cards/{}": {
+      "method": "DELETE",
+      "path": "/v1/customers/{customer}/cards/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/customers/{}/cards/{}": {
+      "method": "GET",
+      "path": "/v1/customers/{customer}/cards/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/customers/{}/cards/{}": {
+      "method": "POST",
+      "path": "/v1/customers/{customer}/cards/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/customers/{}/cash_balance": {
+      "method": "GET",
+      "path": "/v1/customers/{customer}/cash_balance",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/customers/{}/cash_balance": {
+      "method": "POST",
+      "path": "/v1/customers/{customer}/cash_balance",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/customers/{}/cash_balance_transactions": {
+      "method": "GET",
+      "path": "/v1/customers/{customer}/cash_balance_transactions",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/customers/{}/cash_balance_transactions/{}": {
+      "method": "GET",
+      "path": "/v1/customers/{customer}/cash_balance_transactions/{transaction}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "DELETE /v1/customers/{}/discount": {
+      "method": "DELETE",
+      "path": "/v1/customers/{customer}/discount",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/customers/{}/discount": {
+      "method": "GET",
+      "path": "/v1/customers/{customer}/discount",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/customers/{}/funding_instructions": {
+      "method": "POST",
+      "path": "/v1/customers/{customer}/funding_instructions",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/customers/{}/payment_methods": {
+      "method": "GET",
+      "path": "/v1/customers/{customer}/payment_methods",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/customers/{}/payment_methods/{}": {
+      "method": "GET",
+      "path": "/v1/customers/{customer}/payment_methods/{payment_method}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/customers/{}/sources": {
+      "method": "GET",
+      "path": "/v1/customers/{customer}/sources",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/customers/{}/sources": {
+      "method": "POST",
+      "path": "/v1/customers/{customer}/sources",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "DELETE /v1/customers/{}/sources/{}": {
+      "method": "DELETE",
+      "path": "/v1/customers/{customer}/sources/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/customers/{}/sources/{}": {
+      "method": "GET",
+      "path": "/v1/customers/{customer}/sources/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/customers/{}/sources/{}": {
+      "method": "POST",
+      "path": "/v1/customers/{customer}/sources/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/customers/{}/sources/{}/verify": {
+      "method": "POST",
+      "path": "/v1/customers/{customer}/sources/{id}/verify",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/customers/{}/subscriptions": {
+      "method": "GET",
+      "path": "/v1/customers/{customer}/subscriptions",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/customers/{}/subscriptions": {
+      "method": "POST",
+      "path": "/v1/customers/{customer}/subscriptions",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "DELETE /v1/customers/{}/subscriptions/{}": {
+      "method": "DELETE",
+      "path": "/v1/customers/{customer}/subscriptions/{subscription_exposed_id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/customers/{}/subscriptions/{}": {
+      "method": "GET",
+      "path": "/v1/customers/{customer}/subscriptions/{subscription_exposed_id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/customers/{}/subscriptions/{}": {
+      "method": "POST",
+      "path": "/v1/customers/{customer}/subscriptions/{subscription_exposed_id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "DELETE /v1/customers/{}/subscriptions/{}/discount": {
+      "method": "DELETE",
+      "path": "/v1/customers/{customer}/subscriptions/{subscription_exposed_id}/discount",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/customers/{}/subscriptions/{}/discount": {
+      "method": "GET",
+      "path": "/v1/customers/{customer}/subscriptions/{subscription_exposed_id}/discount",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/customers/{}/tax_ids": {
+      "method": "GET",
+      "path": "/v1/customers/{customer}/tax_ids",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/customers/{}/tax_ids": {
+      "method": "POST",
+      "path": "/v1/customers/{customer}/tax_ids",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "DELETE /v1/customers/{}/tax_ids/{}": {
+      "method": "DELETE",
+      "path": "/v1/customers/{customer}/tax_ids/{id}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/customers/{}/tax_ids/{}": {
+      "method": "GET",
+      "path": "/v1/customers/{customer}/tax_ids/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/disputes": {
+      "method": "GET",
+      "path": "/v1/disputes",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/disputes/{}": {
+      "method": "GET",
+      "path": "/v1/disputes/{dispute}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/disputes/{}": {
+      "method": "POST",
+      "path": "/v1/disputes/{dispute}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/disputes/{}/close": {
+      "method": "POST",
+      "path": "/v1/disputes/{dispute}/close",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/entitlements/active_entitlements": {
+      "method": "GET",
+      "path": "/v1/entitlements/active_entitlements",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/entitlements/active_entitlements/{}": {
+      "method": "GET",
+      "path": "/v1/entitlements/active_entitlements/{id}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/entitlements/features": {
+      "method": "GET",
+      "path": "/v1/entitlements/features",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/entitlements/features": {
+      "method": "POST",
+      "path": "/v1/entitlements/features",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/entitlements/features/{}": {
+      "method": "GET",
+      "path": "/v1/entitlements/features/{id}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/entitlements/features/{}": {
+      "method": "POST",
+      "path": "/v1/entitlements/features/{id}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/ephemeral_keys": {
+      "method": "POST",
+      "path": "/v1/ephemeral_keys",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "DELETE /v1/ephemeral_keys/{}": {
+      "method": "DELETE",
+      "path": "/v1/ephemeral_keys/{key}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/events": {
+      "method": "GET",
+      "path": "/v1/events",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/events/{}": {
+      "method": "GET",
+      "path": "/v1/events/{id}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/exchange_rates": {
+      "method": "GET",
+      "path": "/v1/exchange_rates",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/exchange_rates/{}": {
+      "method": "GET",
+      "path": "/v1/exchange_rates/{rate_id}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/external_accounts/{}": {
+      "method": "POST",
+      "path": "/v1/external_accounts/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/file_links": {
+      "method": "GET",
+      "path": "/v1/file_links",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/file_links": {
+      "method": "POST",
+      "path": "/v1/file_links",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/file_links/{}": {
+      "method": "GET",
+      "path": "/v1/file_links/{link}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/file_links/{}": {
+      "method": "POST",
+      "path": "/v1/file_links/{link}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/files": {
+      "method": "GET",
+      "path": "/v1/files",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/files": {
+      "method": "POST",
+      "path": "/v1/files",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/files/{}": {
+      "method": "GET",
+      "path": "/v1/files/{file}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/financial_connections/accounts": {
+      "method": "GET",
+      "path": "/v1/financial_connections/accounts",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/financial_connections/accounts/{}": {
+      "method": "GET",
+      "path": "/v1/financial_connections/accounts/{account}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/financial_connections/accounts/{}/disconnect": {
+      "method": "POST",
+      "path": "/v1/financial_connections/accounts/{account}/disconnect",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/financial_connections/accounts/{}/owners": {
+      "method": "GET",
+      "path": "/v1/financial_connections/accounts/{account}/owners",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/financial_connections/accounts/{}/refresh": {
+      "method": "POST",
+      "path": "/v1/financial_connections/accounts/{account}/refresh",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/financial_connections/accounts/{}/subscribe": {
+      "method": "POST",
+      "path": "/v1/financial_connections/accounts/{account}/subscribe",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/financial_connections/accounts/{}/unsubscribe": {
+      "method": "POST",
+      "path": "/v1/financial_connections/accounts/{account}/unsubscribe",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/financial_connections/sessions": {
+      "method": "POST",
+      "path": "/v1/financial_connections/sessions",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/financial_connections/sessions/{}": {
+      "method": "GET",
+      "path": "/v1/financial_connections/sessions/{session}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/financial_connections/transactions": {
+      "method": "GET",
+      "path": "/v1/financial_connections/transactions",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/financial_connections/transactions/{}": {
+      "method": "GET",
+      "path": "/v1/financial_connections/transactions/{transaction}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/forwarding/requests": {
+      "method": "GET",
+      "path": "/v1/forwarding/requests",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/forwarding/requests": {
+      "method": "POST",
+      "path": "/v1/forwarding/requests",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/forwarding/requests/{}": {
+      "method": "GET",
+      "path": "/v1/forwarding/requests/{id}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/identity/verification_reports": {
+      "method": "GET",
+      "path": "/v1/identity/verification_reports",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/identity/verification_reports/{}": {
+      "method": "GET",
+      "path": "/v1/identity/verification_reports/{report}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/identity/verification_sessions": {
+      "method": "GET",
+      "path": "/v1/identity/verification_sessions",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/identity/verification_sessions": {
+      "method": "POST",
+      "path": "/v1/identity/verification_sessions",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/identity/verification_sessions/{}": {
+      "method": "GET",
+      "path": "/v1/identity/verification_sessions/{session}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/identity/verification_sessions/{}": {
+      "method": "POST",
+      "path": "/v1/identity/verification_sessions/{session}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/identity/verification_sessions/{}/cancel": {
+      "method": "POST",
+      "path": "/v1/identity/verification_sessions/{session}/cancel",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/identity/verification_sessions/{}/redact": {
+      "method": "POST",
+      "path": "/v1/identity/verification_sessions/{session}/redact",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/invoice_payments": {
+      "method": "GET",
+      "path": "/v1/invoice_payments",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/invoice_payments/{}": {
+      "method": "GET",
+      "path": "/v1/invoice_payments/{invoice_payment}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/invoice_rendering_templates": {
+      "method": "GET",
+      "path": "/v1/invoice_rendering_templates",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/invoice_rendering_templates/{}": {
+      "method": "GET",
+      "path": "/v1/invoice_rendering_templates/{template}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/invoice_rendering_templates/{}/archive": {
+      "method": "POST",
+      "path": "/v1/invoice_rendering_templates/{template}/archive",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/invoice_rendering_templates/{}/unarchive": {
+      "method": "POST",
+      "path": "/v1/invoice_rendering_templates/{template}/unarchive",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/invoiceitems": {
+      "method": "GET",
+      "path": "/v1/invoiceitems",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/invoiceitems": {
+      "method": "POST",
+      "path": "/v1/invoiceitems",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "DELETE /v1/invoiceitems/{}": {
+      "method": "DELETE",
+      "path": "/v1/invoiceitems/{invoiceitem}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/invoiceitems/{}": {
+      "method": "GET",
+      "path": "/v1/invoiceitems/{invoiceitem}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/invoiceitems/{}": {
+      "method": "POST",
+      "path": "/v1/invoiceitems/{invoiceitem}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/invoices": {
+      "method": "GET",
+      "path": "/v1/invoices",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/invoices": {
+      "method": "POST",
+      "path": "/v1/invoices",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/invoices/create_preview": {
+      "method": "POST",
+      "path": "/v1/invoices/create_preview",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/invoices/search": {
+      "method": "GET",
+      "path": "/v1/invoices/search",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "DELETE /v1/invoices/{}": {
+      "method": "DELETE",
+      "path": "/v1/invoices/{invoice}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/invoices/{}": {
+      "method": "GET",
+      "path": "/v1/invoices/{invoice}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/invoices/{}": {
+      "method": "POST",
+      "path": "/v1/invoices/{invoice}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/invoices/{}/add_lines": {
+      "method": "POST",
+      "path": "/v1/invoices/{invoice}/add_lines",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/invoices/{}/attach_payment": {
+      "method": "POST",
+      "path": "/v1/invoices/{invoice}/attach_payment",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/invoices/{}/finalize": {
+      "method": "POST",
+      "path": "/v1/invoices/{invoice}/finalize",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/invoices/{}/lines": {
+      "method": "GET",
+      "path": "/v1/invoices/{invoice}/lines",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/invoices/{}/lines/{}": {
+      "method": "POST",
+      "path": "/v1/invoices/{invoice}/lines/{line_item_id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/invoices/{}/mark_uncollectible": {
+      "method": "POST",
+      "path": "/v1/invoices/{invoice}/mark_uncollectible",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/invoices/{}/pay": {
+      "method": "POST",
+      "path": "/v1/invoices/{invoice}/pay",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/invoices/{}/remove_lines": {
+      "method": "POST",
+      "path": "/v1/invoices/{invoice}/remove_lines",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/invoices/{}/send": {
+      "method": "POST",
+      "path": "/v1/invoices/{invoice}/send",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/invoices/{}/update_lines": {
+      "method": "POST",
+      "path": "/v1/invoices/{invoice}/update_lines",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/invoices/{}/void": {
+      "method": "POST",
+      "path": "/v1/invoices/{invoice}/void",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/issuing/authorizations": {
+      "method": "GET",
+      "path": "/v1/issuing/authorizations",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/issuing/authorizations/{}": {
+      "method": "GET",
+      "path": "/v1/issuing/authorizations/{authorization}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/issuing/authorizations/{}": {
+      "method": "POST",
+      "path": "/v1/issuing/authorizations/{authorization}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/issuing/authorizations/{}/approve": {
+      "method": "POST",
+      "path": "/v1/issuing/authorizations/{authorization}/approve",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/issuing/authorizations/{}/decline": {
+      "method": "POST",
+      "path": "/v1/issuing/authorizations/{authorization}/decline",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/issuing/cardholders": {
+      "method": "GET",
+      "path": "/v1/issuing/cardholders",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/issuing/cardholders": {
+      "method": "POST",
+      "path": "/v1/issuing/cardholders",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/issuing/cardholders/{}": {
+      "method": "GET",
+      "path": "/v1/issuing/cardholders/{cardholder}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/issuing/cardholders/{}": {
+      "method": "POST",
+      "path": "/v1/issuing/cardholders/{cardholder}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/issuing/cards": {
+      "method": "GET",
+      "path": "/v1/issuing/cards",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/issuing/cards": {
+      "method": "POST",
+      "path": "/v1/issuing/cards",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/issuing/cards/{}": {
+      "method": "GET",
+      "path": "/v1/issuing/cards/{card}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/issuing/cards/{}": {
+      "method": "POST",
+      "path": "/v1/issuing/cards/{card}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/issuing/disputes": {
+      "method": "GET",
+      "path": "/v1/issuing/disputes",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/issuing/disputes": {
+      "method": "POST",
+      "path": "/v1/issuing/disputes",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/issuing/disputes/{}": {
+      "method": "GET",
+      "path": "/v1/issuing/disputes/{dispute}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/issuing/disputes/{}": {
+      "method": "POST",
+      "path": "/v1/issuing/disputes/{dispute}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/issuing/disputes/{}/submit": {
+      "method": "POST",
+      "path": "/v1/issuing/disputes/{dispute}/submit",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/issuing/personalization_designs": {
+      "method": "GET",
+      "path": "/v1/issuing/personalization_designs",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/issuing/personalization_designs": {
+      "method": "POST",
+      "path": "/v1/issuing/personalization_designs",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/issuing/personalization_designs/{}": {
+      "method": "GET",
+      "path": "/v1/issuing/personalization_designs/{personalization_design}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/issuing/personalization_designs/{}": {
+      "method": "POST",
+      "path": "/v1/issuing/personalization_designs/{personalization_design}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/issuing/physical_bundles": {
+      "method": "GET",
+      "path": "/v1/issuing/physical_bundles",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/issuing/physical_bundles/{}": {
+      "method": "GET",
+      "path": "/v1/issuing/physical_bundles/{physical_bundle}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/issuing/settlements/{}": {
+      "method": "GET",
+      "path": "/v1/issuing/settlements/{settlement}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/issuing/settlements/{}": {
+      "method": "POST",
+      "path": "/v1/issuing/settlements/{settlement}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/issuing/tokens": {
+      "method": "GET",
+      "path": "/v1/issuing/tokens",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/issuing/tokens/{}": {
+      "method": "GET",
+      "path": "/v1/issuing/tokens/{token}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/issuing/tokens/{}": {
+      "method": "POST",
+      "path": "/v1/issuing/tokens/{token}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/issuing/transactions": {
+      "method": "GET",
+      "path": "/v1/issuing/transactions",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/issuing/transactions/{}": {
+      "method": "GET",
+      "path": "/v1/issuing/transactions/{transaction}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/issuing/transactions/{}": {
+      "method": "POST",
+      "path": "/v1/issuing/transactions/{transaction}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/link_account_sessions": {
+      "method": "POST",
+      "path": "/v1/link_account_sessions",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/link_account_sessions/{}": {
+      "method": "GET",
+      "path": "/v1/link_account_sessions/{session}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/linked_accounts": {
+      "method": "GET",
+      "path": "/v1/linked_accounts",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/linked_accounts/{}": {
+      "method": "GET",
+      "path": "/v1/linked_accounts/{account}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/linked_accounts/{}/disconnect": {
+      "method": "POST",
+      "path": "/v1/linked_accounts/{account}/disconnect",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/linked_accounts/{}/owners": {
+      "method": "GET",
+      "path": "/v1/linked_accounts/{account}/owners",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/linked_accounts/{}/refresh": {
+      "method": "POST",
+      "path": "/v1/linked_accounts/{account}/refresh",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/mandates/{}": {
+      "method": "GET",
+      "path": "/v1/mandates/{mandate}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/payment_attempt_records": {
+      "method": "GET",
+      "path": "/v1/payment_attempt_records",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/payment_attempt_records/{}": {
+      "method": "GET",
+      "path": "/v1/payment_attempt_records/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/payment_intents": {
+      "method": "GET",
+      "path": "/v1/payment_intents",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/payment_intents": {
+      "method": "POST",
+      "path": "/v1/payment_intents",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/payment_intents/search": {
+      "method": "GET",
+      "path": "/v1/payment_intents/search",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/payment_intents/{}": {
+      "method": "GET",
+      "path": "/v1/payment_intents/{intent}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/payment_intents/{}": {
+      "method": "POST",
+      "path": "/v1/payment_intents/{intent}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/payment_intents/{}/amount_details_line_items": {
+      "method": "GET",
+      "path": "/v1/payment_intents/{intent}/amount_details_line_items",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/payment_intents/{}/apply_customer_balance": {
+      "method": "POST",
+      "path": "/v1/payment_intents/{intent}/apply_customer_balance",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/payment_intents/{}/cancel": {
+      "method": "POST",
+      "path": "/v1/payment_intents/{intent}/cancel",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/payment_intents/{}/capture": {
+      "method": "POST",
+      "path": "/v1/payment_intents/{intent}/capture",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/payment_intents/{}/confirm": {
+      "method": "POST",
+      "path": "/v1/payment_intents/{intent}/confirm",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/payment_intents/{}/increment_authorization": {
+      "method": "POST",
+      "path": "/v1/payment_intents/{intent}/increment_authorization",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/payment_intents/{}/verify_microdeposits": {
+      "method": "POST",
+      "path": "/v1/payment_intents/{intent}/verify_microdeposits",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/payment_links": {
+      "method": "GET",
+      "path": "/v1/payment_links",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/payment_links": {
+      "method": "POST",
+      "path": "/v1/payment_links",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/payment_links/{}": {
+      "method": "GET",
+      "path": "/v1/payment_links/{payment_link}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/payment_links/{}": {
+      "method": "POST",
+      "path": "/v1/payment_links/{payment_link}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/payment_links/{}/line_items": {
+      "method": "GET",
+      "path": "/v1/payment_links/{payment_link}/line_items",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/payment_method_configurations": {
+      "method": "GET",
+      "path": "/v1/payment_method_configurations",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/payment_method_configurations": {
+      "method": "POST",
+      "path": "/v1/payment_method_configurations",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/payment_method_configurations/{}": {
+      "method": "GET",
+      "path": "/v1/payment_method_configurations/{configuration}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/payment_method_configurations/{}": {
+      "method": "POST",
+      "path": "/v1/payment_method_configurations/{configuration}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/payment_method_domains": {
+      "method": "GET",
+      "path": "/v1/payment_method_domains",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/payment_method_domains": {
+      "method": "POST",
+      "path": "/v1/payment_method_domains",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/payment_method_domains/{}": {
+      "method": "GET",
+      "path": "/v1/payment_method_domains/{payment_method_domain}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/payment_method_domains/{}": {
+      "method": "POST",
+      "path": "/v1/payment_method_domains/{payment_method_domain}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/payment_method_domains/{}/validate": {
+      "method": "POST",
+      "path": "/v1/payment_method_domains/{payment_method_domain}/validate",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/payment_methods": {
+      "method": "GET",
+      "path": "/v1/payment_methods",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/payment_methods": {
+      "method": "POST",
+      "path": "/v1/payment_methods",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/payment_methods/{}": {
+      "method": "GET",
+      "path": "/v1/payment_methods/{payment_method}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/payment_methods/{}": {
+      "method": "POST",
+      "path": "/v1/payment_methods/{payment_method}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/payment_methods/{}/attach": {
+      "method": "POST",
+      "path": "/v1/payment_methods/{payment_method}/attach",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/payment_methods/{}/detach": {
+      "method": "POST",
+      "path": "/v1/payment_methods/{payment_method}/detach",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/payment_records": {
+      "method": "GET",
+      "path": "/v1/payment_records",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/payment_records/report_payment": {
+      "method": "POST",
+      "path": "/v1/payment_records/report_payment",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/payment_records/{}": {
+      "method": "GET",
+      "path": "/v1/payment_records/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/payment_records/{}/report_payment_attempt": {
+      "method": "POST",
+      "path": "/v1/payment_records/{id}/report_payment_attempt",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/payment_records/{}/report_payment_attempt_canceled": {
+      "method": "POST",
+      "path": "/v1/payment_records/{id}/report_payment_attempt_canceled",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/payment_records/{}/report_payment_attempt_failed": {
+      "method": "POST",
+      "path": "/v1/payment_records/{id}/report_payment_attempt_failed",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/payment_records/{}/report_payment_attempt_guaranteed": {
+      "method": "POST",
+      "path": "/v1/payment_records/{id}/report_payment_attempt_guaranteed",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/payment_records/{}/report_payment_attempt_informational": {
+      "method": "POST",
+      "path": "/v1/payment_records/{id}/report_payment_attempt_informational",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/payment_records/{}/report_refund": {
+      "method": "POST",
+      "path": "/v1/payment_records/{id}/report_refund",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/payouts": {
+      "method": "GET",
+      "path": "/v1/payouts",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/payouts": {
+      "method": "POST",
+      "path": "/v1/payouts",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/payouts/{}": {
+      "method": "GET",
+      "path": "/v1/payouts/{payout}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/payouts/{}": {
+      "method": "POST",
+      "path": "/v1/payouts/{payout}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/payouts/{}/cancel": {
+      "method": "POST",
+      "path": "/v1/payouts/{payout}/cancel",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/payouts/{}/reverse": {
+      "method": "POST",
+      "path": "/v1/payouts/{payout}/reverse",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/plans": {
+      "method": "GET",
+      "path": "/v1/plans",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/plans": {
+      "method": "POST",
+      "path": "/v1/plans",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "DELETE /v1/plans/{}": {
+      "method": "DELETE",
+      "path": "/v1/plans/{plan}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/plans/{}": {
+      "method": "GET",
+      "path": "/v1/plans/{plan}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/plans/{}": {
+      "method": "POST",
+      "path": "/v1/plans/{plan}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/prices": {
+      "method": "GET",
+      "path": "/v1/prices",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/prices": {
+      "method": "POST",
+      "path": "/v1/prices",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/prices/search": {
+      "method": "GET",
+      "path": "/v1/prices/search",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/prices/{}": {
+      "method": "GET",
+      "path": "/v1/prices/{price}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/prices/{}": {
+      "method": "POST",
+      "path": "/v1/prices/{price}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/product_catalog/trial_offers": {
+      "method": "GET",
+      "path": "/v1/product_catalog/trial_offers",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/product_catalog/trial_offers": {
+      "method": "POST",
+      "path": "/v1/product_catalog/trial_offers",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/product_catalog/trial_offers/{}": {
+      "method": "GET",
+      "path": "/v1/product_catalog/trial_offers/{id}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/product_catalog/trial_offers/{}": {
+      "method": "POST",
+      "path": "/v1/product_catalog/trial_offers/{id}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/products": {
+      "method": "GET",
+      "path": "/v1/products",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/products": {
+      "method": "POST",
+      "path": "/v1/products",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/products/search": {
+      "method": "GET",
+      "path": "/v1/products/search",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "DELETE /v1/products/{}": {
+      "method": "DELETE",
+      "path": "/v1/products/{id}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/products/{}": {
+      "method": "GET",
+      "path": "/v1/products/{id}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/products/{}": {
+      "method": "POST",
+      "path": "/v1/products/{id}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/products/{}/features": {
+      "method": "GET",
+      "path": "/v1/products/{product}/features",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/products/{}/features": {
+      "method": "POST",
+      "path": "/v1/products/{product}/features",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "DELETE /v1/products/{}/features/{}": {
+      "method": "DELETE",
+      "path": "/v1/products/{product}/features/{id}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/products/{}/features/{}": {
+      "method": "GET",
+      "path": "/v1/products/{product}/features/{id}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/promotion_codes": {
+      "method": "GET",
+      "path": "/v1/promotion_codes",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/promotion_codes": {
+      "method": "POST",
+      "path": "/v1/promotion_codes",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/promotion_codes/{}": {
+      "method": "GET",
+      "path": "/v1/promotion_codes/{promotion_code}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/promotion_codes/{}": {
+      "method": "POST",
+      "path": "/v1/promotion_codes/{promotion_code}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/quotes": {
+      "method": "GET",
+      "path": "/v1/quotes",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/quotes": {
+      "method": "POST",
+      "path": "/v1/quotes",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/quotes/{}": {
+      "method": "GET",
+      "path": "/v1/quotes/{quote}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/quotes/{}": {
+      "method": "POST",
+      "path": "/v1/quotes/{quote}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/quotes/{}/accept": {
+      "method": "POST",
+      "path": "/v1/quotes/{quote}/accept",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/quotes/{}/cancel": {
+      "method": "POST",
+      "path": "/v1/quotes/{quote}/cancel",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/quotes/{}/computed_upfront_line_items": {
+      "method": "GET",
+      "path": "/v1/quotes/{quote}/computed_upfront_line_items",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/quotes/{}/finalize": {
+      "method": "POST",
+      "path": "/v1/quotes/{quote}/finalize",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/quotes/{}/line_items": {
+      "method": "GET",
+      "path": "/v1/quotes/{quote}/line_items",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/quotes/{}/pdf": {
+      "method": "GET",
+      "path": "/v1/quotes/{quote}/pdf",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/radar/early_fraud_warnings": {
+      "method": "GET",
+      "path": "/v1/radar/early_fraud_warnings",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/radar/early_fraud_warnings/{}": {
+      "method": "GET",
+      "path": "/v1/radar/early_fraud_warnings/{early_fraud_warning}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/radar/payment_evaluations": {
+      "method": "POST",
+      "path": "/v1/radar/payment_evaluations",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/radar/value_list_items": {
+      "method": "GET",
+      "path": "/v1/radar/value_list_items",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/radar/value_list_items": {
+      "method": "POST",
+      "path": "/v1/radar/value_list_items",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "DELETE /v1/radar/value_list_items/{}": {
+      "method": "DELETE",
+      "path": "/v1/radar/value_list_items/{item}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/radar/value_list_items/{}": {
+      "method": "GET",
+      "path": "/v1/radar/value_list_items/{item}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/radar/value_lists": {
+      "method": "GET",
+      "path": "/v1/radar/value_lists",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/radar/value_lists": {
+      "method": "POST",
+      "path": "/v1/radar/value_lists",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "DELETE /v1/radar/value_lists/{}": {
+      "method": "DELETE",
+      "path": "/v1/radar/value_lists/{value_list}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/radar/value_lists/{}": {
+      "method": "GET",
+      "path": "/v1/radar/value_lists/{value_list}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/radar/value_lists/{}": {
+      "method": "POST",
+      "path": "/v1/radar/value_lists/{value_list}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/refunds": {
+      "method": "GET",
+      "path": "/v1/refunds",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/refunds": {
+      "method": "POST",
+      "path": "/v1/refunds",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/refunds/{}": {
+      "method": "GET",
+      "path": "/v1/refunds/{refund}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/refunds/{}": {
+      "method": "POST",
+      "path": "/v1/refunds/{refund}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/refunds/{}/cancel": {
+      "method": "POST",
+      "path": "/v1/refunds/{refund}/cancel",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/reporting/report_runs": {
+      "method": "GET",
+      "path": "/v1/reporting/report_runs",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/reporting/report_runs": {
+      "method": "POST",
+      "path": "/v1/reporting/report_runs",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/reporting/report_runs/{}": {
+      "method": "GET",
+      "path": "/v1/reporting/report_runs/{report_run}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/reporting/report_types": {
+      "method": "GET",
+      "path": "/v1/reporting/report_types",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/reporting/report_types/{}": {
+      "method": "GET",
+      "path": "/v1/reporting/report_types/{report_type}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/reviews": {
+      "method": "GET",
+      "path": "/v1/reviews",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/reviews/{}": {
+      "method": "GET",
+      "path": "/v1/reviews/{review}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/reviews/{}/approve": {
+      "method": "POST",
+      "path": "/v1/reviews/{review}/approve",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/setup_attempts": {
+      "method": "GET",
+      "path": "/v1/setup_attempts",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/setup_intents": {
+      "method": "GET",
+      "path": "/v1/setup_intents",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/setup_intents": {
+      "method": "POST",
+      "path": "/v1/setup_intents",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/setup_intents/{}": {
+      "method": "GET",
+      "path": "/v1/setup_intents/{intent}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/setup_intents/{}": {
+      "method": "POST",
+      "path": "/v1/setup_intents/{intent}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/setup_intents/{}/cancel": {
+      "method": "POST",
+      "path": "/v1/setup_intents/{intent}/cancel",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/setup_intents/{}/confirm": {
+      "method": "POST",
+      "path": "/v1/setup_intents/{intent}/confirm",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/setup_intents/{}/verify_microdeposits": {
+      "method": "POST",
+      "path": "/v1/setup_intents/{intent}/verify_microdeposits",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/shipping_rates": {
+      "method": "GET",
+      "path": "/v1/shipping_rates",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/shipping_rates": {
+      "method": "POST",
+      "path": "/v1/shipping_rates",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/shipping_rates/{}": {
+      "method": "GET",
+      "path": "/v1/shipping_rates/{shipping_rate_token}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/shipping_rates/{}": {
+      "method": "POST",
+      "path": "/v1/shipping_rates/{shipping_rate_token}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/sigma/saved_queries/{}": {
+      "method": "POST",
+      "path": "/v1/sigma/saved_queries/{id}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/sigma/scheduled_query_runs": {
+      "method": "GET",
+      "path": "/v1/sigma/scheduled_query_runs",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/sigma/scheduled_query_runs/{}": {
+      "method": "GET",
+      "path": "/v1/sigma/scheduled_query_runs/{scheduled_query_run}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/sources": {
+      "method": "POST",
+      "path": "/v1/sources",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/sources/{}": {
+      "method": "GET",
+      "path": "/v1/sources/{source}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/sources/{}": {
+      "method": "POST",
+      "path": "/v1/sources/{source}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/sources/{}/mandate_notifications/{}": {
+      "method": "GET",
+      "path": "/v1/sources/{source}/mandate_notifications/{mandate_notification}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/sources/{}/source_transactions": {
+      "method": "GET",
+      "path": "/v1/sources/{source}/source_transactions",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/sources/{}/source_transactions/{}": {
+      "method": "GET",
+      "path": "/v1/sources/{source}/source_transactions/{source_transaction}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/sources/{}/verify": {
+      "method": "POST",
+      "path": "/v1/sources/{source}/verify",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/subscription_items": {
+      "method": "GET",
+      "path": "/v1/subscription_items",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/subscription_items": {
+      "method": "POST",
+      "path": "/v1/subscription_items",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "DELETE /v1/subscription_items/{}": {
+      "method": "DELETE",
+      "path": "/v1/subscription_items/{item}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/subscription_items/{}": {
+      "method": "GET",
+      "path": "/v1/subscription_items/{item}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/subscription_items/{}": {
+      "method": "POST",
+      "path": "/v1/subscription_items/{item}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/subscription_schedules": {
+      "method": "GET",
+      "path": "/v1/subscription_schedules",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/subscription_schedules": {
+      "method": "POST",
+      "path": "/v1/subscription_schedules",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/subscription_schedules/{}": {
+      "method": "GET",
+      "path": "/v1/subscription_schedules/{schedule}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/subscription_schedules/{}": {
+      "method": "POST",
+      "path": "/v1/subscription_schedules/{schedule}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/subscription_schedules/{}/cancel": {
+      "method": "POST",
+      "path": "/v1/subscription_schedules/{schedule}/cancel",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/subscription_schedules/{}/release": {
+      "method": "POST",
+      "path": "/v1/subscription_schedules/{schedule}/release",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/subscriptions": {
+      "method": "GET",
+      "path": "/v1/subscriptions",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/subscriptions": {
+      "method": "POST",
+      "path": "/v1/subscriptions",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/subscriptions/search": {
+      "method": "GET",
+      "path": "/v1/subscriptions/search",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "DELETE /v1/subscriptions/{}": {
+      "method": "DELETE",
+      "path": "/v1/subscriptions/{subscription_exposed_id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/subscriptions/{}": {
+      "method": "GET",
+      "path": "/v1/subscriptions/{subscription_exposed_id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/subscriptions/{}": {
+      "method": "POST",
+      "path": "/v1/subscriptions/{subscription_exposed_id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "DELETE /v1/subscriptions/{}/discount": {
+      "method": "DELETE",
+      "path": "/v1/subscriptions/{subscription_exposed_id}/discount",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/subscriptions/{}/migrate": {
+      "method": "POST",
+      "path": "/v1/subscriptions/{subscription}/migrate",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/subscriptions/{}/pause": {
+      "method": "POST",
+      "path": "/v1/subscriptions/{subscription}/pause",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/subscriptions/{}/resume": {
+      "method": "POST",
+      "path": "/v1/subscriptions/{subscription}/resume",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/tax/associations/find": {
+      "method": "GET",
+      "path": "/v1/tax/associations/find",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/tax/calculations": {
+      "method": "POST",
+      "path": "/v1/tax/calculations",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/tax/calculations/{}": {
+      "method": "GET",
+      "path": "/v1/tax/calculations/{calculation}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/tax/calculations/{}/line_items": {
+      "method": "GET",
+      "path": "/v1/tax/calculations/{calculation}/line_items",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/tax/locations": {
+      "method": "GET",
+      "path": "/v1/tax/locations",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/tax/locations": {
+      "method": "POST",
+      "path": "/v1/tax/locations",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/tax/locations/{}": {
+      "method": "GET",
+      "path": "/v1/tax/locations/{location}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/tax/registrations": {
+      "method": "GET",
+      "path": "/v1/tax/registrations",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/tax/registrations": {
+      "method": "POST",
+      "path": "/v1/tax/registrations",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/tax/registrations/{}": {
+      "method": "GET",
+      "path": "/v1/tax/registrations/{id}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/tax/registrations/{}": {
+      "method": "POST",
+      "path": "/v1/tax/registrations/{id}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/tax/settings": {
+      "method": "GET",
+      "path": "/v1/tax/settings",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/tax/settings": {
+      "method": "POST",
+      "path": "/v1/tax/settings",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/tax/transactions/create_from_calculation": {
+      "method": "POST",
+      "path": "/v1/tax/transactions/create_from_calculation",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/tax/transactions/create_reversal": {
+      "method": "POST",
+      "path": "/v1/tax/transactions/create_reversal",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/tax/transactions/{}": {
+      "method": "GET",
+      "path": "/v1/tax/transactions/{transaction}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/tax/transactions/{}/line_items": {
+      "method": "GET",
+      "path": "/v1/tax/transactions/{transaction}/line_items",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/tax_codes": {
+      "method": "GET",
+      "path": "/v1/tax_codes",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/tax_codes/{}": {
+      "method": "GET",
+      "path": "/v1/tax_codes/{id}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/tax_ids": {
+      "method": "GET",
+      "path": "/v1/tax_ids",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/tax_ids": {
+      "method": "POST",
+      "path": "/v1/tax_ids",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "DELETE /v1/tax_ids/{}": {
+      "method": "DELETE",
+      "path": "/v1/tax_ids/{id}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/tax_ids/{}": {
+      "method": "GET",
+      "path": "/v1/tax_ids/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/tax_rates": {
+      "method": "GET",
+      "path": "/v1/tax_rates",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/tax_rates": {
+      "method": "POST",
+      "path": "/v1/tax_rates",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/tax_rates/{}": {
+      "method": "GET",
+      "path": "/v1/tax_rates/{tax_rate}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/tax_rates/{}": {
+      "method": "POST",
+      "path": "/v1/tax_rates/{tax_rate}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/terminal/configurations": {
+      "method": "GET",
+      "path": "/v1/terminal/configurations",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/terminal/configurations": {
+      "method": "POST",
+      "path": "/v1/terminal/configurations",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "DELETE /v1/terminal/configurations/{}": {
+      "method": "DELETE",
+      "path": "/v1/terminal/configurations/{configuration}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/terminal/configurations/{}": {
+      "method": "GET",
+      "path": "/v1/terminal/configurations/{configuration}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/terminal/configurations/{}": {
+      "method": "POST",
+      "path": "/v1/terminal/configurations/{configuration}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/terminal/connection_tokens": {
+      "method": "POST",
+      "path": "/v1/terminal/connection_tokens",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/terminal/locations": {
+      "method": "GET",
+      "path": "/v1/terminal/locations",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/terminal/locations": {
+      "method": "POST",
+      "path": "/v1/terminal/locations",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "DELETE /v1/terminal/locations/{}": {
+      "method": "DELETE",
+      "path": "/v1/terminal/locations/{location}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/terminal/locations/{}": {
+      "method": "GET",
+      "path": "/v1/terminal/locations/{location}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/terminal/locations/{}": {
+      "method": "POST",
+      "path": "/v1/terminal/locations/{location}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/terminal/onboarding_links": {
+      "method": "POST",
+      "path": "/v1/terminal/onboarding_links",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/terminal/readers": {
+      "method": "GET",
+      "path": "/v1/terminal/readers",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/terminal/readers": {
+      "method": "POST",
+      "path": "/v1/terminal/readers",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "DELETE /v1/terminal/readers/{}": {
+      "method": "DELETE",
+      "path": "/v1/terminal/readers/{reader}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/terminal/readers/{}": {
+      "method": "GET",
+      "path": "/v1/terminal/readers/{reader}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/terminal/readers/{}": {
+      "method": "POST",
+      "path": "/v1/terminal/readers/{reader}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/terminal/readers/{}/cancel_action": {
+      "method": "POST",
+      "path": "/v1/terminal/readers/{reader}/cancel_action",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/terminal/readers/{}/collect_inputs": {
+      "method": "POST",
+      "path": "/v1/terminal/readers/{reader}/collect_inputs",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/terminal/readers/{}/collect_payment_method": {
+      "method": "POST",
+      "path": "/v1/terminal/readers/{reader}/collect_payment_method",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/terminal/readers/{}/confirm_payment_intent": {
+      "method": "POST",
+      "path": "/v1/terminal/readers/{reader}/confirm_payment_intent",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/terminal/readers/{}/process_payment_intent": {
+      "method": "POST",
+      "path": "/v1/terminal/readers/{reader}/process_payment_intent",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/terminal/readers/{}/process_setup_intent": {
+      "method": "POST",
+      "path": "/v1/terminal/readers/{reader}/process_setup_intent",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/terminal/readers/{}/refund_payment": {
+      "method": "POST",
+      "path": "/v1/terminal/readers/{reader}/refund_payment",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/terminal/readers/{}/set_reader_display": {
+      "method": "POST",
+      "path": "/v1/terminal/readers/{reader}/set_reader_display",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/terminal/refunds": {
+      "method": "POST",
+      "path": "/v1/terminal/refunds",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/test_helpers/confirmation_tokens": {
+      "method": "POST",
+      "path": "/v1/test_helpers/confirmation_tokens",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/test_helpers/customers/{}/fund_cash_balance": {
+      "method": "POST",
+      "path": "/v1/test_helpers/customers/{customer}/fund_cash_balance",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/test_helpers/issuing/authorizations": {
+      "method": "POST",
+      "path": "/v1/test_helpers/issuing/authorizations",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/test_helpers/issuing/authorizations/{}/capture": {
+      "method": "POST",
+      "path": "/v1/test_helpers/issuing/authorizations/{authorization}/capture",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/test_helpers/issuing/authorizations/{}/expire": {
+      "method": "POST",
+      "path": "/v1/test_helpers/issuing/authorizations/{authorization}/expire",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/test_helpers/issuing/authorizations/{}/finalize_amount": {
+      "method": "POST",
+      "path": "/v1/test_helpers/issuing/authorizations/{authorization}/finalize_amount",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/test_helpers/issuing/authorizations/{}/fraud_challenges/respond": {
+      "method": "POST",
+      "path": "/v1/test_helpers/issuing/authorizations/{authorization}/fraud_challenges/respond",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/test_helpers/issuing/authorizations/{}/increment": {
+      "method": "POST",
+      "path": "/v1/test_helpers/issuing/authorizations/{authorization}/increment",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/test_helpers/issuing/authorizations/{}/reverse": {
+      "method": "POST",
+      "path": "/v1/test_helpers/issuing/authorizations/{authorization}/reverse",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/test_helpers/issuing/cards/{}/shipping/deliver": {
+      "method": "POST",
+      "path": "/v1/test_helpers/issuing/cards/{card}/shipping/deliver",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/test_helpers/issuing/cards/{}/shipping/fail": {
+      "method": "POST",
+      "path": "/v1/test_helpers/issuing/cards/{card}/shipping/fail",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/test_helpers/issuing/cards/{}/shipping/return": {
+      "method": "POST",
+      "path": "/v1/test_helpers/issuing/cards/{card}/shipping/return",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/test_helpers/issuing/cards/{}/shipping/ship": {
+      "method": "POST",
+      "path": "/v1/test_helpers/issuing/cards/{card}/shipping/ship",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/test_helpers/issuing/cards/{}/shipping/submit": {
+      "method": "POST",
+      "path": "/v1/test_helpers/issuing/cards/{card}/shipping/submit",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/test_helpers/issuing/personalization_designs/{}/activate": {
+      "method": "POST",
+      "path": "/v1/test_helpers/issuing/personalization_designs/{personalization_design}/activate",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/test_helpers/issuing/personalization_designs/{}/deactivate": {
+      "method": "POST",
+      "path": "/v1/test_helpers/issuing/personalization_designs/{personalization_design}/deactivate",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/test_helpers/issuing/personalization_designs/{}/reject": {
+      "method": "POST",
+      "path": "/v1/test_helpers/issuing/personalization_designs/{personalization_design}/reject",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/test_helpers/issuing/settlements": {
+      "method": "POST",
+      "path": "/v1/test_helpers/issuing/settlements",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/test_helpers/issuing/settlements/{}/complete": {
+      "method": "POST",
+      "path": "/v1/test_helpers/issuing/settlements/{settlement}/complete",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/test_helpers/issuing/transactions/create_force_capture": {
+      "method": "POST",
+      "path": "/v1/test_helpers/issuing/transactions/create_force_capture",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/test_helpers/issuing/transactions/create_unlinked_refund": {
+      "method": "POST",
+      "path": "/v1/test_helpers/issuing/transactions/create_unlinked_refund",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/test_helpers/issuing/transactions/{}/refund": {
+      "method": "POST",
+      "path": "/v1/test_helpers/issuing/transactions/{transaction}/refund",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/test_helpers/refunds/{}/expire": {
+      "method": "POST",
+      "path": "/v1/test_helpers/refunds/{refund}/expire",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/test_helpers/terminal/readers/{}/present_payment_method": {
+      "method": "POST",
+      "path": "/v1/test_helpers/terminal/readers/{reader}/present_payment_method",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/test_helpers/terminal/readers/{}/succeed_input_collection": {
+      "method": "POST",
+      "path": "/v1/test_helpers/terminal/readers/{reader}/succeed_input_collection",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/test_helpers/terminal/readers/{}/timeout_input_collection": {
+      "method": "POST",
+      "path": "/v1/test_helpers/terminal/readers/{reader}/timeout_input_collection",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/test_helpers/test_clocks": {
+      "method": "GET",
+      "path": "/v1/test_helpers/test_clocks",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/test_helpers/test_clocks": {
+      "method": "POST",
+      "path": "/v1/test_helpers/test_clocks",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "DELETE /v1/test_helpers/test_clocks/{}": {
+      "method": "DELETE",
+      "path": "/v1/test_helpers/test_clocks/{test_clock}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/test_helpers/test_clocks/{}": {
+      "method": "GET",
+      "path": "/v1/test_helpers/test_clocks/{test_clock}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/test_helpers/test_clocks/{}/advance": {
+      "method": "POST",
+      "path": "/v1/test_helpers/test_clocks/{test_clock}/advance",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/test_helpers/treasury/inbound_transfers/{}/fail": {
+      "method": "POST",
+      "path": "/v1/test_helpers/treasury/inbound_transfers/{id}/fail",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/test_helpers/treasury/inbound_transfers/{}/return": {
+      "method": "POST",
+      "path": "/v1/test_helpers/treasury/inbound_transfers/{id}/return",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/test_helpers/treasury/inbound_transfers/{}/succeed": {
+      "method": "POST",
+      "path": "/v1/test_helpers/treasury/inbound_transfers/{id}/succeed",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/test_helpers/treasury/outbound_payments/{}": {
+      "method": "POST",
+      "path": "/v1/test_helpers/treasury/outbound_payments/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/test_helpers/treasury/outbound_payments/{}/fail": {
+      "method": "POST",
+      "path": "/v1/test_helpers/treasury/outbound_payments/{id}/fail",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/test_helpers/treasury/outbound_payments/{}/post": {
+      "method": "POST",
+      "path": "/v1/test_helpers/treasury/outbound_payments/{id}/post",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/test_helpers/treasury/outbound_payments/{}/return": {
+      "method": "POST",
+      "path": "/v1/test_helpers/treasury/outbound_payments/{id}/return",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/test_helpers/treasury/outbound_transfers/{}": {
+      "method": "POST",
+      "path": "/v1/test_helpers/treasury/outbound_transfers/{outbound_transfer}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/test_helpers/treasury/outbound_transfers/{}/fail": {
+      "method": "POST",
+      "path": "/v1/test_helpers/treasury/outbound_transfers/{outbound_transfer}/fail",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/test_helpers/treasury/outbound_transfers/{}/post": {
+      "method": "POST",
+      "path": "/v1/test_helpers/treasury/outbound_transfers/{outbound_transfer}/post",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/test_helpers/treasury/outbound_transfers/{}/return": {
+      "method": "POST",
+      "path": "/v1/test_helpers/treasury/outbound_transfers/{outbound_transfer}/return",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/test_helpers/treasury/received_credits": {
+      "method": "POST",
+      "path": "/v1/test_helpers/treasury/received_credits",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/test_helpers/treasury/received_debits": {
+      "method": "POST",
+      "path": "/v1/test_helpers/treasury/received_debits",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/three_d_secure/authentications": {
+      "method": "GET",
+      "path": "/v1/three_d_secure/authentications",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/three_d_secure/authentications": {
+      "method": "POST",
+      "path": "/v1/three_d_secure/authentications",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/three_d_secure/authentications/{}": {
+      "method": "GET",
+      "path": "/v1/three_d_secure/authentications/{authentication}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/three_d_secure/authentications/{}/cancel": {
+      "method": "POST",
+      "path": "/v1/three_d_secure/authentications/{authentication}/cancel",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/three_d_secure/authentications/{}/submit": {
+      "method": "POST",
+      "path": "/v1/three_d_secure/authentications/{authentication}/submit",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/tokens": {
+      "method": "POST",
+      "path": "/v1/tokens",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/tokens/{}": {
+      "method": "GET",
+      "path": "/v1/tokens/{token}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/topups": {
+      "method": "GET",
+      "path": "/v1/topups",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/topups": {
+      "method": "POST",
+      "path": "/v1/topups",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/topups/{}": {
+      "method": "GET",
+      "path": "/v1/topups/{topup}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/topups/{}": {
+      "method": "POST",
+      "path": "/v1/topups/{topup}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/topups/{}/cancel": {
+      "method": "POST",
+      "path": "/v1/topups/{topup}/cancel",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/transfers": {
+      "method": "GET",
+      "path": "/v1/transfers",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/transfers": {
+      "method": "POST",
+      "path": "/v1/transfers",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/transfers/{}/reversals": {
+      "method": "GET",
+      "path": "/v1/transfers/{id}/reversals",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/transfers/{}/reversals": {
+      "method": "POST",
+      "path": "/v1/transfers/{id}/reversals",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/transfers/{}": {
+      "method": "GET",
+      "path": "/v1/transfers/{transfer}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/transfers/{}": {
+      "method": "POST",
+      "path": "/v1/transfers/{transfer}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/transfers/{}/reversals/{}": {
+      "method": "GET",
+      "path": "/v1/transfers/{transfer}/reversals/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/transfers/{}/reversals/{}": {
+      "method": "POST",
+      "path": "/v1/transfers/{transfer}/reversals/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/treasury/credit_reversals": {
+      "method": "GET",
+      "path": "/v1/treasury/credit_reversals",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/treasury/credit_reversals": {
+      "method": "POST",
+      "path": "/v1/treasury/credit_reversals",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/treasury/credit_reversals/{}": {
+      "method": "GET",
+      "path": "/v1/treasury/credit_reversals/{credit_reversal}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/treasury/debit_reversals": {
+      "method": "GET",
+      "path": "/v1/treasury/debit_reversals",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/treasury/debit_reversals": {
+      "method": "POST",
+      "path": "/v1/treasury/debit_reversals",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/treasury/debit_reversals/{}": {
+      "method": "GET",
+      "path": "/v1/treasury/debit_reversals/{debit_reversal}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/treasury/financial_accounts": {
+      "method": "GET",
+      "path": "/v1/treasury/financial_accounts",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/treasury/financial_accounts": {
+      "method": "POST",
+      "path": "/v1/treasury/financial_accounts",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/treasury/financial_accounts/{}": {
+      "method": "GET",
+      "path": "/v1/treasury/financial_accounts/{financial_account}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/treasury/financial_accounts/{}": {
+      "method": "POST",
+      "path": "/v1/treasury/financial_accounts/{financial_account}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/treasury/financial_accounts/{}/close": {
+      "method": "POST",
+      "path": "/v1/treasury/financial_accounts/{financial_account}/close",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/treasury/financial_accounts/{}/features": {
+      "method": "GET",
+      "path": "/v1/treasury/financial_accounts/{financial_account}/features",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/treasury/financial_accounts/{}/features": {
+      "method": "POST",
+      "path": "/v1/treasury/financial_accounts/{financial_account}/features",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/treasury/inbound_transfers": {
+      "method": "GET",
+      "path": "/v1/treasury/inbound_transfers",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/treasury/inbound_transfers": {
+      "method": "POST",
+      "path": "/v1/treasury/inbound_transfers",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/treasury/inbound_transfers/{}": {
+      "method": "GET",
+      "path": "/v1/treasury/inbound_transfers/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/treasury/inbound_transfers/{}/cancel": {
+      "method": "POST",
+      "path": "/v1/treasury/inbound_transfers/{inbound_transfer}/cancel",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/treasury/outbound_payments": {
+      "method": "GET",
+      "path": "/v1/treasury/outbound_payments",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/treasury/outbound_payments": {
+      "method": "POST",
+      "path": "/v1/treasury/outbound_payments",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/treasury/outbound_payments/{}": {
+      "method": "GET",
+      "path": "/v1/treasury/outbound_payments/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/treasury/outbound_payments/{}/cancel": {
+      "method": "POST",
+      "path": "/v1/treasury/outbound_payments/{id}/cancel",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/treasury/outbound_transfers": {
+      "method": "GET",
+      "path": "/v1/treasury/outbound_transfers",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/treasury/outbound_transfers": {
+      "method": "POST",
+      "path": "/v1/treasury/outbound_transfers",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/treasury/outbound_transfers/{}": {
+      "method": "GET",
+      "path": "/v1/treasury/outbound_transfers/{outbound_transfer}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "POST /v1/treasury/outbound_transfers/{}/cancel": {
+      "method": "POST",
+      "path": "/v1/treasury/outbound_transfers/{outbound_transfer}/cancel",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/treasury/received_credits": {
+      "method": "GET",
+      "path": "/v1/treasury/received_credits",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/treasury/received_credits/{}": {
+      "method": "GET",
+      "path": "/v1/treasury/received_credits/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/treasury/received_debits": {
+      "method": "GET",
+      "path": "/v1/treasury/received_debits",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/treasury/received_debits/{}": {
+      "method": "GET",
+      "path": "/v1/treasury/received_debits/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/treasury/transaction_entries": {
+      "method": "GET",
+      "path": "/v1/treasury/transaction_entries",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/treasury/transaction_entries/{}": {
+      "method": "GET",
+      "path": "/v1/treasury/transaction_entries/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/treasury/transactions": {
+      "method": "GET",
+      "path": "/v1/treasury/transactions",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/treasury/transactions/{}": {
+      "method": "GET",
+      "path": "/v1/treasury/transactions/{id}",
+      "count": 4,
+      "rules": {
+        "response-property-enum-value-added": 4
+      }
+    },
+    "GET /v1/webhook_endpoints": {
+      "method": "GET",
+      "path": "/v1/webhook_endpoints",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/webhook_endpoints": {
+      "method": "POST",
+      "path": "/v1/webhook_endpoints",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "DELETE /v1/webhook_endpoints/{}": {
+      "method": "DELETE",
+      "path": "/v1/webhook_endpoints/{webhook_endpoint}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "GET /v1/webhook_endpoints/{}": {
+      "method": "GET",
+      "path": "/v1/webhook_endpoints/{webhook_endpoint}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    },
+    "POST /v1/webhook_endpoints/{}": {
+      "method": "POST",
+      "path": "/v1/webhook_endpoints/{webhook_endpoint}",
+      "count": 2,
+      "rules": {
+        "response-property-enum-value-added": 2
+      }
+    }
+  }
+}

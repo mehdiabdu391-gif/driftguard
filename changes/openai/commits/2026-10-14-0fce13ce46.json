@@ -1,0 +1,58 @@
+{
+  "specId": "openai",
+  "base": {
+    "sha": "803527048c4b4d059cee8129eac9630f2130bc75",
+    "date": "2026-10-13T16:20:46Z",
+    "message": "Add detailed error and moderation info to image generation responses"
+  },
+  "revision": {
+    "sha": "0fce13ce46465f8876e4a968a73c7bca3aa8e335",
+    "date": "2026-10-14T19:53:41Z",
+    "message": "Allow updating API key scopes and add Live audio fixture events"
+  },
+  "compareUrl": "https://github.com/openai/openai-openapi/compare/803527048c4b4d059cee8129eac9630f2130bc75...0fce13ce46465f8876e4a968a73c7bca3aa8e335",
+  "oasdiff": "oasdiff version 1.34.0",
+  "changes": [],
+  "responseSummary": {
+    "GET /organization/projects": {
+      "method": "GET",
+      "path": "/organization/projects",
+      "count": 3,
+      "rules": {
+        "response-property-enum-value-added": 3
+      }
+    },
+    "POST /organization/projects": {
+      "method": "POST",
+      "path": "/organization/projects",
+      "count": 6,
+      "rules": {
+        "response-property-enum-value-added": 6
+      }
+    },
+    "GET /organization/projects/{}": {
+      "method": "GET",
+      "path": "/organization/projects/{project_id}",
+      "count": 3,
+      "rules": {
+        "response-property-enum-value-added": 3
+      }
+    },
+    "POST /organization/projects/{}": {
+      "method": "POST",
+      "path": "/organization/projects/{project_id}",
+      "count": 3,
+      "rules": {
+        "response-property-enum-value-added": 3
+      }
+    },
+    "POST /organization/projects/{}/archive": {
+      "method": "POST",
+      "path": "/organization/projects/{project_id}/archive",
+      "count": 3,
+      "rules": {
+        "response-property-enum-value-added": 3
+      }
+    }
+  }
+}

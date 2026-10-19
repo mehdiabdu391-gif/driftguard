@@ -1,0 +1,78 @@
+{
+  "specId": "openai",
+  "base": {
+    "sha": "234829e2b634b8fb159df7fcddbffad204173ffd",
+    "date": "2026-10-07T19:23:06Z",
+    "message": "Add description for choice options array constraints"
+  },
+  "revision": {
+    "sha": "3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d",
+    "date": "2026-10-08T07:31:43Z",
+    "message": "Deprecate text-prompt voice creation; require audio samples for custom T"
+  },
+  "compareUrl": "https://github.com/openai/openai-openapi/compare/234829e2b634b8fb159df7fcddbffad204173ffd...3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d",
+  "oasdiff": "oasdiff version 1.34.0",
+  "changes": [
+    {
+      "rule": "request-body-media-type-removed",
+      "level": 3,
+      "text": "removed the media type `application/json` from the request body",
+      "method": "POST",
+      "path": "/audio/voices",
+      "operationId": "createVoice",
+      "source": null,
+      "kind": "request-other",
+      "target": null,
+      "verification": {
+        "status": "unverified",
+        "reason": "no field-level target to check"
+      },
+      "specId": "openai",
+      "key": "request-body-media-type-removed|POST /audio/voices|removed the media type `application/json` from the request body",
+      "sourceUrl": null,
+      "compareUrl": "https://github.com/openai/openai-openapi/compare/234829e2b634b8fb159df7fcddbffad204173ffd...3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d",
+      "introducedIn": {
+        "sha": "3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d",
+        "date": "2026-10-08T07:31:43Z",
+        "message": "Deprecate text-prompt voice creation; require audio samples for custom T",
+        "compareUrl": "https://github.com/openai/openai-openapi/compare/234829e2b634b8fb159df7fcddbffad204173ffd...3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d"
+      }
+    },
+    {
+      "rule": "request-body-one-of-removed",
+      "level": 3,
+      "text": "removed `#/components/schemas/CreateVoicePromptRequest` from the request body `oneOf` list",
+      "method": "POST",
+      "path": "/audio/voices",
+      "operationId": "createVoice",
+      "source": null,
+      "kind": "request-other",
+      "target": null,
+      "verification": {
+        "status": "unverified",
+        "reason": "no field-level target to check"
+      },
+      "specId": "openai",
+      "key": "request-body-one-of-removed|POST /audio/voices|removed `#/components/schemas/CreateVoicePromptRequest` from the request body `oneOf` list",
+      "sourceUrl": null,
+      "compareUrl": "https://github.com/openai/openai-openapi/compare/234829e2b634b8fb159df7fcddbffad204173ffd...3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d",
+      "introducedIn": {
+        "sha": "3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d",
+        "date": "2026-10-08T07:31:43Z",
+        "message": "Deprecate text-prompt voice creation; require audio samples for custom T",
+        "compareUrl": "https://github.com/openai/openai-openapi/compare/234829e2b634b8fb159df7fcddbffad204173ffd...3c4759c1ecc98a2ac3d3df85d54f4eb409f5957d"
+      }
+    }
+  ],
+  "responseSummary": {
+    "POST /audio/voices": {
+      "method": "POST",
+      "path": "/audio/voices",
+      "count": 2,
+      "rules": {
+        "response-property-any-of-added": 1,
+        "response-property-type-changed": 1
+      }
+    }
+  }
+}

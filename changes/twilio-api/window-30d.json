@@ -1,0 +1,19 @@
+{
+ "specId": "twilio-api",
+ "days": 30,
+ "base": {
+  "sha": "5aa7f31977ce5812f7b7bc1f46a38555ebaa2888",
+  "date": "2026-09-09T10:42:33Z",
+  "message": "[Librarian] Regenerated @ f443c9dfa233e41d0e61c9ed6ca2b162467a08b5 c5c2de9152376e52624ec1944d1d0090a42cf016 (#163)"
+ },
+ "revision": {
+  "sha": "157fb094bd08957183278242d7622c8560b7a4c4",
+  "date": "2026-10-06T11:03:20Z",
+  "message": "[Librarian] Regenerated @ 65f186ed432e7d4763681d0938b6100538958867 b912db512dedc5b551443d1f017bd90808b98733 (#166)"
+ },
+ "compareUrl": "https://github.com/twilio/twilio-oai/compare/5aa7f31977ce5812f7b7bc1f46a38555ebaa2888...157fb094bd08957183278242d7622c8560b7a4c4",
+ "oasdiff": "oasdiff version 1.34.0",
+ "generatedAt": "2026-10-19T08:24:16.409Z",
+ "changes": [],
+ "responseSummary": {}
+}

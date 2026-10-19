@@ -1,0 +1,26 @@
+{
+  "specId": "openai",
+  "base": {
+    "sha": "239c481c5fd75052acb3e93cf72c15a7b4a45e74",
+    "date": "2026-10-08T17:10:28Z",
+    "message": "Add OCI external storage provider support to API"
+  },
+  "revision": {
+    "sha": "b2751c6625493c9c64db21b1b26a4d9300e589e3",
+    "date": "2026-10-08T17:55:47Z",
+    "message": "Restrict 'type' field in voice object to 'audio_sample' enum only"
+  },
+  "compareUrl": "https://github.com/openai/openai-openapi/compare/239c481c5fd75052acb3e93cf72c15a7b4a45e74...b2751c6625493c9c64db21b1b26a4d9300e589e3",
+  "oasdiff": "oasdiff version 1.34.0",
+  "changes": [],
+  "responseSummary": {
+    "POST /audio/voices": {
+      "method": "POST",
+      "path": "/audio/voices",
+      "count": 1,
+      "rules": {
+        "response-property-enum-value-added": 1
+      }
+    }
+  }
+}

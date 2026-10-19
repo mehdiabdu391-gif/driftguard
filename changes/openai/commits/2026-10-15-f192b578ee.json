@@ -1,0 +1,135 @@
+{
+  "specId": "openai",
+  "base": {
+    "sha": "45a0efe4c14b6a15401055076357df869cc16f0d",
+    "date": "2026-10-15T22:17:31Z",
+    "message": "Add Decision API integration to Live sessions"
+  },
+  "revision": {
+    "sha": "f192b578eef466a1a1469a47b1851f57ba812c2e",
+    "date": "2026-10-15T23:26:03Z",
+    "message": "Make URL property optional and nullable in pattern search actions"
+  },
+  "compareUrl": "https://github.com/openai/openai-openapi/compare/45a0efe4c14b6a15401055076357df869cc16f0d...f192b578eef466a1a1469a47b1851f57ba812c2e",
+  "oasdiff": "oasdiff version 1.34.0",
+  "changes": [],
+  "responseSummary": {
+    "GET /conversations/{}/items": {
+      "method": "GET",
+      "path": "/conversations/{conversation_id}/items",
+      "count": 2,
+      "rules": {
+        "response-property-became-optional": 1,
+        "response-property-list-of-types-widened": 1
+      }
+    },
+    "POST /conversations/{}/items": {
+      "method": "POST",
+      "path": "/conversations/{conversation_id}/items",
+      "count": 2,
+      "rules": {
+        "response-property-became-optional": 1,
+        "response-property-list-of-types-widened": 1
+      }
+    },
+    "GET /conversations/{}/items/{}": {
+      "method": "GET",
+      "path": "/conversations/{conversation_id}/items/{item_id}",
+      "count": 2,
+      "rules": {
+        "response-property-became-optional": 1,
+        "response-property-list-of-types-widened": 1
+      }
+    },
+    "POST /responses": {
+      "method": "POST",
+      "path": "/responses",
+      "count": 6,
+      "rules": {
+        "response-property-became-optional": 3,
+        "response-property-list-of-types-widened": 3
+      }
+    },
+    "POST /responses/compact": {
+      "method": "POST",
+      "path": "/responses/compact",
+      "count": 2,
+      "rules": {
+        "response-property-became-optional": 1,
+        "response-property-list-of-types-widened": 1
+      }
+    },
+    "POST /responses/compact?beta=true": {
+      "method": "POST",
+      "path": "/responses/compact?beta=true",
+      "count": 2,
+      "rules": {
+        "response-property-became-optional": 1,
+        "response-property-list-of-types-widened": 1
+      }
+    },
+    "GET /responses/{}": {
+      "method": "GET",
+      "path": "/responses/{response_id}",
+      "count": 2,
+      "rules": {
+        "response-property-list-of-types-widened": 1,
+        "response-property-became-optional": 1
+      }
+    },
+    "POST /responses/{}/cancel": {
+      "method": "POST",
+      "path": "/responses/{response_id}/cancel",
+      "count": 2,
+      "rules": {
+        "response-property-list-of-types-widened": 1,
+        "response-property-became-optional": 1
+      }
+    },
+    "POST /responses/{}/cancel?beta=true": {
+      "method": "POST",
+      "path": "/responses/{response_id}/cancel?beta=true",
+      "count": 2,
+      "rules": {
+        "response-property-list-of-types-widened": 1,
+        "response-property-became-optional": 1
+      }
+    },
+    "GET /responses/{}/input_items": {
+      "method": "GET",
+      "path": "/responses/{response_id}/input_items",
+      "count": 2,
+      "rules": {
+        "response-property-became-optional": 1,
+        "response-property-list-of-types-widened": 1
+      }
+    },
+    "GET /responses/{}/input_items?beta=true": {
+      "method": "GET",
+      "path": "/responses/{response_id}/input_items?beta=true",
+      "count": 2,
+      "rules": {
+        "response-property-became-optional": 1,
+        "response-property-list-of-types-widened": 1
+      }
+    },
+    "GET /responses/{}?beta=true": {
+      "method": "GET",
+      "path": "/responses/{response_id}?beta=true",
+      "count": 2,
+      "rules": {
+        "response-property-list-of-types-widened": 1,
+        "response-property-became-optional": 1
+      }
+    },
+    "POST /responses?beta=true": {
+      "method": "POST",
+      "path": "/responses?beta=true",
+      "count": 6,
+      "rules": {
+        "response-property-became-optional": 3,
+        "response-property-list-of-types-widened": 3
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "specId": "openai",
+  "base": {
+    "sha": "f6f80b90bb96d74c22b05a68295af6e7359a48a6",
+    "date": "2026-10-08T20:44:03Z",
+    "message": "Add detailed schemas for Live tool selection parameters"
+  },
+  "revision": {
+    "sha": "978d0571e61ab2b18b80a84d17276f05403aace7",
+    "date": "2026-10-08T21:10:05Z",
+    "message": "Add OpenAI-hosted agent environments API and lifecycle webhooks"
+  },
+  "compareUrl": "https://github.com/openai/openai-openapi/compare/f6f80b90bb96d74c22b05a68295af6e7359a48a6...978d0571e61ab2b18b80a84d17276f05403aace7",
+  "oasdiff": "oasdiff version 1.34.0",
+  "changes": [],
+  "responseSummary": {
+    "GET /agents/environments/{}": {
+      "method": "GET",
+      "path": "/agents/environments/{environment_id}",
+      "count": 1,
+      "rules": {
+        "response-property-enum-value-added": 1
+      }
+    }
+  }
+}

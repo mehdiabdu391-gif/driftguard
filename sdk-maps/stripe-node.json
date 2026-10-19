@@ -1,0 +1,3067 @@
+{
+ "sdk": "stripe-node",
+ "specId": "stripe",
+ "repo": "stripe/stripe-node",
+ "sha": "ae674ed942ac1afc2f73fdab8716a3acdc13cd98",
+ "commitDate": "2026-10-16T23:45:09Z",
+ "styles": {
+  "client": {
+   "account.del": {
+    "method": "DELETE",
+    "path": "/v1/accounts/{}",
+    "source": "src/resources/Accounts.ts"
+   },
+   "account.retrieve": {
+    "method": "GET",
+    "path": "/v1/accounts/{}",
+    "alternatives": [
+     {
+      "method": "GET",
+      "path": "/v1/accounts/{}"
+     },
+     {
+      "method": "GET",
+      "path": "/v1/account"
+     }
+    ],
+    "source": "src/resources/Accounts.ts"
+   },
+   "account.update": {
+    "method": "POST",
+    "path": "/v1/accounts/{}",
+    "source": "src/resources/Accounts.ts"
+   },
+   "account.retrieveCurrent": {
+    "method": "GET",
+    "path": "/v1/account",
+    "source": "src/resources/Accounts.ts"
+   },
+   "account.list": {
+    "method": "GET",
+    "path": "/v1/accounts",
+    "source": "src/resources/Accounts.ts"
+   },
+   "account.create": {
+    "method": "POST",
+    "path": "/v1/accounts",
+    "source": "src/resources/Accounts.ts"
+   },
+   "account.reject": {
+    "method": "POST",
+    "path": "/v1/accounts/{}/reject",
+    "source": "src/resources/Accounts.ts"
+   },
+   "account.unreject": {
+    "method": "POST",
+    "path": "/v1/accounts/{}/unreject",
+    "source": "src/resources/Accounts.ts"
+   },
+   "account.listCapabilities": {
+    "method": "GET",
+    "path": "/v1/accounts/{}/capabilities",
+    "source": "src/resources/Accounts.ts"
+   },
+   "account.retrieveCapability": {
+    "method": "GET",
+    "path": "/v1/accounts/{}/capabilities/{}",
+    "source": "src/resources/Accounts.ts"
+   },
+   "account.updateCapability": {
+    "method": "POST",
+    "path": "/v1/accounts/{}/capabilities/{}",
+    "source": "src/resources/Accounts.ts"
+   },
+   "account.deleteExternalAccount": {
+    "method": "DELETE",
+    "path": "/v1/accounts/{}/external_accounts/{}",
+    "source": "src/resources/Accounts.ts"
+   },
+   "account.retrieveExternalAccount": {
+    "method": "GET",
+    "path": "/v1/accounts/{}/external_accounts/{}",
+    "source": "src/resources/Accounts.ts"
+   },
+   "account.updateExternalAccount": {
+    "method": "POST",
+    "path": "/v1/accounts/{}/external_accounts/{}",
+    "source": "src/resources/Accounts.ts"
+   },
+   "account.listExternalAccounts": {
+    "method": "GET",
+    "path": "/v1/accounts/{}/external_accounts",
+    "source": "src/resources/Accounts.ts"
+   },
+   "account.createExternalAccount": {
+    "method": "POST",
+    "path": "/v1/accounts/{}/external_accounts",
+    "source": "src/resources/Accounts.ts"
+   },
+   "account.createLoginLink": {
+    "method": "POST",
+    "path": "/v1/accounts/{}/login_links",
+    "source": "src/resources/Accounts.ts"
+   },
+   "account.deletePerson": {
+    "method": "DELETE",
+    "path": "/v1/accounts/{}/persons/{}",
+    "source": "src/resources/Accounts.ts"
+   },
+   "account.retrievePerson": {
+    "method": "GET",
+    "path": "/v1/accounts/{}/persons/{}",
+    "source": "src/resources/Accounts.ts"
+   },
+   "account.updatePerson": {
+    "method": "POST",
+    "path": "/v1/accounts/{}/persons/{}",
+    "source": "src/resources/Accounts.ts"
+   },
+   "account.listPersons": {
+    "method": "GET",
+    "path": "/v1/accounts/{}/persons",
+    "source": "src/resources/Accounts.ts"
+   },
+   "account.createPerson": {
+    "method": "POST",
+    "path": "/v1/accounts/{}/persons",
+    "source": "src/resources/Accounts.ts"
+   },
+   "accounts.del": {
+    "method": "DELETE",
+    "path": "/v1/accounts/{}",
+    "source": "src/resources/Accounts.ts"
+   },
+   "accounts.retrieve": {
+    "method": "GET",
+    "path": "/v1/accounts/{}",
+    "alternatives": [
+     {
+      "method": "GET",
+      "path": "/v1/accounts/{}"
+     },
+     {
+      "method": "GET",
+      "path": "/v1/account"
+     }
+    ],
+    "source": "src/resources/Accounts.ts"
+   },
+   "accounts.update": {
+    "method": "POST",
+    "path": "/v1/accounts/{}",
+    "source": "src/resources/Accounts.ts"
+   },
+   "accounts.retrieveCurrent": {
+    "method": "GET",
+    "path": "/v1/account",
+    "source": "src/resources/Accounts.ts"
+   },
+   "accounts.list": {
+    "method": "GET",
+    "path": "/v1/accounts",
+    "source": "src/resources/Accounts.ts"
+   },
+   "accounts.create": {
+    "method": "POST",
+    "path": "/v1/accounts",
+    "source": "src/resources/Accounts.ts"
+   },
+   "accounts.reject": {
+    "method": "POST",
+    "path": "/v1/accounts/{}/reject",
+    "source": "src/resources/Accounts.ts"
+   },
+   "accounts.unreject": {
+    "method": "POST",
+    "path": "/v1/accounts/{}/unreject",
+    "source": "src/resources/Accounts.ts"
+   },
+   "accounts.listCapabilities": {
+    "method": "GET",
+    "path": "/v1/accounts/{}/capabilities",
+    "source": "src/resources/Accounts.ts"
+   },
+   "accounts.retrieveCapability": {
+    "method": "GET",
+    "path": "/v1/accounts/{}/capabilities/{}",
+    "source": "src/resources/Accounts.ts"
+   },
+   "accounts.updateCapability": {
+    "method": "POST",
+    "path": "/v1/accounts/{}/capabilities/{}",
+    "source": "src/resources/Accounts.ts"
+   },
+   "accounts.deleteExternalAccount": {
+    "method": "DELETE",
+    "path": "/v1/accounts/{}/external_accounts/{}",
+    "source": "src/resources/Accounts.ts"
+   },
+   "accounts.retrieveExternalAccount": {
+    "method": "GET",
+    "path": "/v1/accounts/{}/external_accounts/{}",
+    "source": "src/resources/Accounts.ts"
+   },
+   "accounts.updateExternalAccount": {
+    "method": "POST",
+    "path": "/v1/accounts/{}/external_accounts/{}",
+    "source": "src/resources/Accounts.ts"
+   },
+   "accounts.listExternalAccounts": {
+    "method": "GET",
+    "path": "/v1/accounts/{}/external_accounts",
+    "source": "src/resources/Accounts.ts"
+   },
+   "accounts.createExternalAccount": {
+    "method": "POST",
+    "path": "/v1/accounts/{}/external_accounts",
+    "source": "src/resources/Accounts.ts"
+   },
+   "accounts.createLoginLink": {
+    "method": "POST",
+    "path": "/v1/accounts/{}/login_links",
+    "source": "src/resources/Accounts.ts"
+   },
+   "accounts.deletePerson": {
+    "method": "DELETE",
+    "path": "/v1/accounts/{}/persons/{}",
+    "source": "src/resources/Accounts.ts"
+   },
+   "accounts.retrievePerson": {
+    "method": "GET",
+    "path": "/v1/accounts/{}/persons/{}",
+    "source": "src/resources/Accounts.ts"
+   },
+   "accounts.updatePerson": {
+    "method": "POST",
+    "path": "/v1/accounts/{}/persons/{}",
+    "source": "src/resources/Accounts.ts"
+   },
+   "accounts.listPersons": {
+    "method": "GET",
+    "path": "/v1/accounts/{}/persons",
+    "source": "src/resources/Accounts.ts"
+   },
+   "accounts.createPerson": {
+    "method": "POST",
+    "path": "/v1/accounts/{}/persons",
+    "source": "src/resources/Accounts.ts"
+   },
+   "accountLinks.create": {
+    "method": "POST",
+    "path": "/v1/account_links",
+    "source": "src/resources/AccountLinks.ts"
+   },
+   "accountSessions.create": {
+    "method": "POST",
+    "path": "/v1/account_sessions",
+    "source": "src/resources/AccountSessions.ts"
+   },
+   "applePayDomains.del": {
+    "method": "DELETE",
+    "path": "/v1/apple_pay/domains/{}",
+    "source": "src/resources/ApplePayDomains.ts"
+   },
+   "applePayDomains.retrieve": {
+    "method": "GET",
+    "path": "/v1/apple_pay/domains/{}",
+    "source": "src/resources/ApplePayDomains.ts"
+   },
+   "applePayDomains.list": {
+    "method": "GET",
+    "path": "/v1/apple_pay/domains",
+    "source": "src/resources/ApplePayDomains.ts"
+   },
+   "applePayDomains.create": {
+    "method": "POST",
+    "path": "/v1/apple_pay/domains",
+    "source": "src/resources/ApplePayDomains.ts"
+   },
+   "applicationFees.list": {
+    "method": "GET",
+    "path": "/v1/application_fees",
+    "source": "src/resources/ApplicationFees.ts"
+   },
+   "applicationFees.retrieve": {
+    "method": "GET",
+    "path": "/v1/application_fees/{}",
+    "source": "src/resources/ApplicationFees.ts"
+   },
+   "applicationFees.retrieveRefund": {
+    "method": "GET",
+    "path": "/v1/application_fees/{}/refunds/{}",
+    "source": "src/resources/ApplicationFees.ts"
+   },
+   "applicationFees.updateRefund": {
+    "method": "POST",
+    "path": "/v1/application_fees/{}/refunds/{}",
+    "source": "src/resources/ApplicationFees.ts"
+   },
+   "applicationFees.listRefunds": {
+    "method": "GET",
+    "path": "/v1/application_fees/{}/refunds",
+    "source": "src/resources/ApplicationFees.ts"
+   },
+   "applicationFees.createRefund": {
+    "method": "POST",
+    "path": "/v1/application_fees/{}/refunds",
+    "source": "src/resources/ApplicationFees.ts"
+   },
+   "balance.retrieve": {
+    "method": "GET",
+    "path": "/v1/balance",
+    "source": "src/resources/Balance.ts"
+   },
+   "balances.retrieve": {
+    "method": "GET",
+    "path": "/v1/balance",
+    "source": "src/resources/Balance.ts"
+   },
+   "balanceSettings.retrieve": {
+    "method": "GET",
+    "path": "/v1/balance_settings",
+    "source": "src/resources/BalanceSettings.ts"
+   },
+   "balanceSettings.update": {
+    "method": "POST",
+    "path": "/v1/balance_settings",
+    "source": "src/resources/BalanceSettings.ts"
+   },
+   "balanceTransactions.list": {
+    "method": "GET",
+    "path": "/v1/balance_transactions",
+    "source": "src/resources/BalanceTransactions.ts"
+   },
+   "balanceTransactions.retrieve": {
+    "method": "GET",
+    "path": "/v1/balance_transactions/{}",
+    "source": "src/resources/BalanceTransactions.ts"
+   },
+   "charges.list": {
+    "method": "GET",
+    "path": "/v1/charges",
+    "source": "src/resources/Charges.ts"
+   },
+   "charges.create": {
+    "method": "POST",
+    "path": "/v1/charges",
+    "source": "src/resources/Charges.ts"
+   },
+   "charges.retrieve": {
+    "method": "GET",
+    "path": "/v1/charges/{}",
+    "source": "src/resources/Charges.ts"
+   },
+   "charges.update": {
+    "method": "POST",
+    "path": "/v1/charges/{}",
+    "source": "src/resources/Charges.ts"
+   },
+   "charges.search": {
+    "method": "GET",
+    "path": "/v1/charges/search",
+    "source": "src/resources/Charges.ts"
+   },
+   "charges.capture": {
+    "method": "POST",
+    "path": "/v1/charges/{}/capture",
+    "source": "src/resources/Charges.ts"
+   },
+   "confirmationTokens.retrieve": {
+    "method": "GET",
+    "path": "/v1/confirmation_tokens/{}",
+    "source": "src/resources/ConfirmationTokens.ts"
+   },
+   "countrySpecs.list": {
+    "method": "GET",
+    "path": "/v1/country_specs",
+    "source": "src/resources/CountrySpecs.ts"
+   },
+   "countrySpecs.retrieve": {
+    "method": "GET",
+    "path": "/v1/country_specs/{}",
+    "source": "src/resources/CountrySpecs.ts"
+   },
+   "coupons.del": {
+    "method": "DELETE",
+    "path": "/v1/coupons/{}",
+    "source": "src/resources/Coupons.ts"
+   },
+   "coupons.retrieve": {
+    "method": "GET",
+    "path": "/v1/coupons/{}",
+    "source": "src/resources/Coupons.ts"
+   },
+   "coupons.update": {
+    "method": "POST",
+    "path": "/v1/coupons/{}",
+    "source": "src/resources/Coupons.ts"
+   },
+   "coupons.list": {
+    "method": "GET",
+    "path": "/v1/coupons",
+    "source": "src/resources/Coupons.ts"
+   },
+   "coupons.create": {
+    "method": "POST",
+    "path": "/v1/coupons",
+    "source": "src/resources/Coupons.ts"
+   },
+   "creditNotes.list": {
+    "method": "GET",
+    "path": "/v1/credit_notes",
+    "source": "src/resources/CreditNotes.ts"
+   },
+   "creditNotes.create": {
+    "method": "POST",
+    "path": "/v1/credit_notes",
+    "source": "src/resources/CreditNotes.ts"
+   },
+   "creditNotes.retrieve": {
+    "method": "GET",
+    "path": "/v1/credit_notes/{}",
+    "source": "src/resources/CreditNotes.ts"
+   },
+   "creditNotes.update": {
+    "method": "POST",
+    "path": "/v1/credit_notes/{}",
+    "source": "src/resources/CreditNotes.ts"
+   },
+   "creditNotes.preview": {
+    "method": "GET",
+    "path": "/v1/credit_notes/preview",
+    "source": "src/resources/CreditNotes.ts"
+   },
+   "creditNotes.voidCreditNote": {
+    "method": "POST",
+    "path": "/v1/credit_notes/{}/void",
+    "source": "src/resources/CreditNotes.ts"
+   },
+   "creditNotes.listPreviewLineItems": {
+    "method": "GET",
+    "path": "/v1/credit_notes/preview/lines",
+    "source": "src/resources/CreditNotes.ts"
+   },
+   "creditNotes.listLineItems": {
+    "method": "GET",
+    "path": "/v1/credit_notes/{}/lines",
+    "source": "src/resources/CreditNotes.ts"
+   },
+   "customers.del": {
+    "method": "DELETE",
+    "path": "/v1/customers/{}",
+    "source": "src/resources/Customers.ts"
+   },
+   "customers.retrieve": {
+    "method": "GET",
+    "path": "/v1/customers/{}",
+    "source": "src/resources/Customers.ts"
+   },
+   "customers.update": {
+    "method": "POST",
+    "path": "/v1/customers/{}",
+    "source": "src/resources/Customers.ts"
+   },
+   "customers.deleteDiscount": {
+    "method": "DELETE",
+    "path": "/v1/customers/{}/discount",
+    "source": "src/resources/Customers.ts"
+   },
+   "customers.list": {
+    "method": "GET",
+    "path": "/v1/customers",
+    "source": "src/resources/Customers.ts"
+   },
+   "customers.create": {
+    "method": "POST",
+    "path": "/v1/customers",
+    "source": "src/resources/Customers.ts"
+   },
+   "customers.search": {
+    "method": "GET",
+    "path": "/v1/customers/search",
+    "source": "src/resources/Customers.ts"
+   },
+   "customers.listBalanceTransactions": {
+    "method": "GET",
+    "path": "/v1/customers/{}/balance_transactions",
+    "source": "src/resources/Customers.ts"
+   },
+   "customers.createBalanceTransaction": {
+    "method": "POST",
+    "path": "/v1/customers/{}/balance_transactions",
+    "source": "src/resources/Customers.ts"
+   },
+   "customers.retrieveBalanceTransaction": {
+    "method": "GET",
+    "path": "/v1/customers/{}/balance_transactions/{}",
+    "source": "src/resources/Customers.ts"
+   },
+   "customers.updateBalanceTransaction": {
+    "method": "POST",
+    "path": "/v1/customers/{}/balance_transactions/{}",
+    "source": "src/resources/Customers.ts"
+   },
+   "customers.retrieveCashBalance": {
+    "method": "GET",
+    "path": "/v1/customers/{}/cash_balance",
+    "source": "src/resources/Customers.ts"
+   },
+   "customers.updateCashBalance": {
+    "method": "POST",
+    "path": "/v1/customers/{}/cash_balance",
+    "source": "src/resources/Customers.ts"
+   },
+   "customers.listCashBalanceTransactions": {
+    "method": "GET",
+    "path": "/v1/customers/{}/cash_balance_transactions",
+    "source": "src/resources/Customers.ts"
+   },
+   "customers.retrieveCashBalanceTransaction": {
+    "method": "GET",
+    "path": "/v1/customers/{}/cash_balance_transactions/{}",
+    "source": "src/resources/Customers.ts"
+   },
+   "customers.createFundingInstructions": {
+    "method": "POST",
+    "path": "/v1/customers/{}/funding_instructions",
+    "source": "src/resources/Customers.ts"
+   },
+   "customers.listPaymentMethods": {
+    "method": "GET",
+    "path": "/v1/customers/{}/payment_methods",
+    "source": "src/resources/Customers.ts"
+   },
+   "customers.retrievePaymentMethod": {
+    "method": "GET",
+    "path": "/v1/customers/{}/payment_methods/{}",
+    "source": "src/resources/Customers.ts"
+   },
+   "customers.listSources": {
+    "method": "GET",
+    "path": "/v1/customers/{}/sources",
+    "source": "src/resources/Customers.ts"
+   },
+   "customers.createSource": {
+    "method": "POST",
+    "path": "/v1/customers/{}/sources",
+    "source": "src/resources/Customers.ts"
+   },
+   "customers.retrieveSource": {
+    "method": "GET",
+    "path": "/v1/customers/{}/sources/{}",
+    "source": "src/resources/Customers.ts"
+   },
+   "customers.updateSource": {
+    "method": "POST",
+    "path": "/v1/customers/{}/sources/{}",
+    "source": "src/resources/Customers.ts"
+   },
+   "customers.deleteSource": {
+    "method": "DELETE",
+    "path": "/v1/customers/{}/sources/{}",
+    "source": "src/resources/Customers.ts"
+   },
+   "customers.verifySource": {
+    "method": "POST",
+    "path": "/v1/customers/{}/sources/{}/verify",
+    "source": "src/resources/Customers.ts"
+   },
+   "customers.deleteTaxId": {
+    "method": "DELETE",
+    "path": "/v1/customers/{}/tax_ids/{}",
+    "source": "src/resources/Customers.ts"
+   },
+   "customers.retrieveTaxId": {
+    "method": "GET",
+    "path": "/v1/customers/{}/tax_ids/{}",
+    "source": "src/resources/Customers.ts"
+   },
+   "customers.listTaxIds": {
+    "method": "GET",
+    "path": "/v1/customers/{}/tax_ids",
+    "source": "src/resources/Customers.ts"
+   },
+   "customers.createTaxId": {
+    "method": "POST",
+    "path": "/v1/customers/{}/tax_ids",
+    "source": "src/resources/Customers.ts"
+   },
+   "customerSessions.create": {
+    "method": "POST",
+    "path": "/v1/customer_sessions",
+    "source": "src/resources/CustomerSessions.ts"
+   },
+   "disputes.list": {
+    "method": "GET",
+    "path": "/v1/disputes",
+    "source": "src/resources/Disputes.ts"
+   },
+   "disputes.retrieve": {
+    "method": "GET",
+    "path": "/v1/disputes/{}",
+    "source": "src/resources/Disputes.ts"
+   },
+   "disputes.update": {
+    "method": "POST",
+    "path": "/v1/disputes/{}",
+    "source": "src/resources/Disputes.ts"
+   },
+   "disputes.close": {
+    "method": "POST",
+    "path": "/v1/disputes/{}/close",
+    "source": "src/resources/Disputes.ts"
+   },
+   "ephemeralKeys.del": {
+    "method": "DELETE",
+    "path": "/v1/ephemeral_keys/{}",
+    "source": "src/resources/EphemeralKeys.ts"
+   },
+   "ephemeralKeys.create": {
+    "method": "POST",
+    "path": "/v1/ephemeral_keys",
+    "source": "src/resources/EphemeralKeys.ts"
+   },
+   "events.list": {
+    "method": "GET",
+    "path": "/v1/events",
+    "source": "src/resources/Events.ts"
+   },
+   "events.retrieve": {
+    "method": "GET",
+    "path": "/v1/events/{}",
+    "source": "src/resources/Events.ts"
+   },
+   "exchangeRates.list": {
+    "method": "GET",
+    "path": "/v1/exchange_rates",
+    "source": "src/resources/ExchangeRates.ts"
+   },
+   "exchangeRates.retrieve": {
+    "method": "GET",
+    "path": "/v1/exchange_rates/{}",
+    "source": "src/resources/ExchangeRates.ts"
+   },
+   "files.list": {
+    "method": "GET",
+    "path": "/v1/files",
+    "source": "src/resources/Files.ts"
+   },
+   "files.create": {
+    "method": "POST",
+    "path": "/v1/files",
+    "source": "src/resources/Files.ts"
+   },
+   "files.retrieve": {
+    "method": "GET",
+    "path": "/v1/files/{}",
+    "source": "src/resources/Files.ts"
+   },
+   "fileLinks.list": {
+    "method": "GET",
+    "path": "/v1/file_links",
+    "source": "src/resources/FileLinks.ts"
+   },
+   "fileLinks.create": {
+    "method": "POST",
+    "path": "/v1/file_links",
+    "source": "src/resources/FileLinks.ts"
+   },
+   "fileLinks.retrieve": {
+    "method": "GET",
+    "path": "/v1/file_links/{}",
+    "source": "src/resources/FileLinks.ts"
+   },
+   "fileLinks.update": {
+    "method": "POST",
+    "path": "/v1/file_links/{}",
+    "source": "src/resources/FileLinks.ts"
+   },
+   "invoices.del": {
+    "method": "DELETE",
+    "path": "/v1/invoices/{}",
+    "source": "src/resources/Invoices.ts"
+   },
+   "invoices.retrieve": {
+    "method": "GET",
+    "path": "/v1/invoices/{}",
+    "source": "src/resources/Invoices.ts"
+   },
+   "invoices.update": {
+    "method": "POST",
+    "path": "/v1/invoices/{}",
+    "source": "src/resources/Invoices.ts"
+   },
+   "invoices.list": {
+    "method": "GET",
+    "path": "/v1/invoices",
+    "source": "src/resources/Invoices.ts"
+   },
+   "invoices.create": {
+    "method": "POST",
+    "path": "/v1/invoices",
+    "source": "src/resources/Invoices.ts"
+   },
+   "invoices.search": {
+    "method": "GET",
+    "path": "/v1/invoices/search",
+    "source": "src/resources/Invoices.ts"
+   },
+   "invoices.addLines": {
+    "method": "POST",
+    "path": "/v1/invoices/{}/add_lines",
+    "source": "src/resources/Invoices.ts"
+   },
+   "invoices.attachPayment": {
+    "method": "POST",
+    "path": "/v1/invoices/{}/attach_payment",
+    "source": "src/resources/Invoices.ts"
+   },
+   "invoices.finalizeInvoice": {
+    "method": "POST",
+    "path": "/v1/invoices/{}/finalize",
+    "source": "src/resources/Invoices.ts"
+   },
+   "invoices.markUncollectible": {
+    "method": "POST",
+    "path": "/v1/invoices/{}/mark_uncollectible",
+    "source": "src/resources/Invoices.ts"
+   },
+   "invoices.pay": {
+    "method": "POST",
+    "path": "/v1/invoices/{}/pay",
+    "source": "src/resources/Invoices.ts"
+   },
+   "invoices.removeLines": {
+    "method": "POST",
+    "path": "/v1/invoices/{}/remove_lines",
+    "source": "src/resources/Invoices.ts"
+   },
+   "invoices.sendInvoice": {
+    "method": "POST",
+    "path": "/v1/invoices/{}/send",
+    "source": "src/resources/Invoices.ts"
+   },
+   "invoices.updateLines": {
+    "method": "POST",
+    "path": "/v1/invoices/{}/update_lines",
+    "source": "src/resources/Invoices.ts"
+   },
+   "invoices.voidInvoice": {
+    "method": "POST",
+    "path": "/v1/invoices/{}/void",
+    "source": "src/resources/Invoices.ts"
+   },
+   "invoices.createPreview": {
+    "method": "POST",
+    "path": "/v1/invoices/create_preview",
+    "source": "src/resources/Invoices.ts"
+   },
+   "invoices.listLineItems": {
+    "method": "GET",
+    "path": "/v1/invoices/{}/lines",
+    "source": "src/resources/Invoices.ts"
+   },
+   "invoices.updateLineItem": {
+    "method": "POST",
+    "path": "/v1/invoices/{}/lines/{}",
+    "source": "src/resources/Invoices.ts"
+   },
+   "invoiceItems.del": {
+    "method": "DELETE",
+    "path": "/v1/invoiceitems/{}",
+    "source": "src/resources/InvoiceItems.ts"
+   },
+   "invoiceItems.retrieve": {
+    "method": "GET",
+    "path": "/v1/invoiceitems/{}",
+    "source": "src/resources/InvoiceItems.ts"
+   },
+   "invoiceItems.update": {
+    "method": "POST",
+    "path": "/v1/invoiceitems/{}",
+    "source": "src/resources/InvoiceItems.ts"
+   },
+   "invoiceItems.list": {
+    "method": "GET",
+    "path": "/v1/invoiceitems",
+    "source": "src/resources/InvoiceItems.ts"
+   },
+   "invoiceItems.create": {
+    "method": "POST",
+    "path": "/v1/invoiceitems",
+    "source": "src/resources/InvoiceItems.ts"
+   },
+   "invoicePayments.list": {
+    "method": "GET",
+    "path": "/v1/invoice_payments",
+    "source": "src/resources/InvoicePayments.ts"
+   },
+   "invoicePayments.retrieve": {
+    "method": "GET",
+    "path": "/v1/invoice_payments/{}",
+    "source": "src/resources/InvoicePayments.ts"
+   },
+   "invoiceRenderingTemplates.list": {
+    "method": "GET",
+    "path": "/v1/invoice_rendering_templates",
+    "source": "src/resources/InvoiceRenderingTemplates.ts"
+   },
+   "invoiceRenderingTemplates.retrieve": {
+    "method": "GET",
+    "path": "/v1/invoice_rendering_templates/{}",
+    "source": "src/resources/InvoiceRenderingTemplates.ts"
+   },
+   "invoiceRenderingTemplates.archive": {
+    "method": "POST",
+    "path": "/v1/invoice_rendering_templates/{}/archive",
+    "source": "src/resources/InvoiceRenderingTemplates.ts"
+   },
+   "invoiceRenderingTemplates.unarchive": {
+    "method": "POST",
+    "path": "/v1/invoice_rendering_templates/{}/unarchive",
+    "source": "src/resources/InvoiceRenderingTemplates.ts"
+   },
+   "mandates.retrieve": {
+    "method": "GET",
+    "path": "/v1/mandates/{}",
+    "source": "src/resources/Mandates.ts"
+   },
+   "oauth.token": {
+    "method": "POST",
+    "path": "/oauth/token",
+    "source": "src/resources/OAuth.ts"
+   },
+   "oauth.deauthorize": {
+    "method": "POST",
+    "path": "/oauth/deauthorize",
+    "source": "src/resources/OAuth.ts"
+   },
+   "paymentAttemptRecords.list": {
+    "method": "GET",
+    "path": "/v1/payment_attempt_records",
+    "source": "src/resources/PaymentAttemptRecords.ts"
+   },
+   "paymentAttemptRecords.retrieve": {
+    "method": "GET",
+    "path": "/v1/payment_attempt_records/{}",
+    "source": "src/resources/PaymentAttemptRecords.ts"
+   },
+   "paymentIntents.list": {
+    "method": "GET",
+    "path": "/v1/payment_intents",
+    "source": "src/resources/PaymentIntents.ts"
+   },
+   "paymentIntents.create": {
+    "method": "POST",
+    "path": "/v1/payment_intents",
+    "source": "src/resources/PaymentIntents.ts"
+   },
+   "paymentIntents.retrieve": {
+    "method": "GET",
+    "path": "/v1/payment_intents/{}",
+    "source": "src/resources/PaymentIntents.ts"
+   },
+   "paymentIntents.update": {
+    "method": "POST",
+    "path": "/v1/payment_intents/{}",
+    "source": "src/resources/PaymentIntents.ts"
+   },
+   "paymentIntents.search": {
+    "method": "GET",
+    "path": "/v1/payment_intents/search",
+    "source": "src/resources/PaymentIntents.ts"
+   },
+   "paymentIntents.applyCustomerBalance": {
+    "method": "POST",
+    "path": "/v1/payment_intents/{}/apply_customer_balance",
+    "source": "src/resources/PaymentIntents.ts"
+   },
+   "paymentIntents.cancel": {
+    "method": "POST",
+    "path": "/v1/payment_intents/{}/cancel",
+    "source": "src/resources/PaymentIntents.ts"
+   },
+   "paymentIntents.capture": {
+    "method": "POST",
+    "path": "/v1/payment_intents/{}/capture",
+    "source": "src/resources/PaymentIntents.ts"
+   },
+   "paymentIntents.confirm": {
+    "method": "POST",
+    "path": "/v1/payment_intents/{}/confirm",
+    "source": "src/resources/PaymentIntents.ts"
+   },
+   "paymentIntents.incrementAuthorization": {
+    "method": "POST",
+    "path": "/v1/payment_intents/{}/increment_authorization",
+    "source": "src/resources/PaymentIntents.ts"
+   },
+   "paymentIntents.verifyMicrodeposits": {
+    "method": "POST",
+    "path": "/v1/payment_intents/{}/verify_microdeposits",
+    "source": "src/resources/PaymentIntents.ts"
+   },
+   "paymentIntents.listAmountDetailsLineItems": {
+    "method": "GET",
+    "path": "/v1/payment_intents/{}/amount_details_line_items",
+    "source": "src/resources/PaymentIntents.ts"
+   },
+   "paymentLinks.list": {
+    "method": "GET",
+    "path": "/v1/payment_links",
+    "source": "src/resources/PaymentLinks.ts"
+   },
+   "paymentLinks.create": {
+    "method": "POST",
+    "path": "/v1/payment_links",
+    "source": "src/resources/PaymentLinks.ts"
+   },
+   "paymentLinks.retrieve": {
+    "method": "GET",
+    "path": "/v1/payment_links/{}",
+    "source": "src/resources/PaymentLinks.ts"
+   },
+   "paymentLinks.update": {
+    "method": "POST",
+    "path": "/v1/payment_links/{}",
+    "source": "src/resources/PaymentLinks.ts"
+   },
+   "paymentLinks.listLineItems": {
+    "method": "GET",
+    "path": "/v1/payment_links/{}/line_items",
+    "source": "src/resources/PaymentLinks.ts"
+   },
+   "paymentMethods.list": {
+    "method": "GET",
+    "path": "/v1/payment_methods",
+    "source": "src/resources/PaymentMethods.ts"
+   },
+   "paymentMethods.create": {
+    "method": "POST",
+    "path": "/v1/payment_methods",
+    "source": "src/resources/PaymentMethods.ts"
+   },
+   "paymentMethods.retrieve": {
+    "method": "GET",
+    "path": "/v1/payment_methods/{}",
+    "source": "src/resources/PaymentMethods.ts"
+   },
+   "paymentMethods.update": {
+    "method": "POST",
+    "path": "/v1/payment_methods/{}",
+    "source": "src/resources/PaymentMethods.ts"
+   },
+   "paymentMethods.attach": {
+    "method": "POST",
+    "path": "/v1/payment_methods/{}/attach",
+    "source": "src/resources/PaymentMethods.ts"
+   },
+   "paymentMethods.detach": {
+    "method": "POST",
+    "path": "/v1/payment_methods/{}/detach",
+    "source": "src/resources/PaymentMethods.ts"
+   },
+   "paymentMethodConfigurations.list": {
+    "method": "GET",
+    "path": "/v1/payment_method_configurations",
+    "source": "src/resources/PaymentMethodConfigurations.ts"
+   },
+   "paymentMethodConfigurations.create": {
+    "method": "POST",
+    "path": "/v1/payment_method_configurations",
+    "source": "src/resources/PaymentMethodConfigurations.ts"
+   },
+   "paymentMethodConfigurations.retrieve": {
+    "method": "GET",
+    "path": "/v1/payment_method_configurations/{}",
+    "source": "src/resources/PaymentMethodConfigurations.ts"
+   },
+   "paymentMethodConfigurations.update": {
+    "method": "POST",
+    "path": "/v1/payment_method_configurations/{}",
+    "source": "src/resources/PaymentMethodConfigurations.ts"
+   },
+   "paymentMethodDomains.list": {
+    "method": "GET",
+    "path": "/v1/payment_method_domains",
+    "source": "src/resources/PaymentMethodDomains.ts"
+   },
+   "paymentMethodDomains.create": {
+    "method": "POST",
+    "path": "/v1/payment_method_domains",
+    "source": "src/resources/PaymentMethodDomains.ts"
+   },
+   "paymentMethodDomains.retrieve": {
+    "method": "GET",
+    "path": "/v1/payment_method_domains/{}",
+    "source": "src/resources/PaymentMethodDomains.ts"
+   },
+   "paymentMethodDomains.update": {
+    "method": "POST",
+    "path": "/v1/payment_method_domains/{}",
+    "source": "src/resources/PaymentMethodDomains.ts"
+   },
+   "paymentMethodDomains.validate": {
+    "method": "POST",
+    "path": "/v1/payment_method_domains/{}/validate",
+    "source": "src/resources/PaymentMethodDomains.ts"
+   },
+   "paymentRecords.list": {
+    "method": "GET",
+    "path": "/v1/payment_records",
+    "source": "src/resources/PaymentRecords.ts"
+   },
+   "paymentRecords.retrieve": {
+    "method": "GET",
+    "path": "/v1/payment_records/{}",
+    "source": "src/resources/PaymentRecords.ts"
+   },
+   "paymentRecords.reportPaymentAttempt": {
+    "method": "POST",
+    "path": "/v1/payment_records/{}/report_payment_attempt",
+    "source": "src/resources/PaymentRecords.ts"
+   },
+   "paymentRecords.reportPaymentAttemptCanceled": {
+    "method": "POST",
+    "path": "/v1/payment_records/{}/report_payment_attempt_canceled",
+    "source": "src/resources/PaymentRecords.ts"
+   },
+   "paymentRecords.reportPaymentAttemptFailed": {
+    "method": "POST",
+    "path": "/v1/payment_records/{}/report_payment_attempt_failed",
+    "source": "src/resources/PaymentRecords.ts"
+   },
+   "paymentRecords.reportPaymentAttemptGuaranteed": {
+    "method": "POST",
+    "path": "/v1/payment_records/{}/report_payment_attempt_guaranteed",
+    "source": "src/resources/PaymentRecords.ts"
+   },
+   "paymentRecords.reportPaymentAttemptInformational": {
+    "method": "POST",
+    "path": "/v1/payment_records/{}/report_payment_attempt_informational",
+    "source": "src/resources/PaymentRecords.ts"
+   },
+   "paymentRecords.reportRefund": {
+    "method": "POST",
+    "path": "/v1/payment_records/{}/report_refund",
+    "source": "src/resources/PaymentRecords.ts"
+   },
+   "paymentRecords.reportPayment": {
+    "method": "POST",
+    "path": "/v1/payment_records/report_payment",
+    "source": "src/resources/PaymentRecords.ts"
+   },
+   "payouts.list": {
+    "method": "GET",
+    "path": "/v1/payouts",
+    "source": "src/resources/Payouts.ts"
+   },
+   "payouts.create": {
+    "method": "POST",
+    "path": "/v1/payouts",
+    "source": "src/resources/Payouts.ts"
+   },
+   "payouts.retrieve": {
+    "method": "GET",
+    "path": "/v1/payouts/{}",
+    "source": "src/resources/Payouts.ts"
+   },
+   "payouts.update": {
+    "method": "POST",
+    "path": "/v1/payouts/{}",
+    "source": "src/resources/Payouts.ts"
+   },
+   "payouts.cancel": {
+    "method": "POST",
+    "path": "/v1/payouts/{}/cancel",
+    "source": "src/resources/Payouts.ts"
+   },
+   "payouts.reverse": {
+    "method": "POST",
+    "path": "/v1/payouts/{}/reverse",
+    "source": "src/resources/Payouts.ts"
+   },
+   "plans.del": {
+    "method": "DELETE",
+    "path": "/v1/plans/{}",
+    "source": "src/resources/Plans.ts"
+   },
+   "plans.retrieve": {
+    "method": "GET",
+    "path": "/v1/plans/{}",
+    "source": "src/resources/Plans.ts"
+   },
+   "plans.update": {
+    "method": "POST",
+    "path": "/v1/plans/{}",
+    "source": "src/resources/Plans.ts"
+   },
+   "plans.list": {
+    "method": "GET",
+    "path": "/v1/plans",
+    "source": "src/resources/Plans.ts"
+   },
+   "plans.create": {
+    "method": "POST",
+    "path": "/v1/plans",
+    "source": "src/resources/Plans.ts"
+   },
+   "prices.list": {
+    "method": "GET",
+    "path": "/v1/prices",
+    "source": "src/resources/Prices.ts"
+   },
+   "prices.create": {
+    "method": "POST",
+    "path": "/v1/prices",
+    "source": "src/resources/Prices.ts"
+   },
+   "prices.retrieve": {
+    "method": "GET",
+    "path": "/v1/prices/{}",
+    "source": "src/resources/Prices.ts"
+   },
+   "prices.update": {
+    "method": "POST",
+    "path": "/v1/prices/{}",
+    "source": "src/resources/Prices.ts"
+   },
+   "prices.search": {
+    "method": "GET",
+    "path": "/v1/prices/search",
+    "source": "src/resources/Prices.ts"
+   },
+   "products.del": {
+    "method": "DELETE",
+    "path": "/v1/products/{}",
+    "source": "src/resources/Products.ts"
+   },
+   "products.retrieve": {
+    "method": "GET",
+    "path": "/v1/products/{}",
+    "source": "src/resources/Products.ts"
+   },
+   "products.update": {
+    "method": "POST",
+    "path": "/v1/products/{}",
+    "source": "src/resources/Products.ts"
+   },
+   "products.list": {
+    "method": "GET",
+    "path": "/v1/products",
+    "source": "src/resources/Products.ts"
+   },
+   "products.create": {
+    "method": "POST",
+    "path": "/v1/products",
+    "source": "src/resources/Products.ts"
+   },
+   "products.search": {
+    "method": "GET",
+    "path": "/v1/products/search",
+    "source": "src/resources/Products.ts"
+   },
+   "products.deleteFeature": {
+    "method": "DELETE",
+    "path": "/v1/products/{}/features/{}",
+    "source": "src/resources/Products.ts"
+   },
+   "products.retrieveFeature": {
+    "method": "GET",
+    "path": "/v1/products/{}/features/{}",
+    "source": "src/resources/Products.ts"
+   },
+   "products.listFeatures": {
+    "method": "GET",
+    "path": "/v1/products/{}/features",
+    "source": "src/resources/Products.ts"
+   },
+   "products.createFeature": {
+    "method": "POST",
+    "path": "/v1/products/{}/features",
+    "source": "src/resources/Products.ts"
+   },
+   "promotionCodes.list": {
+    "method": "GET",
+    "path": "/v1/promotion_codes",
+    "source": "src/resources/PromotionCodes.ts"
+   },
+   "promotionCodes.create": {
+    "method": "POST",
+    "path": "/v1/promotion_codes",
+    "source": "src/resources/PromotionCodes.ts"
+   },
+   "promotionCodes.retrieve": {
+    "method": "GET",
+    "path": "/v1/promotion_codes/{}",
+    "source": "src/resources/PromotionCodes.ts"
+   },
+   "promotionCodes.update": {
+    "method": "POST",
+    "path": "/v1/promotion_codes/{}",
+    "source": "src/resources/PromotionCodes.ts"
+   },
+   "quotes.list": {
+    "method": "GET",
+    "path": "/v1/quotes",
+    "source": "src/resources/Quotes.ts"
+   },
+   "quotes.create": {
+    "method": "POST",
+    "path": "/v1/quotes",
+    "source": "src/resources/Quotes.ts"
+   },
+   "quotes.retrieve": {
+    "method": "GET",
+    "path": "/v1/quotes/{}",
+    "source": "src/resources/Quotes.ts"
+   },
+   "quotes.update": {
+    "method": "POST",
+    "path": "/v1/quotes/{}",
+    "source": "src/resources/Quotes.ts"
+   },
+   "quotes.accept": {
+    "method": "POST",
+    "path": "/v1/quotes/{}/accept",
+    "source": "src/resources/Quotes.ts"
+   },
+   "quotes.cancel": {
+    "method": "POST",
+    "path": "/v1/quotes/{}/cancel",
+    "source": "src/resources/Quotes.ts"
+   },
+   "quotes.finalizeQuote": {
+    "method": "POST",
+    "path": "/v1/quotes/{}/finalize",
+    "source": "src/resources/Quotes.ts"
+   },
+   "quotes.pdf": {
+    "method": "GET",
+    "path": "/v1/quotes/{}/pdf",
+    "source": "src/resources/Quotes.ts"
+   },
+   "quotes.listComputedUpfrontLineItems": {
+    "method": "GET",
+    "path": "/v1/quotes/{}/computed_upfront_line_items",
+    "source": "src/resources/Quotes.ts"
+   },
+   "quotes.listLineItems": {
+    "method": "GET",
+    "path": "/v1/quotes/{}/line_items",
+    "source": "src/resources/Quotes.ts"
+   },
+   "refunds.list": {
+    "method": "GET",
+    "path": "/v1/refunds",
+    "source": "src/resources/Refunds.ts"
+   },
+   "refunds.create": {
+    "method": "POST",
+    "path": "/v1/refunds",
+    "source": "src/resources/Refunds.ts"
+   },
+   "refunds.retrieve": {
+    "method": "GET",
+    "path": "/v1/refunds/{}",
+    "source": "src/resources/Refunds.ts"
+   },
+   "refunds.update": {
+    "method": "POST",
+    "path": "/v1/refunds/{}",
+    "source": "src/resources/Refunds.ts"
+   },
+   "refunds.cancel": {
+    "method": "POST",
+    "path": "/v1/refunds/{}/cancel",
+    "source": "src/resources/Refunds.ts"
+   },
+   "reviews.list": {
+    "method": "GET",
+    "path": "/v1/reviews",
+    "source": "src/resources/Reviews.ts"
+   },
+   "reviews.retrieve": {
+    "method": "GET",
+    "path": "/v1/reviews/{}",
+    "source": "src/resources/Reviews.ts"
+   },
+   "reviews.approve": {
+    "method": "POST",
+    "path": "/v1/reviews/{}/approve",
+    "source": "src/resources/Reviews.ts"
+   },
+   "setupAttempts.list": {
+    "method": "GET",
+    "path": "/v1/setup_attempts",
+    "source": "src/resources/SetupAttempts.ts"
+   },
+   "setupIntents.list": {
+    "method": "GET",
+    "path": "/v1/setup_intents",
+    "source": "src/resources/SetupIntents.ts"
+   },
+   "setupIntents.create": {
+    "method": "POST",
+    "path": "/v1/setup_intents",
+    "source": "src/resources/SetupIntents.ts"
+   },
+   "setupIntents.retrieve": {
+    "method": "GET",
+    "path": "/v1/setup_intents/{}",
+    "source": "src/resources/SetupIntents.ts"
+   },
+   "setupIntents.update": {
+    "method": "POST",
+    "path": "/v1/setup_intents/{}",
+    "source": "src/resources/SetupIntents.ts"
+   },
+   "setupIntents.cancel": {
+    "method": "POST",
+    "path": "/v1/setup_intents/{}/cancel",
+    "source": "src/resources/SetupIntents.ts"
+   },
+   "setupIntents.confirm": {
+    "method": "POST",
+    "path": "/v1/setup_intents/{}/confirm",
+    "source": "src/resources/SetupIntents.ts"
+   },
+   "setupIntents.verifyMicrodeposits": {
+    "method": "POST",
+    "path": "/v1/setup_intents/{}/verify_microdeposits",
+    "source": "src/resources/SetupIntents.ts"
+   },
+   "shippingRates.list": {
+    "method": "GET",
+    "path": "/v1/shipping_rates",
+    "source": "src/resources/ShippingRates.ts"
+   },
+   "shippingRates.create": {
+    "method": "POST",
+    "path": "/v1/shipping_rates",
+    "source": "src/resources/ShippingRates.ts"
+   },
+   "shippingRates.retrieve": {
+    "method": "GET",
+    "path": "/v1/shipping_rates/{}",
+    "source": "src/resources/ShippingRates.ts"
+   },
+   "shippingRates.update": {
+    "method": "POST",
+    "path": "/v1/shipping_rates/{}",
+    "source": "src/resources/ShippingRates.ts"
+   },
+   "sources.retrieve": {
+    "method": "GET",
+    "path": "/v1/sources/{}",
+    "source": "src/resources/Sources.ts"
+   },
+   "sources.update": {
+    "method": "POST",
+    "path": "/v1/sources/{}",
+    "source": "src/resources/Sources.ts"
+   },
+   "sources.create": {
+    "method": "POST",
+    "path": "/v1/sources",
+    "source": "src/resources/Sources.ts"
+   },
+   "sources.verify": {
+    "method": "POST",
+    "path": "/v1/sources/{}/verify",
+    "source": "src/resources/Sources.ts"
+   },
+   "sources.listSourceTransactions": {
+    "method": "GET",
+    "path": "/v1/sources/{}/source_transactions",
+    "source": "src/resources/Sources.ts"
+   },
+   "subscriptions.cancel": {
+    "method": "DELETE",
+    "path": "/v1/subscriptions/{}",
+    "source": "src/resources/Subscriptions.ts"
+   },
+   "subscriptions.retrieve": {
+    "method": "GET",
+    "path": "/v1/subscriptions/{}",
+    "source": "src/resources/Subscriptions.ts"
+   },
+   "subscriptions.update": {
+    "method": "POST",
+    "path": "/v1/subscriptions/{}",
+    "source": "src/resources/Subscriptions.ts"
+   },
+   "subscriptions.deleteDiscount": {
+    "method": "DELETE",
+    "path": "/v1/subscriptions/{}/discount",
+    "source": "src/resources/Subscriptions.ts"
+   },
+   "subscriptions.list": {
+    "method": "GET",
+    "path": "/v1/subscriptions",
+    "source": "src/resources/Subscriptions.ts"
+   },
+   "subscriptions.create": {
+    "method": "POST",
+    "path": "/v1/subscriptions",
+    "source": "src/resources/Subscriptions.ts"
+   },
+   "subscriptions.search": {
+    "method": "GET",
+    "path": "/v1/subscriptions/search",
+    "source": "src/resources/Subscriptions.ts"
+   },
+   "subscriptions.migrate": {
+    "method": "POST",
+    "path": "/v1/subscriptions/{}/migrate",
+    "source": "src/resources/Subscriptions.ts"
+   },
+   "subscriptions.pause": {
+    "method": "POST",
+    "path": "/v1/subscriptions/{}/pause",
+    "source": "src/resources/Subscriptions.ts"
+   },
+   "subscriptions.resume": {
+    "method": "POST",
+    "path": "/v1/subscriptions/{}/resume",
+    "source": "src/resources/Subscriptions.ts"
+   },
+   "subscriptionItems.del": {
+    "method": "DELETE",
+    "path": "/v1/subscription_items/{}",
+    "source": "src/resources/SubscriptionItems.ts"
+   },
+   "subscriptionItems.retrieve": {
+    "method": "GET",
+    "path": "/v1/subscription_items/{}",
+    "source": "src/resources/SubscriptionItems.ts"
+   },
+   "subscriptionItems.update": {
+    "method": "POST",
+    "path": "/v1/subscription_items/{}",
+    "source": "src/resources/SubscriptionItems.ts"
+   },
+   "subscriptionItems.list": {
+    "method": "GET",
+    "path": "/v1/subscription_items",
+    "source": "src/resources/SubscriptionItems.ts"
+   },
+   "subscriptionItems.create": {
+    "method": "POST",
+    "path": "/v1/subscription_items",
+    "source": "src/resources/SubscriptionItems.ts"
+   },
+   "subscriptionSchedules.list": {
+    "method": "GET",
+    "path": "/v1/subscription_schedules",
+    "source": "src/resources/SubscriptionSchedules.ts"
+   },
+   "subscriptionSchedules.create": {
+    "method": "POST",
+    "path": "/v1/subscription_schedules",
+    "source": "src/resources/SubscriptionSchedules.ts"
+   },
+   "subscriptionSchedules.retrieve": {
+    "method": "GET",
+    "path": "/v1/subscription_schedules/{}",
+    "source": "src/resources/SubscriptionSchedules.ts"
+   },
+   "subscriptionSchedules.update": {
+    "method": "POST",
+    "path": "/v1/subscription_schedules/{}",
+    "source": "src/resources/SubscriptionSchedules.ts"
+   },
+   "subscriptionSchedules.cancel": {
+    "method": "POST",
+    "path": "/v1/subscription_schedules/{}/cancel",
+    "source": "src/resources/SubscriptionSchedules.ts"
+   },
+   "subscriptionSchedules.release": {
+    "method": "POST",
+    "path": "/v1/subscription_schedules/{}/release",
+    "source": "src/resources/SubscriptionSchedules.ts"
+   },
+   "taxCodes.list": {
+    "method": "GET",
+    "path": "/v1/tax_codes",
+    "source": "src/resources/TaxCodes.ts"
+   },
+   "taxCodes.retrieve": {
+    "method": "GET",
+    "path": "/v1/tax_codes/{}",
+    "source": "src/resources/TaxCodes.ts"
+   },
+   "taxIds.del": {
+    "method": "DELETE",
+    "path": "/v1/tax_ids/{}",
+    "source": "src/resources/TaxIds.ts"
+   },
+   "taxIds.retrieve": {
+    "method": "GET",
+    "path": "/v1/tax_ids/{}",
+    "source": "src/resources/TaxIds.ts"
+   },
+   "taxIds.list": {
+    "method": "GET",
+    "path": "/v1/tax_ids",
+    "source": "src/resources/TaxIds.ts"
+   },
+   "taxIds.create": {
+    "method": "POST",
+    "path": "/v1/tax_ids",
+    "source": "src/resources/TaxIds.ts"
+   },
+   "taxRates.list": {
+    "method": "GET",
+    "path": "/v1/tax_rates",
+    "source": "src/resources/TaxRates.ts"
+   },
+   "taxRates.create": {
+    "method": "POST",
+    "path": "/v1/tax_rates",
+    "source": "src/resources/TaxRates.ts"
+   },
+   "taxRates.retrieve": {
+    "method": "GET",
+    "path": "/v1/tax_rates/{}",
+    "source": "src/resources/TaxRates.ts"
+   },
+   "taxRates.update": {
+    "method": "POST",
+    "path": "/v1/tax_rates/{}",
+    "source": "src/resources/TaxRates.ts"
+   },
+   "tokens.retrieve": {
+    "method": "GET",
+    "path": "/v1/tokens/{}",
+    "source": "src/resources/Tokens.ts"
+   },
+   "tokens.create": {
+    "method": "POST",
+    "path": "/v1/tokens",
+    "source": "src/resources/Tokens.ts"
+   },
+   "topups.list": {
+    "method": "GET",
+    "path": "/v1/topups",
+    "source": "src/resources/Topups.ts"
+   },
+   "topups.create": {
+    "method": "POST",
+    "path": "/v1/topups",
+    "source": "src/resources/Topups.ts"
+   },
+   "topups.retrieve": {
+    "method": "GET",
+    "path": "/v1/topups/{}",
+    "source": "src/resources/Topups.ts"
+   },
+   "topups.update": {
+    "method": "POST",
+    "path": "/v1/topups/{}",
+    "source": "src/resources/Topups.ts"
+   },
+   "topups.cancel": {
+    "method": "POST",
+    "path": "/v1/topups/{}/cancel",
+    "source": "src/resources/Topups.ts"
+   },
+   "transfers.list": {
+    "method": "GET",
+    "path": "/v1/transfers",
+    "source": "src/resources/Transfers.ts"
+   },
+   "transfers.create": {
+    "method": "POST",
+    "path": "/v1/transfers",
+    "source": "src/resources/Transfers.ts"
+   },
+   "transfers.retrieve": {
+    "method": "GET",
+    "path": "/v1/transfers/{}",
+    "source": "src/resources/Transfers.ts"
+   },
+   "transfers.update": {
+    "method": "POST",
+    "path": "/v1/transfers/{}",
+    "source": "src/resources/Transfers.ts"
+   },
+   "transfers.listReversals": {
+    "method": "GET",
+    "path": "/v1/transfers/{}/reversals",
+    "source": "src/resources/Transfers.ts"
+   },
+   "transfers.createReversal": {
+    "method": "POST",
+    "path": "/v1/transfers/{}/reversals",
+    "source": "src/resources/Transfers.ts"
+   },
+   "transfers.retrieveReversal": {
+    "method": "GET",
+    "path": "/v1/transfers/{}/reversals/{}",
+    "source": "src/resources/Transfers.ts"
+   },
+   "transfers.updateReversal": {
+    "method": "POST",
+    "path": "/v1/transfers/{}/reversals/{}",
+    "source": "src/resources/Transfers.ts"
+   },
+   "webhookEndpoints.del": {
+    "method": "DELETE",
+    "path": "/v1/webhook_endpoints/{}",
+    "source": "src/resources/WebhookEndpoints.ts"
+   },
+   "webhookEndpoints.retrieve": {
+    "method": "GET",
+    "path": "/v1/webhook_endpoints/{}",
+    "source": "src/resources/WebhookEndpoints.ts"
+   },
+   "webhookEndpoints.update": {
+    "method": "POST",
+    "path": "/v1/webhook_endpoints/{}",
+    "source": "src/resources/WebhookEndpoints.ts"
+   },
+   "webhookEndpoints.list": {
+    "method": "GET",
+    "path": "/v1/webhook_endpoints",
+    "source": "src/resources/WebhookEndpoints.ts"
+   },
+   "webhookEndpoints.create": {
+    "method": "POST",
+    "path": "/v1/webhook_endpoints",
+    "source": "src/resources/WebhookEndpoints.ts"
+   },
+   "apps.installs.list": {
+    "method": "GET",
+    "path": "/v1/apps/installs",
+    "source": "src/resources/Apps/Installs.ts"
+   },
+   "apps.installs.create": {
+    "method": "POST",
+    "path": "/v1/apps/installs",
+    "source": "src/resources/Apps/Installs.ts"
+   },
+   "apps.installs.retrieve": {
+    "method": "GET",
+    "path": "/v1/apps/installs/{}",
+    "source": "src/resources/Apps/Installs.ts"
+   },
+   "apps.installs.update": {
+    "method": "POST",
+    "path": "/v1/apps/installs/{}",
+    "source": "src/resources/Apps/Installs.ts"
+   },
+   "apps.installs.uninstall": {
+    "method": "POST",
+    "path": "/v1/apps/installs/{}/uninstall",
+    "source": "src/resources/Apps/Installs.ts"
+   },
+   "apps.secrets.list": {
+    "method": "GET",
+    "path": "/v1/apps/secrets",
+    "source": "src/resources/Apps/Secrets.ts"
+   },
+   "apps.secrets.create": {
+    "method": "POST",
+    "path": "/v1/apps/secrets",
+    "source": "src/resources/Apps/Secrets.ts"
+   },
+   "apps.secrets.find": {
+    "method": "GET",
+    "path": "/v1/apps/secrets/find",
+    "source": "src/resources/Apps/Secrets.ts"
+   },
+   "apps.secrets.deleteWhere": {
+    "method": "POST",
+    "path": "/v1/apps/secrets/delete",
+    "source": "src/resources/Apps/Secrets.ts"
+   },
+   "billing.alerts.list": {
+    "method": "GET",
+    "path": "/v1/billing/alerts",
+    "source": "src/resources/Billing/Alerts.ts"
+   },
+   "billing.alerts.create": {
+    "method": "POST",
+    "path": "/v1/billing/alerts",
+    "source": "src/resources/Billing/Alerts.ts"
+   },
+   "billing.alerts.retrieve": {
+    "method": "GET",
+    "path": "/v1/billing/alerts/{}",
+    "source": "src/resources/Billing/Alerts.ts"
+   },
+   "billing.alerts.activate": {
+    "method": "POST",
+    "path": "/v1/billing/alerts/{}/activate",
+    "source": "src/resources/Billing/Alerts.ts"
+   },
+   "billing.alerts.archive": {
+    "method": "POST",
+    "path": "/v1/billing/alerts/{}/archive",
+    "source": "src/resources/Billing/Alerts.ts"
+   },
+   "billing.alerts.deactivate": {
+    "method": "POST",
+    "path": "/v1/billing/alerts/{}/deactivate",
+    "source": "src/resources/Billing/Alerts.ts"
+   },
+   "billing.creditBalanceSummary.retrieve": {
+    "method": "GET",
+    "path": "/v1/billing/credit_balance_summary",
+    "source": "src/resources/Billing/CreditBalanceSummary.ts"
+   },
+   "billing.creditBalanceTransactions.list": {
+    "method": "GET",
+    "path": "/v1/billing/credit_balance_transactions",
+    "source": "src/resources/Billing/CreditBalanceTransactions.ts"
+   },
+   "billing.creditBalanceTransactions.retrieve": {
+    "method": "GET",
+    "path": "/v1/billing/credit_balance_transactions/{}",
+    "source": "src/resources/Billing/CreditBalanceTransactions.ts"
+   },
+   "billing.creditGrants.list": {
+    "method": "GET",
+    "path": "/v1/billing/credit_grants",
+    "source": "src/resources/Billing/CreditGrants.ts"
+   },
+   "billing.creditGrants.create": {
+    "method": "POST",
+    "path": "/v1/billing/credit_grants",
+    "source": "src/resources/Billing/CreditGrants.ts"
+   },
+   "billing.creditGrants.retrieve": {
+    "method": "GET",
+    "path": "/v1/billing/credit_grants/{}",
+    "source": "src/resources/Billing/CreditGrants.ts"
+   },
+   "billing.creditGrants.update": {
+    "method": "POST",
+    "path": "/v1/billing/credit_grants/{}",
+    "source": "src/resources/Billing/CreditGrants.ts"
+   },
+   "billing.creditGrants.expire": {
+    "method": "POST",
+    "path": "/v1/billing/credit_grants/{}/expire",
+    "source": "src/resources/Billing/CreditGrants.ts"
+   },
+   "billing.creditGrants.voidGrant": {
+    "method": "POST",
+    "path": "/v1/billing/credit_grants/{}/void",
+    "source": "src/resources/Billing/CreditGrants.ts"
+   },
+   "billing.feedbackOptions.list": {
+    "method": "GET",
+    "path": "/v1/billing/feedback_options",
+    "source": "src/resources/Billing/FeedbackOptions.ts"
+   },
+   "billing.feedbackOptions.create": {
+    "method": "POST",
+    "path": "/v1/billing/feedback_options",
+    "source": "src/resources/Billing/FeedbackOptions.ts"
+   },
+   "billing.feedbackOptions.retrieve": {
+    "method": "GET",
+    "path": "/v1/billing/feedback_options/{}",
+    "source": "src/resources/Billing/FeedbackOptions.ts"
+   },
+   "billing.feedbackOptions.update": {
+    "method": "POST",
+    "path": "/v1/billing/feedback_options/{}",
+    "source": "src/resources/Billing/FeedbackOptions.ts"
+   },
+   "billing.feedbackOptions.deactivate": {
+    "method": "POST",
+    "path": "/v1/billing/feedback_options/{}/deactivate",
+    "source": "src/resources/Billing/FeedbackOptions.ts"
+   },
+   "billing.meterEventAdjustments.create": {
+    "method": "POST",
+    "path": "/v1/billing/meter_event_adjustments",
+    "source": "src/resources/Billing/MeterEventAdjustments.ts"
+   },
+   "billing.meterEvents.create": {
+    "method": "POST",
+    "path": "/v1/billing/meter_events",
+    "source": "src/resources/Billing/MeterEvents.ts"
+   },
+   "billing.meters.list": {
+    "method": "GET",
+    "path": "/v1/billing/meters",
+    "source": "src/resources/Billing/Meters.ts"
+   },
+   "billing.meters.create": {
+    "method": "POST",
+    "path": "/v1/billing/meters",
+    "source": "src/resources/Billing/Meters.ts"
+   },
+   "billing.meters.retrieve": {
+    "method": "GET",
+    "path": "/v1/billing/meters/{}",
+    "source": "src/resources/Billing/Meters.ts"
+   },
+   "billing.meters.update": {
+    "method": "POST",
+    "path": "/v1/billing/meters/{}",
+    "source": "src/resources/Billing/Meters.ts"
+   },
+   "billing.meters.deactivate": {
+    "method": "POST",
+    "path": "/v1/billing/meters/{}/deactivate",
+    "source": "src/resources/Billing/Meters.ts"
+   },
+   "billing.meters.reactivate": {
+    "method": "POST",
+    "path": "/v1/billing/meters/{}/reactivate",
+    "source": "src/resources/Billing/Meters.ts"
+   },
+   "billing.meters.listEventSummaries": {
+    "method": "GET",
+    "path": "/v1/billing/meters/{}/event_summaries",
+    "source": "src/resources/Billing/Meters.ts"
+   },
+   "billingPortal.configurations.list": {
+    "method": "GET",
+    "path": "/v1/billing_portal/configurations",
+    "source": "src/resources/BillingPortal/Configurations.ts"
+   },
+   "billingPortal.configurations.create": {
+    "method": "POST",
+    "path": "/v1/billing_portal/configurations",
+    "source": "src/resources/BillingPortal/Configurations.ts"
+   },
+   "billingPortal.configurations.retrieve": {
+    "method": "GET",
+    "path": "/v1/billing_portal/configurations/{}",
+    "source": "src/resources/BillingPortal/Configurations.ts"
+   },
+   "billingPortal.configurations.update": {
+    "method": "POST",
+    "path": "/v1/billing_portal/configurations/{}",
+    "source": "src/resources/BillingPortal/Configurations.ts"
+   },
+   "billingPortal.sessions.create": {
+    "method": "POST",
+    "path": "/v1/billing_portal/sessions",
+    "source": "src/resources/BillingPortal/Sessions.ts"
+   },
+   "checkout.sessions.list": {
+    "method": "GET",
+    "path": "/v1/checkout/sessions",
+    "source": "src/resources/Checkout/Sessions.ts"
+   },
+   "checkout.sessions.create": {
+    "method": "POST",
+    "path": "/v1/checkout/sessions",
+    "source": "src/resources/Checkout/Sessions.ts"
+   },
+   "checkout.sessions.retrieve": {
+    "method": "GET",
+    "path": "/v1/checkout/sessions/{}",
+    "source": "src/resources/Checkout/Sessions.ts"
+   },
+   "checkout.sessions.update": {
+    "method": "POST",
+    "path": "/v1/checkout/sessions/{}",
+    "source": "src/resources/Checkout/Sessions.ts"
+   },
+   "checkout.sessions.expire": {
+    "method": "POST",
+    "path": "/v1/checkout/sessions/{}/expire",
+    "source": "src/resources/Checkout/Sessions.ts"
+   },
+   "checkout.sessions.listLineItems": {
+    "method": "GET",
+    "path": "/v1/checkout/sessions/{}/line_items",
+    "source": "src/resources/Checkout/Sessions.ts"
+   },
+   "climate.orders.list": {
+    "method": "GET",
+    "path": "/v1/climate/orders",
+    "source": "src/resources/Climate/Orders.ts"
+   },
+   "climate.orders.create": {
+    "method": "POST",
+    "path": "/v1/climate/orders",
+    "source": "src/resources/Climate/Orders.ts"
+   },
+   "climate.orders.retrieve": {
+    "method": "GET",
+    "path": "/v1/climate/orders/{}",
+    "source": "src/resources/Climate/Orders.ts"
+   },
+   "climate.orders.update": {
+    "method": "POST",
+    "path": "/v1/climate/orders/{}",
+    "source": "src/resources/Climate/Orders.ts"
+   },
+   "climate.orders.cancel": {
+    "method": "POST",
+    "path": "/v1/climate/orders/{}/cancel",
+    "source": "src/resources/Climate/Orders.ts"
+   },
+   "climate.products.list": {
+    "method": "GET",
+    "path": "/v1/climate/products",
+    "source": "src/resources/Climate/Products.ts"
+   },
+   "climate.products.retrieve": {
+    "method": "GET",
+    "path": "/v1/climate/products/{}",
+    "source": "src/resources/Climate/Products.ts"
+   },
+   "climate.suppliers.list": {
+    "method": "GET",
+    "path": "/v1/climate/suppliers",
+    "source": "src/resources/Climate/Suppliers.ts"
+   },
+   "climate.suppliers.retrieve": {
+    "method": "GET",
+    "path": "/v1/climate/suppliers/{}",
+    "source": "src/resources/Climate/Suppliers.ts"
+   },
+   "entitlements.activeEntitlements.list": {
+    "method": "GET",
+    "path": "/v1/entitlements/active_entitlements",
+    "source": "src/resources/Entitlements/ActiveEntitlements.ts"
+   },
+   "entitlements.activeEntitlements.retrieve": {
+    "method": "GET",
+    "path": "/v1/entitlements/active_entitlements/{}",
+    "source": "src/resources/Entitlements/ActiveEntitlements.ts"
+   },
+   "entitlements.features.list": {
+    "method": "GET",
+    "path": "/v1/entitlements/features",
+    "source": "src/resources/Entitlements/Features.ts"
+   },
+   "entitlements.features.create": {
+    "method": "POST",
+    "path": "/v1/entitlements/features",
+    "source": "src/resources/Entitlements/Features.ts"
+   },
+   "entitlements.features.retrieve": {
+    "method": "GET",
+    "path": "/v1/entitlements/features/{}",
+    "source": "src/resources/Entitlements/Features.ts"
+   },
+   "entitlements.features.update": {
+    "method": "POST",
+    "path": "/v1/entitlements/features/{}",
+    "source": "src/resources/Entitlements/Features.ts"
+   },
+   "financialConnections.accounts.list": {
+    "method": "GET",
+    "path": "/v1/financial_connections/accounts",
+    "source": "src/resources/FinancialConnections/Accounts.ts"
+   },
+   "financialConnections.accounts.retrieve": {
+    "method": "GET",
+    "path": "/v1/financial_connections/accounts/{}",
+    "source": "src/resources/FinancialConnections/Accounts.ts"
+   },
+   "financialConnections.accounts.disconnect": {
+    "method": "POST",
+    "path": "/v1/financial_connections/accounts/{}/disconnect",
+    "source": "src/resources/FinancialConnections/Accounts.ts"
+   },
+   "financialConnections.accounts.refresh": {
+    "method": "POST",
+    "path": "/v1/financial_connections/accounts/{}/refresh",
+    "source": "src/resources/FinancialConnections/Accounts.ts"
+   },
+   "financialConnections.accounts.subscribe": {
+    "method": "POST",
+    "path": "/v1/financial_connections/accounts/{}/subscribe",
+    "source": "src/resources/FinancialConnections/Accounts.ts"
+   },
+   "financialConnections.accounts.unsubscribe": {
+    "method": "POST",
+    "path": "/v1/financial_connections/accounts/{}/unsubscribe",
+    "source": "src/resources/FinancialConnections/Accounts.ts"
+   },
+   "financialConnections.accounts.listOwners": {
+    "method": "GET",
+    "path": "/v1/financial_connections/accounts/{}/owners",
+    "source": "src/resources/FinancialConnections/Accounts.ts"
+   },
+   "financialConnections.sessions.retrieve": {
+    "method": "GET",
+    "path": "/v1/financial_connections/sessions/{}",
+    "source": "src/resources/FinancialConnections/Sessions.ts"
+   },
+   "financialConnections.sessions.create": {
+    "method": "POST",
+    "path": "/v1/financial_connections/sessions",
+    "source": "src/resources/FinancialConnections/Sessions.ts"
+   },
+   "financialConnections.transactions.list": {
+    "method": "GET",
+    "path": "/v1/financial_connections/transactions",
+    "source": "src/resources/FinancialConnections/Transactions.ts"
+   },
+   "financialConnections.transactions.retrieve": {
+    "method": "GET",
+    "path": "/v1/financial_connections/transactions/{}",
+    "source": "src/resources/FinancialConnections/Transactions.ts"
+   },
+   "forwarding.requests.list": {
+    "method": "GET",
+    "path": "/v1/forwarding/requests",
+    "source": "src/resources/Forwarding/Requests.ts"
+   },
+   "forwarding.requests.create": {
+    "method": "POST",
+    "path": "/v1/forwarding/requests",
+    "source": "src/resources/Forwarding/Requests.ts"
+   },
+   "forwarding.requests.retrieve": {
+    "method": "GET",
+    "path": "/v1/forwarding/requests/{}",
+    "source": "src/resources/Forwarding/Requests.ts"
+   },
+   "identity.verificationReports.list": {
+    "method": "GET",
+    "path": "/v1/identity/verification_reports",
+    "source": "src/resources/Identity/VerificationReports.ts"
+   },
+   "identity.verificationReports.retrieve": {
+    "method": "GET",
+    "path": "/v1/identity/verification_reports/{}",
+    "source": "src/resources/Identity/VerificationReports.ts"
+   },
+   "identity.verificationSessions.list": {
+    "method": "GET",
+    "path": "/v1/identity/verification_sessions",
+    "source": "src/resources/Identity/VerificationSessions.ts"
+   },
+   "identity.verificationSessions.create": {
+    "method": "POST",
+    "path": "/v1/identity/verification_sessions",
+    "source": "src/resources/Identity/VerificationSessions.ts"
+   },
+   "identity.verificationSessions.retrieve": {
+    "method": "GET",
+    "path": "/v1/identity/verification_sessions/{}",
+    "source": "src/resources/Identity/VerificationSessions.ts"
+   },
+   "identity.verificationSessions.update": {
+    "method": "POST",
+    "path": "/v1/identity/verification_sessions/{}",
+    "source": "src/resources/Identity/VerificationSessions.ts"
+   },
+   "identity.verificationSessions.cancel": {
+    "method": "POST",
+    "path": "/v1/identity/verification_sessions/{}/cancel",
+    "source": "src/resources/Identity/VerificationSessions.ts"
+   },
+   "identity.verificationSessions.redact": {
+    "method": "POST",
+    "path": "/v1/identity/verification_sessions/{}/redact",
+    "source": "src/resources/Identity/VerificationSessions.ts"
+   },
+   "issuing.authorizations.list": {
+    "method": "GET",
+    "path": "/v1/issuing/authorizations",
+    "source": "src/resources/Issuing/Authorizations.ts"
+   },
+   "issuing.authorizations.retrieve": {
+    "method": "GET",
+    "path": "/v1/issuing/authorizations/{}",
+    "source": "src/resources/Issuing/Authorizations.ts"
+   },
+   "issuing.authorizations.update": {
+    "method": "POST",
+    "path": "/v1/issuing/authorizations/{}",
+    "source": "src/resources/Issuing/Authorizations.ts"
+   },
+   "issuing.authorizations.approve": {
+    "method": "POST",
+    "path": "/v1/issuing/authorizations/{}/approve",
+    "source": "src/resources/Issuing/Authorizations.ts"
+   },
+   "issuing.authorizations.decline": {
+    "method": "POST",
+    "path": "/v1/issuing/authorizations/{}/decline",
+    "source": "src/resources/Issuing/Authorizations.ts"
+   },
+   "issuing.cardholders.list": {
+    "method": "GET",
+    "path": "/v1/issuing/cardholders",
+    "source": "src/resources/Issuing/Cardholders.ts"
+   },
+   "issuing.cardholders.create": {
+    "method": "POST",
+    "path": "/v1/issuing/cardholders",
+    "source": "src/resources/Issuing/Cardholders.ts"
+   },
+   "issuing.cardholders.retrieve": {
+    "method": "GET",
+    "path": "/v1/issuing/cardholders/{}",
+    "source": "src/resources/Issuing/Cardholders.ts"
+   },
+   "issuing.cardholders.update": {
+    "method": "POST",
+    "path": "/v1/issuing/cardholders/{}",
+    "source": "src/resources/Issuing/Cardholders.ts"
+   },
+   "issuing.cards.list": {
+    "method": "GET",
+    "path": "/v1/issuing/cards",
+    "source": "src/resources/Issuing/Cards.ts"
+   },
+   "issuing.cards.create": {
+    "method": "POST",
+    "path": "/v1/issuing/cards",
+    "source": "src/resources/Issuing/Cards.ts"
+   },
+   "issuing.cards.retrieve": {
+    "method": "GET",
+    "path": "/v1/issuing/cards/{}",
+    "source": "src/resources/Issuing/Cards.ts"
+   },
+   "issuing.cards.update": {
+    "method": "POST",
+    "path": "/v1/issuing/cards/{}",
+    "source": "src/resources/Issuing/Cards.ts"
+   },
+   "issuing.disputes.list": {
+    "method": "GET",
+    "path": "/v1/issuing/disputes",
+    "source": "src/resources/Issuing/Disputes.ts"
+   },
+   "issuing.disputes.create": {
+    "method": "POST",
+    "path": "/v1/issuing/disputes",
+    "source": "src/resources/Issuing/Disputes.ts"
+   },
+   "issuing.disputes.retrieve": {
+    "method": "GET",
+    "path": "/v1/issuing/disputes/{}",
+    "source": "src/resources/Issuing/Disputes.ts"
+   },
+   "issuing.disputes.update": {
+    "method": "POST",
+    "path": "/v1/issuing/disputes/{}",
+    "source": "src/resources/Issuing/Disputes.ts"
+   },
+   "issuing.disputes.submit": {
+    "method": "POST",
+    "path": "/v1/issuing/disputes/{}/submit",
+    "source": "src/resources/Issuing/Disputes.ts"
+   },
+   "issuing.personalizationDesigns.list": {
+    "method": "GET",
+    "path": "/v1/issuing/personalization_designs",
+    "source": "src/resources/Issuing/PersonalizationDesigns.ts"
+   },
+   "issuing.personalizationDesigns.create": {
+    "method": "POST",
+    "path": "/v1/issuing/personalization_designs",
+    "source": "src/resources/Issuing/PersonalizationDesigns.ts"
+   },
+   "issuing.personalizationDesigns.retrieve": {
+    "method": "GET",
+    "path": "/v1/issuing/personalization_designs/{}",
+    "source": "src/resources/Issuing/PersonalizationDesigns.ts"
+   },
+   "issuing.personalizationDesigns.update": {
+    "method": "POST",
+    "path": "/v1/issuing/personalization_designs/{}",
+    "source": "src/resources/Issuing/PersonalizationDesigns.ts"
+   },
+   "issuing.physicalBundles.list": {
+    "method": "GET",
+    "path": "/v1/issuing/physical_bundles",
+    "source": "src/resources/Issuing/PhysicalBundles.ts"
+   },
+   "issuing.physicalBundles.retrieve": {
+    "method": "GET",
+    "path": "/v1/issuing/physical_bundles/{}",
+    "source": "src/resources/Issuing/PhysicalBundles.ts"
+   },
+   "issuing.tokens.list": {
+    "method": "GET",
+    "path": "/v1/issuing/tokens",
+    "source": "src/resources/Issuing/Tokens.ts"
+   },
+   "issuing.tokens.retrieve": {
+    "method": "GET",
+    "path": "/v1/issuing/tokens/{}",
+    "source": "src/resources/Issuing/Tokens.ts"
+   },
+   "issuing.tokens.update": {
+    "method": "POST",
+    "path": "/v1/issuing/tokens/{}",
+    "source": "src/resources/Issuing/Tokens.ts"
+   },
+   "issuing.transactions.list": {
+    "method": "GET",
+    "path": "/v1/issuing/transactions",
+    "source": "src/resources/Issuing/Transactions.ts"
+   },
+   "issuing.transactions.retrieve": {
+    "method": "GET",
+    "path": "/v1/issuing/transactions/{}",
+    "source": "src/resources/Issuing/Transactions.ts"
+   },
+   "issuing.transactions.update": {
+    "method": "POST",
+    "path": "/v1/issuing/transactions/{}",
+    "source": "src/resources/Issuing/Transactions.ts"
+   },
+   "productCatalog.trialOffers.list": {
+    "method": "GET",
+    "path": "/v1/product_catalog/trial_offers",
+    "source": "src/resources/ProductCatalog/TrialOffers.ts"
+   },
+   "productCatalog.trialOffers.create": {
+    "method": "POST",
+    "path": "/v1/product_catalog/trial_offers",
+    "source": "src/resources/ProductCatalog/TrialOffers.ts"
+   },
+   "productCatalog.trialOffers.retrieve": {
+    "method": "GET",
+    "path": "/v1/product_catalog/trial_offers/{}",
+    "source": "src/resources/ProductCatalog/TrialOffers.ts"
+   },
+   "productCatalog.trialOffers.update": {
+    "method": "POST",
+    "path": "/v1/product_catalog/trial_offers/{}",
+    "source": "src/resources/ProductCatalog/TrialOffers.ts"
+   },
+   "radar.earlyFraudWarnings.list": {
+    "method": "GET",
+    "path": "/v1/radar/early_fraud_warnings",
+    "source": "src/resources/Radar/EarlyFraudWarnings.ts"
+   },
+   "radar.earlyFraudWarnings.retrieve": {
+    "method": "GET",
+    "path": "/v1/radar/early_fraud_warnings/{}",
+    "source": "src/resources/Radar/EarlyFraudWarnings.ts"
+   },
+   "radar.paymentEvaluations.create": {
+    "method": "POST",
+    "path": "/v1/radar/payment_evaluations",
+    "source": "src/resources/Radar/PaymentEvaluations.ts"
+   },
+   "radar.valueListItems.del": {
+    "method": "DELETE",
+    "path": "/v1/radar/value_list_items/{}",
+    "source": "src/resources/Radar/ValueListItems.ts"
+   },
+   "radar.valueListItems.retrieve": {
+    "method": "GET",
+    "path": "/v1/radar/value_list_items/{}",
+    "source": "src/resources/Radar/ValueListItems.ts"
+   },
+   "radar.valueListItems.list": {
+    "method": "GET",
+    "path": "/v1/radar/value_list_items",
+    "source": "src/resources/Radar/ValueListItems.ts"
+   },
+   "radar.valueListItems.create": {
+    "method": "POST",
+    "path": "/v1/radar/value_list_items",
+    "source": "src/resources/Radar/ValueListItems.ts"
+   },
+   "radar.valueLists.del": {
+    "method": "DELETE",
+    "path": "/v1/radar/value_lists/{}",
+    "source": "src/resources/Radar/ValueLists.ts"
+   },
+   "radar.valueLists.retrieve": {
+    "method": "GET",
+    "path": "/v1/radar/value_lists/{}",
+    "source": "src/resources/Radar/ValueLists.ts"
+   },
+   "radar.valueLists.update": {
+    "method": "POST",
+    "path": "/v1/radar/value_lists/{}",
+    "source": "src/resources/Radar/ValueLists.ts"
+   },
+   "radar.valueLists.list": {
+    "method": "GET",
+    "path": "/v1/radar/value_lists",
+    "source": "src/resources/Radar/ValueLists.ts"
+   },
+   "radar.valueLists.create": {
+    "method": "POST",
+    "path": "/v1/radar/value_lists",
+    "source": "src/resources/Radar/ValueLists.ts"
+   },
+   "reporting.reportRuns.list": {
+    "method": "GET",
+    "path": "/v1/reporting/report_runs",
+    "source": "src/resources/Reporting/ReportRuns.ts"
+   },
+   "reporting.reportRuns.create": {
+    "method": "POST",
+    "path": "/v1/reporting/report_runs",
+    "source": "src/resources/Reporting/ReportRuns.ts"
+   },
+   "reporting.reportRuns.retrieve": {
+    "method": "GET",
+    "path": "/v1/reporting/report_runs/{}",
+    "source": "src/resources/Reporting/ReportRuns.ts"
+   },
+   "reporting.reportTypes.list": {
+    "method": "GET",
+    "path": "/v1/reporting/report_types",
+    "source": "src/resources/Reporting/ReportTypes.ts"
+   },
+   "reporting.reportTypes.retrieve": {
+    "method": "GET",
+    "path": "/v1/reporting/report_types/{}",
+    "source": "src/resources/Reporting/ReportTypes.ts"
+   },
+   "sigma.scheduledQueryRuns.list": {
+    "method": "GET",
+    "path": "/v1/sigma/scheduled_query_runs",
+    "source": "src/resources/Sigma/ScheduledQueryRuns.ts"
+   },
+   "sigma.scheduledQueryRuns.retrieve": {
+    "method": "GET",
+    "path": "/v1/sigma/scheduled_query_runs/{}",
+    "source": "src/resources/Sigma/ScheduledQueryRuns.ts"
+   },
+   "tax.associations.find": {
+    "method": "GET",
+    "path": "/v1/tax/associations/find",
+    "source": "src/resources/Tax/Associations.ts"
+   },
+   "tax.calculations.retrieve": {
+    "method": "GET",
+    "path": "/v1/tax/calculations/{}",
+    "source": "src/resources/Tax/Calculations.ts"
+   },
+   "tax.calculations.create": {
+    "method": "POST",
+    "path": "/v1/tax/calculations",
+    "source": "src/resources/Tax/Calculations.ts"
+   },
+   "tax.calculations.listLineItems": {
+    "method": "GET",
+    "path": "/v1/tax/calculations/{}/line_items",
+    "source": "src/resources/Tax/Calculations.ts"
+   },
+   "tax.locations.list": {
+    "method": "GET",
+    "path": "/v1/tax/locations",
+    "source": "src/resources/Tax/Locations.ts"
+   },
+   "tax.locations.create": {
+    "method": "POST",
+    "path": "/v1/tax/locations",
+    "source": "src/resources/Tax/Locations.ts"
+   },
+   "tax.locations.retrieve": {
+    "method": "GET",
+    "path": "/v1/tax/locations/{}",
+    "source": "src/resources/Tax/Locations.ts"
+   },
+   "tax.registrations.list": {
+    "method": "GET",
+    "path": "/v1/tax/registrations",
+    "source": "src/resources/Tax/Registrations.ts"
+   },
+   "tax.registrations.create": {
+    "method": "POST",
+    "path": "/v1/tax/registrations",
+    "source": "src/resources/Tax/Registrations.ts"
+   },
+   "tax.registrations.retrieve": {
+    "method": "GET",
+    "path": "/v1/tax/registrations/{}",
+    "source": "src/resources/Tax/Registrations.ts"
+   },
+   "tax.registrations.update": {
+    "method": "POST",
+    "path": "/v1/tax/registrations/{}",
+    "source": "src/resources/Tax/Registrations.ts"
+   },
+   "tax.settings.retrieve": {
+    "method": "GET",
+    "path": "/v1/tax/settings",
+    "source": "src/resources/Tax/Settings.ts"
+   },
+   "tax.settings.update": {
+    "method": "POST",
+    "path": "/v1/tax/settings",
+    "source": "src/resources/Tax/Settings.ts"
+   },
+   "tax.transactions.retrieve": {
+    "method": "GET",
+    "path": "/v1/tax/transactions/{}",
+    "source": "src/resources/Tax/Transactions.ts"
+   },
+   "tax.transactions.createFromCalculation": {
+    "method": "POST",
+    "path": "/v1/tax/transactions/create_from_calculation",
+    "source": "src/resources/Tax/Transactions.ts"
+   },
+   "tax.transactions.createReversal": {
+    "method": "POST",
+    "path": "/v1/tax/transactions/create_reversal",
+    "source": "src/resources/Tax/Transactions.ts"
+   },
+   "tax.transactions.listLineItems": {
+    "method": "GET",
+    "path": "/v1/tax/transactions/{}/line_items",
+    "source": "src/resources/Tax/Transactions.ts"
+   },
+   "terminal.configurations.del": {
+    "method": "DELETE",
+    "path": "/v1/terminal/configurations/{}",
+    "source": "src/resources/Terminal/Configurations.ts"
+   },
+   "terminal.configurations.retrieve": {
+    "method": "GET",
+    "path": "/v1/terminal/configurations/{}",
+    "source": "src/resources/Terminal/Configurations.ts"
+   },
+   "terminal.configurations.update": {
+    "method": "POST",
+    "path": "/v1/terminal/configurations/{}",
+    "source": "src/resources/Terminal/Configurations.ts"
+   },
+   "terminal.configurations.list": {
+    "method": "GET",
+    "path": "/v1/terminal/configurations",
+    "source": "src/resources/Terminal/Configurations.ts"
+   },
+   "terminal.configurations.create": {
+    "method": "POST",
+    "path": "/v1/terminal/configurations",
+    "source": "src/resources/Terminal/Configurations.ts"
+   },
+   "terminal.connectionTokens.create": {
+    "method": "POST",
+    "path": "/v1/terminal/connection_tokens",
+    "source": "src/resources/Terminal/ConnectionTokens.ts"
+   },
+   "terminal.locations.del": {
+    "method": "DELETE",
+    "path": "/v1/terminal/locations/{}",
+    "source": "src/resources/Terminal/Locations.ts"
+   },
+   "terminal.locations.retrieve": {
+    "method": "GET",
+    "path": "/v1/terminal/locations/{}",
+    "source": "src/resources/Terminal/Locations.ts"
+   },
+   "terminal.locations.update": {
+    "method": "POST",
+    "path": "/v1/terminal/locations/{}",
+    "source": "src/resources/Terminal/Locations.ts"
+   },
+   "terminal.locations.list": {
+    "method": "GET",
+    "path": "/v1/terminal/locations",
+    "source": "src/resources/Terminal/Locations.ts"
+   },
+   "terminal.locations.create": {
+    "method": "POST",
+    "path": "/v1/terminal/locations",
+    "source": "src/resources/Terminal/Locations.ts"
+   },
+   "terminal.onboardingLinks.create": {
+    "method": "POST",
+    "path": "/v1/terminal/onboarding_links",
+    "source": "src/resources/Terminal/OnboardingLinks.ts"
+   },
+   "terminal.readers.del": {
+    "method": "DELETE",
+    "path": "/v1/terminal/readers/{}",
+    "source": "src/resources/Terminal/Readers.ts"
+   },
+   "terminal.readers.retrieve": {
+    "method": "GET",
+    "path": "/v1/terminal/readers/{}",
+    "source": "src/resources/Terminal/Readers.ts"
+   },
+   "terminal.readers.update": {
+    "method": "POST",
+    "path": "/v1/terminal/readers/{}",
+    "source": "src/resources/Terminal/Readers.ts"
+   },
+   "terminal.readers.list": {
+    "method": "GET",
+    "path": "/v1/terminal/readers",
+    "source": "src/resources/Terminal/Readers.ts"
+   },
+   "terminal.readers.create": {
+    "method": "POST",
+    "path": "/v1/terminal/readers",
+    "source": "src/resources/Terminal/Readers.ts"
+   },
+   "terminal.readers.cancelAction": {
+    "method": "POST",
+    "path": "/v1/terminal/readers/{}/cancel_action",
+    "source": "src/resources/Terminal/Readers.ts"
+   },
+   "terminal.readers.collectInputs": {
+    "method": "POST",
+    "path": "/v1/terminal/readers/{}/collect_inputs",
+    "source": "src/resources/Terminal/Readers.ts"
+   },
+   "terminal.readers.collectPaymentMethod": {
+    "method": "POST",
+    "path": "/v1/terminal/readers/{}/collect_payment_method",
+    "source": "src/resources/Terminal/Readers.ts"
+   },
+   "terminal.readers.confirmPaymentIntent": {
+    "method": "POST",
+    "path": "/v1/terminal/readers/{}/confirm_payment_intent",
+    "source": "src/resources/Terminal/Readers.ts"
+   },
+   "terminal.readers.processPaymentIntent": {
+    "method": "POST",
+    "path": "/v1/terminal/readers/{}/process_payment_intent",
+    "source": "src/resources/Terminal/Readers.ts"
+   },
+   "terminal.readers.processSetupIntent": {
+    "method": "POST",
+    "path": "/v1/terminal/readers/{}/process_setup_intent",
+    "source": "src/resources/Terminal/Readers.ts"
+   },
+   "terminal.readers.refundPayment": {
+    "method": "POST",
+    "path": "/v1/terminal/readers/{}/refund_payment",
+    "source": "src/resources/Terminal/Readers.ts"
+   },
+   "terminal.readers.setReaderDisplay": {
+    "method": "POST",
+    "path": "/v1/terminal/readers/{}/set_reader_display",
+    "source": "src/resources/Terminal/Readers.ts"
+   },
+   "testHelpers.confirmationTokens.create": {
+    "method": "POST",
+    "path": "/v1/test_helpers/confirmation_tokens",
+    "source": "src/resources/TestHelpers/ConfirmationTokens.ts"
+   },
+   "testHelpers.customers.fundCashBalance": {
+    "method": "POST",
+    "path": "/v1/test_helpers/customers/{}/fund_cash_balance",
+    "source": "src/resources/TestHelpers/Customers.ts"
+   },
+   "testHelpers.refunds.expire": {
+    "method": "POST",
+    "path": "/v1/test_helpers/refunds/{}/expire",
+    "source": "src/resources/TestHelpers/Refunds.ts"
+   },
+   "testHelpers.testClocks.del": {
+    "method": "DELETE",
+    "path": "/v1/test_helpers/test_clocks/{}",
+    "source": "src/resources/TestHelpers/TestClocks.ts"
+   },
+   "testHelpers.testClocks.retrieve": {
+    "method": "GET",
+    "path": "/v1/test_helpers/test_clocks/{}",
+    "source": "src/resources/TestHelpers/TestClocks.ts"
+   },
+   "testHelpers.testClocks.list": {
+    "method": "GET",
+    "path": "/v1/test_helpers/test_clocks",
+    "source": "src/resources/TestHelpers/TestClocks.ts"
+   },
+   "testHelpers.testClocks.create": {
+    "method": "POST",
+    "path": "/v1/test_helpers/test_clocks",
+    "source": "src/resources/TestHelpers/TestClocks.ts"
+   },
+   "testHelpers.testClocks.advance": {
+    "method": "POST",
+    "path": "/v1/test_helpers/test_clocks/{}/advance",
+    "source": "src/resources/TestHelpers/TestClocks.ts"
+   },
+   "testHelpers.issuing.authorizations.create": {
+    "method": "POST",
+    "path": "/v1/test_helpers/issuing/authorizations",
+    "source": "src/resources/TestHelpers/Issuing/Authorizations.ts"
+   },
+   "testHelpers.issuing.authorizations.capture": {
+    "method": "POST",
+    "path": "/v1/test_helpers/issuing/authorizations/{}/capture",
+    "source": "src/resources/TestHelpers/Issuing/Authorizations.ts"
+   },
+   "testHelpers.issuing.authorizations.expire": {
+    "method": "POST",
+    "path": "/v1/test_helpers/issuing/authorizations/{}/expire",
+    "source": "src/resources/TestHelpers/Issuing/Authorizations.ts"
+   },
+   "testHelpers.issuing.authorizations.finalizeAmount": {
+    "method": "POST",
+    "path": "/v1/test_helpers/issuing/authorizations/{}/finalize_amount",
+    "source": "src/resources/TestHelpers/Issuing/Authorizations.ts"
+   },
+   "testHelpers.issuing.authorizations.respond": {
+    "method": "POST",
+    "path": "/v1/test_helpers/issuing/authorizations/{}/fraud_challenges/respond",
+    "source": "src/resources/TestHelpers/Issuing/Authorizations.ts"
+   },
+   "testHelpers.issuing.authorizations.increment": {
+    "method": "POST",
+    "path": "/v1/test_helpers/issuing/authorizations/{}/increment",
+    "source": "src/resources/TestHelpers/Issuing/Authorizations.ts"
+   },
+   "testHelpers.issuing.authorizations.reverse": {
+    "method": "POST",
+    "path": "/v1/test_helpers/issuing/authorizations/{}/reverse",
+    "source": "src/resources/TestHelpers/Issuing/Authorizations.ts"
+   },
+   "testHelpers.issuing.cards.deliverCard": {
+    "method": "POST",
+    "path": "/v1/test_helpers/issuing/cards/{}/shipping/deliver",
+    "source": "src/resources/TestHelpers/Issuing/Cards.ts"
+   },
+   "testHelpers.issuing.cards.failCard": {
+    "method": "POST",
+    "path": "/v1/test_helpers/issuing/cards/{}/shipping/fail",
+    "source": "src/resources/TestHelpers/Issuing/Cards.ts"
+   },
+   "testHelpers.issuing.cards.returnCard": {
+    "method": "POST",
+    "path": "/v1/test_helpers/issuing/cards/{}/shipping/return",
+    "source": "src/resources/TestHelpers/Issuing/Cards.ts"
+   },
+   "testHelpers.issuing.cards.shipCard": {
+    "method": "POST",
+    "path": "/v1/test_helpers/issuing/cards/{}/shipping/ship",
+    "source": "src/resources/TestHelpers/Issuing/Cards.ts"
+   },
+   "testHelpers.issuing.cards.submitCard": {
+    "method": "POST",
+    "path": "/v1/test_helpers/issuing/cards/{}/shipping/submit",
+    "source": "src/resources/TestHelpers/Issuing/Cards.ts"
+   },
+   "testHelpers.issuing.personalizationDesigns.activate": {
+    "method": "POST",
+    "path": "/v1/test_helpers/issuing/personalization_designs/{}/activate",
+    "source": "src/resources/TestHelpers/Issuing/PersonalizationDesigns.ts"
+   },
+   "testHelpers.issuing.personalizationDesigns.deactivate": {
+    "method": "POST",
+    "path": "/v1/test_helpers/issuing/personalization_designs/{}/deactivate",
+    "source": "src/resources/TestHelpers/Issuing/PersonalizationDesigns.ts"
+   },
+   "testHelpers.issuing.personalizationDesigns.reject": {
+    "method": "POST",
+    "path": "/v1/test_helpers/issuing/personalization_designs/{}/reject",
+    "source": "src/resources/TestHelpers/Issuing/PersonalizationDesigns.ts"
+   },
+   "testHelpers.issuing.transactions.refund": {
+    "method": "POST",
+    "path": "/v1/test_helpers/issuing/transactions/{}/refund",
+    "source": "src/resources/TestHelpers/Issuing/Transactions.ts"
+   },
+   "testHelpers.issuing.transactions.createForceCapture": {
+    "method": "POST",
+    "path": "/v1/test_helpers/issuing/transactions/create_force_capture",
+    "source": "src/resources/TestHelpers/Issuing/Transactions.ts"
+   },
+   "testHelpers.issuing.transactions.createUnlinkedRefund": {
+    "method": "POST",
+    "path": "/v1/test_helpers/issuing/transactions/create_unlinked_refund",
+    "source": "src/resources/TestHelpers/Issuing/Transactions.ts"
+   },
+   "testHelpers.terminal.readers.presentPaymentMethod": {
+    "method": "POST",
+    "path": "/v1/test_helpers/terminal/readers/{}/present_payment_method",
+    "source": "src/resources/TestHelpers/Terminal/Readers.ts"
+   },
+   "testHelpers.terminal.readers.succeedInputCollection": {
+    "method": "POST",
+    "path": "/v1/test_helpers/terminal/readers/{}/succeed_input_collection",
+    "source": "src/resources/TestHelpers/Terminal/Readers.ts"
+   },
+   "testHelpers.terminal.readers.timeoutInputCollection": {
+    "method": "POST",
+    "path": "/v1/test_helpers/terminal/readers/{}/timeout_input_collection",
+    "source": "src/resources/TestHelpers/Terminal/Readers.ts"
+   },
+   "testHelpers.treasury.inboundTransfers.fail": {
+    "method": "POST",
+    "path": "/v1/test_helpers/treasury/inbound_transfers/{}/fail",
+    "source": "src/resources/TestHelpers/Treasury/InboundTransfers.ts"
+   },
+   "testHelpers.treasury.inboundTransfers.returnInboundTransfer": {
+    "method": "POST",
+    "path": "/v1/test_helpers/treasury/inbound_transfers/{}/return",
+    "source": "src/resources/TestHelpers/Treasury/InboundTransfers.ts"
+   },
+   "testHelpers.treasury.inboundTransfers.succeed": {
+    "method": "POST",
+    "path": "/v1/test_helpers/treasury/inbound_transfers/{}/succeed",
+    "source": "src/resources/TestHelpers/Treasury/InboundTransfers.ts"
+   },
+   "testHelpers.treasury.outboundPayments.update": {
+    "method": "POST",
+    "path": "/v1/test_helpers/treasury/outbound_payments/{}",
+    "source": "src/resources/TestHelpers/Treasury/OutboundPayments.ts"
+   },
+   "testHelpers.treasury.outboundPayments.fail": {
+    "method": "POST",
+    "path": "/v1/test_helpers/treasury/outbound_payments/{}/fail",
+    "source": "src/resources/TestHelpers/Treasury/OutboundPayments.ts"
+   },
+   "testHelpers.treasury.outboundPayments.post": {
+    "method": "POST",
+    "path": "/v1/test_helpers/treasury/outbound_payments/{}/post",
+    "source": "src/resources/TestHelpers/Treasury/OutboundPayments.ts"
+   },
+   "testHelpers.treasury.outboundPayments.returnOutboundPayment": {
+    "method": "POST",
+    "path": "/v1/test_helpers/treasury/outbound_payments/{}/return",
+    "source": "src/resources/TestHelpers/Treasury/OutboundPayments.ts"
+   },
+   "testHelpers.treasury.outboundTransfers.update": {
+    "method": "POST",
+    "path": "/v1/test_helpers/treasury/outbound_transfers/{}",
+    "source": "src/resources/TestHelpers/Treasury/OutboundTransfers.ts"
+   },
+   "testHelpers.treasury.outboundTransfers.fail": {
+    "method": "POST",
+    "path": "/v1/test_helpers/treasury/outbound_transfers/{}/fail",
+    "source": "src/resources/TestHelpers/Treasury/OutboundTransfers.ts"
+   },
+   "testHelpers.treasury.outboundTransfers.post": {
+    "method": "POST",
+    "path": "/v1/test_helpers/treasury/outbound_transfers/{}/post",
+    "source": "src/resources/TestHelpers/Treasury/OutboundTransfers.ts"
+   },
+   "testHelpers.treasury.outboundTransfers.returnOutboundTransfer": {
+    "method": "POST",
+    "path": "/v1/test_helpers/treasury/outbound_transfers/{}/return",
+    "source": "src/resources/TestHelpers/Treasury/OutboundTransfers.ts"
+   },
+   "testHelpers.treasury.receivedCredits.create": {
+    "method": "POST",
+    "path": "/v1/test_helpers/treasury/received_credits",
+    "source": "src/resources/TestHelpers/Treasury/ReceivedCredits.ts"
+   },
+   "testHelpers.treasury.receivedDebits.create": {
+    "method": "POST",
+    "path": "/v1/test_helpers/treasury/received_debits",
+    "source": "src/resources/TestHelpers/Treasury/ReceivedDebits.ts"
+   },
+   "threeDSecure.authentications.list": {
+    "method": "GET",
+    "path": "/v1/three_d_secure/authentications",
+    "source": "src/resources/ThreeDSecure/Authentications.ts"
+   },
+   "threeDSecure.authentications.create": {
+    "method": "POST",
+    "path": "/v1/three_d_secure/authentications",
+    "source": "src/resources/ThreeDSecure/Authentications.ts"
+   },
+   "threeDSecure.authentications.retrieve": {
+    "method": "GET",
+    "path": "/v1/three_d_secure/authentications/{}",
+    "source": "src/resources/ThreeDSecure/Authentications.ts"
+   },
+   "threeDSecure.authentications.cancel": {
+    "method": "POST",
+    "path": "/v1/three_d_secure/authentications/{}/cancel",
+    "source": "src/resources/ThreeDSecure/Authentications.ts"
+   },
+   "threeDSecure.authentications.submit": {
+    "method": "POST",
+    "path": "/v1/three_d_secure/authentications/{}/submit",
+    "source": "src/resources/ThreeDSecure/Authentications.ts"
+   },
+   "treasury.creditReversals.list": {
+    "method": "GET",
+    "path": "/v1/treasury/credit_reversals",
+    "source": "src/resources/Treasury/CreditReversals.ts"
+   },
+   "treasury.creditReversals.create": {
+    "method": "POST",
+    "path": "/v1/treasury/credit_reversals",
+    "source": "src/resources/Treasury/CreditReversals.ts"
+   },
+   "treasury.creditReversals.retrieve": {
+    "method": "GET",
+    "path": "/v1/treasury/credit_reversals/{}",
+    "source": "src/resources/Treasury/CreditReversals.ts"
+   },
+   "treasury.debitReversals.list": {
+    "method": "GET",
+    "path": "/v1/treasury/debit_reversals",
+    "source": "src/resources/Treasury/DebitReversals.ts"
+   },
+   "treasury.debitReversals.create": {
+    "method": "POST",
+    "path": "/v1/treasury/debit_reversals",
+    "source": "src/resources/Treasury/DebitReversals.ts"
+   },
+   "treasury.debitReversals.retrieve": {
+    "method": "GET",
+    "path": "/v1/treasury/debit_reversals/{}",
+    "source": "src/resources/Treasury/DebitReversals.ts"
+   },
+   "treasury.financialAccounts.list": {
+    "method": "GET",
+    "path": "/v1/treasury/financial_accounts",
+    "source": "src/resources/Treasury/FinancialAccounts.ts"
+   },
+   "treasury.financialAccounts.create": {
+    "method": "POST",
+    "path": "/v1/treasury/financial_accounts",
+    "source": "src/resources/Treasury/FinancialAccounts.ts"
+   },
+   "treasury.financialAccounts.retrieve": {
+    "method": "GET",
+    "path": "/v1/treasury/financial_accounts/{}",
+    "source": "src/resources/Treasury/FinancialAccounts.ts"
+   },
+   "treasury.financialAccounts.update": {
+    "method": "POST",
+    "path": "/v1/treasury/financial_accounts/{}",
+    "source": "src/resources/Treasury/FinancialAccounts.ts"
+   },
+   "treasury.financialAccounts.close": {
+    "method": "POST",
+    "path": "/v1/treasury/financial_accounts/{}/close",
+    "source": "src/resources/Treasury/FinancialAccounts.ts"
+   },
+   "treasury.financialAccounts.updateFeatures": {
+    "method": "POST",
+    "path": "/v1/treasury/financial_accounts/{}/features",
+    "source": "src/resources/Treasury/FinancialAccounts.ts"
+   },
+   "treasury.financialAccounts.retrieveFeatures": {
+    "method": "GET",
+    "path": "/v1/treasury/financial_accounts/{}/features",
+    "source": "src/resources/Treasury/FinancialAccounts.ts"
+   },
+   "treasury.inboundTransfers.list": {
+    "method": "GET",
+    "path": "/v1/treasury/inbound_transfers",
+    "source": "src/resources/Treasury/InboundTransfers.ts"
+   },
+   "treasury.inboundTransfers.create": {
+    "method": "POST",
+    "path": "/v1/treasury/inbound_transfers",
+    "source": "src/resources/Treasury/InboundTransfers.ts"
+   },
+   "treasury.inboundTransfers.retrieve": {
+    "method": "GET",
+    "path": "/v1/treasury/inbound_transfers/{}",
+    "source": "src/resources/Treasury/InboundTransfers.ts"
+   },
+   "treasury.inboundTransfers.cancel": {
+    "method": "POST",
+    "path": "/v1/treasury/inbound_transfers/{}/cancel",
+    "source": "src/resources/Treasury/InboundTransfers.ts"
+   },
+   "treasury.outboundPayments.list": {
+    "method": "GET",
+    "path": "/v1/treasury/outbound_payments",
+    "source": "src/resources/Treasury/OutboundPayments.ts"
+   },
+   "treasury.outboundPayments.create": {
+    "method": "POST",
+    "path": "/v1/treasury/outbound_payments",
+    "source": "src/resources/Treasury/OutboundPayments.ts"
+   },
+   "treasury.outboundPayments.retrieve": {
+    "method": "GET",
+    "path": "/v1/treasury/outbound_payments/{}",
+    "source": "src/resources/Treasury/OutboundPayments.ts"
+   },
+   "treasury.outboundPayments.cancel": {
+    "method": "POST",
+    "path": "/v1/treasury/outbound_payments/{}/cancel",
+    "source": "src/resources/Treasury/OutboundPayments.ts"
+   },
+   "treasury.outboundTransfers.list": {
+    "method": "GET",
+    "path": "/v1/treasury/outbound_transfers",
+    "source": "src/resources/Treasury/OutboundTransfers.ts"
+   },
+   "treasury.outboundTransfers.create": {
+    "method": "POST",
+    "path": "/v1/treasury/outbound_transfers",
+    "source": "src/resources/Treasury/OutboundTransfers.ts"
+   },
+   "treasury.outboundTransfers.retrieve": {
+    "method": "GET",
+    "path": "/v1/treasury/outbound_transfers/{}",
+    "source": "src/resources/Treasury/OutboundTransfers.ts"
+   },
+   "treasury.outboundTransfers.cancel": {
+    "method": "POST",
+    "path": "/v1/treasury/outbound_transfers/{}/cancel",
+    "source": "src/resources/Treasury/OutboundTransfers.ts"
+   },
+   "treasury.receivedCredits.list": {
+    "method": "GET",
+    "path": "/v1/treasury/received_credits",
+    "source": "src/resources/Treasury/ReceivedCredits.ts"
+   },
+   "treasury.receivedCredits.retrieve": {
+    "method": "GET",
+    "path": "/v1/treasury/received_credits/{}",
+    "source": "src/resources/Treasury/ReceivedCredits.ts"
+   },
+   "treasury.receivedDebits.list": {
+    "method": "GET",
+    "path": "/v1/treasury/received_debits",
+    "source": "src/resources/Treasury/ReceivedDebits.ts"
+   },
+   "treasury.receivedDebits.retrieve": {
+    "method": "GET",
+    "path": "/v1/treasury/received_debits/{}",
+    "source": "src/resources/Treasury/ReceivedDebits.ts"
+   },
+   "treasury.transactionEntries.list": {
+    "method": "GET",
+    "path": "/v1/treasury/transaction_entries",
+    "source": "src/resources/Treasury/TransactionEntries.ts"
+   },
+   "treasury.transactionEntries.retrieve": {
+    "method": "GET",
+    "path": "/v1/treasury/transaction_entries/{}",
+    "source": "src/resources/Treasury/TransactionEntries.ts"
+   },
+   "treasury.transactions.list": {
+    "method": "GET",
+    "path": "/v1/treasury/transactions",
+    "source": "src/resources/Treasury/Transactions.ts"
+   },
+   "treasury.transactions.retrieve": {
+    "method": "GET",
+    "path": "/v1/treasury/transactions/{}",
+    "source": "src/resources/Treasury/Transactions.ts"
+   },
+   "v2.billing.meterEventAdjustments.create": {
+    "method": "POST",
+    "path": "/v2/billing/meter_event_adjustments",
+    "source": "src/resources/V2/Billing/MeterEventAdjustments.ts"
+   },
+   "v2.billing.meterEventSession.create": {
+    "method": "POST",
+    "path": "/v2/billing/meter_event_session",
+    "source": "src/resources/V2/Billing/MeterEventSession.ts"
+   },
+   "v2.billing.meterEventStream.create": {
+    "method": "POST",
+    "path": "/v2/billing/meter_event_stream",
+    "source": "src/resources/V2/Billing/MeterEventStream.ts"
+   },
+   "v2.billing.meterEvents.create": {
+    "method": "POST",
+    "path": "/v2/billing/meter_events",
+    "source": "src/resources/V2/Billing/MeterEvents.ts"
+   },
+   "v2.commerce.productCatalog.imports.list": {
+    "method": "GET",
+    "path": "/v2/commerce/product_catalog/imports",
+    "source": "src/resources/V2/Commerce/ProductCatalog/Imports.ts"
+   },
+   "v2.commerce.productCatalog.imports.create": {
+    "method": "POST",
+    "path": "/v2/commerce/product_catalog/imports",
+    "source": "src/resources/V2/Commerce/ProductCatalog/Imports.ts"
+   },
+   "v2.commerce.productCatalog.imports.retrieve": {
+    "method": "GET",
+    "path": "/v2/commerce/product_catalog/imports/{}",
+    "source": "src/resources/V2/Commerce/ProductCatalog/Imports.ts"
+   },
+   "v2.core.accountLinks.create": {
+    "method": "POST",
+    "path": "/v2/core/account_links",
+    "source": "src/resources/V2/Core/AccountLinks.ts"
+   },
+   "v2.core.accountTokens.create": {
+    "method": "POST",
+    "path": "/v2/core/account_tokens",
+    "source": "src/resources/V2/Core/AccountTokens.ts"
+   },
+   "v2.core.accountTokens.retrieve": {
+    "method": "GET",
+    "path": "/v2/core/account_tokens/{}",
+    "source": "src/resources/V2/Core/AccountTokens.ts"
+   },
+   "v2.core.accounts.list": {
+    "method": "GET",
+    "path": "/v2/core/accounts",
+    "source": "src/resources/V2/Core/Accounts.ts"
+   },
+   "v2.core.accounts.create": {
+    "method": "POST",
+    "path": "/v2/core/accounts",
+    "source": "src/resources/V2/Core/Accounts.ts"
+   },
+   "v2.core.accounts.retrieve": {
+    "method": "GET",
+    "path": "/v2/core/accounts/{}",
+    "source": "src/resources/V2/Core/Accounts.ts"
+   },
+   "v2.core.accounts.update": {
+    "method": "POST",
+    "path": "/v2/core/accounts/{}",
+    "source": "src/resources/V2/Core/Accounts.ts"
+   },
+   "v2.core.accounts.close": {
+    "method": "POST",
+    "path": "/v2/core/accounts/{}/close",
+    "source": "src/resources/V2/Core/Accounts.ts"
+   },
+   "v2.core.eventDestinations.list": {
+    "method": "GET",
+    "path": "/v2/core/event_destinations",
+    "source": "src/resources/V2/Core/EventDestinations.ts"
+   },
+   "v2.core.eventDestinations.create": {
+    "method": "POST",
+    "path": "/v2/core/event_destinations",
+    "source": "src/resources/V2/Core/EventDestinations.ts"
+   },
+   "v2.core.eventDestinations.del": {
+    "method": "DELETE",
+    "path": "/v2/core/event_destinations/{}",
+    "source": "src/resources/V2/Core/EventDestinations.ts"
+   },
+   "v2.core.eventDestinations.retrieve": {
+    "method": "GET",
+    "path": "/v2/core/event_destinations/{}",
+    "source": "src/resources/V2/Core/EventDestinations.ts"
+   },
+   "v2.core.eventDestinations.update": {
+    "method": "POST",
+    "path": "/v2/core/event_destinations/{}",
+    "source": "src/resources/V2/Core/EventDestinations.ts"
+   },
+   "v2.core.eventDestinations.disable": {
+    "method": "POST",
+    "path": "/v2/core/event_destinations/{}/disable",
+    "source": "src/resources/V2/Core/EventDestinations.ts"
+   },
+   "v2.core.eventDestinations.enable": {
+    "method": "POST",
+    "path": "/v2/core/event_destinations/{}/enable",
+    "source": "src/resources/V2/Core/EventDestinations.ts"
+   },
+   "v2.core.eventDestinations.ping": {
+    "method": "POST",
+    "path": "/v2/core/event_destinations/{}/ping",
+    "source": "src/resources/V2/Core/EventDestinations.ts"
+   },
+   "v2.core.events.list": {
+    "method": "GET",
+    "path": "/v2/core/events",
+    "source": "src/resources/V2/Core/Events.ts"
+   },
+   "v2.core.events.retrieve": {
+    "method": "GET",
+    "path": "/v2/core/events/{}",
+    "source": "src/resources/V2/Core/Events.ts"
+   }
+  }
+ },
+ "skipped": []
+}
